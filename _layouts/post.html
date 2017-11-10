@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{ page.title }}</title>  
+  {% if page.description %}
+    <meta name="description" content="{{ page.description }}">
+  {% endif %}  
+  {% include meta-data.html %}
+</head>
+
+<body id="top">
+  {% include navigation.html %}
+  <main class="main-wrapper" id="panel">
+    {% include mobile-menu-trigger.html %}
+    <div class="post-container">
+      {{ content }}
+      <div class="post__cta-container">
+        <a href="/contact" class="button--primary">
+        Let&rsquo;s work together
+        </a>
+        <a href="#top" class="button--secondary">
+          Back to top
+        </a>
+      </div>
+    </div>
+  </main>
+  {% include footer.html %}
+  {% include scripts.html %}
+</body>
+</html>

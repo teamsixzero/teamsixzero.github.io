@@ -1,0 +1,77 @@
+.porfolio-header-overlap {
+  @media only screen and 
+  (min-width: $screen-sm){
+    margin-top: -72px;
+    padding-top: 0;
+    background: transparent;
+    
+    .work__description {
+      margin-top: 144px;
+    }    
+  }
+}
+
+// Portolio with centered image and text
+
+.portfolio--centered {
+  @include grid-container;
+  padding-top: 112px;
+  padding-bottom: 112px;
+
+  @media only screen and 
+  (max-width: $screen-sm) {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  @media only screen and 
+  (max-width: $screen-xs) {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    text-align: center;
+  }
+
+  .portfolio__name {
+    margin-top: 0;
+  }
+
+  .portfolio__description {
+    @include grid-column(6);
+    @include grid-shift(3);
+    text-align: center;
+    margin-bottom: 24px;
+
+    @media only screen and 
+    (max-width: $screen-sm){
+      @include grid-column(10);
+      @include grid-shift(1);
+    }
+
+    @media only screen and 
+    (max-width: $screen-xs){
+      @include grid-column(12);
+      @include grid-shift(0);
+    }
+  }
+
+  .portfolio__image {
+    @include grid-column(10);
+    @include grid-shift(1);
+
+    @media only screen and 
+    (max-width: $screen-sm){
+      @include grid-column(10);
+      @include grid-shift(1);
+    }
+
+    @media only screen and 
+    (max-width: $screen-xs){
+      @include grid-column(12);
+      @include grid-shift(0);
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}

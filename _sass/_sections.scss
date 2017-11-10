@@ -1,0 +1,30 @@
+.center-cta {
+  text-align: center;
+  padding: 96px 40px;
+
+  @media only screen and 
+  (max-width: $screen-sm) {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .button--primary {
+    margin-right: 8px;
+  }
+
+  .section-title {
+    margin-top: 0;
+  }
+
+  @media only screen and 
+  (max-width: $screen-sm){
+    .button--primary {
+      margin-right: 0;
+      margin-bottom: 8px;
+    }
+  }
+}
+
+.has-no-padding-bottom {
+  padding-bottom: 0 !important;
+}
