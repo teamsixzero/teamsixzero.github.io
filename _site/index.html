@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>zerosix</title>  
+  <meta name="description" content="A high impact user-centric UX/UI software product designer based in Vancouver Canada that helps companies build great products. Let's work together.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="/assets/img/favicon.png" sizes="16x16">  
+<link rel="icon" type="image/png" href="/assets/img/favicon.png" sizes="32x32">  
+<link rel="icon" type="image/png" href="/assets/img/favicon.png" sizes="96x96">
+<!-- Styles -->
+<link rel="stylesheet" href="/assets/css/main.css" media="all">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Poppins:300,400,700">
+
+</head>
+<body>
+  <nav class="desktop-nav">
+  <div class="nav__inner">
+    <a href="/">
+        <img src="/assets/img/logo-light.png" class="logo">
+    </a>
+    <a href="/work/" class="nav__item">Work</a>
+<a href="/contact/" class="nav__item">Contact</a>
+  </div>
+</nav>
+
+<nav class="mobile-nav" id="menu">
+  <a href="/work/" class="nav__item">Work</a>
+<a href="/contact/" class="nav__item">Contact</a>
+</nav>
+  <main class="main-wrapper" id="panel">
+    <div class="mobile-nav-trigger">
+  <button class="hamburger hamburger--spin toggle-button" type="button">
+    <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+    </span>
+  </button>
+</div>
+    <header class="header-home">
+  <div class="header__content">
+    <h1 class="header__title">We are the most human focused design agency.</h1>
+    <h5 class="header__subtitle">
+      We help companies build life changing apps and software.
+    </h5>
+  </div>
+</header>
+  </main>
+  <footer>
+  <svg class="logo" xmlns:x="http://ns.adobe.com/Extensibility/1.0/" xmlns:i="http://ns.adobe.com/AdobeIllustrator/10.0/" xmlns:graph="http://ns.adobe.com/Graphs/1.0/" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="-949 951 100 125" style="enable-background:new -949 951 100 100;" xml:space="preserve"><switch><foreignObject requiredExtensions="http://ns.adobe.com/AdobeIllustrator/10.0/" x="0" y="0" width="1" height="1"/><g i:extraneous="self"><path d="M-899,961.1l-47.5,79.9h95L-899,961.1z M-877.2,1008.2l-17.1-15.8l-5.6,9.1l-4.5-5.4l-15.6,10.7l21-35.3L-877.2,1008.2z"/></g></switch></svg><!-- Hello. I hope you're having a good day. -->
+</footer>
+  <!-- JQuery -->
+<script
+  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+  crossorigin="anonymous"></script>
+
+<!-- Slideout menu -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
+<script>
+  var slideout = new Slideout({
+    'panel': document.getElementById('panel'),
+    'menu': document.getElementById('menu'),
+    'padding': 241,
+    'tolerance': 70
+  });
+
+  // Toggle button
+  document.querySelector('.toggle-button').addEventListener('click', function() {
+    slideout.toggle();
+  });
+
+  $(window).resize(function() {
+    if ($(window).width() > 480) {
+      $('.main-wrapper').removeAttr("style");
+    }
+  });
+</script>
+
+<!-- Hamburger menu icon animation -->
+<script>
+var $hamburger = $(".hamburger");
+
+$hamburger.on("click", function(e) {
+  $hamburger.toggleClass("is-active");
+});
+</script>
+
+<!-- Style links on active page -->
+<script>
+var loc = window.location.pathname;
+
+$('.nav__inner').find('.nav__item').each(function() {
+  $(this).toggleClass('active', $(this).attr('href') == loc);
+});
+</script>
+
+
+</body>
+</html>

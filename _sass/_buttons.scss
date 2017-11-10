@@ -1,0 +1,39 @@
+/* Buttons */
+
+%button {
+  display: inline-block;
+  padding: 15px 20px;
+  text-decoration: none;
+  transition: all .1s ease-in-out;
+  text-align: center;
+}
+
+.button--primary {  
+  @extend %button;
+  background: #394A9F;
+  color: #ffffff;  
+
+  &:hover {
+    background: #192A7D;
+    box-shadow: 0 2px 20px rgba($grey, 0.3);
+    color: #ffffff;
+  }
+}
+
+.button--secondary { 
+  @extend %button;
+  background: transparent;
+  color: $blue;
+
+  @media only screen and 
+  (max-width: $screen-md) {
+    margin-top: 8px;
+  }
+
+  &:hover {
+    background: #ffffff;
+    text-decoration: underline;
+    box-shadow: 0 2px 20px rgba($grey, 0.3);
+    color: $blue;
+  }  
+}

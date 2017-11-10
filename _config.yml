@@ -1,0 +1,8 @@
+name: Zerosix
+markdown: kramdown
+plugins:
+  - jekyll-sitemap
+sass:
+  sass_dir: _sass
+  style: compressed
+permalink: pretty

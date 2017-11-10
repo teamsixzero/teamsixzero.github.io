@@ -1,0 +1,23 @@
+.gallery-container {
+  @include grid-container;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.gallery-container__inner {
+  @include grid-column(12);
+}
+
+.gallery-image-link {
+  @include grid-column(3);
+  margin-bottom: 16px;
+  
+  @media only screen and 
+  (max-width: $screen-sm) {      
+    @include grid-column(6);
+  }
+}
+
+.gallery-image {
+  width: 100%;
+}
