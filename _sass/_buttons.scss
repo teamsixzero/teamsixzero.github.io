@@ -10,11 +10,11 @@
 
 .button--primary {  
   @extend %button;
-  background: #394A9F;
+  background: $blue;
   color: #ffffff;  
 
   &:hover {
-    background: #192A7D;
+    background: $blue;
     box-shadow: 0 2px 20px rgba($grey, 0.3);
     color: #ffffff;
   }
