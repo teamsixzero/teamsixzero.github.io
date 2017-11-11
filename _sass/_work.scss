@@ -31,6 +31,12 @@
 }
 
 .work__description {
+
+  @media only screen and 
+  (min-width: $screen-md) {
+    margin-top: 96px;
+  }    
+
   @media only screen and 
   (min-width: $screen-sm) {
     @include grid-column(5);
