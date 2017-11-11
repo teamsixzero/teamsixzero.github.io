@@ -3,7 +3,8 @@
 header {
   @include grid-container;
   background: #ffffff;
-  padding: 120px 32px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 
   @media only screen and 
   (max-width: $screen-sm) {
@@ -82,8 +83,8 @@ header {
 
   @media only screen and 
   (max-width: $screen-sm) {
-    padding-top: 152px;
-    padding-bottom: 112px;
+    padding-top: 120px;
+    padding-bottom: 80px;
   }
 
   .header__title {
