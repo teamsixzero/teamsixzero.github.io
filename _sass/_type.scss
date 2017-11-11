@@ -2,6 +2,7 @@ h1, h2, h3, h4, h5, h6, p {
   line-height: 1.75;
   font-weight: 200;
   margin-bottom: 32px;
+  margin-top: 0;
 }
 
 h1, h2, h3, h4 {
@@ -30,6 +31,13 @@ h5 {
 
 h6 {
   font-size: 21px;
+}
+
+p {
+  @media only screen and 
+  (max-width: $screen-sm) {
+    font-size: 16px;
+  }
 }
 
 a {

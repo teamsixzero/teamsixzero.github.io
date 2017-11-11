@@ -1,0 +1,13 @@
+footer {
+  border-top: 1px solid rgba($grey-medium, .2);
+  text-align: center;
+  padding-top: 96px;
+  padding-bottom: 96px;
+  color: $grey-medium;
+
+  @media only screen and 
+  (max-width: $screen-xs){
+    padding-top: 72px;
+  padding-bottom: 72px;
+  }
+}

@@ -3,8 +3,8 @@
 // ============================================================================= 
 
 .mobile-nav-trigger {
-  border-bottom: 1px solid #e2e2e2;
-  background: #ffffff;
+  position: absolute;
+  top: 0;
   padding: 16px;
   display: none;
 
@@ -36,8 +36,8 @@
 
 .desktop-nav {
   @include grid-container;
-  padding: 24px;
-  position: fixed;
+  padding: 32px 0;
+  position: absolute;
   top: 0;
   width: 100%;
   z-index: 100;
@@ -57,7 +57,7 @@
     text-decoration: none;
     font-size: 16px;
     font-weight: 100;
-    transition: none;
+    transition: all .1s ease-in-out;
     color: $white-faded;
 
     &:hover {
@@ -75,9 +75,16 @@
 }
 
 .nav__inner {
-  @include grid-column(12);
+  @include grid-column(10);
+  @include grid-shift(1);
   display: flex;
   align-items: center;
+
+  @media only screen and 
+  (max-width: $screen-md){
+    @include grid-column(12);
+    @include grid-shift(0);
+  }
 }
 
 // ============================================================================= 
@@ -94,7 +101,7 @@
   -webkit-overflow-scrolling: touch;
   z-index: 0;
   display: none;
-  background: $grey;
+  background: #040a12;
   text-align: center;
   padding-top: 32px;
   padding-bottom: 32px;
