@@ -23,20 +23,3 @@ $('.nav__inner').find('.nav__item').each(function() {
   $(this).toggleClass('active', $(this).attr('href') == loc);
 });
 </script>
-
-{% if page.testimonials %} 
-<!-- Slick Slider -->
-<script type="text/javascript" src="/assets/js/slick.min.js"></script>
-<script type="text/javascript">
-  $(document).ready(function(){
-    $('.testimonial__container').slick({
-      fade: true,
-      autoplay: true,
-      autoplaySpeed: 9000,
-      appendArrows: ".testimonial__arrows",
-      prevArrow: "<button class='arrow--left'>&larr;</button>",
-      nextArrow: "<button class='arrow--right'>&rarr;</button>"
-    });
-  });
-</script>
-{% endif %}
