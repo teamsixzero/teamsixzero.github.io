@@ -75,16 +75,9 @@
 }
 
 .nav__inner {
-  @include grid-column(10);
-  @include grid-shift(1);
+  @include grid-column(12);
   display: flex;
   align-items: center;
-
-  @media only screen and 
-  (max-width: $screen-md){
-    @include grid-column(12);
-    @include grid-shift(0);
-  }
 }
 
 // ============================================================================= 
