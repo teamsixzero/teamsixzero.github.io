@@ -1,8 +1,4 @@
 .what-we-do {
-  .card-container {
-    padding-top: 32px;
-  }
-
   .card {
     @include grid-column(4);
 
