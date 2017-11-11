@@ -1,8 +1,8 @@
 footer {
   border-top: 1px solid rgba($grey-medium, .2);
   text-align: center;
-  padding-top: 96px;
-  padding-bottom: 96px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   color: $grey-medium;
   font-size: 16px;
 
@@ -10,5 +10,16 @@ footer {
   (max-width: $screen-xs){
     padding-top: 72px;
   padding-bottom: 72px;
+  }
+}
+
+.footer__nav {
+  display: block;
+  text-align: center;
+  margin-bottom: 32px;
+
+  .nav__item {
+    text-decoration: none;
+    padding: 0 8px;
   }
 }
