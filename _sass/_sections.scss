@@ -69,6 +69,11 @@
       font-size: 25px;
     }
   }
+
+  .section-subtitle {
+    margin-bottom: 64px;
+    color: rgba($grey, 0.7);
+  }
 }
 
 .has-no-padding-bottom {
@@ -82,8 +87,8 @@
 
 .section--testimonial {
   @include grid-container;
-  padding-top: 216px;
-  padding-bottom: 128px;
+  padding-top: 224px;
+  padding-bottom: 144px;
   background: linear-gradient(#ffffff, #fbfbfb);
 
   @media only screen and 
