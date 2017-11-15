@@ -28,7 +28,7 @@
 
 .address__info {
   text-align: left;
-  flex: 0 0 auto;
+  flex: 1;
   padding: 40px 64px;
 
   @media only screen and 
@@ -42,18 +42,13 @@
 }
 
 .address-map-image {
-  flex: 1;
+  flex: 0 0 50%;
   margin-left: auto;
   text-align: right;
 
   img {
     width: 100%;    
     vertical-align: top;
-
-    @media only screen and 
-    (min-width: $screen-md){
-      max-width: 400px;
-    }
   }
 }
 

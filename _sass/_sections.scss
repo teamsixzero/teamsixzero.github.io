@@ -198,6 +198,10 @@ section {
 .section--text{
   padding-top: 144px;
   padding-bottom: 144px;
+
+  p:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
 
