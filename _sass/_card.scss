@@ -18,10 +18,9 @@
   flex: 1;
   box-sizing: border-box;
   box-shadow: 0 20px 30px rgba($grey-medium, 0.2);
-  padding: 32px 40px;
+  padding: 40px 32px;
   background: #ffffff;    
-  text-align: center;
-  border-radius: 2px;
+  text-align: left;
 
   @media only screen and 
   (max-width: $screen-sm) {
@@ -37,16 +36,15 @@
   }
 
   .card-image {
-    width: 80px;
+    width: 48px;
     height: auto;
     display: inline-block;
-    margin: 40px auto;
+    margin-bottom: 112px;
 
     @media only screen and 
     (max-width: $screen-xs) {
-      width: 60px;
-      margin-top: 20px;
-      margin-bottom: 20px;
+      width: 40px;
+      margin-bottom: 64px;
     }
   }
 
@@ -61,8 +59,13 @@
   }
 
   .card-body {
-    font-size: 16px;
+    font-size: 14px;
     margin-bottom: 0;
+
+    @media only screen and 
+    (max-width: $screen-xs) {
+      font-size: 14px;
+    }
   }
 }
 

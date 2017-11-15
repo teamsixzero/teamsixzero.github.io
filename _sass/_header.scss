@@ -3,13 +3,13 @@
 header {
   @include grid-container;
   background: #ffffff;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 200px;
+  padding-bottom: 160px;
 
   @media only screen and 
-  (max-width: $screen-sm) {
-    padding-top: 64px;
-    padding-bottom: 64px;
+  (max-width: $screen-xs) {
+    padding-top: 120px;
+    padding-bottom: 80px;
   }
 
   .button--primary {
@@ -132,24 +132,8 @@ header {
 
 .header--home {
   background: url('/assets/img/home-bg.png') no-repeat center center;
-  padding-top: 200px;
-  padding-bottom: 160px;
-
-  @media only screen and 
-  (max-width: $screen-xs) {
-    padding-top: 120px;
-    padding-bottom: 80px;
-  }
 }
 
 .header--about {
-  background: #F9F9FA;
-  padding-top: 176px;
-  padding-bottom: 120px;
-
-  @media only screen and 
-  (max-width: $screen-xs) {
-    padding-top: 120px;
-    padding-bottom: 64px;
-  }
+  background: $grey-light;
 }
