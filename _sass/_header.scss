@@ -73,20 +73,10 @@ header {
 
 
 // =============================================================================
-// Pages
+// Header: Colours
 // =============================================================================
 
-.header-home {
-  background: url('/assets/img/home-bg.png') no-repeat center center;
-  padding-top: 200px;
-  padding-bottom: 160px;
-
-  @media only screen and 
-  (max-width: $screen-sm) {
-    padding-top: 120px;
-    padding-bottom: 80px;
-  }
-
+.header--teal {
   .header__title {
     color: $teal;
     font-size: 64px;
@@ -105,5 +95,61 @@ header {
 
   .header__subtitle {
     color: $white-faded;
+  }
+}
+
+
+.header--white {
+  .header__title {
+    color: $grey;
+    font-size: 64px;
+    line-height: 1.5;
+
+    @media only screen and 
+    (max-width: $screen-sm) {
+      font-size: 53px;
+    }
+
+    @media only screen and 
+    (max-width: $screen-sm) {
+      font-size: 37px;
+    }
+  }
+
+  .header__subtitle {
+    color: rgba($grey,0.5);
+  }
+
+  .nav--item {
+    color: $grey;
+  }
+}
+
+
+// =============================================================================
+// Header: Pages specific
+// =============================================================================
+
+.header--home {
+  background: url('/assets/img/home-bg.png') no-repeat center center;
+  padding-top: 200px;
+  padding-bottom: 160px;
+
+  @media only screen and 
+  (max-width: $screen-xs) {
+    padding-top: 120px;
+    padding-bottom: 80px;
+  }
+}
+
+.header--about {
+  background: #F9F9FA;
+  padding-top: 176px;
+  padding-bottom: 120px;
+
+  @media only screen and 
+  (max-width: $screen-xs) {
+    padding-top: 120px;
+    padding-bottom: 64px;
   }
 }
