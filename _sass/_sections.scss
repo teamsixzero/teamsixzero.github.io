@@ -199,11 +199,22 @@ section {
   padding-top: 144px;
   padding-bottom: 144px;
 
+  @media only screen and 
+  (max-width: $screen-sm) {
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+
+  @media only screen and 
+  (max-width: $screen-xs) {
+    padding-top: 88px;
+    padding-bottom: 88px;
+  }
+
   p:last-of-type {
     margin-bottom: 0;
   }
 }
-
 
 // =============================================================================
 // Individual pages 
