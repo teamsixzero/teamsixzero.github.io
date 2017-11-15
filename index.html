@@ -3,7 +3,7 @@ layout: default
 title: sixzero | We help companies build life changing apps and software.
 ---
 
-<header class="header-home">
+<header class="header--teal header--home">
   <div class="header__content">
     <h1 class="header__title">We are the most human focused design agency</h1>
     <p class="header__subtitle">
@@ -12,7 +12,7 @@ title: sixzero | We help companies build life changing apps and software.
   </div>
 </header>
 
-<section class="work-item image--right has-no-padding-bottom">
+<section class="work-item image--right">
   <div class="work-item__inner">
     <div class="work__description">
       <h3 class="company__name">Apps with impact</h3>
@@ -29,35 +29,7 @@ title: sixzero | We help companies build life changing apps and software.
   </div>
 </section>
 
-<section class="section--centered what-we-do has-no-padding-bottom">
-  <div class="section__inner--c10">
-    <h3 class="section-title">What we do</h3>
-    <p class="section-subtitle">
-      We can help you take your idea from sketch to reality.
-    </p>  
-    <div class="card--c4">
-      <img src="/assets/img/icon-interface-design.png" class="card-image">
-      <h6 class="card-title">Interface Design</h6>
-      <p class="card-body">
-        Looking sharp is important! We make beautiful, clean and intuitve interfaces. 
-      </p>
-    </div>
-    <div class="card--c4">
-      <img src="/assets/img/icon-ux-design.png" class="card-image">
-      <h6 class="card-title">User Experience</h6>
-      <p class="card-body">
-        Solid UX will ensure that your clients get the most out of your app.
-      </p>
-    </div>
-    <div class="card--c4">
-      <img src="/assets/img/icon-development.png" class="card-image">
-      <h6 class="card-title">Development</h6>
-      <p class="card-body">
-        Bring your concept to life and get it out on the world on all major platforms.
-      </p>
-    </div>
-  </div>
-</section>
+{% include section-what-we-do.html %}
 
 <section class="section--testimonial">
   <div class="section__inner--c8">
@@ -73,10 +45,4 @@ title: sixzero | We help companies build life changing apps and software.
   </div>
 </section>
 
-<section class="section--centered">
-  <h3 class="section-title">Let&rsquo;s work together</h3>
-  <p class="section-subtitle">
-    We will help you build something people love.
-  </p>
-  <a href="mailto:{% include email.html %}" class="button--primary">Get in touch</a>
-</section>
+{% include section-cta-block.html %}

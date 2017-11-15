@@ -1,0 +1,69 @@
+.where-we-work {
+  .section-title {
+    margin-bottom: 40px;
+  }
+}
+
+.address-with-map {
+  display: flex;
+  align-items: center;
+  box-shadow: 0 20px 30px rgba($grey-medium, 0.2);
+  background: #ffffff;
+  padding: 0;
+
+  @media only screen and 
+  (max-width: $screen-sm){
+    @include grid-column(8);
+    @include grid-shift(2);
+    display: block;    
+  }
+
+  @media only screen and 
+  (max-width: $screen-xs){
+    @include grid-column(12);
+    @include grid-shift(0);
+    display: block;    
+  }
+}
+
+.address__info {
+  text-align: left;
+  flex: 0 0 auto;
+  padding: 40px 64px;
+
+  @media only screen and 
+  (max-width: $screen-sm){
+    padding: 40px;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.address-map-image {
+  flex: 1;
+  margin-left: auto;
+  text-align: right;
+
+  img {
+    width: 100%;    
+    vertical-align: top;
+
+    @media only screen and 
+    (min-width: $screen-md){
+      max-width: 400px;
+    }
+  }
+}
+
+.address__directions {
+  &:after {
+    content: "→";
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    left: 10px;
+    top: 2px;
+  }
+}

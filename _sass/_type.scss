@@ -42,8 +42,9 @@ p {
 
 a {
   color: $grey;
-  text-decoration: none;
+  text-decoration: underline;
   transition: all .1s ease-in-out;
+  cursor: pointer;
 
   &:hover {
     color: $teal;

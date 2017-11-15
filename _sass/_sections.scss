@@ -1,3 +1,25 @@
+section {
+  @include grid-container;
+  border-bottom: 1px solid rgba($grey-medium, .2);
+}
+
+.section__inner--c6 {
+  @include grid-column(6);
+  @include grid-shift(3);
+
+  @media only screen and 
+  (max-width: $screen-md){
+    @include grid-column(8);
+    @include grid-shift(2);
+  }
+
+  @media only screen and 
+  (max-width: $screen-sm) {
+    @include grid-column(12);
+    @include grid-shift(0);
+  }
+}
+
 .section__inner--c8 {
   @include grid-column(8);
   @include grid-shift(2);
@@ -26,8 +48,19 @@
   }
 }
 
+
+// Section: Attributes
+// ----------------------
+
 .has-no-padding-bottom {
   padding-bottom: 0;
+}
+
+// Section: Colours
+// ----------------------
+
+.section--color-grey {
+  background: $grey-light;
 }
 
 // =============================================================================
@@ -35,9 +68,9 @@
 // =============================================================================
 
 .section--centered {
-  @include grid-container;
   text-align: center;
-  padding: 144px 0;
+  padding-top: 144px;
+  padding-bottom: 144px;
 
   @media only screen and 
   (max-width: $screen-sm) {
@@ -66,12 +99,11 @@
 
     @media only screen and 
     (max-width: $screen-sm) {
-      font-size: 25px;
+      font-size: 31px;
     }
   }
 
   .section-subtitle {
-    margin-bottom: 64px;
     color: rgba($grey, 0.7);
   }
 }
@@ -82,12 +114,12 @@
 
 
 // =============================================================================
-// Reviews
+// Tesimonial
 // =============================================================================
 
 .section--testimonial {
   @include grid-container;
-  padding-top: 224px;
+  padding-top: 144px;
   padding-bottom: 144px;
   background: linear-gradient(#ffffff, #fbfbfb);
 
@@ -156,4 +188,24 @@
   (max-width: $screen-xs){
     font-size: 13px;
   }
+}
+
+
+// =============================================================================
+// Text
+// =============================================================================
+
+.section--text{
+  padding-top: 144px;
+  padding-bottom: 144px;
+}
+
+
+// =============================================================================
+// Individual pages 
+// =============================================================================
+
+.what-we-do {
+  padding-top: 128px;
+  padding-bottom: 152px;
 }

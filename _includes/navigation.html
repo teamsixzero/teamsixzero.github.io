@@ -1,7 +1,7 @@
-<nav class="desktop-nav">
+<nav class="desktop-nav {% unless page.light_header %}nav--dark{% else %}nav--light{% endunless %}">
   <div class="nav__inner">
     <a href="/">
-        <img src="/assets/img/logo-light.png" class="logo">
+      <img src="/assets/img/{% unless page.light_header %}logo-light.png{% else %}logo-dark.png{% endunless %}" class="logo">
     </a>
     {% include nav-links.html %}
   </div>
@@ -10,3 +10,6 @@
 <nav class="mobile-nav" id="menu">
   {% include nav-links.html %}
 </nav>
+
+
+
