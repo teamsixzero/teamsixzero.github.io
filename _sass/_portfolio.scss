@@ -12,11 +12,13 @@
 }
 
 // Portolio with centered image and text
+// ----------------
 
 .portfolio--centered {
   @include grid-container;
   padding-top: 112px;
   padding-bottom: 112px;
+  border: 0;
 
   @media only screen and 
   (max-width: $screen-sm) {
@@ -72,6 +74,12 @@
 
     img {
       width: 100%;
+    }
+
+    .device--mobile {
+      display: block;
+      max-width: 400px;
+      margin:0 auto;
     }
   }
 }
