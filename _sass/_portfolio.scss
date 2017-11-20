@@ -61,25 +61,39 @@
     @include grid-shift(1);
 
     @media only screen and 
-    (max-width: $screen-sm){
-      @include grid-column(10);
-      @include grid-shift(1);
-    }
-
-    @media only screen and 
     (max-width: $screen-xs){
       @include grid-column(12);
       @include grid-shift(0);
     }
+  }
 
-    img {
-      width: 100%;
-    }
+  .device--mobile {
+    display: block;
+    max-width: 400px;
+    margin: 0 auto;
 
-    .device--mobile {
-      display: block;
-      max-width: 400px;
-      margin:0 auto;
+    @media only screen and 
+    (max-width: $screen-xs){
+      @include grid-column(8);
+      @include grid-shift(2);
     }
+  }
+}
+
+.portfolio__comparison-image {
+  @include grid-column(10);
+  @include grid-shift(1);
+  padding-top: 80px;
+
+  @media only screen and 
+  (max-width: $screen-xs){
+    @include grid-column(12);
+    @include grid-shift(0);
+  }
+
+  .comparison-caption {
+    padding: 16px;
+    color: $grey-medium;
+    font-size: 14px;
   }
 }
