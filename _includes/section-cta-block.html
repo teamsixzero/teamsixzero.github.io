@@ -1,8 +1,18 @@
 <section class="section--centered section-cta-block {{ include.class }}">
-  <div class="section__inner--c10">
-    <h3 class="section-title">Let&rsquo;s work together</h3>
+  <div class="section__inner--c8">
+    <h3 class="section-title">
+      {% if include.title %}
+        {{ include.title }}
+      {% else %}
+        Let&rsquo;s work together
+      {% endif %}
+    </h3>
     <p class="section-subtitle">
-      We will help you build something people love.
+      {% if include.subtitle %}
+        {{ include.subtitle }}
+      {% else %}
+        We will help you build something people love.
+      {% endif %}
     </p>
     <a href="mailto:{% include email.html %}" class="button--primary">Get in touch</a>
   </div>
