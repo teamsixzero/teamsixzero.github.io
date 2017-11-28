@@ -1,18 +1,170 @@
+// ============================================================================= 
+// Portolio
+// ============================================================================= 
+
+.portfolio__name {
+  margin-bottom: 16px;
+}
+
+.portfolio__description p {
+  @media only screen and 
+  (max-width: $screen-sm) {
+    font-size: 16px;
+  }
+}
+
+// ============================================================================= 
+// Portolio: Image left/right
+// ============================================================================= 
+
+%left-right-images {
+  @include grid-container;
+  background: #ffffff;
+  padding-top: 144px;
+  padding-bottom: 144px;
+  overflow: hidden;
+  border: none;
+
+  @media only screen and 
+  (max-width: $screen-sm) {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  @media only screen and 
+  (max-width: $screen-xs) {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    text-align: center;
+  }
+
+  .section__inner--c10 {
+    @media only screen and 
+    (max-width: $screen-xs) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .portfolio__description {
+    @media only screen and 
+    (min-width: $screen-md) {
+      margin-top: 96px;
+    }    
+
+    @media only screen and 
+    (max-width: $screen-xs) {
+      margin-bottom: 32px;
+      display: block;
+    }
+  }
+
+  .portfolio__image {
+    @media only screen and 
+    (min-width: $screen-sm) {
+      @include grid-column(7);
+    }
+
+    @media only screen and 
+    (min-width: $screen-xs)  {
+      @include grid-column(6);
+    }
+
+    img {
+      max-width: 1000px;
+
+      @media only screen and 
+      (max-width: $screen-sm) {
+        max-width: 800px;
+      }
+
+      @media only screen and 
+      (max-width: $screen-xs) {
+        width: 100%;
+      }
+    }
+  }  
+}
+
+// ============================================================================= 
+// Portolio: image hangs on the right
+// ============================================================================= 
+
+.portfolio--right-image {
+  @extend %left-right-images;
+
+  .portfolio__description {
+    @media only screen and 
+    (min-width: $screen-sm) {
+      @include grid-column(5);
+    }
+
+    @media only screen and 
+    (min-width: $screen-xs) and 
+    (max-width: $screen-xs-max){
+      @include grid-column(6);
+    }
+
+    @media only screen and 
+    (max-width: $screen-xs) {
+      margin-bottom: 32px;
+    }
+  }
+}
+
+// ============================================================================= 
+// Portolio: image hangs on the left
+// ============================================================================= 
+
+.portfolio--left-image {
+  @extend %left-right-images;
+
+  .portfolio__description {
+    @media only screen and 
+    (min-width: $screen-xs) {
+      @include grid-column(5);
+      @include grid-shift(1);
+    }
+
+    @media only screen and 
+    (max-width: $screen-xs) {
+      order: 1;
+    }
+  }
+
+  .portfolio__image {
+    @media only screen and 
+    (min-width: $screen-xs) {
+      direction: rtl;
+    }
+
+    @media only screen and 
+    (max-width: $screen-xs) {
+      order: 2;
+    }
+  }  
+}
+
+// ============================================================================= 
+// Portolio: image that overlaps the header box
+// ============================================================================= 
+
 .porfolio-header-overlap {
   @media only screen and 
   (min-width: $screen-sm){
-    margin-top: -72px;
+    margin-top: -56px;
     padding-top: 0;
     background: transparent;
     
-    .work__description {
+    .portfolio__description {
       margin-top: 144px;
     }    
   }
 }
 
-// Portolio with centered image and text
-// ----------------
+// ============================================================================= 
+// Portolio: with centered image and text
+// ============================================================================= 
 
 .portfolio--centered {
   @include grid-container;
@@ -79,6 +231,10 @@
     }
   }
 }
+
+// ============================================================================= 
+// Portolio: 2-up comparison image
+// ============================================================================= 
 
 .portfolio__comparison-image {
   @include grid-column(10);
