@@ -1,0 +1,270 @@
+// ============================================================================= 
+// Project
+// ============================================================================= 
+
+.project__name {
+  margin-top: 0;
+  margin-bottom: 16px;
+
+  @media only screen and 
+  (max-width: $screen-sm) {
+    font-size: 25px;
+  }
+}
+
+.project__description p {
+  @media only screen and 
+  (max-width: $screen-md) {
+    font-size: 16px;
+  }
+}
+
+.project__expertise {
+  font-size: 14px;
+
+  .expertise-title {
+    color: rgba($grey, 0.4);
+    margin-bottom: 8px;
+  }
+}
+
+// ============================================================================= 
+// Project: Image left/right
+// ============================================================================= 
+
+%left-right-images {
+  @include grid-container;
+  background: #ffffff;
+  padding-top: 144px;
+  padding-bottom: 144px;
+  overflow: hidden;
+  border: none;
+
+  @media only screen and 
+  (max-width: $screen-sm) {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  @media only screen and 
+  (max-width: $screen-xs) {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    text-align: center;
+  }
+
+  .section__inner--c10 {
+    @media only screen and 
+    (max-width: $screen-xs) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .project__description {
+    @media only screen and 
+    (min-width: $screen-md) {
+      margin-top: 96px;
+    }    
+
+    @media only screen and 
+    (max-width: $screen-xs) {
+      margin-bottom: 32px;
+      display: block;
+    }
+  }
+
+  .project__image {
+    @media only screen and 
+    (min-width: $screen-sm) {
+      @include grid-column(7);
+    }
+
+    @media only screen and 
+    (min-width: $screen-xs)  {
+      @include grid-column(6);
+    }
+
+    img {
+      max-width: 1000px;
+
+      @media only screen and 
+      (max-width: $screen-sm) {
+        max-width: 800px;
+      }
+
+      @media only screen and 
+      (max-width: $screen-xs) {
+        width: 100%;
+      }
+    }
+  }  
+}
+
+// ============================================================================= 
+// Project: image hangs on the right
+// ============================================================================= 
+
+.project--right-image {
+  @extend %left-right-images;
+
+  .project__description {
+    @media only screen and 
+    (min-width: $screen-sm) {
+      @include grid-column(5);
+    }
+
+    @media only screen and 
+    (min-width: $screen-xs) and 
+    (max-width: $screen-xs-max){
+      @include grid-column(6);
+    }
+
+    @media only screen and 
+    (max-width: $screen-xs) {
+      margin-bottom: 32px;
+    }
+  }
+}
+
+// ============================================================================= 
+// Project: image hangs on the left
+// ============================================================================= 
+
+.project--left-image {
+  @extend %left-right-images;
+
+  .project__description {
+    @media only screen and 
+    (min-width: $screen-xs) {
+      @include grid-column(5);
+      @include grid-shift(1);
+    }
+
+    @media only screen and 
+    (max-width: $screen-xs) {
+      order: 1;
+    }
+  }
+
+  .project__image {
+    @media only screen and 
+    (min-width: $screen-xs) {
+      direction: rtl;
+    }
+
+    @media only screen and 
+    (max-width: $screen-xs) {
+      order: 2;
+    }
+  }  
+}
+
+// ============================================================================= 
+// Project: image that overlaps the header box
+// ============================================================================= 
+
+.project-header-overlap {
+  @media only screen and 
+  (min-width: $screen-sm){
+    margin-top: -56px;
+    padding-top: 0;
+    background: transparent;
+    
+    .project__description {
+      margin-top: 144px;
+    }    
+  }
+}
+
+// ============================================================================= 
+// Project: with centered image and text
+// ============================================================================= 
+
+.project--centered {
+  @include grid-container;
+  padding-top: 112px;
+  padding-bottom: 112px;
+  border: 0;
+
+  @media only screen and 
+  (max-width: $screen-sm) {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  @media only screen and 
+  (max-width: $screen-xs) {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    text-align: center;
+  }
+
+  .project__name {
+    margin-top: 0;
+  }
+
+  .project__description {
+    @include grid-column(8);
+    @include grid-shift(2);
+    text-align: center;
+    margin-bottom: 24px;
+
+    @media only screen and 
+    (max-width: $screen-sm){
+      @include grid-column(10);
+      @include grid-shift(1);
+    }
+
+    @media only screen and 
+    (max-width: $screen-xs){
+      @include grid-column(12);
+      @include grid-shift(0);
+    }
+  }
+
+  .project__image {
+    @include grid-column(10);
+    @include grid-shift(1);
+
+    @media only screen and 
+    (max-width: $screen-xs){
+      @include grid-column(12);
+      @include grid-shift(0);
+    }
+  }
+
+  .device--mobile {
+    display: block;
+    max-width: 400px;
+    margin: 0 auto;
+
+    @media only screen and 
+    (max-width: $screen-xs){
+      @include grid-column(8);
+      @include grid-shift(2);
+    }
+  }
+}
+
+// ============================================================================= 
+// Project: 2-up comparison image
+// ============================================================================= 
+
+.project__comparison-image {
+  @include grid-column(10);
+  @include grid-shift(1);
+  padding-top: 80px;
+
+  @media only screen and 
+  (max-width: $screen-xs){
+    @include grid-column(12);
+    @include grid-shift(0);
+  }
+
+  .comparison-caption {
+    padding: 16px;
+    color: $grey-medium;
+    font-size: 14px;
+  }
+}
