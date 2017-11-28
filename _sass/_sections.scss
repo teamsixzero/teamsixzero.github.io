@@ -176,6 +176,10 @@ section {
     text-align: center;
     font-size: 16px;
   }
+
+  h6 {
+    margin-bottom: 8px;
+  }
 }
 
 .testimonial__name {
@@ -189,6 +193,15 @@ section {
   (max-width: $screen-xs){
     font-size: 13px;
   }
+}
+
+.testimonial__mini-title {
+  font-size: 13px;
+  font-weight: 100;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  color: rgba($grey, .5);
 }
 
 
