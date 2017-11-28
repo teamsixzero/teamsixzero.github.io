@@ -14,8 +14,17 @@
 
 .project__description p {
   @media only screen and 
-  (max-width: $screen-sm) {
+  (max-width: $screen-md) {
     font-size: 16px;
+  }
+}
+
+.project__expertise {
+  font-size: 14px;
+
+  .expertise-title {
+    color: rgba($grey, 0.4);
+    margin-bottom: 8px;
   }
 }
 
