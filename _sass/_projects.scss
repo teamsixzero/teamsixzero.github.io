@@ -1,12 +1,18 @@
 // ============================================================================= 
-// Portolio
+// Project
 // ============================================================================= 
 
-.portfolio__name {
+.project__name {
+  margin-top: 0;
   margin-bottom: 16px;
+
+  @media only screen and 
+  (max-width: $screen-sm) {
+    font-size: 25px;
+  }
 }
 
-.portfolio__description p {
+.project__description p {
   @media only screen and 
   (max-width: $screen-sm) {
     font-size: 16px;
@@ -14,7 +20,7 @@
 }
 
 // ============================================================================= 
-// Portolio: Image left/right
+// Project: Image left/right
 // ============================================================================= 
 
 %left-right-images {
@@ -46,7 +52,7 @@
     }
   }
 
-  .portfolio__description {
+  .project__description {
     @media only screen and 
     (min-width: $screen-md) {
       margin-top: 96px;
@@ -59,7 +65,7 @@
     }
   }
 
-  .portfolio__image {
+  .project__image {
     @media only screen and 
     (min-width: $screen-sm) {
       @include grid-column(7);
@@ -87,13 +93,13 @@
 }
 
 // ============================================================================= 
-// Portolio: image hangs on the right
+// Project: image hangs on the right
 // ============================================================================= 
 
-.portfolio--right-image {
+.project--right-image {
   @extend %left-right-images;
 
-  .portfolio__description {
+  .project__description {
     @media only screen and 
     (min-width: $screen-sm) {
       @include grid-column(5);
@@ -113,13 +119,13 @@
 }
 
 // ============================================================================= 
-// Portolio: image hangs on the left
+// Project: image hangs on the left
 // ============================================================================= 
 
-.portfolio--left-image {
+.project--left-image {
   @extend %left-right-images;
 
-  .portfolio__description {
+  .project__description {
     @media only screen and 
     (min-width: $screen-xs) {
       @include grid-column(5);
@@ -132,7 +138,7 @@
     }
   }
 
-  .portfolio__image {
+  .project__image {
     @media only screen and 
     (min-width: $screen-xs) {
       direction: rtl;
@@ -146,27 +152,27 @@
 }
 
 // ============================================================================= 
-// Portolio: image that overlaps the header box
+// Project: image that overlaps the header box
 // ============================================================================= 
 
-.porfolio-header-overlap {
+.project-header-overlap {
   @media only screen and 
   (min-width: $screen-sm){
     margin-top: -56px;
     padding-top: 0;
     background: transparent;
     
-    .portfolio__description {
+    .project__description {
       margin-top: 144px;
     }    
   }
 }
 
 // ============================================================================= 
-// Portolio: with centered image and text
+// Project: with centered image and text
 // ============================================================================= 
 
-.portfolio--centered {
+.project--centered {
   @include grid-container;
   padding-top: 112px;
   padding-bottom: 112px;
@@ -185,11 +191,11 @@
     text-align: center;
   }
 
-  .portfolio__name {
+  .project__name {
     margin-top: 0;
   }
 
-  .portfolio__description {
+  .project__description {
     @include grid-column(8);
     @include grid-shift(2);
     text-align: center;
@@ -208,7 +214,7 @@
     }
   }
 
-  .portfolio__image {
+  .project__image {
     @include grid-column(10);
     @include grid-shift(1);
 
@@ -233,10 +239,10 @@
 }
 
 // ============================================================================= 
-// Portolio: 2-up comparison image
+// Project: 2-up comparison image
 // ============================================================================= 
 
-.portfolio__comparison-image {
+.project__comparison-image {
   @include grid-column(10);
   @include grid-shift(1);
   padding-top: 80px;
