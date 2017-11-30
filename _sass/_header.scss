@@ -41,6 +41,8 @@ header {
 }
 
 .header__subtitle {
+  font-family: $body-font;
+  font-size: 21px;
   margin-top: 24px;
 
   @media only screen and 
