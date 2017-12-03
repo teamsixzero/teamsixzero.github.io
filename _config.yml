@@ -6,3 +6,4 @@ sass:
   sass_dir: _sass
   style: compressed
 permalink: pretty
+google_analytics: UA-110588115-1

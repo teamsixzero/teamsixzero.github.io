@@ -3,6 +3,9 @@
 <head>
   <title>{{ page.title }}</title> 
   {% include meta-data.html %}
+  {% if site.google_analytics and jekyll.environment == 'production' %}
+    {% include analytics.html %}
+  {% endif %}
 </head>
 <body>
   {% include navigation.html %}
