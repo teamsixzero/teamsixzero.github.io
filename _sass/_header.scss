@@ -7,6 +7,12 @@ header {
   padding-bottom: 180px;
 
   @media only screen and 
+  (max-width: $screen-sm) {
+    padding-top: 170px;
+    padding-bottom: 130px;
+  }
+
+  @media only screen and 
   (max-width: $screen-xs) {
     padding-top: 130px;
     padding-bottom: 100px;
