@@ -3,13 +3,13 @@
 header {
   @include grid-container;
   background: #ffffff;
-  padding-top: 200px;
-  padding-bottom: 160px;
+  padding-top: 210px;
+  padding-bottom: 180px;
 
   @media only screen and 
   (max-width: $screen-xs) {
-    padding-top: 120px;
-    padding-bottom: 80px;
+    padding-top: 130px;
+    padding-bottom: 100px;
   }
 
   .button--primary {
@@ -44,6 +44,7 @@ header {
   font-family: $body-font;
   font-size: 21px;
   margin-top: 24px;
+  margin-bottom: 0;
 
   @media only screen and 
   (max-width: $screen-sm) {
@@ -103,8 +104,12 @@ header {
 
 .header--grey {
   background: $grey-light;
-  padding-top: 200px;
-  padding-bottom: 140px;
+  
+  @media only screen and 
+  (min-width: $screen-md) {
+    padding-top: 200px;
+    padding-bottom: 150px;
+  }  
 
   .header__title {
     color: $grey;
