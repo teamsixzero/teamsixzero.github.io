@@ -40,6 +40,18 @@ p {
   }
 }
 
+ul li {
+  line-height: 1.75;
+  margin-bottom: 32px;
+  color: $grey;
+  font-weight: 200;
+}
+
+
+// ============================================================================= 
+// Type: Links
+// ============================================================================= 
+
 a {
   color: $grey;
   text-decoration: underline;
@@ -51,9 +63,13 @@ a {
   }
 }
 
-ul li {
-  line-height: 1.75;
-  margin-bottom: 32px;
-  color: $grey;
-  font-weight: 200;
+.link-with-arrow {
+  &:after {
+    content: "→";
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    left: 8px;
+    top: 2px;
+  }
 }

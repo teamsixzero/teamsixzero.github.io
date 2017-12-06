@@ -51,14 +51,3 @@
     vertical-align: top;
   }
 }
-
-.address__directions {
-  &:after {
-    content: "→";
-    text-decoration: none;
-    display: inline-block;
-    position: relative;
-    left: 10px;
-    top: 2px;
-  }
-}
