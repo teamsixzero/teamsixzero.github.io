@@ -42,7 +42,7 @@ section {
   @include grid-shift(1);
 
   @media only screen and 
-  (max-width: $screen-sm) {
+  (max-width: $screen-md) {
     @include grid-column(12);
     @include grid-shift(0);
   }
@@ -237,4 +237,10 @@ section {
 .what-we-do {
   padding-top: 128px;
   padding-bottom: 152px;
+
+  @media only screen and 
+  (max-width: $screen-sm) {
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
 }
