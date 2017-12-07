@@ -42,7 +42,7 @@ section {
   @include grid-shift(1);
 
   @media only screen and 
-  (max-width: $screen-sm) {
+  (max-width: $screen-md) {
     @include grid-column(12);
     @include grid-shift(0);
   }
@@ -154,8 +154,13 @@ section {
     margin: 0 auto;
 
     @media only screen and 
+    (max-width: $screen-sm){
+      width: 80%;
+    }
+
+    @media only screen and 
     (max-width: $screen-xs){
-      width: 50%;
+      width: 40%;
     }
   }
 }
@@ -166,7 +171,7 @@ section {
 
   @media only screen and 
   (max-width: $screen-sm){
-    font-size: 18px;
+    @include grid-shift(0);
   }
 
   @media only screen and 
@@ -174,12 +179,21 @@ section {
     @include grid-column(12);
     @include grid-shift(0);
     text-align: center;
-    font-size: 16px;
   }
 }
 
 .testimonial__text {
   margin-bottom: 8px;
+
+  @media only screen and 
+  (max-width: $screen-sm){
+    font-size: 18px;
+  }
+
+  @media only screen and 
+  (max-width: $screen-xs){
+    font-size: 16px;
+  }
 }
 
 .testimonial__name {
@@ -235,6 +249,9 @@ section {
 // =============================================================================
 
 .what-we-do {
-  padding-top: 128px;
-  padding-bottom: 152px;
+  @media only screen and 
+  (min-width: $screen-md) {
+    padding-top: 128px;
+    padding-bottom: 152px;
+  }
 }

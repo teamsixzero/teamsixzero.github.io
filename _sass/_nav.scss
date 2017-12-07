@@ -30,6 +30,25 @@
   }
 }
 
+
+.mobile-logo {
+  position: absolute;
+  left: 50%;
+  top: 17px;
+  transform: translateX(-50%);
+  display: none;
+
+  @media only screen and 
+  (max-width: $screen-xs) {
+    display: block;
+  }
+
+  .logo {
+    margin-right: 0;
+    height: 16px;
+  }
+}
+
 // ============================================================================= 
 // Desktop Nav
 // ============================================================================= 
