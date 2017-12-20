@@ -56,6 +56,10 @@ section {
   padding-bottom: 0;
 }
 
+.has-border-bottom {
+  border-bottom: 1px solid rgba($grey-medium, .2) !important;
+}
+
 // Section: Colours
 // ----------------------
 
@@ -253,5 +257,10 @@ section {
   (min-width: $screen-md) {
     padding-top: 128px;
     padding-bottom: 152px;
+  }
+
+  .card--c4:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 20px 30px rgba($grey-medium, 0.2);
   }
 }
