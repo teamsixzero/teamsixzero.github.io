@@ -2,7 +2,7 @@
 
 %button {
   display: inline-block;
-  padding: 15px 20px;
+  padding: 14px 20px;
   text-decoration: none;
   transition: all .1s ease-in-out;
   text-align: center;
@@ -16,7 +16,6 @@
 
   &:hover {
     background: lighten($teal, 5%);
-    box-shadow: 1px 6px 15px rgba($grey-medium, 0.2);
     color: #ffffff;
   }
 }
@@ -24,7 +23,7 @@
 .button--secondary { 
   @extend %button;
   background: transparent;
-  color: $blue;
+  color: $teal;
 
   @media only screen and 
   (max-width: $screen-md) {
@@ -35,6 +34,6 @@
     background: #ffffff;
     text-decoration: underline;
     box-shadow: 0 2px 20px rgba($grey, 0.3);
-    color: $blue;
+    color: $teal;
   }  
 }
