@@ -3,6 +3,9 @@
     <h1 class="header__title">{{ include.title }}</h1>
     <h2 class="header__subtitle">
       {{ include.subtitle }}
+      {% if include.link %}
+        <a href="{{ include.link }}" target="_blank" class="header__link link-with-arrow">{{ include.linkText }}</a>
+      {% endif %}
     </h2>
   </div>
 </header>
