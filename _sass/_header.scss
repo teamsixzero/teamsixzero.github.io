@@ -43,6 +43,7 @@ header {
   @media only screen and 
   (max-width: $screen-sm) {
     font-size: 37px;
+    line-height: 1.25;
   }
 }
 
@@ -150,6 +151,31 @@ header {
   .nav--item {
     color: $grey;
   }
+}
+
+
+.header--small {
+  @media only screen and 
+  (min-width: $screen-md) {
+    padding-top: 144px;
+    padding-bottom: 56px;
+  }
+
+  @media only screen and 
+  (max-width: $screen-md) {
+    padding-top: 128px;
+    padding-bottom: 56px;
+  }
+
+  @media only screen and 
+  (max-width: $screen-xs) {
+    padding-top: 96px;
+    padding-bottom: 32px;
+  }
+}
+
+.header--white {
+  background: #ffffff;
 }
 
 
