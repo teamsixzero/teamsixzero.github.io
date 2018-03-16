@@ -34,7 +34,7 @@
     @include grid-column(12);
     margin-bottom: 40px;
     padding: 32px;
-    box-shadow: 0 15px 20px rgba($grey, 0.1);
+    box-shadow: 0 8px 12px rgba($grey-medium, 0.2);
   }
 
   .card-image {
