@@ -1,6 +1,6 @@
 h1, h2, h3, h4, h5, h6, p {
   line-height: 1.75;
-  font-weight: 200;
+  font-weight: 300;
   margin-bottom: 32px;
   margin-top: 0;
 }
@@ -44,7 +44,7 @@ ul li {
   line-height: 1.75;
   margin-bottom: 32px;
   color: $grey;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 
@@ -71,5 +71,13 @@ a {
     position: relative;
     left: 5px;
     top: 1px;
+  }
+
+  &:hover {
+
+    &:after {
+      transition: all .2s ease-in-out;
+      left: 9px;
+    }
   }
 }
