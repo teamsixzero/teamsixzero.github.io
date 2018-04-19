@@ -115,6 +115,11 @@
 
   .project__image {
     @include grid-shift(1);
+
+    @media only screen and 
+    (max-width: $screen-sm) {
+      @include grid-shift(0);
+    }
   }
 
   .project__description {
