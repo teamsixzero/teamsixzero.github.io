@@ -113,6 +113,15 @@
 .project--right-image {
   @extend %left-right-images;
 
+  .project__image {
+    @include grid-shift(1);
+
+    @media only screen and 
+    (max-width: $screen-sm) {
+      @include grid-shift(0);
+    }
+  }
+
   .project__description {
     @media only screen and 
     (min-width: $screen-sm) {
@@ -173,6 +182,7 @@
   @media only screen and 
   (min-width: $screen-sm){
     margin-top: -48px;
+    margin-bottom: -48px;
     padding-top: 0;
     background: transparent;
     
