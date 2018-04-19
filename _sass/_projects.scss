@@ -113,6 +113,10 @@
 .project--right-image {
   @extend %left-right-images;
 
+  .project__image {
+    @include grid-shift(1);
+  }
+
   .project__description {
     @media only screen and 
     (min-width: $screen-sm) {
