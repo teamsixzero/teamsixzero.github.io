@@ -31,14 +31,16 @@
     <a href="/" class="">
   <img src="/assets/img/logo-light.png" class="logo">
 </a>
-    <a href="/about/" class="nav__item">About</a>
+    <a href="#work" class="nav__item">Work</a>
+<a href="/about/" class="nav__item">About</a>
 <a href="mailto:hello@sixzero.co" class="nav__item" target="_blank">Contact</a>
   </div>
 </nav>
 
 <nav class="mobile-nav" id="menu">
   <a href="/" class="nav__item">Home</a>
-  <a href="/about/" class="nav__item">About</a>
+  <a href="#work" class="nav__item">Work</a>
+<a href="/about/" class="nav__item">About</a>
 <a href="mailto:hello@sixzero.co" class="nav__item" target="_blank">Contact</a>
 </nav>
   <main class="main-wrapper" id="panel">
@@ -63,7 +65,7 @@
   </div>
 </header>
 
-<section class="project--right-image has-no-padding-bottom">
+<section class="project--right-image has-no-padding-bottom" id="work">
   <div class="section__inner--c10">
     <div class="project__description">
       <h4 class="project__name">Apps with impact</h4>
@@ -170,7 +172,8 @@
   </main>
   <footer>
   <div class="footer__nav">
-    <a href="/about/" class="nav__item">About</a>
+    <a href="#work" class="nav__item">Work</a>
+<a href="/about/" class="nav__item">About</a>
 <a href="mailto:hello@sixzero.co" class="nav__item" target="_blank">Contact</a>
   </div>
   <div class="footer__copy">
@@ -223,6 +226,19 @@ var loc = window.location.pathname;
 
 $('.nav__inner').find('.nav__item').each(function() {
   $(this).toggleClass('active', $(this).attr('href') == loc);
+});
+</script>
+
+<!-- Smooth scroll -->
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
 });
 </script>
 </body>
