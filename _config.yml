@@ -2,6 +2,7 @@ name: Zerosix
 markdown: kramdown
 plugins:
   - jekyll-sitemap
+  - jekyll-redirect-from
 sass:
   sass_dir: _sass
   style: compressed
