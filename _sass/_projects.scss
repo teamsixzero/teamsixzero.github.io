@@ -274,6 +274,12 @@
     @include grid-shift(3);
 
     @media only screen and 
+    (max-width: $screen-md){
+      @include grid-column(8);
+      @include grid-shift(2);
+    }
+
+    @media only screen and 
     (max-width: $screen-sm){
       @include grid-column(10);
       @include grid-shift(1);
@@ -319,9 +325,16 @@
   padding-top: 144px;
   padding-bottom: 0px;
   border: none;
+  text-align: center;
 
   .intro__copy {
     line-height: 2;
+    color: $grey-3;
+
+    @media only screen and 
+    (max-width: $screen-md) {
+      font-size: 19px;      
+    }
 
     @media only screen and 
     (max-width: $screen-sm) {
@@ -333,7 +346,7 @@
   @media only screen and 
   (max-width: $screen-sm) {
     padding-top: 96px;
-    padding-bottom: 96px;
+    padding-bottom: 0px;
   }
 
   @media only screen and 
