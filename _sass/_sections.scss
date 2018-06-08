@@ -31,7 +31,7 @@ section {
   }
 
   @media only screen and 
-  (max-width: $screen-sm) {
+  (max-width: $screen-xs) {
     @include grid-column(12);
     @include grid-shift(0);
   }
@@ -42,7 +42,7 @@ section {
   @include grid-shift(1);
 
   @media only screen and 
-  (max-width: $screen-md) {
+  (max-width: $screen-sm) {
     @include grid-column(12);
     @include grid-shift(0);
   }

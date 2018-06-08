@@ -267,6 +267,96 @@
   }
 }
 
+.project-centered--left-aligned{
+  .project__description {
+    text-align: left;
+    @include grid-column(6);
+    @include grid-shift(3);
+
+    @media only screen and 
+    (max-width: $screen-md){
+      @include grid-column(8);
+      @include grid-shift(2);
+    }
+
+    @media only screen and 
+    (max-width: $screen-sm){
+      @include grid-column(10);
+      @include grid-shift(1);
+    }
+
+    @media only screen and 
+    (max-width: $screen-xs){
+      @include grid-column(12);
+      @include grid-shift(0);
+      text-align: center;
+    }
+  }
+}
+
+// ============================================================================= 
+// Project: Isometric Mobile
+// ============================================================================= 
+
+.project--isometric-mobile {
+  margin-bottom: 200px;
+
+  .project__image {
+    @include grid-column(8);
+    @include grid-shift(2);
+    margin-bottom: -350px;
+
+    @media only screen and 
+    (max-width: $screen-xs){
+      @include grid-column(12);
+      @include grid-shift(0);
+    }
+  }
+}
+
+
+// ============================================================================= 
+// Project: Intro
+// =============================================================================
+
+.project--intro {
+  @include grid-container;
+  background: #ffffff;
+  padding-top: 144px;
+  padding-bottom: 0px;
+  border: none;
+  text-align: center;
+
+  .intro__copy {
+    line-height: 2;
+    color: $grey-3;
+
+    @media only screen and 
+    (max-width: $screen-md) {
+      font-size: 19px;      
+    }
+
+    @media only screen and 
+    (max-width: $screen-sm) {
+      font-size: 16px;
+      line-height: 1.75;
+    }
+  }
+
+  @media only screen and 
+  (max-width: $screen-sm) {
+    padding-top: 96px;
+    padding-bottom: 0px;
+  }
+
+  @media only screen and 
+  (max-width: $screen-xs) {
+    padding-top: 96px;
+    padding-bottom: 32px;
+    text-align: center;
+  }
+}
+
 // ============================================================================= 
 // Project: 2-up comparison image
 // ============================================================================= 

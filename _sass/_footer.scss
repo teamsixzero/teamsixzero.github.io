@@ -9,7 +9,7 @@ footer {
   @media only screen and 
   (max-width: $screen-xs){
     padding-top: 72px;
-  padding-bottom: 72px;
+    padding-bottom: 72px;
   }
 }
 
@@ -24,6 +24,11 @@ footer {
     font-size: 13px;
     letter-spacing: 1px;
     text-transform: uppercase;
+
+    @media only screen and 
+    (max-width: $screen-xs){
+      font-size: 11px;
+    }
   }
 }
 
