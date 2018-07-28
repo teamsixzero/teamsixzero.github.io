@@ -18,7 +18,7 @@
   flex-direction: column;
   flex: 0 0 auto;
   box-sizing: border-box;
-  box-shadow: 0 15px 20px rgba($grey-medium, 0.2);
+  box-shadow: 0 20px 30px rgba($grey-medium, 0.2);
   padding: 40px 32px;
   background: #ffffff;    
   text-align: left;
@@ -26,7 +26,7 @@
 
   @media only screen and 
   (max-width: $screen-sm) {
-    box-shadow: 0 15px 20px rgba($grey, 0.1);
+    box-shadow: 0 12px 20px rgba($grey, 0.2);
   }
 
   @media only screen and 
@@ -56,8 +56,11 @@
   }
 
   .card-title {
-    font-size: 18px;
+    font-size: 14px;
     margin-bottom: 16px;
+    text-transform: uppercase; 
+    letter-spacing: 1px;
+    color: rgba($grey, .5);
 
     @media only screen and 
     (max-width: $screen-xs) {

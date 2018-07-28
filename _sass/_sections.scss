@@ -1,6 +1,5 @@
 section {
   @include grid-container;
-  border-bottom: 1px solid rgba($grey-medium, .2);
 }
 
 .section__inner--c6 {
@@ -143,7 +142,6 @@ section {
   @include grid-container;
   padding-top: 144px;
   padding-bottom: 144px;
-  background: linear-gradient(#ffffff, #fbfbfb);
 
   @media only screen and 
   (max-width: $screen-sm){
@@ -205,6 +203,7 @@ section {
 
 .testimonial__text {
   margin-bottom: 8px;
+  line-height: 1.75;
 
   @media only screen and 
   (max-width: $screen-sm){
@@ -272,12 +271,11 @@ section {
 .what-we-do {
   @media only screen and 
   (min-width: $screen-md) {
-    padding-top: 128px;
-    padding-bottom: 152px;
+    padding-bottom: 176px;
   }
 
   .card--c4:hover {
     transform: translateY(-2px);
-    box-shadow: 0 20px 30px rgba($grey-medium, 0.2);
+    box-shadow: 0 25px 30px rgba($grey-medium, 0.3);
   }
 }
