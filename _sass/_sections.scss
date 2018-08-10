@@ -71,8 +71,12 @@ section {
 // Section: Colours
 // ----------------------
 
-.section--color-grey {
+.section--color-grey-light {
   background: $grey-light;
+}
+
+.section--color-grey {
+  background: $grey;
 }
 
 // =============================================================================
