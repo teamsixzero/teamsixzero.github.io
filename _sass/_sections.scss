@@ -14,8 +14,8 @@ section {
 
   @media only screen and 
   (max-width: $screen-sm) {
-    @include grid-column(12);
-    @include grid-shift(0);
+    @include grid-column(10);
+    @include grid-shift(1);
   }
 }
 
@@ -140,102 +140,64 @@ section {
 
 .section--testimonial {
   @include grid-container;
-  padding-top: 144px;
-  padding-bottom: 144px;
+  padding-top: 248px;
+  padding-bottom: 248px;
+  background: $grey;
+
+  @media only screen and 
+  (max-width: $screen-md){
+    padding-top: 208px;
+    padding-bottom: 208px;
+  }
 
   @media only screen and 
   (max-width: $screen-sm){
-    padding-top: 112px;
-    padding-bottom: 112px;
+    padding-top: 176px;
+    padding-bottom: 176px;
   }
 
   @media only screen and 
   (max-width: $screen-xs){
-    padding-top: 88px;
-    padding-bottom: 88px;
+    padding-top: 144px;
+    padding-bottom: 144px;
   }
+}
+
+.testimonial__person {
+  display: flex;
+  align-items: center;
 }
 
 .testimonial__image {
-  @include grid-column(4);
-  text-align: center;
-
-  @media only screen and 
-  (max-width: $screen-xs){
-    @include grid-column(12);
-    margin-bottom: 40px;
-  }
-
-  img {
-    border-radius: 500px;
-    width: 100%;
-    max-width: 220px;
-    margin: 0 auto;
-
-    @media only screen and 
-    (max-width: $screen-sm){
-      width: 80%;
-    }
-
-    @media only screen and 
-    (max-width: $screen-xs){
-      width: 40%;
-    }
-  }
-}
-
-.testimonial__body {
-  @include grid-column(7);
-  @include grid-shift(1);
-
-  @media only screen and 
-  (max-width: $screen-sm){
-    @include grid-shift(0);
-  }
-
-  @media only screen and 
-  (max-width: $screen-xs){
-    @include grid-column(12);
-    @include grid-shift(0);
-    text-align: center;
-  }
+  height: 48px;
+  width: auto;
+  border-radius: 500px;
+  margin-right: 16px;
+  display: inline-block;
 }
 
 .testimonial__text {
-  margin-bottom: 8px;
-  line-height: 1.75;
+  color: #ffffff;
+  font-family: $header-font;
+  font-size: 33px;
 
   @media only screen and 
   (max-width: $screen-sm){
-    font-size: 18px;
+    font-size: 27px;
   }
 
   @media only screen and 
   (max-width: $screen-xs){
-    font-size: 16px;
+    font-size: 23px;
   }
 }
 
 .testimonial__name {
-  padding-top: 24px;
   text-transform: uppercase;
-  font-weight: 800;
+  font-weight: 200;
   letter-spacing: 1px;
   font-size: 14px;
-
-  @media only screen and 
-  (max-width: $screen-xs){
-    font-size: 13px;
-  }
-}
-
-.testimonial__mini-title {
-  font-size: 13px;
-  font-weight: 100;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  margin-bottom: 24px;
-  color: rgba($grey, .5);
+  color: $grey-light;
 }
 
 

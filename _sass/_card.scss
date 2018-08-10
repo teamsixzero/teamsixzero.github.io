@@ -26,11 +26,6 @@
 
   @media only screen and 
   (max-width: $screen-sm) {
-    box-shadow: 0 12px 20px rgba($grey, 0.2);
-  }
-
-  @media only screen and 
-  (max-width: $screen-xs-max) {
     @include grid-column(12);
     margin-bottom: 40px;
     padding: 32px;
