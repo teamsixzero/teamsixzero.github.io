@@ -66,6 +66,8 @@ a {
 }
 
 .link-with-arrow {
+  white-space: nowrap;
+
   &:after {
     content: "→";
     text-decoration: none;

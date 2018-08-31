@@ -12,6 +12,13 @@
   }
 }
 
+.project__description{
+ @media only screen and 
+  (max-width: $screen-sm) {
+    text-align: left;
+  }
+}
+
 .project__description p {
   @media only screen and 
   (max-width: $screen-md) {
@@ -26,11 +33,11 @@
 
 .project__expertise {
   font-size: 14px;
+}
 
-  .expertise-title {
-    color: rgba($grey, 0.4);
-    margin-bottom: 8px;
-  }
+.expertise-title {
+  color: rgba($grey, 0.4);
+  margin-bottom: 8px;
 }
 
 .project__body + .project__expertise {
@@ -301,15 +308,31 @@
 .project--isometric-mobile {
   margin-bottom: 200px;
 
+  @media only screen and 
+  (max-width: $screen-sm){
+    margin-bottom: 180px;
+  }
+
+  @media only screen and 
+  (max-width: $screen-xs){
+    margin-bottom: 80px;
+  }
+
   .project__image {
     @include grid-column(8);
     @include grid-shift(2);
     margin-bottom: -350px;
 
     @media only screen and 
+    (max-width: $screen-md){
+      margin-bottom: -260px;
+    }
+
+    @media only screen and 
     (max-width: $screen-xs){
       @include grid-column(12);
       @include grid-shift(0);
+      margin-bottom: -144px;
     }
   }
 }
