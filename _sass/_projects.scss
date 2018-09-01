@@ -7,8 +7,13 @@
   margin-bottom: 16px;
 
   @media only screen and 
+  (max-width: $screen-md) {
+    font-size: 27px;
+  }
+
+  @media only screen and 
   (max-width: $screen-sm) {
-    font-size: 25px;
+    font-size: 23px;
   }
 }
 
@@ -296,7 +301,6 @@
     (max-width: $screen-xs){
       @include grid-column(12);
       @include grid-shift(0);
-      text-align: center;
     }
   }
 }
