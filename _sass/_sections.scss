@@ -77,6 +77,16 @@ section {
 
 .section--color-grey {
   background: $grey;
+  color: #ffffff;
+
+  .expertise-title {
+    color: #ffffff;
+  }
+
+  p, 
+  .expertise-list {
+    color: $white-faded;
+  }
 }
 
 // =============================================================================
@@ -115,7 +125,7 @@ section {
 
     @media only screen and 
     (max-width: $screen-sm) {
-      font-size: 31px;
+      font-size: 27px;
     }
   }
 

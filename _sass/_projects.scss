@@ -7,8 +7,20 @@
   margin-bottom: 16px;
 
   @media only screen and 
+  (max-width: $screen-md) {
+    font-size: 27px;
+  }
+
+  @media only screen and 
   (max-width: $screen-sm) {
-    font-size: 25px;
+    font-size: 23px;
+  }
+}
+
+.project__description{
+ @media only screen and 
+  (max-width: $screen-sm) {
+    text-align: left;
   }
 }
 
@@ -26,11 +38,11 @@
 
 .project__expertise {
   font-size: 14px;
+}
 
-  .expertise-title {
-    color: rgba($grey, 0.4);
-    margin-bottom: 8px;
-  }
+.expertise-title {
+  color: rgba($grey, 0.4);
+  margin-bottom: 8px;
 }
 
 .project__body + .project__expertise {
@@ -72,8 +84,14 @@
   }
 
   .project__description {
+
     @media only screen and 
     (min-width: $screen-md) {
+      margin-top: 32px;
+    } 
+
+    @media only screen and 
+    (min-width: $screen-lg) {
       margin-top: 96px;
     }    
 
@@ -289,7 +307,6 @@
     (max-width: $screen-xs){
       @include grid-column(12);
       @include grid-shift(0);
-      text-align: center;
     }
   }
 }
@@ -301,15 +318,31 @@
 .project--isometric-mobile {
   margin-bottom: 200px;
 
+  @media only screen and 
+  (max-width: $screen-sm){
+    margin-bottom: 180px;
+  }
+
+  @media only screen and 
+  (max-width: $screen-xs){
+    margin-bottom: 80px;
+  }
+
   .project__image {
     @include grid-column(8);
     @include grid-shift(2);
     margin-bottom: -350px;
 
     @media only screen and 
+    (max-width: $screen-md){
+      margin-bottom: -260px;
+    }
+
+    @media only screen and 
     (max-width: $screen-xs){
       @include grid-column(12);
       @include grid-shift(0);
+      margin-bottom: -144px;
     }
   }
 }
