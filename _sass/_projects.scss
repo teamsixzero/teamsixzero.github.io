@@ -84,8 +84,14 @@
   }
 
   .project__description {
+
     @media only screen and 
     (min-width: $screen-md) {
+      margin-top: 32px;
+    } 
+
+    @media only screen and 
+    (min-width: $screen-lg) {
       margin-top: 96px;
     }    
 
