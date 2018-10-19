@@ -1,14 +1,10 @@
 .where-we-work {
-  .section-title {
-    margin-bottom: 40px;
-    color: #ffffff;
-  }
+  background: url('/assets/img/map-grey.png') 0 0 no-repeat;
 }
 
 .address-with-map {
   display: flex;
   align-items: center;
-  box-shadow: 0 20px 30px rgba($blue, 0.7);
   background: #ffffff;
   padding: 0;
 
