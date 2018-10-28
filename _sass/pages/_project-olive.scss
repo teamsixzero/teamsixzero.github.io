@@ -11,9 +11,13 @@
     padding-top: 192px;
   }
 
+  .header__title {
+    margin-bottom: 32px;
+  }
+
 }
 
-.olive-cropped-screen {
+.has-border-bottom{
   border-bottom: 1px solid #D8D8D8;
 
   img {
@@ -21,7 +25,12 @@
   }
 }
 
-.olive-large-ipads .project__image {
+
+.large-image .project__image img {
+  max-width: 1300px;
+}
+
+.wide-cropped-image .project__image {
   width: 100%;
   text-align: center;
   overflow: hidden;
@@ -31,10 +40,6 @@
     left: 50%;
     transform: translate(-50%,0)
   }
-}
-
-.large-image .project__image img {
-  max-width: 1300px;
 }
 
 .has-bg-circle-right {
