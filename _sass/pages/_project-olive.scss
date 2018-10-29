@@ -4,32 +4,108 @@
     background: url('/assets/img/bg-circle-2.png');
     background-repeat: no-repeat;
     background-position: left top;
+
+    @media only screen and 
+    (max-width: $screen-md) {
+      background-size: 650px auto;
+    }
+
+    @media only screen and 
+    (max-width: $screen-sm) {
+      background-size: 500px auto;
+    }
   }
 
   .project--intro {
     background: transparent;
     padding-top: 192px;
+
+    @media only screen and 
+    (max-width: $screen-sm) {
+      padding-top: 136px;
+
+    }
   }
 
   .header__title {
     margin-bottom: 32px;
   }
 
+  .buyer-mindset {
+    @media only screen and 
+    (max-width: $screen-sm) {
+      padding-top: 0;
+    }
+  }
+
+  .cropped-screenshot {
+    @media only screen and 
+    (max-width: $screen-sm) {
+      padding-top: 48px;
+    }
+
+    @media only screen and 
+    (max-width: $screen-xs) {
+      padding-top: 24px;
+    }
+
+    .responsive-image {
+      display: block;
+    }
+  }
 }
 
 // Generic stuff that can be moved
 
-.has-border-bottom{
-  border-bottom: 1px solid #D8D8D8;
+.project--brief{
+    @include grid-container;
+    padding-top: 136px;
+    padding-bottom: 136px;
+    border: 0;
 
-  img {
-    display: block;
+    @media only screen and 
+    (max-width: $screen-sm) {
+      padding-top: 112px;
+      padding-bottom: 112px;
+    }
+
+    @media only screen and 
+    (max-width: $screen-xs) {
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
   }
-}
+
+  .brief__body {
+    @include grid-column(4);
+    @include grid-shift(1);
+
+
+    @media only screen and 
+    (max-width: $screen-lg) {
+      @include grid-column(5);
+      @include grid-shift(1);
+    }
+
+    @media only screen and 
+    (max-width: $screen-sm) {
+      @include grid-column(6);
+      @include grid-shift(1);
+    }
+
+    @media only screen and 
+    (max-width: $screen-xs) {
+      @include grid-column(12);
+      @include grid-shift(0);
+    }
+  }
 
 
 .large-image .project__image img {
-  max-width: 1300px;
+  @media only screen and 
+  (min-width: $screen-lg) {
+    max-width: 1300px;
+  }  
 }
 
 .wide-cropped-image .project__image {
@@ -40,15 +116,18 @@
   img {
     position: relative;
     left: 50%;
-    transform: translate(-50%,0)
-  }
-}
+    transform: translate(-50%,0);
 
-.has-bg-circle-right {
-  background: url('/assets/img/bg-circle-1.png');
-  background-repeat: no-repeat;
-  background-position: right center;
-  background-size: contain;
+    @media only screen and 
+    (max-width: $screen-md) {
+      max-width: 1800px;
+    }
+
+    @media only screen and 
+    (max-width: $screen-sm) {
+      max-width: 1200px;
+    }
+  }
 }
 
 .has-xl-spacing {
@@ -66,4 +145,12 @@
     padding-top: 96px;
     padding-bottom: 96px;
   }
+}
+
+
+.has-bg-circle-right {
+  background: url('/assets/img/bg-circle-1.png');
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
 }
