@@ -76,6 +76,11 @@ section {
 // Section: Colours
 // ----------------------
 
+
+.section--color-grey-light-gradient {
+  background-image: linear-gradient(#ffffff, $grey-light);
+}
+
 .section--color-grey-light {
   background: $grey-light;
 }
