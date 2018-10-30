@@ -33,8 +33,13 @@
 
   .buyer-mindset {
     @media only screen and 
-    (max-width: $screen-sm) {
+    (max-width: $screen-lg) {
       padding-top: 0;
+    }
+
+    @media only screen and 
+    (max-width: $screen-sm) {
+      padding-top: 48px;
     }
   }
 
@@ -89,7 +94,7 @@
 
     @media only screen and 
     (max-width: $screen-sm) {
-      @include grid-column(6);
+      @include grid-column(8);
       @include grid-shift(1);
     }
 
@@ -117,16 +122,6 @@
     position: relative;
     left: 50%;
     transform: translate(-50%,0);
-
-    @media only screen and 
-    (max-width: $screen-md) {
-      max-width: 1800px;
-    }
-
-    @media only screen and 
-    (max-width: $screen-sm) {
-      max-width: 1200px;
-    }
   }
 }
 
