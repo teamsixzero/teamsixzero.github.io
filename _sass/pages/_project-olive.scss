@@ -33,7 +33,7 @@
 
   .buyer-mindset {
     @media only screen and 
-    (max-width: $screen-lg) {
+    (min-width: $screen-md) {
       padding-top: 0;
     }
 
@@ -149,3 +149,8 @@
   background-position: right center;
   background-size: contain;
 }
+
+
+
+
+
