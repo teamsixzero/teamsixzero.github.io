@@ -67,6 +67,7 @@ a {
 
 .link-with-arrow {
   white-space: nowrap;
+  text-decoration: none;
 
   &:after {
     content: "→";
@@ -78,6 +79,7 @@ a {
   }
 
   &:hover {
+    text-decoration: underline;
 
     &:after {
       transition: all .2s ease-in-out;
