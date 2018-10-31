@@ -1,0 +1,44 @@
+.body-has-bg-top-right {
+  .main-wrapper {
+    background: #ffffff url('/assets/img/bg-circle-3.png');
+    background-repeat: no-repeat;
+    background-position: right top;
+
+    @media only screen and 
+    (max-width: $screen-md) {
+      background-size: 650px auto;
+    }
+
+    @media only screen and 
+    (max-width: $screen-sm) {
+      background-size: 500px auto;
+    }
+  } 
+}
+
+
+.body-has-bg-top-left {
+  .main-wrapper {
+    background: #ffffff url('/assets/img/bg-circle-2.png');
+    background-repeat: no-repeat;
+    background-position: left top;
+
+    @media only screen and 
+    (max-width: $screen-md) {
+      background-size: 650px auto;
+    }
+
+    @media only screen and 
+    (max-width: $screen-sm) {
+      background-size: 500px auto;
+    }
+  }
+}
+
+
+.has-bg-circle-right {
+  background: url('/assets/img/bg-circle-1.png');
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
+}

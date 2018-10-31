@@ -1,0 +1,20 @@
+.buyer-mindset {
+  @media only screen and 
+  (min-width: $screen-md) {
+    padding-top: 0;
+  }
+
+  @media only screen and 
+  (max-width: $screen-sm) {
+    padding-top: 48px;
+  }
+}
+
+.leads-that-matter { 
+  .project__image {
+    @media only screen and 
+    (max-width: $screen-sm) {
+      @include grid-shift(0);
+    }
+  }
+}

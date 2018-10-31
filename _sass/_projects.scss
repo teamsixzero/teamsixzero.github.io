@@ -3,9 +3,6 @@
 // ============================================================================= 
 
 .project__name {
-  margin-top: 0;
-  margin-bottom: 16px;
-
   @media only screen and 
   (max-width: $screen-md) {
     font-size: 27px;
@@ -24,14 +21,10 @@
   }
 }
 
-.project__description p {
+.project__description p,
+.brief__body p {
   @media only screen and 
   (max-width: $screen-md) {
-    font-size: 16px;
-  }
-
-  @media only screen and 
-  (max-width: $screen-sm) {
     font-size: 14px;
   }
 }
@@ -56,7 +49,7 @@
 
 %left-right-images {
   @include grid-container;
-  background: #ffffff;
+  // background: #ffffff;
   padding-top: 144px;
   padding-bottom: 144px;
   overflow: hidden;
@@ -76,25 +69,16 @@
   }
 
   .section__inner--c10 {
+    display: flex;
+    align-items: center;
+
     @media only screen and 
     (max-width: $screen-xs) {
-      display: flex;
       flex-direction: column;
     }
   }
 
   .project__description {
-
-    @media only screen and 
-    (min-width: $screen-md) {
-      margin-top: 32px;
-    } 
-
-    @media only screen and 
-    (min-width: $screen-lg) {
-      margin-top: 96px;
-    }    
-
     @media only screen and 
     (max-width: $screen-xs) {
       margin-bottom: 32px;
@@ -114,11 +98,16 @@
     }
 
     img {
-      max-width: 1000px;
+      max-width: 1300px;
+
+      @media only screen and 
+      (max-width: $screen-md) {
+        max-width: 1000px;
+      }
 
       @media only screen and 
       (max-width: $screen-sm) {
-        max-width: 800px;
+        max-width: 700px;
       }
 
       @media only screen and 
@@ -195,24 +184,6 @@
       order: 2;
     }
   }  
-}
-
-// ============================================================================= 
-// Project: image that overlaps the header box
-// ============================================================================= 
-
-.project-header-overlap {
-  @media only screen and 
-  (min-width: $screen-sm){
-    margin-top: -48px;
-    margin-bottom: -48px;
-    padding-top: 0;
-    background: transparent;
-    
-    .project__description {
-      margin-top: 144px;
-    }    
-  }
 }
 
 // ============================================================================= 
@@ -352,49 +323,6 @@
   }
 }
 
-
-// ============================================================================= 
-// Project: Intro
-// =============================================================================
-
-.project--intro {
-  @include grid-container;
-  background: #ffffff;
-  padding-top: 144px;
-  padding-bottom: 0px;
-  border: none;
-  text-align: center;
-
-  .intro__copy {
-    line-height: 2;
-    color: $grey-3;
-
-    @media only screen and 
-    (max-width: $screen-md) {
-      font-size: 19px;      
-    }
-
-    @media only screen and 
-    (max-width: $screen-sm) {
-      font-size: 16px;
-      line-height: 1.75;
-    }
-  }
-
-  @media only screen and 
-  (max-width: $screen-sm) {
-    padding-top: 96px;
-    padding-bottom: 0px;
-  }
-
-  @media only screen and 
-  (max-width: $screen-xs) {
-    padding-top: 96px;
-    padding-bottom: 32px;
-    text-align: center;
-  }
-}
-
 // ============================================================================= 
 // Project: 2-up comparison image
 // ============================================================================= 
@@ -416,3 +344,87 @@
     font-size: 14px;
   }
 }
+
+
+// ============================================================================= 
+// Project: Cropped images see on Olive
+// ============================================================================= 
+
+
+.cropped-screenshot {
+  @media only screen and 
+  (max-width: $screen-sm) {
+    padding-top: 48px;
+  }
+
+  @media only screen and 
+  (max-width: $screen-xs) {
+    padding-top: 24px;
+  }
+
+  .responsive-image {
+    display: block;
+  }
+}
+
+
+.wide-cropped-image .project__image {
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+
+  img {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+  }
+}
+
+
+
+// ============================================================================= 
+// Project: Floating brief section see olive.
+// ============================================================================= 
+
+.project--brief {
+    @include grid-container;
+    padding-top: 136px;
+    padding-bottom: 136px;
+    border: 0;
+
+    @media only screen and 
+    (max-width: $screen-sm) {
+      padding-top: 112px;
+      padding-bottom: 112px;
+    }
+
+    @media only screen and 
+    (max-width: $screen-xs) {
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+  }
+
+  .brief__body {
+    @include grid-column(4);
+    @include grid-shift(1);
+
+
+    @media only screen and 
+    (max-width: $screen-lg) {
+      @include grid-column(5);
+      @include grid-shift(1);
+    }
+
+    @media only screen and 
+    (max-width: $screen-sm) {
+      @include grid-column(8);
+      @include grid-shift(1);
+    }
+
+    @media only screen and 
+    (max-width: $screen-xs) {
+      @include grid-column(12);
+      @include grid-shift(0);
+    }
+  }

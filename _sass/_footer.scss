@@ -25,6 +25,10 @@ footer {
     letter-spacing: 1px;
     text-transform: uppercase;
 
+    &:hover {
+      text-decoration: underline;
+    }
+
     @media only screen and 
     (max-width: $screen-xs){
       font-size: 11px;

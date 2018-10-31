@@ -88,6 +88,66 @@ header {
 }
 
 
+// ============================================================================= 
+// Project: Intro
+// =============================================================================
+
+.project--intro {
+  @include grid-container;
+  background: transparent;
+  padding-top: 192px;
+  padding-bottom: 64px;
+  border: none;
+  text-align: center;
+
+
+  @media only screen and 
+  (max-width: $screen-sm) {
+    padding-top: 112px;
+    padding-bottom: 0px;
+  }
+
+  @media only screen and 
+  (max-width: $screen-xs) {
+    padding-top: 112px;
+    padding-bottom: 0;
+    text-align: center;
+  }
+
+  .intro__title {
+    margin-bottom: 16px;
+
+    @media only screen and 
+    (max-width: $screen-sm) {
+      font-size: 37px;
+      line-height: 1.25;
+    }
+
+    @media only screen and 
+    (max-width: $screen-sm) {
+      font-size: 31px;
+      line-height: 1.25;
+    }
+  }
+
+  .intro__copy {
+    line-height: 2;
+    color: $grey-3;
+
+    @media only screen and 
+    (max-width: $screen-md) {
+      font-size: 19px;      
+    }
+
+    @media only screen and 
+    (max-width: $screen-sm) {
+      font-size: 16px;
+      line-height: 1.75;
+    }
+  }
+}
+
+
 // =============================================================================
 // Header: Colours
 // =============================================================================
@@ -164,32 +224,6 @@ header {
     color: $grey;
   }
 }
-
-
-.header--small {
-  @media only screen and 
-  (min-width: $screen-md) {
-    padding-top: 144px;
-    padding-bottom: 56px;
-  }
-
-  @media only screen and 
-  (max-width: $screen-md) {
-    padding-top: 128px;
-    padding-bottom: 56px;
-  }
-
-  @media only screen and 
-  (max-width: $screen-xs) {
-    padding-top: 96px;
-    padding-bottom: 32px;
-  }
-}
-
-.header--white {
-  background: #ffffff;
-}
-
 
 // =============================================================================
 // Header: Pages specific

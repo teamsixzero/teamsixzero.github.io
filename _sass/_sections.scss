@@ -68,8 +68,35 @@ section {
   border-bottom: 1px solid rgba($grey-medium, .2) !important;
 }
 
+.has-border-bottom{
+  border-bottom: 1px solid #D8D8D8;
+}
+
+.has-xl-spacing {
+  padding-top: 240px;
+  padding-bottom: 240px;
+
+  @media only screen and 
+  (max-width: $screen-sm) {
+    padding-top: 144px;
+    padding-bottom: 144px;
+  }
+
+  @media only screen and 
+  (max-width: $screen-xs) {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+}
+
+
 // Section: Colours
 // ----------------------
+
+
+.section--color-grey-light-gradient {
+  background-image: linear-gradient(#ffffff, $grey-light);
+}
 
 .section--color-grey-light {
   background: $grey-light;
