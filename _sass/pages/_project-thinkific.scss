@@ -1,0 +1,32 @@
+.project-thinkific {
+  .main-wrapper {
+    background: url('/assets/img/bg-circle-3.png');
+    background-repeat: no-repeat;
+    background-position: right top;
+
+    @media only screen and 
+    (max-width: $screen-md) {
+      background-size: 650px auto;
+    }
+
+    @media only screen and 
+    (max-width: $screen-sm) {
+      background-size: 500px auto;
+    }
+  } 
+
+  .project--intro {
+    background: transparent;
+    padding-top: 192px;
+
+    @media only screen and 
+    (max-width: $screen-sm) {
+      padding-top: 136px;
+
+    }
+  }
+
+  .header__title {
+    margin-bottom: 32px;
+  }
+}

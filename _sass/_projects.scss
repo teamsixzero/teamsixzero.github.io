@@ -3,7 +3,6 @@
 // ============================================================================= 
 
 .project__name {
-
   @media only screen and 
   (max-width: $screen-md) {
     font-size: 27px;
@@ -50,7 +49,7 @@
 
 %left-right-images {
   @include grid-container;
-  background: #ffffff;
+  // background: #ffffff;
   padding-top: 144px;
   padding-bottom: 144px;
   overflow: hidden;
@@ -185,24 +184,6 @@
       order: 2;
     }
   }  
-}
-
-// ============================================================================= 
-// Project: image that overlaps the header box
-// ============================================================================= 
-
-.project-header-overlap {
-  @media only screen and 
-  (min-width: $screen-sm){
-    margin-top: -48px;
-    margin-bottom: -48px;
-    padding-top: 0;
-    background: transparent;
-    
-    .project__description {
-      margin-top: 144px;
-    }    
-  }
 }
 
 // ============================================================================= 
@@ -349,7 +330,6 @@
 
 .project--intro {
   @include grid-container;
-  background: #ffffff;
   padding-top: 144px;
   padding-bottom: 0px;
   border: none;
