@@ -2,19 +2,3 @@
   max-width: 80px;
   margin-bottom: 40px;
 }
-
-.project-vanbex {
-  .project--intro {
-      background: transparent;
-      padding-top: 192px;
-
-      @media only screen and 
-      (max-width: $screen-sm) {
-        padding-top: 136px;
-      }
-    }
-
-  .header__title {
-    margin-bottom: 32px;
-  }
-}

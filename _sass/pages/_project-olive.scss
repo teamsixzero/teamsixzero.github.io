@@ -1,158 +1,20 @@
-.project-olive {
-
-  .main-wrapper {
-    background: url('/assets/img/bg-circle-2.png');
-    background-repeat: no-repeat;
-    background-position: left top;
-
-    @media only screen and 
-    (max-width: $screen-md) {
-      background-size: 650px auto;
-    }
-
-    @media only screen and 
-    (max-width: $screen-sm) {
-      background-size: 500px auto;
-    }
+.buyer-mindset {
+  @media only screen and 
+  (min-width: $screen-md) {
+    padding-top: 0;
   }
-
-  .project--intro {
-    background: transparent;
-    padding-top: 192px;
-
-    @media only screen and 
-    (max-width: $screen-sm) {
-      padding-top: 136px;
-
-    }
-  }
-
-  .header__title {
-    margin-bottom: 32px;
-  }
-
-  .cropped-screenshot {
-    @media only screen and 
-    (max-width: $screen-sm) {
-      padding-top: 48px;
-    }
-
-    @media only screen and 
-    (max-width: $screen-xs) {
-      padding-top: 24px;
-    }
-
-    .responsive-image {
-      display: block;
-    }
-  }
-
-  .buyer-mindset {
-    @media only screen and 
-    (min-width: $screen-md) {
-      padding-top: 0;
-    }
-
-    @media only screen and 
-    (max-width: $screen-sm) {
-      padding-top: 48px;
-    }
-  }
-
-  .leads-that-matter { 
-    .project__image {
-      @media only screen and 
-      (max-width: $screen-sm) {
-        @include grid-shift(0);
-      }
-    }
-  }
-}
-
-// Generic stuff that can be moved
-
-.project--brief{
-    @include grid-container;
-    padding-top: 136px;
-    padding-bottom: 136px;
-    border: 0;
-
-    @media only screen and 
-    (max-width: $screen-sm) {
-      padding-top: 112px;
-      padding-bottom: 112px;
-    }
-
-    @media only screen and 
-    (max-width: $screen-xs) {
-      padding-top: 80px;
-      padding-bottom: 80px;
-    }
-  }
-
-  .brief__body {
-    @include grid-column(4);
-    @include grid-shift(1);
-
-
-    @media only screen and 
-    (max-width: $screen-lg) {
-      @include grid-column(5);
-      @include grid-shift(1);
-    }
-
-    @media only screen and 
-    (max-width: $screen-sm) {
-      @include grid-column(8);
-      @include grid-shift(1);
-    }
-
-    @media only screen and 
-    (max-width: $screen-xs) {
-      @include grid-column(12);
-      @include grid-shift(0);
-    }
-  }
-
-
-.wide-cropped-image .project__image {
-  width: 100%;
-  text-align: center;
-  overflow: hidden;
-
-  img {
-    position: relative;
-    left: 50%;
-    transform: translate(-50%,0);
-  }
-}
-
-.has-xl-spacing {
-  padding-top: 240px;
-  padding-bottom: 240px;
 
   @media only screen and 
   (max-width: $screen-sm) {
-    padding-top: 144px;
-    padding-bottom: 144px;
-  }
-
-  @media only screen and 
-  (max-width: $screen-xs) {
-    padding-top: 96px;
-    padding-bottom: 96px;
+    padding-top: 48px;
   }
 }
 
-
-.has-bg-circle-right {
-  background: url('/assets/img/bg-circle-1.png');
-  background-repeat: no-repeat;
-  background-position: right center;
-  background-size: contain;
+.leads-that-matter { 
+  .project__image {
+    @media only screen and 
+    (max-width: $screen-sm) {
+      @include grid-shift(0);
+    }
+  }
 }
-
-
-
-
-
