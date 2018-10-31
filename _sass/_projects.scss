@@ -3,8 +3,6 @@
 // ============================================================================= 
 
 .project__name {
-  margin-top: 0;
-  margin-bottom: 16px;
 
   @media only screen and 
   (max-width: $screen-md) {
@@ -101,11 +99,16 @@
     }
 
     img {
-      max-width: 1000px;
+      max-width: 1300px;
+
+      @media only screen and 
+      (max-width: $screen-md) {
+        max-width: 1000px;
+      }
 
       @media only screen and 
       (max-width: $screen-sm) {
-        max-width: 800px;
+        max-width: 700px;
       }
 
       @media only screen and 
