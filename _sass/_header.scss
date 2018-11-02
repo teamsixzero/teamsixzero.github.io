@@ -216,36 +216,35 @@ header {
   @include grid-container;
   background: transparent;
   padding-top: 224px;
-  padding-bottom: 224px;
+  padding-bottom: 200px;
+
 
   @media only screen and 
-  (max-width: $screen-sm) {
-    padding-top: 170px;
-    padding-bottom: 130px;
+  (max-width: $screen-md) {
+    padding-top: 168px;
+    padding-bottom: 152px;
   }
 
-  @media only screen and 
+   @media only screen and 
   (max-width: $screen-xs) {
-    padding-top: 130px;
-    padding-bottom: 100px;
+    padding-top: 128px;
+    padding-bottom: 112px;
   }
 
   .header__title {
     @media only screen and 
     (min-width: $screen-lg) {
       font-size: 57px;
-    }    
+    }   
 
     @media only screen and 
     (max-width: $screen-sm) {
       font-size: 37px;
-      line-height: 1.5;
     }
 
     @media only screen and 
     (max-width: $screen-xs) {
       font-size: 31px;
-      line-height: 1.5;
     }
   }
 
@@ -278,7 +277,7 @@ header {
   .header__icon {
     width: 56px;
     height: auto;
-    margin-bottom: 40px;
+    margin-bottom: 32px;
 
     @media only screen and 
     (max-width: $screen-sm) {
