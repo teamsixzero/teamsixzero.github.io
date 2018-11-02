@@ -64,6 +64,10 @@ section {
   padding-bottom: 0 !important;
 }
 
+.has-no-padding-top {
+  padding-top: 0 !important;
+}
+
 .has-border-bottom {
   border-bottom: 1px solid rgba($grey-medium, .2) !important;
 }
@@ -104,19 +108,10 @@ section {
 
 .section--color-grey {
   background: $grey;
+}
 
-  .expertise-title {
-    color: #ffffff;
-  }
-
-  .expertise-list {
-    color: $white-faded;
-  }
-
-  // See this on thinkific case study
-  .project__description {
-    color: #ffffff;
-  }
+.section--color-blue {
+  background: $blue;
 }
 
 // =============================================================================
@@ -186,7 +181,7 @@ section {
   @include grid-container;
   padding-top: 248px;
   padding-bottom: 248px;
-  background: $grey;
+  background: $blue;
 
   @media only screen and 
   (max-width: $screen-md){
