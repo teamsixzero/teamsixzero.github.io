@@ -23,23 +23,6 @@ header {
     padding-top: 130px;
     padding-bottom: 100px;
   }
-
-  .button--primary {
-    margin-right: 8px;
-
-    @media only screen and 
-    (max-width: $screen-sm) {      
-      margin-right: 0;
-    }
-  }
-
-  .button--primary, 
-  .button--secondary {
-    @media only screen and 
-    (max-width: $screen-xs) {
-      display: block;
-    }
-  }
 }
 
 .header__title {
@@ -230,5 +213,83 @@ header {
 // =============================================================================
 
 .header--home {
-  background: url('/assets/img/home-bg.png') no-repeat center center;
+  @include grid-container;
+  background: transparent;
+  padding-top: 224px;
+  padding-bottom: 232px;
+
+  @media only screen and 
+  (max-width: $screen-sm) {
+    padding-top: 170px;
+    padding-bottom: 130px;
+  }
+
+  @media only screen and 
+  (max-width: $screen-xs) {
+    padding-top: 130px;
+    padding-bottom: 100px;
+  }
+
+  .header__title {
+    @media only screen and 
+    (min-width: $screen-lg) {
+      font-size: 57px;
+    }    
+
+    @media only screen and 
+    (max-width: $screen-sm) {
+      font-size: 37px;
+      line-height: 1.5;
+    }
+
+    @media only screen and 
+    (max-width: $screen-xs) {
+      font-size: 31px;
+      line-height: 1.5;
+    }
+  }
+
+
+  .header__content {
+    @include grid-column(6);
+    @include grid-shift(1);
+    text-align: left;
+
+    @media only screen and 
+    (max-width: $screen-lg) {
+      @include grid-column(8);
+      @include grid-shift(1);
+    }
+
+    @media only screen and 
+    (max-width: $screen-sm) {
+      @include grid-column(10);
+      @include grid-shift(1);
+    }
+
+    @media only screen and 
+    (max-width: $screen-xs) {
+      @include grid-column(12);
+      @include grid-shift(0);
+      text-align: center;
+    }
+  }
+
+  .header__icon {
+    width: 56px;
+    height: auto;
+    margin-bottom: 40px;
+
+    @media only screen and 
+    (max-width: $screen-sm) {
+      width: 40px;
+      margin-bottom: 24px;
+    }
+  }
 }
+
+
+
+
+
+

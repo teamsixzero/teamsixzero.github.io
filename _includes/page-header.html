@@ -1,11 +1,16 @@
 <header class="{{ include.class }}">
   <div class="header__content">
+    {% if include.icon %}
+      <img src="{{ include.icon }}" class="header__icon" alt="Header title icon">      
+    {% endif %}
     <h1 class="header__title">{{ include.title }}</h1>
-    <h2 class="header__subtitle">
-      {{ include.subtitle }}
-      {% if include.link %}
-        <a href="{{ include.link }}" target="_blank" class="header__link link-with-arrow">{{ include.linkText }}</a>
-      {% endif %}
-    </h2>
+    {% if include.subtitle %}
+      <h2 class="header__subtitle">
+        {{ include.subtitle }}
+        {% if include.link %}
+          <a href="{{ include.link }}" target="_blank" class="header__link link-with-arrow">{{ include.linkText }}</a>
+        {% endif %}
+      </h2>
+    {% endif %}
   </div>
 </header>
