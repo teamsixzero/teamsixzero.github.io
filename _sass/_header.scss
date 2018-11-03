@@ -216,7 +216,7 @@ header {
   @include grid-container;
   background: transparent;
   padding-top: 224px;
-  padding-bottom: 200px;
+  padding-bottom: 224px;
 
 
   @media only screen and 
@@ -250,7 +250,7 @@ header {
 
 
   .header__content {
-    @include grid-column(6);
+    @include grid-column(7);
     @include grid-shift(1);
     text-align: left;
 
