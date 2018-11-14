@@ -1,0 +1,24 @@
+.col--c3 {
+  @include grid-column(3);
+
+  @media screen and 
+  (min-width: $screen-sm) and 
+  (max-width: $screen-lg) {
+    margin-bottom: 92px;
+
+    &:nth-last-child(-n+2) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media only screen and 
+  (max-width: $screen-lg) {
+    @include grid-column(6);
+  }
+
+  @media only screen and 
+  (max-width: $screen-sm) {
+    @include grid-column(12);
+    margin-bottom: 48px;
+  }
+}
