@@ -1,0 +1,38 @@
+  .ftsy-intro .intro__copy { 
+    line-height: 2;
+    color: #9CA3AB;
+  }
+
+
+.ftsy-shopping {
+  padding: 0;
+  background: #F5F5F5;
+
+  .section__inner--c12 {
+    display: flex;
+    align-items: center;
+
+    @media only screen and 
+    (max-width: $screen-xs) {
+      flex-direction: column;
+    }
+  }
+
+  .project__description {
+    @media only screen and 
+    (min-width: $screen-sm) {
+      @include grid-column(5);
+    }
+
+    @media only screen and 
+    (min-width: $screen-xs) and 
+    (max-width: $screen-xs-max){
+      @include grid-column(6);
+    }
+
+    @media only screen and 
+    (max-width: $screen-xs) {
+      margin-bottom: 32px;
+    }
+  }
+}
