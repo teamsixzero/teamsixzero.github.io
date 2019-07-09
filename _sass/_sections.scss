@@ -76,20 +76,37 @@ section {
   border-bottom: 1px solid #D8D8D8;
 }
 
-.has-xl-spacing {
-  padding-top: 240px;
-  padding-bottom: 240px;
+.has-xl-margin {
+  margin-top: 160px !important;
+  margin-bottom: 160px !important;
 
   @media only screen and 
   (max-width: $screen-sm) {
-    padding-top: 144px;
-    padding-bottom: 144px;
+    margin-top: 144px !important;
+    margin-bottom: 144px !important;
   }
 
   @media only screen and 
   (max-width: $screen-xs) {
-    padding-top: 96px;
-    padding-bottom: 96px;
+    margin-top: 96px !important;
+    margin-bottom: 96px !important;
+  }
+}
+
+.has-xxl-spacing {
+  padding-top: 240px !important;
+  padding-bottom: 240px !important;
+
+  @media only screen and 
+  (max-width: $screen-sm) {
+    padding-top: 144px !important;
+    padding-bottom: 144px !important;
+  }
+
+  @media only screen and 
+  (max-width: $screen-xs) {
+    padding-top: 96px !important;
+    padding-bottom: 96px !important;
   }
 }
 

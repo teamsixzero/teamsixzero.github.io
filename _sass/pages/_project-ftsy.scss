@@ -1,38 +1,77 @@
-  .ftsy-intro .intro__copy { 
-    line-height: 2;
-    color: #9CA3AB;
+.ftsy-intro {
+
+  .intro__title {
+    @media only screen and 
+    (max-width: $screen-lg) {
+      font-size: 37px;
+      line-height: 1.25;
+    }
+
+    @media only screen and 
+    (max-width: $screen-md) {
+      font-size: 31px;
+      line-height: 1.25;
+    }
+
+    @media only screen and 
+    (max-width: $screen-sm) {
+      font-size: 27px;
+    }
   }
+
+  .intro__copy { 
+    @media only screen and 
+    (max-width: $screen-lg) {
+      font-size: 19px;
+    }
+
+    @media only screen and 
+    (max-width: $screen-md) {
+      font-size: 16px;
+      line-height: 1.75;
+    }
+  }
+
+  .project__image img {
+    max-width: 520px;
+  }
+}
 
 
 .ftsy-shopping {
-  padding: 0;
-  background: #F5F5F5;
+  background: url('/assets/img/projects/ftsy/shopping.png');
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
+  background-color: #F5F5F5;
 
-  .section__inner--c12 {
-    display: flex;
-    align-items: center;
+  padding-top: 320px;
+  padding-bottom: 320px;
 
-    @media only screen and 
-    (max-width: $screen-xs) {
-      flex-direction: column;
-    }
+  @media only screen and 
+  (max-width: $screen-lg) {
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 
-  .project__description {
-    @media only screen and 
-    (min-width: $screen-sm) {
-      @include grid-column(5);
-    }
 
-    @media only screen and 
-    (min-width: $screen-xs) and 
-    (max-width: $screen-xs-max){
-      @include grid-column(6);
-    }
+  @media only screen and 
+  (max-width: $screen-md) {
+    padding-top: 104px;
+    padding-bottom: 104px;
+    background: #F5F5F5;
+  }
 
-    @media only screen and 
-    (max-width: $screen-xs) {
-      margin-bottom: 32px;
-    }
+  @media only screen and 
+  (max-width: $screen-sm) {
+    background: #F5F5F5;
+  }
+
+}
+
+
+.ftsy-scanning {
+  .project__image img {
+    max-width: 520px;
   }
 }
