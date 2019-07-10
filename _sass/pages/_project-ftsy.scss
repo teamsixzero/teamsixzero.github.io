@@ -1,5 +1,10 @@
 .ftsy-intro {
 
+   @media only screen and 
+    (max-width: $screen-md) {
+      padding-top: 144px;
+    }
+
   .intro__title {
     @media only screen and 
     (max-width: $screen-lg) {
@@ -32,9 +37,18 @@
     }
   }
 
-  .project__image img {
-    max-width: 520px;
+  .project__image {
+    @include grid-shift(1);
+
+    img {
+      max-width: 450px;
+    }
   }
+}
+
+
+.ftsy-testing {
+  margin-bottom: 0;
 }
 
 .ftsy-shopping {
@@ -118,7 +132,11 @@
 
 
 .ftsy-scanning {
-  .project__image img {
-    max-width: 520px;
+  .project__image {
+    @include grid-shift(1);
+
+    img {
+      max-width: 520px;
+    }
   }
 }
