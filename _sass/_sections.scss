@@ -88,8 +88,8 @@ section {
 
   @media only screen and 
   (max-width: $screen-xs) {
-    margin-top: 96px !important;
-    margin-bottom: 96px !important;
+    margin-top: 48px !important;
+    margin-bottom: 48px !important;
   }
 }
 
@@ -208,14 +208,14 @@ section {
 
   @media only screen and 
   (max-width: $screen-sm){
-    padding-top: 176px;
-    padding-bottom: 176px;
+    padding-top: 144px;
+    padding-bottom: 144px;
   }
 
   @media only screen and 
   (max-width: $screen-xs){
-    padding-top: 144px;
-    padding-bottom: 144px;
+    padding-top: 112px;
+    padding-bottom: 112px;
   }
 }
 

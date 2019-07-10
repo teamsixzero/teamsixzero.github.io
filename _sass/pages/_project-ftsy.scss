@@ -37,37 +37,6 @@
   }
 }
 
-
-// .ftsy-shopping {
-//   background: url('/assets/img/projects/ftsy/shopping.png');
-//   background-repeat: no-repeat;
-//   background-position: right center;
-//   background-size: contain;
-//   background-color: #F5F5F5;
-
-//   padding-top: 320px;
-//   padding-bottom: 320px;
-
-//   @media only screen and 
-//   (max-width: $screen-lg) {
-//     padding-top: 200px;
-//     padding-bottom: 200px;
-//   }
-
-
-//   @media only screen and 
-//   (max-width: $screen-md) {
-//     padding-top: 104px;
-//     padding-bottom: 104px;
-//     background: #F5F5F5;
-//   }
-
-//   @media only screen and 
-//   (max-width: $screen-sm) {
-//     background: #F5F5F5;
-//   }
-// }
-
 .ftsy-shopping {
   display: flex;
   flex: 0 0 auto;
@@ -81,62 +50,68 @@
   }
 
   .project__description {
+    @include grid-container;
     display: flex;
     justify-content: center;
-    max-width: 50%;
+    flex: 0 0 50%;
 
-    @media only screen and 
-    (max-width: $screen-lg) {
-      max-width: 40%;
-    }
 
     @media only screen and 
     (max-width: $screen-sm) {
       display: block;
       max-width: 100%;
+      margin: 56px 32px 46px;
+    }
+
+    @media only screen and 
+    (max-width: $screen-xs) {
+      margin-left: 0;
+      margin-right: 0;
     }
   }
 
   .project__description-inner {
-    max-width: 55%;
+    @include grid-column(7);
 
     @media only screen and 
-    (max-width: $screen-lg) {
-      max-width: 65%;
-    } 
+    (min-width: $screen-md) {
+      @include grid-column(8);
+    }
 
     @media only screen and 
     (max-width: $screen-md) {
-      max-width: 80%;
-      margin-bottom: 32px;
+      @include grid-column(9);
     }
 
     @media only screen and 
     (max-width: $screen-sm) {
-      max-width: 60%;
-      padding: 40px 24px 0 40px;
+      @include grid-column(10);
+    }
+
+    @media only screen and 
+    (max-width: $screen-xs) {
+      @include grid-column(12);
     }
   }
 
   .project__image {
     overflow: hidden;
-
-    @media only screen and 
-    (max-width: $screen-sm) {
-      padding: 48px 24px;
+ 
+    img {
+      width: 100%;
+      vertical-align: top;
     }
 
     @media only screen and 
     (max-width: $screen-sm) {
-      display: inline-block;
+      display: block;
       width: 100%;
-      padding: 0;
-      text-align: center;
       margin-bottom: -350px;
+    }
 
-      img {
-        width: 100%;
-      }
+    @media only screen and 
+    (max-width: $screen-xs) {
+      margin-bottom: -100px;
     }
   }
 }
