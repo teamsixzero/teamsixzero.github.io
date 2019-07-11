@@ -7,7 +7,7 @@ section {
   @include grid-shift(3);
 
   @media only screen and 
-  (max-width: $screen-md){
+  (max-width: $screen-lg){
     @include grid-column(8);
     @include grid-shift(2);
   }
@@ -77,19 +77,36 @@ section {
 }
 
 .has-xl-spacing {
-  padding-top: 240px;
-  padding-bottom: 240px;
+  margin-top: 160px !important;
+  margin-bottom: 160px !important;
 
   @media only screen and 
   (max-width: $screen-sm) {
-    padding-top: 144px;
-    padding-bottom: 144px;
+    margin-top: 144px !important;
+    margin-bottom: 144px !important;
   }
 
   @media only screen and 
   (max-width: $screen-xs) {
-    padding-top: 96px;
-    padding-bottom: 96px;
+    margin-top: 48px !important;
+   margin-bottom: 48px !important;
+  }
+}
+
+.has-xxl-spacing {
+  padding-top: 240px !important;
+  padding-bottom: 240px !important;
+
+  @media only screen and 
+  (max-width: $screen-sm) {
+    padding-top: 144px !important;
+    padding-bottom: 144px !important;
+  }
+
+  @media only screen and 
+  (max-width: $screen-xs) {
+    padding-top: 96px !important;
+    padding-bottom: 96px !important;
   }
 }
 
@@ -191,14 +208,14 @@ section {
 
   @media only screen and 
   (max-width: $screen-sm){
-    padding-top: 176px;
-    padding-bottom: 176px;
+    padding-top: 144px;
+    padding-bottom: 144px;
   }
 
   @media only screen and 
   (max-width: $screen-xs){
-    padding-top: 144px;
-    padding-bottom: 144px;
+    padding-top: 112px;
+    padding-bottom: 112px;
   }
 }
 
