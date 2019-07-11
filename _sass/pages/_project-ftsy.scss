@@ -1,3 +1,21 @@
+.ftsy-home-preview {
+
+  .project__description {
+    @media only screen and 
+    (min-width: $screen-sm) {
+      @include grid-column(3);
+    }
+  }
+
+  .project__image {
+    @media only screen and 
+    (min-width: $screen-sm) {
+      @include grid-column(8);
+    }
+  }
+}
+
+
 .ftsy-intro {
 
   @media only screen and 
