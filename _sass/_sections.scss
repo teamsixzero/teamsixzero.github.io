@@ -77,19 +77,19 @@ section {
 }
 
 .has-xl-spacing {
-  margin-top: 160px !important;
-  margin-bottom: 160px !important;
+  padding-top: 160px !important;
+  padding-bottom: 160px !important;
 
   @media only screen and 
   (max-width: $screen-sm) {
-    margin-top: 144px !important;
-    margin-bottom: 144px !important;
+    padding-top: 144px !important;
+    padding-bottom: 144px !important;
   }
 
   @media only screen and 
   (max-width: $screen-xs) {
-    margin-top: 48px !important;
-    margin-bottom: 48px !important;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
   }
 }
 
