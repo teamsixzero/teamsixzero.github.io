@@ -74,7 +74,7 @@
 
     @media only screen and 
     (max-width: $screen-xs) {
-      flex-direction: column;
+      display: block;
     }
   }
 

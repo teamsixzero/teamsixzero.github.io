@@ -7,7 +7,7 @@ section {
   @include grid-shift(3);
 
   @media only screen and 
-  (max-width: $screen-md){
+  (max-width: $screen-lg){
     @include grid-column(8);
     @include grid-shift(2);
   }

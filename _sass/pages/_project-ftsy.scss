@@ -1,9 +1,15 @@
 .ftsy-intro {
 
-   @media only screen and 
-    (max-width: $screen-md) {
-      padding-top: 144px;
-    }
+  @media only screen and 
+  (max-width: $screen-md) {
+    padding-top: 208px;
+  }
+
+  @media only screen and 
+  (max-width: $screen-xs) {
+    padding-top: 112px;
+  }
+
 
   .intro__title {
     @media only screen and 
@@ -34,14 +40,6 @@
     (max-width: $screen-md) {
       font-size: 16px;
       line-height: 1.75;
-    }
-  }
-
-  .project__image {
-    @include grid-shift(1);
-
-    img {
-      max-width: 450px;
     }
   }
 }
@@ -81,6 +79,7 @@
     (max-width: $screen-xs) {
       margin-left: 0;
       margin-right: 0;
+      margin-bottom: 0;
     }
   }
 
@@ -131,12 +130,25 @@
 }
 
 
-.ftsy-scanning {
+.ftsy-scanning, 
+.ftsy-intro {
   .project__image {
-    @include grid-shift(1);
 
-    img {
-      max-width: 520px;
+    @media only screen and 
+    (min-width: $screen-sm) {
+      @include grid-shift(1);
+      text-align: center;
+
+      img {
+        max-width: 520px;
+      }
     }
-  }
+
+    @media only screen and 
+    (max-width: $screen-sm) {
+      img {
+        max-width: 300px;
+      }
+    }
+  }  
 }
