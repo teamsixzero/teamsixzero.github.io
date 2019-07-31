@@ -68,7 +68,7 @@
     text-align: center;
   }
 
-  .section__inner--c10 {
+  div[class*="section__inner"] {
     display: flex;
     align-items: center;
 

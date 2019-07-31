@@ -1,3 +1,37 @@
+.ftsy-home-preview {
+
+  .project__description {
+
+    @media only screen and 
+    (min-width: $screen-sm) {
+      @include grid-column(4);
+    }
+
+     @media only screen and 
+    (min-width: $screen-md) {
+      @include grid-column(3);
+    }
+  }
+
+  .project__image {
+    @media only screen and 
+    (min-width: $screen-sm) {
+      @include grid-column(7);
+      margin-top: 50px;
+    }
+
+    @media only screen and 
+    (min-width: $screen-md) {
+      margin-top: 120px;
+    }
+
+    img {
+      max-width: 750px;
+    }
+  }
+}
+
+
 .ftsy-intro {
 
   @media only screen and 
