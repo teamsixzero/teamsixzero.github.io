@@ -111,6 +111,21 @@ section {
 }
 
 
+.has-xl-spacing--bottom {
+  margin-bottom: 160px !important;
+
+  @media only screen and 
+  (max-width: $screen-sm) {
+    margin-bottom: 144px !important;
+  }
+
+  @media only screen and 
+  (max-width: $screen-xs) {
+   margin-bottom: 48px !important;
+  }
+}
+
+
 // Section: Colours
 // ----------------------
 
@@ -254,19 +269,6 @@ section {
   letter-spacing: 1px;
   font-size: 14px;
   color: $grey-light;
-}
-
-.section--testimonial-white{
-  @extend .section--testimonial;
-  background: #ffffff;
-
-  .testimonial__text {
-    color: $grey;
-  }
-
-  .testimonial__name {
-    color: $grey-3;
-  }
 }
 
 
