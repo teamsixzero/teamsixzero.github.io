@@ -216,13 +216,13 @@ header {
   @include grid-container;
   background: transparent;
   padding-top: 224px;
-  padding-bottom: 240px;
+  padding-bottom: 160px;
 
 
   @media only screen and 
   (max-width: $screen-md) {
-    padding-top: 152px;
-    padding-bottom: 152px;
+    padding-top: 144px;
+    padding-bottom: 144px;
   }
 
    @media only screen and 
