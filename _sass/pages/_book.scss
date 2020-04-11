@@ -36,6 +36,10 @@
   @include grid-column(6);
   @include grid-shift(1);
   padding-top: 64px;
+
+  p {
+    font-size: 20px;
+  }
 }
 
 
