@@ -1,0 +1,85 @@
+.book-landing {
+  p {
+    font-size: 18px;
+    line-height: 1.75;
+  }
+
+  hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+// =============================================================================
+// Highlights
+// =============================================================================
+
+.book-highlights__title {
+  text-align: center;
+}
+
+.book-highlight__subtitle {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.book-highlight__body {
+  margin-bottom: 0;
+  padding-right: 24px;
+}
+
+// =============================================================================
+// Skills
+// =============================================================================
+
+.book-skills__list {
+  margin-left: 0;
+  padding-left: 24px;
+}
+
+.book-skill {
+  font-size: 18px;
+  margin-bottom: 8px;
+  font-weight: 200;
+}
+
+// =============================================================================
+// Table of Contents
+// =============================================================================
+
+.book-toc__title {
+  text-align: center;
+
+  @media only screen and 
+  (max-width: $screen-sm) {
+    text-align: left;
+  }
+}
+
+.toc__step {
+  margin-bottom: 56px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.toc__chapters {
+  margin-bottom: 0;
+  padding-left: 16px;
+}
+
+.toc__chapter {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.toc__chapter-title {
+  font-weight: 700;
+  margin-bottom: 16px;
+}
