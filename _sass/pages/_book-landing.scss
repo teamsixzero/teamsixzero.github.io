@@ -1,18 +1,9 @@
 .book-landing {
   
   
-  h1 {
-    @media only screen and 
-    (max-width: $screen-md) {
-      font-size: 31px;
-    }
-  }
-
-  h2 {
-    @media only screen and 
-    (max-width: $screen-lg) {
-      font-size: 31px;
-    }
+  h1, h2 {
+    font-size: 200%;
+    line-height: 1.25;
   }
 
   h6 {
@@ -100,11 +91,17 @@
     }
 
     img {
-      max-width: 600px;
- 
+      max-width: 500px;
+
+      @media only screen and 
+      (max-width: $screen-md) {
+        max-width: 350px;
+      }
+
       @media only screen and 
       (max-width: $screen-sm) {
         max-width: 250px;
+        margin-bottom: 32px;
       }
     }
   }  
