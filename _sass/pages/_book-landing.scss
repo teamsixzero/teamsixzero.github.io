@@ -1,7 +1,35 @@
 .book-landing {
+  
+  
+  h1 {
+    @media only screen and 
+    (max-width: $screen-md) {
+      font-size: 31px;
+    }
+  }
+
+  h2 {
+    @media only screen and 
+    (max-width: $screen-lg) {
+      font-size: 31px;
+    }
+  }
+
+  h6 {
+    @media only screen and 
+    (max-width: $screen-md) {
+      font-size: 18px;
+    }
+  }
+
   p {
     font-size: 18px;
     line-height: 1.75;
+
+    @media only screen and 
+    (max-width: $screen-md) {
+      font-size: 16px;
+    }
   }
 
   hr {
@@ -15,17 +43,107 @@
 }
 
 // =============================================================================
-// Highlights
+// Intro 
+// =============================================================================
+
+
+.book-intro {
+  @include grid-container;
+  padding-top: 144px;
+  padding-bottom: 144px;
+  overflow: hidden;
+  border: none;
+
+  @media only screen and 
+  (max-width: $screen-md) {
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+
+  @media only screen and 
+  (max-width: $screen-sm) {
+    text-align: center;
+  }
+  
+  .section__inner--c10 {
+    display: flex;
+    align-items: center;
+ 
+    @media only screen and 
+    (max-width: $screen-sm) {
+      display: block;
+    }
+  }
+
+  .book-intro__description {
+    @media only screen and 
+    (min-width: $screen-sm) {
+      @include grid-column(6);
+    }
+
+    @media only screen and 
+    (max-width: $screen-sm) {
+      margin-bottom: 24px;
+      display: block;
+    }
+  }
+
+  .book-intro__cover {
+    @media only screen and 
+    (min-width: $screen-sm) {
+      @include grid-column(6);
+    }
+
+    @media only screen and 
+    (max-width: $screen-sm) {
+      display: block;
+    }
+
+    img {
+      max-width: 600px;
+ 
+      @media only screen and 
+      (max-width: $screen-sm) {
+        max-width: 250px;
+      }
+    }
+  }  
+}
+
+.book-intro__title {
+  @media only screen and 
+  (min-width: $screen-lg) {
+    margin-right: 10px;
+  }
+}
+
+.book-intro__subtitle {
+  color: rgba($grey, 0.7);
+}
+
+// =============================================================================
+// Highlights 
 // =============================================================================
 
 .book-highlights__title {
   text-align: center;
+  margin-bottom: 56px;
+
+  @media only screen and 
+  (max-width: $screen-sm) {
+    text-align: left;
+  }
 }
 
 .book-highlight__subtitle {
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 16px;
+
+  @media only screen and 
+  (max-width: $screen-sm) {
+    margin-right: 8px;
+  }
 }
 
 .book-highlight__body {
@@ -33,9 +151,20 @@
   padding-right: 24px;
 }
 
+.book-highlight {
+  @media only screen and 
+  (max-width: $screen-sm) {
+    margin-bottom: 48px;
+  }  
+}
+
 // =============================================================================
 // Skills
 // =============================================================================
+
+.book-skills__subtitle {
+  color: rgba($grey, 0.7);
+}
 
 .book-skills__list {
   margin-left: 0;
@@ -46,6 +175,11 @@
   font-size: 18px;
   margin-bottom: 8px;
   font-weight: 200;
+
+  @media only screen and 
+  (max-width: $screen-md) {
+    margin-bottom: 16px;
+  } 
 }
 
 // =============================================================================
@@ -54,6 +188,7 @@
 
 .book-toc__title {
   text-align: center;
+  margin-bottom: 56px;
 
   @media only screen and 
   (max-width: $screen-sm) {
@@ -82,4 +217,13 @@
 .toc__chapter-title {
   font-weight: 700;
   margin-bottom: 16px;
+}
+
+
+// =============================================================================
+// About
+// =============================================================================
+
+.book-about__title {
+  margin-bottom: 56px;
 }

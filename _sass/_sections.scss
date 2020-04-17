@@ -8,8 +8,8 @@ section {
 
   @media only screen and 
   (max-width: $screen-sm) {
-    @include grid-column(10);
-    @include grid-shift(1);
+    @include grid-column(12);
+    @include grid-shift(0);
   }
 }
 
