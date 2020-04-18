@@ -92,6 +92,29 @@ a {
   }
 }
 
+.link-with-arrow__left {
+  white-space: nowrap;
+  text-decoration: none;
+
+  &:before {
+    content: "←";
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    right: 5px;
+    top: 1px;
+  }
+
+  &:hover {
+    text-decoration: underline;
+
+    &:before {
+      transition: all .2s ease-in-out;
+      right: 9px;
+    }
+  }
+}
+
 .quote-highlight {
   background-color: $teal;
   padding-left: 8px;

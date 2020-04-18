@@ -1,9 +1,13 @@
 .book-landing {
-  
-  
   h1, h2 {
     font-size: 200%;
     line-height: 1.25;
+
+    @media only screen and 
+    (min-width: $screen-lg) {
+      font-size: 250%;
+      line-height: 1.5;
+    }
   }
 
   h6 {
@@ -22,7 +26,9 @@
       font-size: 16px;
     }
   }
+}
 
+.book {
   hr {
     border: 0;
     height: 0;
@@ -32,6 +38,47 @@
     margin: 0 auto;
   }
 }
+
+
+// =============================================================================
+// Webbook Index
+// =============================================================================
+
+.book-edition, .book-authors {
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgba($grey, 0.7);
+}
+
+.book-edition {
+  margin-right: 16px;
+}
+
+.book-details {
+  margin-bottom: 40px;
+}
+
+
+.book-index__title {
+font-size: 350%;
+}
+
+.book-index__subtitle {
+  font-size: 25px;
+  color: rgba($grey, 0.7);
+}
+
+.book-index__body {
+  font-size: 21px;
+}
+
+.book-back-button {
+  padding: 96px 0 56px 0;
+}
+
 
 // =============================================================================
 // Intro 
@@ -106,6 +153,7 @@
     }
   }  
 }
+
 
 .book-intro__title {
   @media only screen and 
