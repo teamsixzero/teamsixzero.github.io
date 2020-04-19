@@ -2,3 +2,5 @@ _site/
 /.sass-cache
 .sass-cache
 _site/index.html
+node_modules
+.jekyll-cache/
