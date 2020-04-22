@@ -6,10 +6,16 @@ og_image: http://sixzero.co/assets/img/usertestingbook/og-image.png
 body_class: book-page
 ---
 
+<script type="text/template">
+<a class="book__menu-hamburger-toggle">
+  {% include svg/hamburger.svg %}
+</a>
+</script>
+
 <div class="book-container">
   <div class="book-menu">
     <div class="book-menu__content">
-      <a href="/startusertesting/" class="book-menu__button">&larr; Back to Sixzero</a>
+      <a href="/startusertesting/" class="book-menu__button remove-if-js">&larr; Back to Sixzero</a>
       <h1 class="book-menu__title">
         Introduction
       </h1>
@@ -36,6 +42,9 @@ body_class: book-page
       <a href="/startusertesting/1-step-1/" class="book-menu__next">Next: Define what you’re testing and why</a>
     </div>
   </div>
+  <!-- end toc section -->
+
+
   <div class="book-content">
     <p>
       It’s impossible to build an app people actually love and want to use if you 
