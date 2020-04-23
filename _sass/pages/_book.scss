@@ -18,51 +18,61 @@
   padding-top: 64px;
 }
 
-.callout {
-  border: 1px solid #000000;
-  padding: 15px;
-}
-
 // ============================================================================= 
 // Type
 // ============================================================================= 
 
 .book-content {
+  color: #000000;
+  padding-bottom: 64px;
 
    h1, h2, h3, h4, h5, h6 {
     margin-top: 64px;
+  }
+
+  h6 {
+    font-weight: 700;
   }
 
   p {
     font-size: 20px;
   }
 
-  blockquote {
-    font-size: 20px;
-    font-weight: bold;
-    border: 1px solid $grey;
-    padding: 15px;
-  }
-
-  ul, ol {
+  ul li, ol li {
     font-size: 20px;
     font-weight: 200;
+    color: #000000;
+    margin-bottom: 8px;
   }
 
-    table {
-    text-align: left;
-    margin-bottom: 32px;
+  a {
+    color: #000000;
+
+    &:hover {
+      color: $teal;
+    }
   }
 
-  td, th, tr {
-    padding: 0;
-    margin: 0;
+  strong {
+    font-weight: 700;
   }
 }
 
 // ============================================================================= 
 // Menu
 // ============================================================================= 
+
+.book-menu {
+  color: #000000;
+
+  a {
+    color: #000000;
+
+    &:hover {
+      color: $teal;
+    }
+  }
+}
 
 .book-menu__button {
   margin-bottom: 36px;
@@ -94,10 +104,15 @@
 // ============================================================================= 
 
 .callout {
-  padding: 36px;
+  margin: 32px 0;
+  background: rgba($grey-medium, 0.1);
+  padding: 40px;
+
 
   .callout__title {
     margin-top: 0 !important;
+    margin-bottom: 24px;
+    font-weight: 800;
   }
 
   p:last-of-type {
@@ -105,3 +120,12 @@
   }
 }
 
+
+// ============================================================================= 
+// Action Items
+// ============================================================================= 
+
+.action-items {
+  border-top: 1px solid rgba($grey-medium, 0.6);
+  margin-top: 88px;
+}
