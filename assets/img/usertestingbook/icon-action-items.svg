@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="88px" height="89px" viewBox="0 0 88 89" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Step-by-step action items</title>
+    <desc>Created with Sketch.</desc>
+    <g id="E-book" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-594.000000, -1531.000000)" id="Step-by-step-action-items">
+            <g transform="translate(594.000000, 1531.000000)">
+                <g id="background_blobs" fill="#5DCFC9" fill-rule="nonzero">
+                    <path d="M23.3772288,58.5096961 C3.76481157,50.0784393 -8.66253638,34.9778421 7.29222475,15.6291885 C18.525679,1.97703803 26.6550097,-7.07034912 38.4419965,7.27359682 C44.0315897,14.1050767 50.2538832,10.936214 54.0928574,23.4875523 C57.9318316,36.0388906 44.020313,37.0406745 39.820401,51.4079836 C37.205623,60.3527718 23.3772288,58.5096961 23.3772288,58.5096961 Z" id="Path"></path>
+                </g>
+                <g id="icon_artwork" transform="translate(6.192593, 14.014815)" stroke="#3A4958" stroke-width="1.5">
+                    <polyline id="Path" stroke-linecap="round" stroke-linejoin="round" points="59.5792593 8.8162963 59.5792593 0.114074074 30.1807407 0.114074074"></polyline>
+                    <line x1="59.5792593" y1="46.9333333" x2="59.5792593" y2="17.5348148" id="Path" stroke-linecap="round" stroke-linejoin="round"></line>
+                    <line x1="59.5792593" y1="73.2518519" x2="59.5792593" y2="64.3540741" id="Path" stroke-linecap="round" stroke-linejoin="round"></line>
+                    <polyline id="Path" stroke-linecap="round" stroke-linejoin="round" points="12.76 64.3540741 12.76 73.3333333 42.1422222 73.3333333"></polyline>
+                    <line x1="12.76" y1="17.5348148" x2="12.76" y2="55.6355556" id="Path" stroke-linecap="round" stroke-linejoin="round"></line>
+                    <circle id="Oval" fill="#FFFFFF" cx="12.76" cy="8.8162963" r="8.71851852"></circle>
+                    <circle id="Oval" fill="#FFFFFF" fill-rule="nonzero" cx="59.5792593" cy="55.6355556" r="8.71851852"></circle>
+                    <path d="M12.2222222,32.2340741 C5.76008155,32.2340741 0.521481481,37.4726741 0.521481481,43.9348148 C0.521481481,50.3969555 5.76008155,55.6355556 12.2222222,55.6355556 L50.3392593,55.6355556" id="Path"></path>
+                    <path d="M60.117037,32.2340741 C66.4137897,31.9991223 71.3971783,26.8263197 71.3971783,20.5251852 C71.3971783,14.2240506 66.4137897,9.0512481 60.117037,8.8162963 L21.4622222,8.8162963" id="Path"></path>
+                    <line x1="4.04148148" y1="8.8162963" x2="0.521481481" y2="8.8162963" id="Path" stroke-linecap="round"></line>
+                    <line x1="80.1451852" y1="55.6355556" x2="68.2977778" y2="55.6355556" id="Path"></line>
+                    <polyline id="Path" stroke-linecap="round" stroke-linejoin="round" points="74.2133333 49.72 80.1451852 55.6355556 74.2133333 61.5674074"></polyline>
+                    <circle id="Oval" fill="#FFFFFF" fill-rule="nonzero" cx="21.4622222" cy="32.3155556" r="2.60740741"></circle>
+                    <line x1="30.1807407" y1="32.2340741" x2="53.4681481" y2="32.2340741" id="Path" stroke-linecap="round"></line>
+                    <circle id="Oval" cx="21.4622222" cy="23.1244444" r="2.60740741"></circle>
+                    <line x1="30.1807407" y1="23.042963" x2="53.4681481" y2="23.042963" id="Path" stroke-linecap="round"></line>
+                    <circle id="Oval" cx="21.4622222" cy="41.4903704" r="2.60740741"></circle>
+                    <line x1="30.1807407" y1="41.4088889" x2="53.4681481" y2="41.4088889" id="Path" stroke-linecap="round"></line>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

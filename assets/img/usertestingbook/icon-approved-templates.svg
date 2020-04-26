@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="89px" viewBox="0 0 80 89" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Approved templates</title>
+    <desc>Created with Sketch.</desc>
+    <g id="E-book" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-916.000000, -1531.000000)" id="Approved-templates">
+            <g transform="translate(916.000000, 1531.000000)">
+                <g id="background_blobs" fill="#5DCFC9" fill-rule="nonzero">
+                    <path d="M40.8578629,6.73175047 C40.8578629,6.73175047 44.8937422,12.4166735 57.090719,15.8793403 C66.9006198,18.661414 60.6828005,50.0222027 50.0337674,52.092549 C19.6886721,57.9921321 22.374519,58.9009222 8.62907986,42.1981771 C-3.10085209,27.9445718 -0.965014386,24.7853788 11.0466642,10.8750104 C24.8895243,-5.1726592 36.497907,-0.695072817 40.8578629,6.73175047 Z" id="Path"></path>
+                </g>
+                <g id="icon_artwork" transform="translate(12.711111, 8.627451)" stroke="#3A4958" stroke-linecap="round" stroke-width="1.5">
+                    <polyline id="Path" stroke-linejoin="round" points="17.8070588 18.0831373 17.8070588 1.17333333 66.4486275 1.17333333 66.4486275 60.1678431 58.1145098 60.1678431"></polyline>
+                    <polyline id="Path" stroke-linejoin="round" points="49.7803922 18.4627451 49.7803922 78.7341176 1.15607843 78.7341176 1.15607843 18.4627451 34.147451 18.4627451"></polyline>
+                    <line x1="49.7976471" y1="18.4627451" x2="17.8070588" y2="1.19058824" id="Path"></line>
+                    <rect id="Rectangle" fill="#FFFFFF" fill-rule="nonzero" stroke-linejoin="round" x="9.47294118" y="26.7796078" width="31.9905882" height="20.8266667"></rect>
+                    <rect id="Rectangle" stroke-linejoin="round" x="49.7976471" y="35.1137255" width="8.33411765" height="16.7027451"></rect>
+                    <line x1="41.4635294" y1="56.0094118" x2="9.47294118" y2="56.0094118" id="Path" stroke-linejoin="round"></line>
+                    <line x1="41.4635294" y1="60.1678431" x2="9.47294118" y2="60.1678431" id="Path" stroke-linejoin="round"></line>
+                    <line x1="33.8023529" y1="64.3435294" x2="9.47294118" y2="64.3435294" id="Path" stroke-linejoin="round"></line>
+                    <line x1="58.1145098" y1="18.4627451" x2="49.7976471" y2="18.4627451" id="Path" stroke-linejoin="round"></line>
+                    <line x1="58.1145098" y1="22.6211765" x2="49.7976471" y2="22.6211765" id="Path" stroke-linejoin="round"></line>
+                    <line x1="58.1145098" y1="26.7796078" x2="49.7976471" y2="26.7796078" id="Path" stroke-linejoin="round"></line>
+                    <circle id="Oval" stroke-linejoin="round" cx="39.3756863" cy="72.4878431" r="2.08784314"></circle>
+                    <polyline id="Path" stroke-linejoin="round" points="53.2313725 14.2870588 58.1145098 14.2870588 58.1145098 10.1286275 44.9145098 10.1286275"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

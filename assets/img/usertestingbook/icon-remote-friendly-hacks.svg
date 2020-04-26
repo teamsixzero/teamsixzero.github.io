@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="89px" height="89px" viewBox="0 0 89 89" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Remote-friendly hacks</title>
+    <desc>Created with Sketch.</desc>
+    <g id="E-book" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-250.000000, -1531.000000)" id="Remote-friendly-hacks">
+            <g transform="translate(250.000000, 1531.000000)">
+                <g id="background_blobs" fill="#5DCFC9" fill-rule="nonzero">
+                    <path d="M28.7259182,4.87576317 C28.7259182,4.87576317 36.1805839,19.2259915 49.1610858,24.6333239 C62.1415877,30.0406563 58.826086,44.7236435 53.9675206,49.8086158 C46.4294461,57.7948298 29.4870239,61.9543162 13.4412469,53.7705266 C-2.27089468,45.7635152 -2.54197344,27.669749 6.24723385,14.0890257 C15.4430593,-0.126019306 23.3147692,-3.41201362 28.7259182,4.87576317 Z" id="Path"></path>
+                </g>
+                <g id="icon_artwork" transform="translate(9.125926, 15.271958)">
+                    <polyline id="Path" stroke="#394858" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" points="41.0997435 15.3775496 46.9163479 21.1975744 41.0997435 27.0336324"></polyline>
+                    <polyline id="Path" stroke="#394858" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" points="37.9837054 56.8071479 32.167101 50.9871231 37.9837054 45.1510651"></polyline>
+                    <path d="M46.9003683,21.1975744 L24.9922235,21.1975744 L24.9922235,72.1187835 L78.572099,72.1187835 L78.572099,66.9080175 C78.2425939,60.5079695 72.9745566,55.4883069 66.5873371,55.4883069 C60.2001177,55.4883069 54.9320804,60.5079695 54.6025752,66.9080175" id="Path" stroke="#394858" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <ellipse id="Oval" fill="#3A4958" fill-rule="nonzero" cx="7.6862273" cy="3.76956614" rx="1" ry="1"></ellipse>
+                    <ellipse id="Oval" fill="#3A4958" fill-rule="nonzero" cx="12.9435429" cy="3.76956614" rx="1" ry="1"></ellipse>
+                    <ellipse id="Oval" fill="#3A4958" fill-rule="nonzero" cx="18.2008584" cy="3.76956614" rx="1" ry="1"></ellipse>
+                    <polyline id="Path" stroke="#394858" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" points="54.0912254 21.1975744 78.5880787 21.1975744 78.5880787 43.1148581"></polyline>
+                    <polyline id="Path" stroke="#394858" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" points="0.511349841 22.800887 0.511349841 0.0659139637 54.0912254 0.0659139637 54.0912254 50.9871231 32.1830806 50.9871231"></polyline>
+                    <line x1="24.9922235" y1="50.9871231" x2="0.511349841" y2="50.9871231" id="Path" stroke="#394858" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></line>
+                    <line x1="0.511349841" y1="7.45718519" x2="54.0912254" y2="7.45718519" id="Path" stroke="#394858" stroke-width="1.5" stroke-linecap="round"></line>
+                    <line x1="54.0912254" y1="28.6048788" x2="78.5880787" y2="28.6048788" id="Path" stroke="#394858" stroke-width="1.5" stroke-linecap="round"></line>
+                    <ellipse id="Oval" stroke="#394858" stroke-width="1.5" fill="#FFFFFF" fill-rule="nonzero" stroke-linecap="round" cx="12.4961117" cy="28.2681831" rx="5.44907175" ry="5.46729607"></ellipse>
+                    <ellipse id="Oval" stroke="#394858" stroke-width="1.5" stroke-linecap="round" cx="66.6033168" cy="49.4158767" rx="5.44907175" ry="5.46729607"></ellipse>
+                    <path d="M0.527329524,50.9871231 L0.527329524,45.776357 C0.56393128,41.3557447 3.01193981,37.3107344 6.90431116,35.2392382 C10.7966825,33.1677421 15.5074168,33.4029135 19.175619,35.8518519" id="Path" stroke="#394858" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
