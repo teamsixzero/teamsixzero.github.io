@@ -6,16 +6,24 @@ og_image: http://sixzero.co/assets/img/usertestingbook/og-image.png
 body_class: book-page
 ---
 
-<script type="text/template">
-<a class="book__menu-hamburger-toggle">
-  {% include svg/hamburger.svg %}
-</a>
-</script>
 
 <div class="book-container">
   <div class="book-menu">
     <div class="book-menu__content">
+      <!-- TODO: transition this in to avoid flash -->
       <a href="/startusertesting/" class="book-menu__button remove-if-js">&larr; Back to Sixzero</a>
+
+      <div
+        class="book-drawer__toggle-container visible-if-js"
+        style="display:none;"
+      >
+        <button class="hamburger book-drawer__toggle">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+      </div>
+
       <h1 class="book-menu__title">
         Introduction
       </h1>

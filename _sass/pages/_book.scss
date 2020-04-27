@@ -15,10 +15,92 @@
   @include grid-container;
 }
 
+.book-drawer {
+  $drawer-width: 450px;
+
+  &__toggle-container {
+    margin-bottom: get-rem(24px);
+  }
+
+  &__toggle {
+    cursor: pointer;
+  }
+
+  &__container {
+    $padding__sides: 4rem;
+
+    position: fixed;
+    width: $drawer-width;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    left: -$drawer-width;
+    padding-top: 2rem;
+    padding-right: $padding__sides;
+    padding-bottom: 2rem;
+    padding-left: $padding__sides;
+    background-color: white;
+    transition: 0.250s ease-in-out all;
+    z-index: 1000;
+    overflow-y: scroll;
+    opacity: 0;
+
+    &--visible {
+      transform: translateX($drawer-width);
+      opacity: 1;
+    }
+  }
+
+  // Content Styles
+  &__top-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4rem;
+  }
+
+  &__header {
+    width: 80%;
+  }
+
+  &__author-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & > p {
+      margin-bottom: 0;
+      color: $grey-3;
+    }
+  }
+
+  &__hr {
+    // TODO: get the correct color to display
+    background: none;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+
+  // content overrides
+  &__container {
+    .toc__chapters {
+      padding-left: 0;
+      list-style-type: none !important;
+    }
+
+    .toc__chapter-title {
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
 .book-menu {
   @include grid-column(4);
   @include grid-shift(0);
   padding-top: 64px;
+  text-align: right;
 
   @media only screen and (min-width: $screen-sm-min) {
     position: sticky;

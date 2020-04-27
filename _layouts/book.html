@@ -1,16 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>{{ page.title }}</title> 
+  <title>{{ page.title }}</title>
   {% include meta-data.html %}
   {% if site.google_analytics and jekyll.environment == 'production' %}
     {% include analytics.html %}
   {% endif %}
 </head>
 <body class="{{ page.body_class }}">
+
+  <!-- TODO: ensure accessibility with aria labels -->
+  <nav class="book-drawer__container">
+    <div class="book-drawer__top-navigation">
+      <a href="/startusertesting/">&larr; back to sixzero.co</a>
+      <button class="book-drawer__toggle">X</button>
+    </div>
+    <div class="book-drawer__header">
+      <h3>How to Design Apps People Actually Want to Use</h3>
+      <h4>A Quick-Start Guide to User Testing</h4>
+      <div class="book-drawer__author-block">
+        <p>V1, 2020 Edition</p>
+        <p>By Nick Foster and Amy Wood</p>
+      </div>
+    </div>
+    <hr class="book-drawer__hr" />
+    {% include book-toc--unstyled.html %}
+  </nav>
+
   <main class="main-wrapper" id="panel">
     {{ content }}
   </main>
   {% include scripts.html %}
+  <script src="/assets/js/book-scripts.js" defer></script>
 </body>
 </html>
