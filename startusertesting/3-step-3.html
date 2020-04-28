@@ -9,8 +9,20 @@ body_class: book-page
 <div class="book-container">
   <div class="book-menu">
     <div class="book-menu__content">
-      <a href="/startusertesting/" class="book-menu__button">&larr; Back to Sixzero</a>
+      <a href="/startusertesting/" class="book-menu__button remove-if-js">&larr; Back to Sixzero</a>
       <small class="book-menu__step">Step 3</small>
+
+      <div
+        class="book-drawer__toggle-container visible-if-js"
+        style="display:none;"
+      >
+        <button class="hamburger book-drawer__toggle">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+      </div>
+
       <h1 class="book-menu__title">
         Build your user test and script
       </h1>
@@ -49,7 +61,7 @@ body_class: book-page
           <a href="#action-items">
             Action Items
           </a>
-        </li> 
+        </li>
       </ul>
       <a href="/startusertesting/4-step-4/" class="book-menu__next">Next: Conduct your user test</a>
     </div>
@@ -59,13 +71,13 @@ body_class: book-page
       Make the experience as real as possible
     </h3>
     <p>
-      Whatever you’ve decided to test, ensure it’s workable so as not to confuse 
-      the user in ways that will take them out of the experience. 
+      Whatever you’ve decided to test, ensure it’s workable so as not to confuse
+      the user in ways that will take them out of the experience.
     </p>
     <p>
       If you’re testing a very early prototype, that doesn’t mean you need to invest
-       hours to make it perfect, but it’s worth running through the prototype a 
-       couple times to make sure any rough spots are smoothed out. To be frank, if 
+       hours to make it perfect, but it’s worth running through the prototype a
+       couple times to make sure any rough spots are smoothed out. To be frank, if
        your prototype is full of bugs or dead ends, it will ruin the test.
     </p>
     <br>
@@ -74,23 +86,23 @@ body_class: book-page
       Set the stage with a realistic scenario
     </h3>
     <p>
-      Giving users a realistic scenario provides the context they need to 
-      successfully perform a task. This is when you’ll want to consider introducing 
-      specific constraints that will help frame their thinking. 
+      Giving users a realistic scenario provides the context they need to
+      successfully perform a task. This is when you’ll want to consider introducing
+      specific constraints that will help frame their thinking.
     </p>
     <p>
-      For example, let’s say you’re doing a test for Airbnb, and you’d like to 
+      For example, let’s say you’re doing a test for Airbnb, and you’d like to
       improve the user experience for guests booking last-minute vacations.
     </p>
     <p>
       In practice that looks like this:
     </p>
     <p>
-      “Imagine you’re trying to book a trip under a tight timeline. How might you 
+      “Imagine you’re trying to book a trip under a tight timeline. How might you
       go about getting a house booked in New York for next weekend?”
     </p>
     <p>
-      In the scenario above, the constraints include: booking type (house), 
+      In the scenario above, the constraints include: booking type (house),
       location (New York), timeframe (next weekend).
     </p>
     <br>
@@ -99,38 +111,38 @@ body_class: book-page
       Write your script
     </h3>
     <p>
-      By this point you’ve already defined what you want to understand and created 
-      a realistic scenario. Use these details to guide your script. 
+      By this point you’ve already defined what you want to understand and created
+      a realistic scenario. Use these details to guide your script.
     </p>
     <p>
-      For example, if you want to find out “if users are able to create an account 
-      successfully,” make sure there’s a question in your script for that. 
-      Remember: Each statement should have an accompanying question in the script. 
-      If we use the example above, we’d want to make sure there was a question 
+      For example, if you want to find out “if users are able to create an account
+      successfully,” make sure there’s a question in your script for that.
+      Remember: Each statement should have an accompanying question in the script.
+      If we use the example above, we’d want to make sure there was a question
       like, “How do you think you would create an account?”
     </p>
     <p>
-      As you create the rest of your script, try to imagine what your user will be 
-      experiencing and craft your questions accordingly. A good exercise for this 
-      is to walk through your prototype like step-by-step. The point here is to 
-      anticipate what your participants might find difficult so you can ensure 
-      you have questions prepared to tease out why they’re finding it difficult. 
-      A good exercise for this is to walk through your prototype like step-by-step. 
-      The point here is to anticipate what your participants might find difficult 
-      so you can ensure you have questions prepared to tease out why they’re finding 
+      As you create the rest of your script, try to imagine what your user will be
+      experiencing and craft your questions accordingly. A good exercise for this
+      is to walk through your prototype like step-by-step. The point here is to
+      anticipate what your participants might find difficult so you can ensure
+      you have questions prepared to tease out why they’re finding it difficult.
+      A good exercise for this is to walk through your prototype like step-by-step.
+      The point here is to anticipate what your participants might find difficult
+      so you can ensure you have questions prepared to tease out why they’re finding
       it difficult.
     </p>
     <p>
-      Thinking about this in advance will give you confidence going into the 
-      session, which puts your participants at ease. Not only that, you’ll ask 
-      better follow-up questions, keep things on track, and recover more easily 
+      Thinking about this in advance will give you confidence going into the
+      session, which puts your participants at ease. Not only that, you’ll ask
+      better follow-up questions, keep things on track, and recover more easily
       if things go way off the rails
     </p>
-    
+
     <h6 class="callout__title">Follow-up questions</h6>
     <p>
-      You don’t need to be a journalist to come up with great follow-up 
-      questions, you just need to be curious. For example, when a participant 
+      You don’t need to be a journalist to come up with great follow-up
+      questions, you just need to be curious. For example, when a participant
       says they like or don’t like something, ask them:
       <ul>
         <li>What don’t you/do you like about it?</li>
@@ -172,12 +184,12 @@ body_class: book-page
     <br>
     <h3 id="dont-forget-the-software-usability-scale">Don’t forget the ‘Software Usability Scale</h3>
     <p>
-      Developed in 1986, the Software Usability Scale (SUS) is a reliable tool for 
+      Developed in 1986, the Software Usability Scale (SUS) is a reliable tool for
       measuring the usability of your product.
     </p>
     <p>
-      When the SUS is used, participants are asked to score the following 10 items 
-      on a scale of one to five, with ‘Strongly Disagree’ (1) on one end and 
+      When the SUS is used, participants are asked to score the following 10 items
+      on a scale of one to five, with ‘Strongly Disagree’ (1) on one end and
       ‘Strongly Agree’ (5) on the other.
     </p>
     <ol>
@@ -196,18 +208,18 @@ body_class: book-page
     <p>Including the SUS in every usability test has the following benefits:</p>
     <ul>
       <li>
-        Provides your team with a baseline usability score. When you’ve completed 
-        all your user tests, either add all the scores together for an overall 
+        Provides your team with a baseline usability score. When you’ve completed
+        all your user tests, either add all the scores together for an overall
         score, or find the average.
       </li>
       <li>
-        Allows you to compare scores between tests. Did one user score something 
-        higher than another user? This may provide additional insights regarding the 
+        Allows you to compare scores between tests. Did one user score something
+        higher than another user? This may provide additional insights regarding the
         usability of your product with respect to different personas.
       </li>
       <li>
-        Gives you leverage when convincing stakeholders where you invest time 
-        and resources. It also lets you easily demonstrate to stakeholders how 
+        Gives you leverage when convincing stakeholders where you invest time
+        and resources. It also lets you easily demonstrate to stakeholders how
         your product has improved as you do more and more tests down the line.
       </li>
     </ul>
@@ -221,31 +233,31 @@ body_class: book-page
       Test the test
     </h3>
     <p>
-      One of the best pieces of advice we can offer is to do a couple dry runs of 
-      the test on anyone you can find, whether a coworker or a friend. Don’t worry 
-      about getting someone who matches your perfect user &mdash; dry runs are for making 
+      One of the best pieces of advice we can offer is to do a couple dry runs of
+      the test on anyone you can find, whether a coworker or a friend. Don’t worry
+      about getting someone who matches your perfect user &mdash; dry runs are for making
       sure your script makes sense and nothing feels awkward or confusing.
     </p>
     <p>
-      If your real participants are participating remotely, a dry run will also 
-      give you the opportunity to see if it makes sense without you sitting right 
+      If your real participants are participating remotely, a dry run will also
+      give you the opportunity to see if it makes sense without you sitting right
       next to them.
     </p>
     <p>
-      Finally, use the dry run to time your test. We find between 1 and 1.5 hours 
-      to be the sweet spot for getting value while keeping your participant 
-      engaged &mdash; any longer and everyone in the room starts to get tired. Long 
-      tests also create a mountain of recordings to parse after the fact, which 
+      Finally, use the dry run to time your test. We find between 1 and 1.5 hours
+      to be the sweet spot for getting value while keeping your participant
+      engaged &mdash; any longer and everyone in the room starts to get tired. Long
+      tests also create a mountain of recordings to parse after the fact, which
       can be time consuming and repetitive.
     </p>
     <br>
     <br>
     <h3 id="modify-as-you-go">Modify as you go</h3>
     <p>
-      We’re not doing actual science here, so feel free to change the test as you 
-      learn.  Some of the best insights we’ve gotten were the result of subtle 
-      tweaks we made as we went. This can mean changes to the test itself, asking 
-      a different question, posing a scenario differently, or making changes to 
+      We’re not doing actual science here, so feel free to change the test as you
+      learn.  Some of the best insights we’ve gotten were the result of subtle
+      tweaks we made as we went. This can mean changes to the test itself, asking
+      a different question, posing a scenario differently, or making changes to
       the UI to fix obvious issues from early tests that hung people up.
     </p>
 
@@ -253,12 +265,12 @@ body_class: book-page
     <h6 class="callout__title">Tools of the trade</h6>
       <ul>
         <li>
-          Screen recording software. If you have a preferred screen recording tool, 
+          Screen recording software. If you have a preferred screen recording tool,
           great. If not, try out Quicktime screen recording — it’s our favourite.
-        </li> 
+        </li>
         <li>
-          Mobile app recording setup. If you’re testing a mobile app, we love using 
-          Mr.Tappy. Using a tool like this also allows users to pick up the device, 
+          Mobile app recording setup. If you’re testing a mobile app, we love using
+          Mr.Tappy. Using a tool like this also allows users to pick up the device,
           making the test more realistic.
         </li>
       </ul>
@@ -277,7 +289,7 @@ body_class: book-page
           Create a scenario for your participants
         </li>
         <li class="action-item">
-          Do at least one (but ideally two or more) dry runs, including a remote dry 
+          Do at least one (but ideally two or more) dry runs, including a remote dry
           run if necessary
         </li>
         <li class="action-item">

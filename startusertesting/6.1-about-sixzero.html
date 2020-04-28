@@ -9,7 +9,19 @@ body_class: book-page
 <div class="book-container">
   <div class="book-menu">
     <div class="book-menu__content">
-      <a href="/startusertesting/" class="book-menu__button">&larr; Back to Sixzero</a>
+      <a href="/startusertesting/" class="book-menu__button remove-if-js">&larr; Back to Sixzero</a>
+
+      <div
+        class="book-drawer__toggle-container visible-if-js"
+        style="display:none;"
+      >
+        <button class="hamburger book-drawer__toggle">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+      </div>
+
       <h1 class="book-menu__title">
         About
       </h1>
