@@ -6,11 +6,11 @@ body {
   -webkit-font-smoothing: antialiased;
   width: 100%;
   max-width: 1700px;
-  height: 100%;
+  height: 100vh;
   margin: 0 auto;
   color: $grey;
 
-  @media only screen and 
+  @media only screen and
   (min-width: 1701px) {
     box-shadow: 0 30px 60px rgba($grey-medium, 0.3);
   }
