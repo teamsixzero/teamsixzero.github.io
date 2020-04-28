@@ -1,21 +1,29 @@
 <!-- Slideout menu -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
 <script>
-  var slideout = new Slideout({
-    'panel': document.getElementById('panel'),
-    'menu': document.getElementById('menu'),
-    'padding': 241,
-    'tolerance': 70
-  });
-
-  // Toggle button
-  document.querySelector('.toggle-button').addEventListener('click', function() {
-    slideout.toggle();
-  });
-
-  $(window).resize(function() {
-    if ($(window).width() > 480) {
-      $('.main-wrapper').removeAttr("style");
+  (function () {
+    // NOTE: if the menu element does not exist, do not initialize slideout
+    var menu = document.getElementById('menu');
+    if (!menu) {
+      return;
     }
-  });
+
+    var slideout = new Slideout({
+      'panel': document.getElementById('panel'),
+      'menu': menu,
+      'padding': 241,
+      'tolerance': 70
+    });
+
+    // Toggle button
+    document.querySelector('.toggle-button').addEventListener('click', function() {
+      slideout.toggle();
+    });
+
+    $(window).resize(function() {
+      if ($(window).width() > 480) {
+        $('.main-wrapper').removeAttr("style");
+      }
+    });
+  })();
 </script>

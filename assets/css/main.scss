@@ -7,6 +7,7 @@
 @import "normalize";
 @import "variables";
 @import "functions";
+@import "mixins";
 
 // Plugins
 @import "neat/neat";
@@ -23,6 +24,8 @@
 @import "card";
 @import "projects";
 @import "backgrounds";
+// TODO: actually move styles here
+// @import "drawer";
 
 // Pages
 @import "pages/about";

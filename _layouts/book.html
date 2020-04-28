@@ -10,17 +10,19 @@
 <body class="{{ page.body_class }}">
 
   <!-- TODO: ensure accessibility with aria labels -->
-  <nav class="book-drawer__container">
+  <nav class="book-drawer__container book-drawer__container--visible">
     <div class="book-drawer__top-navigation">
       <a href="/startusertesting/">&larr; back to sixzero.co</a>
-      <button class="book-drawer__toggle">X</button>
+      <button class="book-drawer__toggle button--icon">
+        {% include svg/icon-close.svg %}
+      </button>
     </div>
     <div class="book-drawer__header">
-      <h3>How to Design Apps People Actually Want to Use</h3>
-      <h4>A Quick-Start Guide to User Testing</h4>
+      <h1 class="book-drawer__title">How to Design Apps People Actually Want to Use</h1>
+      <p class="book-drawer__byline">A Quick-Start Guide to User Testing</p>
       <div class="book-drawer__author-block">
-        <p>V1, 2020 Edition</p>
-        <p>By Nick Foster and Amy Wood</p>
+        <p>V1,&nbsp;2020&nbsp;Edition</p>
+        <p>By&nbsp;Nick&nbsp;Foster&nbsp;&&nbsp;Amy&nbsp;Wood</p>
       </div>
     </div>
     <hr class="book-drawer__hr" />

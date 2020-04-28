@@ -16,18 +16,11 @@
 }
 
 .book-drawer {
-  $drawer-width: 450px;
-
-  &__toggle-container {
-    margin-bottom: get-rem(24px);
-  }
-
-  &__toggle {
-    cursor: pointer;
-  }
+  $drawer-width: 500px;
 
   &__container {
-    $padding__sides: 4rem;
+    // TODO: unify padding sizes
+    // $padding__sides: 2rem;
 
     position: fixed;
     width: $drawer-width;
@@ -35,14 +28,16 @@
     top: 0;
     bottom: 0;
     left: -$drawer-width;
-    padding-top: 2rem;
-    padding-right: $padding__sides;
+    padding-top: 2.5rem;
+    padding-right: 2rem;
     padding-bottom: 2rem;
-    padding-left: $padding__sides;
+    padding-left: 2rem;
     background-color: white;
     transition: 0.250s ease-in-out all;
+    // TODO: create z-index manager, then add to z-index manager
     z-index: 1000;
     overflow-y: scroll;
+    // NOTE: this is to allow the drawer to slide in on larger screens without looking janky
     opacity: 0;
 
     &--visible {
@@ -51,7 +46,25 @@
     }
   }
 
-  // Content Styles
+  // Drawer triggers
+  // ---------------------------------------
+  // Used in-line on floating sidebar
+  &__toggle-container {
+    margin-bottom: get-rem(24px);
+  }
+
+  // The toggle itself
+  &__toggle {
+    @include reset__button();
+    cursor: pointer;
+
+    svg {
+      fill: $blue;
+    }
+  }
+
+  // Drawer content
+  // ---------------------------------------
   &__top-navigation {
     display: flex;
     justify-content: space-between;
@@ -60,7 +73,16 @@
   }
 
   &__header {
-    width: 80%;
+    width: 85%;
+  }
+
+  &__title {
+    font-size: get-rem(24px);
+  }
+
+  &__byline {
+    font-size: get-rem(18px);
+    font-weight: 600;
   }
 
   &__author-block {
@@ -71,16 +93,22 @@
     & > p {
       margin-bottom: 0;
       color: $grey-3;
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.1rem;
+      text-transform: uppercase;
     }
   }
 
   &__hr {
-    // TODO: get the correct color to display
-    background: none;
+    border-top: none;
+    // TODO: consider assigning to a variable
+    border-color: rgba($grey, 0.2);
     margin-top: 4rem;
     margin-bottom: 4rem;
   }
 
+  // TODO: avoid all overrides
   // content overrides
   &__container {
     .toc__chapters {
@@ -89,9 +117,18 @@
     }
 
     .toc__chapter-title {
+      font-size: get-rem(18px);
+      font-weight: 600;
+
       a {
+        // TODO: ask if this is intended in design -> does not match rest of site
         text-decoration: none;
       }
+    }
+
+    .toc__chapter {
+      margin-bottom: get-rem(4px);
+      font-size: get-rem(16px);
     }
   }
 }

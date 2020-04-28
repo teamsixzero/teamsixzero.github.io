@@ -1,0 +1,12 @@
+// Element Resets
+// --------------------------------------
+@mixin reset__button() {
+  // Normalize (<button>)
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible;
+}
