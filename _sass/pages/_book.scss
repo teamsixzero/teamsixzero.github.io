@@ -16,7 +16,7 @@
 }
 
 .book-drawer {
-  $drawer-width: 500px;
+  $drawer-width: get-rem(500px);
 
   &__container {
     // TODO: unify padding sizes
@@ -25,6 +25,7 @@
     position: fixed;
     width: $drawer-width;
     // TODO: resolve -> somehow removing this fixed that shitty viewport over-stretch
+    // QUESTION: is there something in the TOC styling pushing it over VH?
     // height: 100vh;
     top: 0;
     bottom: 0;
@@ -35,8 +36,7 @@
     padding-left: 2rem;
     background-color: white;
     transition: 0.250s ease-in-out all;
-    // TODO: create z-index manager, then add to z-index manager
-    z-index: 1000;
+    z-index: z(drawer);
     overflow-y: scroll;
     // NOTE: this is to allow the drawer to slide in on larger screens without looking janky
     opacity: 0;
@@ -62,6 +62,18 @@
     svg {
       fill: $blue;
     }
+  }
+
+  &__content-overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    // height: 100%;
+    // width: 100%;
+    z-index: z(drawer__content-overlay);
   }
 
   // Drawer content

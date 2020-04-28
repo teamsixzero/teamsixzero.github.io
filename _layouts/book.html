@@ -10,7 +10,7 @@
 <body class="{{ page.body_class }}">
 
   <!-- TODO: ensure accessibility with aria labels -->
-  <nav class="book-drawer__container book-drawer__container--visible">
+  <nav class="book-drawer__container">
     <div class="book-drawer__top-navigation">
       <a href="/startusertesting/">&larr; back to sixzero.co</a>
       <button class="book-drawer__toggle button--icon">
@@ -30,6 +30,7 @@
   </nav>
 
   <main class="main-wrapper" id="panel">
+    <div class="book-drawer__content-overlay"></div>
     {{ content }}
   </main>
   {% include scripts.html %}
