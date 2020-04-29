@@ -1,3 +1,16 @@
+.book-index, .book-page {
+  box-shadow: none;
+
+  hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
 .book-container {
   @include grid-container;
 }
@@ -38,11 +51,21 @@
     font-size: 20px;
   }
 
+  ul, ol {
+    padding: 0;
+    margin: 0 24px;
+  }
+
   ul li, ol li {
     font-size: 20px;
     font-weight: 200;
     color: #000000;
     margin-bottom: 8px;
+
+    li:last-of-type{
+      margin-bottom: 0;
+      border: 1px solid red;
+    }
   }
 
   a {
@@ -126,6 +149,20 @@
 // ============================================================================= 
 
 .action-items {
-  border-top: 1px solid rgba($grey-medium, 0.6);
-  margin-top: 88px;
+  background: rgba($grey-medium, 0.1);
+  padding: 40px;
+  margin: 48px 0;
 }
+
+.action-items__title {
+  margin-top: 0 !important;
+}
+
+.action-items__list {
+  margin-bottom: 0;
+}
+
+
+
+
+
