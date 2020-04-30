@@ -39,10 +39,6 @@
   color: #000000;
   padding-bottom: 64px;
 
-   h1, h2, h3, h4, h5, h6 {
-    margin-top: 64px;
-  }
-
   h6 {
     font-weight: 700;
   }
@@ -53,7 +49,9 @@
 
   ul, ol {
     padding: 0;
-    margin: 0 24px;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top: 0;
   }
 
   ul li, ol li {
@@ -61,11 +59,6 @@
     font-weight: 200;
     color: #000000;
     margin-bottom: 8px;
-
-    li:last-of-type{
-      margin-bottom: 0;
-      border: 1px solid red;
-    }
   }
 
   a {
@@ -102,8 +95,19 @@
   display: block;
 }
 
+.book-menu__step {
+  display: block;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgba($grey, 0.7);
+  margin-bottom: 24px;
+}
+
 .book-menu__title {
-  font-size: 37px;
+  font-size: 36px;
   line-height: 1.25;
 }
 
@@ -127,7 +131,7 @@
 // ============================================================================= 
 
 .callout {
-  margin: 32px 0;
+  margin: 32px 0 16px;
   background: rgba($grey-medium, 0.1);
   padding: 40px;
 
