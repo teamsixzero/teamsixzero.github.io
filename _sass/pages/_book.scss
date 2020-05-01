@@ -218,6 +218,18 @@
   }
 }
 
+// blur effect
+.main-wrapper__blur {
+  // TODO: change this to a mixin
+  $blur-size: 3;
+
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='#{$blur-size}');
+  -webkit-filter: url(#svg__filter__blur);
+  filter: url(#svg__filter__blur);
+  -webkit-filter: blur(#{$blur-size}px);
+  filter: blur(#{$blur-size}px);
+}
+
 .book-menu__content {
 
   @include breakpoint__ebook__navigation--expanded() {
@@ -276,17 +288,6 @@
 
   strong {
     font-weight: 700;
-  }
-
-  &__blur {
-    // TODO: change this to a mixin
-    $blur-size: 3;
-
-    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='#{$blur-size}');
-    -webkit-filter: url(#svg__filter__blur);
-    filter: url(#svg__filter__blur);
-    -webkit-filter: blur(#{$blur-size}px);
-    filter: blur(#{$blur-size}px);
   }
 }
 
