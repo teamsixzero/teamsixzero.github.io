@@ -1,14 +1,7 @@
-ruby '2.6.3'
 source 'https://rubygems.org'
 
-gem 'jekyll'
-gem 'jekyll-sitemap'
-gem 'jekyll-redirect-from'
-gem 'jekyll-autoprefixer'
+gem 'jekyll', '~> 3.8.6'
+gem 'jekyll-sitemap', '~> 1.4.0'
+gem 'jekyll-redirect-from', '~> 0.16.0'
+gem 'jekyll-autoprefixer', '~> 1.0.2'
 
-# NOTE: I couldn't get jekyll processor syntax to behave nicely with eslint, so
-# I opted to convert by hand (I'm pretty attached to in-editor linters,
-# vscode-eslint couldn't handle this one). Solution would be to find vscode or eslint
-# solution that ignored jekyll pre-processing dashes required at start of file
-
-# gem 'jekyll-babel'
