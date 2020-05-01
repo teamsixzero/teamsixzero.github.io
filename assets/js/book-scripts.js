@@ -4,12 +4,14 @@
 $(() => {
   const $drawerContainer = $('.book-drawer__container');
   const $drawerContentOverlay = $('.book-drawer__content-overlay');
+  const $bookContent = $('.book-content');
   const drawerVisibleClass = 'book-drawer__container--visible';
 
   // helpers
   // ----------------------------------
   const hideDrawer = () => {
     $drawerContainer.removeClass('book-drawer__container--visible');
+    $bookContent.removeClass('book-content__blur');
     $drawerContentOverlay.hide();
   };
 
@@ -18,8 +20,10 @@ $(() => {
 
     if ($drawerContainer.hasClass(drawerVisibleClass)) {
       $drawerContentOverlay.show();
+      $bookContent.addClass('book-content__blur');
     } else {
       $drawerContentOverlay.hide();
+      $bookContent.removeClass('book-content__blur');
     }
   };
 

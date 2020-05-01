@@ -12,7 +12,7 @@
 .book-page {
   box-shadow: none;
 
-  hr {
+  &__hr {
     border: 0;
     height: 0;
     border-top: 1px solid rgba(0, 0, 0, 0.08);
@@ -58,6 +58,7 @@
 }
 
 .book-drawer {
+  // TODO: refactor this shit
   $drawer__base-width: 500px;
   $drawer__base-slide: 564px;
 
@@ -84,6 +85,7 @@
     &--visible {
       opacity: 1;
       transform: translateX($drawer__base-slide);
+      box-shadow: 4px 0px 20px 0px rgba(0, 0, 0, 0.15);
       z-index: z(drawer);
 
       @media (max-width: $drawer__base-slide) {
@@ -118,7 +120,6 @@
     left: 0;
     right: 0;
     z-index: z(drawer__content-overlay);
-    // TODO: add blur here
   }
 
   // Drawer content
@@ -144,12 +145,20 @@
   }
 
   &__author-block {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include breakpoint__ebook__navigation--expanded {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
 
     & > p {
       @include typography__heading-accent-text();
+
+      @include breakpoint__ebook__navigation--compressed () {
+        &:first-of-type {
+          margin-bottom: get-rem(4px);
+        }
+      }
     }
   }
 
@@ -227,6 +236,11 @@
 // Type
 // =============================================================================
 
+// TODO: move to separate file
+.svg__blur {
+  display: none;
+}
+
 .book-content {
   color: #000000;
   padding-bottom: 64px;
@@ -263,6 +277,17 @@
 
   strong {
     font-weight: 700;
+  }
+
+  &__blur {
+    // TODO: change this to a mixin
+    $blur-size: 3;
+
+    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='#{$blur-size}');
+    -webkit-filter: url(#svg__filter__blur);
+    filter: url(#svg__filter__blur);
+    -webkit-filter: blur(#{$blur-size}px);
+    filter: blur(#{$blur-size}px);
   }
 }
 
