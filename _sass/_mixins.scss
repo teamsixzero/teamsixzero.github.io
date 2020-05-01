@@ -15,8 +15,9 @@
 // breakpoints
 // ------------------------------------
 // TODO: work this into the design system -> Discuss with Nick
-$ebook__navigation-breakpoint: 1200px;
+$ebook__navigation-breakpoint: 900px;
 
+// TODO: rename to something semantic
 @mixin breakpoint__ebook__navigation--compressed() {
   @media only screen and (max-width: $ebook__navigation-breakpoint) {
     @content;
@@ -24,6 +25,7 @@ $ebook__navigation-breakpoint: 1200px;
 }
 
 // TODO: work this into the design system
+// TODO: rename to something semantic
 @mixin breakpoint__ebook__navigation--expanded() {
   @media only screen and (min-width: $ebook__navigation-breakpoint + 1) {
     @content;

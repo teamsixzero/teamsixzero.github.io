@@ -1,4 +1,15 @@
-.book-index, .book-page {
+// TODO: move to mixins
+@mixin typography__heading-accent-text () {
+  margin-bottom: 0;
+  color: $grey-3;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+.book-index,
+.book-page {
   box-shadow: none;
 
   hr {
@@ -9,6 +20,12 @@
     width: 80%;
     margin: 0 auto;
   }
+}
+
+.book-page {
+  width: 100%;
+  width: 100vw;
+  z-index: z(main);
 }
 
 // Grid
@@ -92,9 +109,8 @@
     bottom: 0;
     left: 0;
     right: 0;
-    // height: 100%;
-    // width: 100%;
     z-index: z(drawer__content-overlay);
+    // TODO: add blur here
   }
 
   // Drawer content
@@ -125,12 +141,7 @@
     align-items: center;
 
     & > p {
-      margin-bottom: 0;
-      color: $grey-3;
-      font-size: 0.8rem;
-      font-weight: 500;
-      letter-spacing: 0.1rem;
-      text-transform: uppercase;
+      @include typography__heading-accent-text();
     }
   }
 
@@ -169,24 +180,38 @@
 }
 
 .book-menu {
-  // @include grid-column(4);
-  // @include grid-shift(0);
   padding-top: 64px;
-  text-align: right;
 
-  @media only screen and (min-width: $screen-sm-min) {
-    position: sticky;
-    top: 0;
+  &__step-heading {
+    @include typography__heading-accent-text();
+    margin-bottom: get-rem(16px);
+  }
+
+  &__sections {
+    // hide chapter navigation entries on mobile
+    @include breakpoint__ebook__navigation--compressed() {
+      display: none;
+    }
+  }
+
+  &__next {
+    // hide next chapter link on mobile
+    @include breakpoint__ebook__navigation--compressed() {
+      display: none;
+    }
   }
 }
 
 .book-menu__content {
-  padding-left: 64px;
+
+  @include breakpoint__ebook__navigation--expanded() {
+    position: sticky;
+    top: 64px;
+    padding-left: 64px;
+  }
 }
 
 .book-content {
-  // @include grid-column(6);
-  // @include grid-shift(1);
   padding-top: 64px;
 }
 
