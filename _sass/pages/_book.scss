@@ -197,7 +197,13 @@
 }
 
 .book-menu {
-  padding-top: 64px;
+  @include breakpoint__ebook__navigation--compressed() {
+    padding-top: get-rem(32px);
+  }
+
+  @include breakpoint__ebook__navigation--expanded() {
+    padding-top: get-rem(64px);
+  }
 
   &__step-heading {
     @include typography__heading-accent-text();

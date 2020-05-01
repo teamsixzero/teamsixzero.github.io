@@ -2,33 +2,47 @@
 // TODO: convert these to es5
 
 $(() => {
+  // TODO: accept inputs for these selectors
+  const DRAWER_VISIBLE_CLASS = 'book-drawer__container--visible';
+
+  const $html = $('html');
   const $drawerContainer = $('.book-drawer__container');
   const $drawerContentOverlay = $('.book-drawer__content-overlay');
-  const $bookContent = $('.main-wrapper');
-  const drawerVisibleClass = 'book-drawer__container--visible';
+  const $mainContent = $('.main-wrapper');
+
 
   // helpers
   // ----------------------------------
+  const isDrawerOpen = () => $drawerContainer.hasClass(DRAWER_VISIBLE_CLASS);
+
   const hideDrawer = () => {
+    $html.removeClass('prevent-scrolling');
     $drawerContainer.removeClass('book-drawer__container--visible');
-    $bookContent.removeClass('main-wrapper__blur');
+    $mainContent.removeClass('main-wrapper__blur');
     $drawerContentOverlay.hide();
+    $mainContent.focus();
+  };
+
+  const showDrawer = () => {
+    $html.addClass('prevent-scrolling');
+    $drawerContainer.addClass('book-drawer__container--visible');
+    $mainContent.addClass('main-wrapper__blur');
+    $drawerContentOverlay.show();
+    $drawerContainer.focus();
   };
 
   const toggleDrawer = () => {
-    $drawerContainer.toggleClass(drawerVisibleClass);
-
-    if ($drawerContainer.hasClass(drawerVisibleClass)) {
-      $drawerContentOverlay.show();
-      $bookContent.addClass('main-wrapper__blur');
-      $drawerContainer.focus();
-    } else {
+    if (isDrawerOpen()) {
       hideDrawer();
+    } else {
+      showDrawer();
     }
   };
 
   // initializers
   // -----------------------------------
+  // NOTE: these are technically outside of the module scope, although still
+  // useful in general and not that expensive to run
   $('.remove-if-js').remove();
   $('.visible-if-js').show();
 
@@ -46,4 +60,6 @@ $(() => {
   $('.book-drawer__container a').click(() => {
     hideDrawer();
   });
+
+  // TODO: add module interface
 });
