@@ -116,6 +116,7 @@
     bottom: 0;
     left: 0;
     right: 0;
+    background-color: rgba(white, 0.9);
     z-index: z(drawer__content-overlay);
   }
 
@@ -221,7 +222,7 @@
 // blur effect
 .main-wrapper__blur {
   // TODO: change this to a mixin
-  $blur-size: 3;
+  $blur-size: 5;
 
   filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='#{$blur-size}');
   -webkit-filter: url(#svg__filter__blur);
