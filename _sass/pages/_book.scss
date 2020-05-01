@@ -50,38 +50,46 @@
     @include breakpoint__ebook__navigation--expanded {
       grid-area: 1 / 2 / 2 / 3;
     }
+
+    @include breakpoint__ebook__navigation--compressed {
+      padding-top: 0;
+    }
   }
 }
 
 .book-drawer {
-  $drawer-width: get-rem(500px);
+  $drawer__base-width: 500px;
+  $drawer__base-slide: 564px;
 
   &__container {
-    // TODO: unify padding sizes
-    // $padding__sides: 2rem;
-
+    box-sizing: border-box;
     position: fixed;
-    width: $drawer-width;
-    // TODO: resolve -> somehow removing this fixed that shitty viewport over-stretch
-    // QUESTION: is there something in the TOC styling pushing it over VH?
-    // height: 100vh;
+    width: $drawer__base-width;
     top: 0;
     bottom: 0;
-    left: -$drawer-width;
+    left: -$drawer__base-slide;
+    max-width: 100%;
     padding-top: 2.5rem;
-    padding-right: 2rem;
-    padding-bottom: 2rem;
-    padding-left: 2rem;
+    padding-right: get-rem(32px);
+    padding-bottom: get-rem(32px);
+    padding-left: get-rem(32px);
     background-color: white;
-    transition: 0.250s ease-in-out all;
-    z-index: z(drawer);
+    // TODO: use prefers-reduced-motion media query here
+    transition-duration: 0.25s;
+    transition-property: transform, opacity;
+    z-index: z(hidden);
     overflow-y: scroll;
-    // NOTE: this is to allow the drawer to slide in on larger screens without looking janky
     opacity: 0;
 
     &--visible {
-      transform: translateX($drawer-width);
       opacity: 1;
+      transform: translateX($drawer__base-slide);
+      z-index: z(drawer);
+
+      @media (max-width: $drawer__base-slide) {
+        max-width: 100vw;
+        width: 100%;
+      }
     }
   }
 
