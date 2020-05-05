@@ -11,6 +11,7 @@
 .book-index,
 .book-page {
   box-shadow: none;
+  overflow-x: hidden;
 
   &__hr {
     border: 0;
@@ -31,7 +32,7 @@
 // Grid
 .book-container {
   display: grid;
-  padding: get-rem(32px);
+  padding: 0 get-rem(32px) get-rem(32px) get-rem(32px);
   grid-template-rows: 1fr;
   grid-row-gap: 0;
 
