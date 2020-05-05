@@ -1,11 +1,20 @@
-// TODO: move to mixins
-@mixin typography__heading-accent-text () {
-  margin-bottom: 0;
-  color: $grey-3;
-  font-size: 0.8rem;
-  font-weight: 500;
-  letter-spacing: 0.1rem;
-  text-transform: uppercase;
+
+
+// slowly transition in six-zero toggle for non-js environments (is replaced w/ menu toggle)
+.book-menu__button.remove-if-js {
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    75% {
+      opacity: 0.01;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  animation: 3s ease-out 0s 1 fadeIn;
 }
 
 .book-index,
@@ -38,7 +47,6 @@
 
   @include breakpoint__ebook__navigation--expanded {
     grid-template-columns: 400px 1fr;
-    grid-column-gap: get-rem(80px);
   }
 
   .book-menu {
@@ -50,6 +58,9 @@
   .book-content {
     @include breakpoint__ebook__navigation--expanded {
       grid-area: 1 / 2 / 2 / 3;
+      width: 70%;
+      max-width: get-rem(670px);
+      margin: 0 auto;
     }
 
     @include breakpoint__ebook__navigation--compressed {

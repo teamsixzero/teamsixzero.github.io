@@ -11,21 +11,31 @@
   overflow: visible;
 }
 
+// typography
+// --------------------------------------
+@mixin typography__heading-accent-text () {
+  margin-bottom: 0;
+  color: $grey-3;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+// TODO: recommend adding typography mixins, to separate look and feel from
+// logical flow of headings
+
 
 // breakpoints
 // ------------------------------------
-// TODO: work this into the design system -> Discuss with Nick
 $ebook__navigation-breakpoint: 900px;
 
-// TODO: rename to something semantic
 @mixin breakpoint__ebook__navigation--compressed() {
   @media only screen and (max-width: $ebook__navigation-breakpoint) {
     @content;
   }
 }
 
-// TODO: work this into the design system
-// TODO: rename to something semantic
 @mixin breakpoint__ebook__navigation--expanded() {
   @media only screen and (min-width: $ebook__navigation-breakpoint + 1) {
     @content;
