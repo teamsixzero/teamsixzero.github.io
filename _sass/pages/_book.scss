@@ -31,6 +31,17 @@
   padding-top: 64px;
 }
 
+.book-footer {
+  border-top: 1px solid rgba($grey-medium, 0.4);
+  padding-top: 64px;
+  margin-top: 64px;
+}
+
+.book-footer__copyright {
+  color: rgba($grey, 0.7);
+  font-style: italic;
+}
+
 // ============================================================================= 
 // Type
 // ============================================================================= 
