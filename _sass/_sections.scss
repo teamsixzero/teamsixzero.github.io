@@ -2,6 +2,17 @@ section {
   @include grid-container;
 }
 
+.section__inner--c4 {
+  @include grid-column(4);
+  @include grid-shift(0);
+
+  @media only screen and 
+  (max-width: $screen-sm) {
+    @include grid-column(12);
+    @include grid-shift(0);
+  }
+}
+
 .section__inner--c6 {
   @include grid-column(6);
   @include grid-shift(3);
@@ -39,6 +50,12 @@ section {
 .section__inner--c10 {
   @include grid-column(10);
   @include grid-shift(1);
+
+  @media only screen and 
+  (max-width: $screen-md){
+    @include grid-column(12);
+    @include grid-shift(0);
+  }
 
   @media only screen and 
   (max-width: $screen-sm) {

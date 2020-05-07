@@ -1,6 +1,8 @@
 // Hamburger
 // ==================================================
+
 .hamburger {
+  @include reset__button();
   padding: $hamburger-padding-y $hamburger-padding-x;
   display: inline-block;
   cursor: pointer;
@@ -8,15 +10,6 @@
   transition-property: opacity, filter;
   transition-duration: $hamburger-hover-transition-duration;
   transition-timing-function: $hamburger-hover-transition-timing-function;
-
-  // Normalize (<button>)
-  font: inherit;
-  color: inherit;
-  text-transform: none;
-  background-color: transparent;
-  border: 0;
-  margin: 0;
-  overflow: visible;
 
   &:hover {
     @if $hamburger-hover-use-filter == true {
@@ -30,7 +23,6 @@
 
 .hamburger-box {
   width: $hamburger-layer-width;
-  // height: $hamburger-layer-height * 3 + $hamburger-layer-spacing * 2;
   height: $hamburger-layer-height * 3 + $hamburger-layer-spacing * 2;
   display: inline-block;
   position: relative;
@@ -62,7 +54,8 @@
 
   &::before {
     top: ($hamburger-layer-spacing + $hamburger-layer-height) * -1;
-    display: none;
+    // TODO: this may disrupt the menu in other places, confirm with Nick
+    // display: none;
   }
 
   &::after {

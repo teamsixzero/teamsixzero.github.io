@@ -1,7 +1,7 @@
 <header class="{{ include.class }}">
   <div class="header__content">
     {% if include.icon %}
-      <img src="{{ include.icon }}" class="header__icon" alt="Header title icon">      
+      <img src="{{ include.icon }}" class="header__icon" alt="{{ include.iconAlt }}">      
     {% endif %}
     <h1 class="header__title">{{ include.title }}</h1>
     {% if include.subtitle %}

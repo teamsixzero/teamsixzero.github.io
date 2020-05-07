@@ -1,7 +1,19 @@
-// ----------------
-// Colors
-// ----------------
+// z-index
+// ----------------------------
+// TODO: rename layers as required
+$z-layers: (
+  "hidden":                   -1,
+  "main":                     0,
+  "slideout-menu":            0,
+  "slideout-panel":           1,
+  "desktop-nav":              100,
+  "drawer__content-overlay":  99,
+  "drawer":                   100,
+);
 
+
+// colors
+// ----------------------------
 $white-faded: rgba(255,255,255,0.7);
 
 $grey: #394858;
@@ -18,9 +30,17 @@ $blue: #233147;
   background: linear-gradient(left, rgba(250,144,112,1) 0%, rgba(251,130,111,1) 100%);
 }
 
+
+// typography
+// -----------------------------
+$base-font-size: 16px !default;
+
 $header-font: 'Libre Baskerville', "Hoefler Text", Garamond, "Times New Roman", serif;
 $body-font: 'Poppins', sans-serif;
 
+
+// breakpoints
+// -------------------------------------------
 //== Media queries breakpoints
 //
 //## Define the breakpoints at which your layout will change, adapting to different screen sizes.

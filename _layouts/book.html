@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>{{ page.title }}</title>
+  {% include meta-data.html %}
+  {% if site.google_analytics and jekyll.environment == 'production' %}
+    {% include analytics.html %}
+  {% endif %}
+</head>
+<body class="{{ page.body_class }}">
+
+  <nav class="book-drawer__container">
+    <div class="book-drawer__top-navigation">
+      <a href="/startusertesting/">&larr; Back to Sixzero</a>
+      <button class="book-drawer__toggle button--icon">
+        {% include svg/icon-close.svg %}
+      </button>
+    </div>
+    <div class="book-drawer__header">
+      <h1 class="book-drawer__title">How to Design Apps People Actually Want to Use</h1>
+      <p class="book-drawer__byline">A Quick-Start Guide to User Testing</p>
+      <div class="book-drawer__author-block">
+        <p>V1, 2020 Edition</p>
+        <p>By Nick Foster & Amy Wood</p>
+      </div>
+    </div>
+    <hr class="book-drawer__hr" />
+    {% include book-toc--unstyled.html %}
+  </nav>
+
+  <main class="main-wrapper" id="panel">
+    <div role="button" aria-hidden="true" aria-label="Hide the book menu" class="book-drawer__content-overlay">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="svg__blur">
+        <defs>
+          <filter id="svg__filter__blur">
+            <feGaussianBlur stdDeviation="3"></feGaussianBlur>
+          </filter>
+        </defs>
+      </svg>
+    </div>
+    {{ content }}
+  </main>
+  {% include scripts.html %}
+  <script src="/assets/js/book-scripts.js" defer></script>
+</body>
+</html>

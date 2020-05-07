@@ -1,8 +1,9 @@
-name: Zerosix
+name: sixzero
 markdown: kramdown
 plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
+  - jekyll-autoprefixer
 sass:
   sass_dir: _sass
   style: compressed

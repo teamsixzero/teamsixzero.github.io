@@ -1,0 +1,26 @@
+{
+  "name": "teamsixzero.github.io",
+  "version": "1.0.0",
+  "description": "website for sixzero",
+  "main": "",
+  "scripts": {
+    "test": "echo 'no test script'",
+    "dev": "concurrently -n jekyll,browsersync \"npm run dev:serve\" \"npm run dev:watch\"",
+    "dev:serve": "bundle exec jekyll serve",
+    "dev:watch": "browser-sync start --proxy \"http://localhost:4000\" --files \"_site/**/*\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/teamsixzero/teamsixzero.github.io.git"
+  },
+  "author": "Nick Foster, Sixzero",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/teamsixzero/teamsixzero.github.io/issues"
+  },
+  "homepage": "https://github.com/teamsixzero/teamsixzero.github.io#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "concurrently": "^5.1.0"
+  }
+}

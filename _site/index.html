@@ -34,6 +34,7 @@
   <img src="/assets/img/logo-dark.png" class="logo">
 </a>
     <a href="/projects/" class="nav__item">Work</a>
+<a href="/startusertesting/" class="nav__item">Book</a>
 <a href="/about/" class="nav__item">About</a>
 <a href="mailto:hello@sixzero.co" class="nav__item" target="_blank">Contact</a>
   </div>
@@ -42,6 +43,7 @@
 <nav class="mobile-nav" id="menu">
   <a href="/" class="nav__item">Home</a>
   <a href="/projects/" class="nav__item">Work</a>
+<a href="/startusertesting/" class="nav__item">Book</a>
 <a href="/about/" class="nav__item">About</a>
 <a href="mailto:hello@sixzero.co" class="nav__item" target="_blank">Contact</a>
 </nav>
@@ -60,7 +62,7 @@
     <header class="header--home">
   <div class="header__content">
     
-      <img src="/assets/img/value-icon-2@4x.png" class="header__icon" alt="Header title icon">      
+      <img src="/assets/img/diamond.svg" class="header__icon" alt="Illustration of a diamond">      
     
     <h1 class="header__title">We help companies design impactful apps and software</h1>
     
@@ -210,6 +212,7 @@
   <footer>
   <div class="footer__nav">
     <a href="/projects/" class="nav__item">Work</a>
+<a href="/startusertesting/" class="nav__item">Book</a>
 <a href="/about/" class="nav__item">About</a>
 <a href="mailto:hello@sixzero.co" class="nav__item" target="_blank">Contact</a>
   </div>
@@ -219,7 +222,7 @@
 </footer>
 
   <!-- Google font CSS -->
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Poppins:300,400,700">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Poppins:300,400,600,700">
 
 <!-- JQuery -->
 <script
@@ -230,24 +233,33 @@
 <!-- Slideout menu -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
 <script>
-  var slideout = new Slideout({
-    'panel': document.getElementById('panel'),
-    'menu': document.getElementById('menu'),
-    'padding': 241,
-    'tolerance': 70
-  });
-
-  // Toggle button
-  document.querySelector('.toggle-button').addEventListener('click', function() {
-    slideout.toggle();
-  });
-
-  $(window).resize(function() {
-    if ($(window).width() > 480) {
-      $('.main-wrapper').removeAttr("style");
+  (function () {
+    // NOTE: if the menu element does not exist, do not initialize slideout
+    var menu = document.getElementById('menu');
+    if (!menu) {
+      return;
     }
-  });
+
+    var slideout = new Slideout({
+      'panel': document.getElementById('panel'),
+      'menu': menu,
+      'padding': 241,
+      'tolerance': 70
+    });
+
+    // Toggle button
+    document.querySelector('.toggle-button').addEventListener('click', function() {
+      slideout.toggle();
+    });
+
+    $(window).resize(function() {
+      if ($(window).width() > 480) {
+        $('.main-wrapper').removeAttr("style");
+      }
+    });
+  })();
 </script>
+
 
 <!-- Hamburger menu icon animation -->
 <script>
@@ -266,5 +278,6 @@ $('.nav__inner').find('.nav__item').each(function() {
   $(this).toggleClass('active', $(this).attr('href') == loc);
 });
 </script>
+
 </body>
 </html>

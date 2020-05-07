@@ -1,0 +1,418 @@
+
+
+// slowly transition in six-zero toggle for non-js environments (is replaced w/ menu toggle)
+.book-menu__button.remove-if-js {
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    75% {
+      opacity: 0.01;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  animation: 3s ease-out 0s 1 fadeIn;
+}
+
+.book-index,
+.book-page {
+  box-shadow: none;
+  overflow-x: hidden;
+
+  &__hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+.book-page {
+  width: 100%;
+  width: 100vw;
+  z-index: z(main);
+}
+
+// Grid
+.book-container {
+  display: grid;
+  padding: 0 get-rem(32px) get-rem(32px) get-rem(32px);
+  grid-template-rows: 1fr;
+  grid-row-gap: 0;
+
+  @include breakpoint__ebook__navigation--expanded {
+    grid-template-columns: get-rem(424px) 1fr;
+  }
+
+  .book-menu {
+    @include breakpoint__ebook__navigation--expanded {
+      grid-area: 1 / 1 / 2 / 2;
+    }
+  }
+
+  .book-content {
+    @include breakpoint__ebook__navigation--expanded {
+      grid-area: 1 / 2 / 2 / 3;
+      width: 70%;
+      max-width: get-rem(800px);
+      margin: 0 auto;
+    }
+
+    @include breakpoint__ebook__navigation--compressed {
+      padding-top: 0;
+    }
+  }
+}
+
+.book-drawer {
+  $drawer__base-width: 500px;
+  $drawer__base-slide: 564px;
+
+  &__container {
+    box-sizing: border-box;
+    position: fixed;
+    width: $drawer__base-width;
+    top: 0;
+    bottom: 0;
+    left: -$drawer__base-slide;
+    max-width: 100%;
+    padding-top: 2.5rem;
+    padding-right: get-rem(32px);
+    padding-bottom: get-rem(32px);
+    padding-left: get-rem(32px);
+    background-color: white;
+    @media (prefers-reduced-motion: no-preference) {
+      transition-duration: 0.25s;
+      transition-property: transform, box-shadow;
+    }
+    z-index: z(drawer);
+    overflow-y: scroll;
+
+    &--visible {
+      transform: translateX($drawer__base-slide);
+      box-shadow: 4px 0px 20px 0px rgba(0, 0, 0, 0.15);
+
+      @media (max-width: $drawer__base-slide) {
+        max-width: 100vw;
+        width: 100%;
+      }
+    }
+  }
+
+  // Drawer triggers
+  // ---------------------------------------
+  // Used in-line on floating sidebar
+  &__toggle-container {
+    margin-bottom: get-rem(24px);
+  }
+
+  // The toggle itself
+  &__toggle {
+    @include reset__button();
+    cursor: pointer;
+
+    svg {
+      fill: $blue;
+    }
+  }
+
+  &__content-overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(white, 0.9);
+    z-index: z(drawer__content-overlay);
+  }
+
+  // Drawer content
+  // ---------------------------------------
+  &__top-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4rem;
+  }
+
+  &__header {
+    width: 85%;
+  }
+
+  &__title {
+    font-size: get-rem(24px);
+  }
+
+  &__byline {
+    font-size: get-rem(18px);
+    font-weight: 600;
+  }
+
+  &__author-block {
+    $breakpoint: 500px;
+
+    @media (min-width: $breakpoint) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    & > p {
+      @include typography__heading-accent-text();
+
+      @media (max-width: $breakpoint) {
+        &:first-of-type {
+          margin-bottom: get-rem(4px);
+        }
+      }
+    }
+  }
+
+  &__hr {
+    border-top: none;
+    // TODO: consider assigning to a variable: $grey--accent-elements
+    border-color: rgba($grey, 0.2);
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+
+  // content overrides
+  &__container {
+    .toc__chapters {
+      padding-left: 0;
+      list-style-type: none !important;
+    }
+
+    .toc__chapter-title {
+      font-size: get-rem(18px);
+      font-weight: 600;
+
+      a {
+        text-decoration: none;
+      }
+    }
+
+    .toc__chapter {
+      margin-bottom: get-rem(4px);
+      font-size: get-rem(16px);
+    }
+  }
+}
+
+.book-menu {
+  @include breakpoint__ebook__navigation--compressed() {
+    padding-top: get-rem(32px);
+  }
+
+  @include breakpoint__ebook__navigation--expanded() {
+    padding-top: get-rem(64px);
+  }
+
+  &__step-heading {
+    @include typography__heading-accent-text();
+    margin-bottom: get-rem(16px);
+  }
+
+  &__sections {
+    // hide chapter navigation entries on mobile
+    @include breakpoint__ebook__navigation--compressed() {
+      display: none;
+    }
+  }
+
+  &__next {
+    // hide next chapter link on mobile
+    @include breakpoint__ebook__navigation--compressed() {
+      display: none;
+    }
+  }
+}
+
+// blur effect
+.main-wrapper__blur {
+  $blur-size: 5;
+
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='#{$blur-size}');
+  -webkit-filter: url(#svg__filter__blur);
+  filter: url(#svg__filter__blur);
+  -webkit-filter: blur(#{$blur-size}px);
+  filter: blur(#{$blur-size}px);
+}
+
+.book-menu__content {
+
+  @include breakpoint__ebook__navigation--expanded() {
+    position: sticky;
+    top: 64px;
+    padding-left: 64px;
+  }
+}
+
+.book-content {
+  padding-top: 64px;
+}
+
+.book-footer {
+  border-top: 1px solid rgba($grey-medium, 0.4);
+  padding-top: 64px;
+  margin-top: 64px;
+}
+
+.book-footer__copyright {
+  color: rgba($grey, 0.7);
+  font-style: italic;
+}
+
+// =============================================================================
+// Type
+// =============================================================================
+
+.svg__blur {
+  display: none;
+}
+
+.book-content {
+  color: #000000;
+  padding-bottom: 64px;
+
+  h6 {
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  ul, ol {
+    padding: 0;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top: 0;
+  }
+
+  ul li, ol li {
+    font-size: 20px;
+    font-weight: 200;
+    color: #000000;
+    margin-bottom: 8px;
+  }
+
+  a {
+    color: #000000;
+
+    &:hover {
+      color: $teal;
+    }
+  }
+
+  strong {
+    font-weight: 700;
+  }
+}
+
+.button__next-step {
+  font-size: 15px;
+}
+
+// =============================================================================
+// Menu
+// =============================================================================
+
+.book-menu {
+  color: #000000;
+
+  a {
+    color: #000000;
+
+    &:hover {
+      color: $teal;
+    }
+  }
+}
+
+.book-menu__button {
+  margin-bottom: 36px;
+  display: block;
+}
+
+.book-menu__step {
+  display: block;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgba($grey, 0.7);
+  margin-bottom: 24px;
+}
+
+.book-menu__title {
+  font-size: 36px;
+  line-height: 1.25;
+}
+
+.book-menu__content {
+  font-size: 18px;
+  font-weight: 200;
+}
+
+.book-menu__sections {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 32px;
+}
+
+.book-menu__section {
+  margin-left: 0;
+}
+
+// =============================================================================
+// Callout
+// =============================================================================
+
+.callout {
+  margin: 32px 0 16px;
+  background: rgba($grey-medium, 0.1);
+  padding: 40px;
+
+
+  .callout__title {
+    margin-top: 0 !important;
+    margin-bottom: 24px;
+    font-weight: 800;
+  }
+
+  p:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+
+// =============================================================================
+// Action Items
+// =============================================================================
+
+.action-items {
+  background: rgba($grey-medium, 0.1);
+  padding: 40px;
+  margin: 48px 0;
+}
+
+.action-items__title {
+  margin-top: 0 !important;
+}
+
+.action-items__list {
+  margin-bottom: 0;
+}
+
+
+
+
+

@@ -6,6 +6,8 @@
 // Base
 @import "normalize";
 @import "variables";
+@import "functions";
+@import "mixins";
 
 // Plugins
 @import "neat/neat";
@@ -25,6 +27,8 @@
 
 // Pages
 @import "pages/about";
+@import "pages/book";
+@import "pages/book-landing";
 @import "pages/project-vanbex";
 @import "pages/project-olive";
 @import "pages/project-ftsy";

@@ -146,7 +146,7 @@
   min-height: 100vh;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
-  z-index: 0;
+  z-index: z(slideout-menu);
   display: none;
   background: #040a12;
   text-align: center;
@@ -181,7 +181,7 @@
 
 .slideout-panel {
   position: relative;
-  z-index: 1;
+  z-index: z(slideout-panel);
   will-change: transform;
   min-height: 100vh;
   background-color: #ffffff; /* A background-color is required */

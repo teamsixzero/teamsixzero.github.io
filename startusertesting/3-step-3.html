@@ -1,0 +1,430 @@
+---
+layout: book
+title: "Step 3: Build your user test and script | How to Design Apps People Actually Want to Use: A Quick-Start Guide to User Testing"
+description: Who we are, what we do and where we do it
+og_image: http://sixzero.co/assets/img/usertestingbook/og-image.png
+body_class: book-page
+---
+
+<div class="book-container">
+  <div class="book-menu">
+    <div class="book-menu__content">
+      <a href="/startusertesting/" class="book-menu__button remove-if-js">&larr; Back to Sixzero</a>
+
+      <div
+        class="book-drawer__toggle-container visible-if-js"
+        style="display:none;"
+      >
+        <button class="hamburger book-drawer__toggle">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+      </div>
+
+      <p class="book-menu__step-heading">
+        <small class="book-menu__step">Step 2</small>
+      </p>
+      <h1 class="book-menu__title">
+        Build your user test and script
+      </h1>
+      <ul class="book-menu__sections">
+        <li class="book-menu__section">
+          <a href="#make-the-experience-as-real-as-possible">
+            Make the experience as real as possible
+          </a>
+        </li>
+        <li class="book-menu__section">
+          <a href="#set-the-stage-with-a-realistic-scenario">
+            Set the stage with a realistic scenario
+          </a>
+        </li>
+        <li class="book-menu__section">
+          <a href="#write-your-script">
+            Write your script
+          </a>
+        </li>
+        <li class="book-menu__section">
+          <a href="#dont-forget-the-software-usability-scale">
+            Don't forget the software usability scale
+          </a>
+        </li>
+        <li class="book-menu__section">
+          <a href="#test-the-test">
+            Test the test
+          </a>
+        </li>
+        <li class="book-menu__section">
+          <a href="#modify-as-you-go">
+            Modify as you go
+          </a>
+        </li>
+        <li class="book-menu__section">
+          <a href="#action-items">
+            Action Items
+          </a>
+        </li>
+      </ul>
+      <a href="/startusertesting/4-step-4/" class="book-menu__next">Next: Conduct your user test</a>
+    </div>
+  </div>
+  <div class="book-content">
+    <h3 id="make-the-experience-as-real-as-possible" class="title-has-no-top-margin">
+      Make the experience as real as possible
+    </h3>
+    <p>
+      As a general rule, you’ll get more detailed feedback the more detailed
+      and functional your prototype. But you don't always need detailed feedback.
+    </p>
+    <p>
+      If you’re looking for high-level feedback on a concept or idea for
+      example &mdash; something like, “This is great” or “This seems unnecessary”
+      &mdash; then you can get away with a minimally functioning prototype,
+      like a paper prototype or clickable wireframes made in Sketch or Figma
+      (referred to as a low- or mid-fidelity prototype).
+    </p>
+    <p>
+      On the other hand, if you need to test a complex feature or a bunch of
+      connected screens that would be really difficult to simulate with simple
+      sketches or wireframes, you'll have to increase the functionality and
+      detail. In other words, you’d need to create a prototype with a higher
+      level of fidelity.
+    </p>
+    <div class="callout">
+      <h6 class="callout__title">What is design fidelity?</h6>
+      <p>
+        Design fidelity refers to the level of functionality and detail of a
+        prototype, which can be categorized as either low, mid, or high-fidelity.
+      </p>
+      <br>
+      <ul>
+        <li>
+          <strong>Low-fidelity prototypes</strong> may include only sticky
+          notes, hand-drawn sketches, or very simple black-and-white wireframes.
+        </li>
+        <li>
+          <strong>Mid-fidelity prototypes</strong> consist of more detailed
+          wireframes with basic functionality, such as the ability to click on
+          links or buttons.
+        </li>
+        <li>
+          <strong>High-fidelity prototypes</strong> are closest to the finished
+          product in appearance and functionality. They may include coded
+          prototypes, if you feel it’s the only way to simulate reality and
+          get the answers you need.
+        </li>
+      </ul>
+    </div>
+    <br>
+    <br>
+    <p>
+      Achieving the right level of fidelity is a balancing act and depends
+      heavily upon how much detail you need in your feedback to continue
+      moving forward with confidence. The trick then is <strong>faking reality just
+      enough so the user buys it, while putting in the minimum amount of
+      effort to create the prototype as possible.</strong> As tempting as it may be
+      to present your testers with something beautiful and polished, building
+      something super detailed too early on would require you to make a
+      bunch of assumptions and waste a bunch of time, which is &mdash; ultimately
+      &mdash; what user testing serves to avoid.
+    </p>
+    <p>
+      Fortunately, we’ve found users are pretty great at playing pretend.
+      Of course, if your prototype &mdash; no matter the level of fidelity &mdash; is
+      full of bugs or dead ends, it will pull the user out of the experience
+      and ruin the test.
+    </p>
+    <p>
+      An easy way to avoid this is to run through your test yourself, start
+      to finish, as well as to recruit a colleague to test the test ahead of
+      time to make sure any rough spots are smoothed out.
+    </p>
+    <br>
+    <br>
+    <h3 id="set-the-stage-with-a-realistic-scenario">
+      Set the stage with a realistic scenario
+    </h3>
+    <p>
+      Giving users a realistic scenario provides the context they need to
+      successfully perform a task. This is when you’ll want to consider introducing
+      specific constraints that will help frame their thinking.
+    </p>
+    <p>
+      For example, let’s say you’re doing a test for Airbnb, and you’d like to
+      improve the user experience for guests booking last-minute vacations.
+    </p>
+    <p>
+      In practice that looks like this:
+    </p>
+    <p>
+      “Imagine you’re trying to book a trip under a tight timeline. How might you
+      go about getting a house booked in New York for next weekend?”
+    </p>
+    <p>
+      In the scenario above, the constraints include: booking type (house),
+      location (New York), timeframe (next weekend).
+    </p>
+    <br>
+    <br>
+    <h3 id="write-your-script">
+      Write your script
+    </h3>
+    <p>
+      By this point you’ve already defined what you want to understand and created
+      a realistic scenario. Use these details to guide your script.
+    </p>
+    <p>
+      For example, if you want to find out “if users are able to create an account
+      successfully,” make sure there’s a question in your script for that.
+      Remember: Each statement should have an accompanying question in the script.
+      If we use the example above, we’d want to make sure there was a question
+      like, “How do you think you would create an account?”
+    </p>
+    <p>
+      As you create the rest of your script, try to imagine what your user will be
+      experiencing and craft your questions accordingly. A good exercise for this
+      is to walk through your prototype like step-by-step. The point here is to
+      anticipate what your participants might find difficult so you can ensure
+      you have questions prepared to tease out why they’re finding it difficult.
+      A good exercise for this is to walk through your prototype like step-by-step.
+      The point here is to anticipate what your participants might find difficult
+      so you can ensure you have questions prepared to tease out why they’re finding
+      it difficult.
+    </p>
+    <p>
+      Thinking about this in advance will give you confidence going into the
+      session, which puts your participants at ease. Not only that, you’ll ask
+      better follow-up questions, keep things on track, and recover more easily
+      if things go way off the rails
+    </p>
+
+    <h6 class="callout__title">Follow-up questions</h6>
+    <p>
+      You don’t need to be a journalist to come up with great follow-up
+      questions, you just need to be curious. For example, when a participant
+      says they like or don’t like something, ask them:
+      <ul>
+        <li>What don’t you/do you like about it?</li>
+        <li>How might you improve it?</li>
+      </ul>
+    </p>
+    <p>
+      If a participant is surprised by something, ask them:
+      <ul>
+        <li>Why were you surprised?</li>
+        <li>What did you expect to happen?</li>
+      </ul>
+    </p>
+    <p>
+      At the start of a new flow or feature, ask participants:
+      <ul>
+        <li>What do you think this is?</li>
+        <li>What are your initial impressions, thoughts, and feelings?</li>
+      </ul>
+    </p>
+    <p>
+      If a participant breezes through something important, stop them and ask:
+      <ul>
+        <li>Did you notice it? Why not?</li>
+        <li>Do you care?</li>
+      </ul>
+    </p>
+    <p>
+      Once a user has completed a flow, ask them:
+      <ul>
+        <li>What were your overall impressions?</li>
+        <li>Did it match your impression of it before you started?</li>
+        <li>Was it valuable?</li>
+        <li>What did you like?</li>
+        <li>What did you dislike?</li>
+      </ul>
+    </p>
+    <br>
+    <br>
+    <h3 id="dont-forget-the-software-usability-scale">Don’t forget the ‘Software Usability Scale</h3>
+    <p>
+      Developed in 1986, the Software Usability Scale (SUS) is a reliable tool for
+      measuring the usability of your product.
+    </p>
+    <p>
+      When the SUS is used, participants are asked to score the following 10 items
+      on a scale of one to five, with ‘Strongly Disagree’ (1) on one end and
+      ‘Strongly Agree’ (5) on the other.
+    </p>
+    <ol>
+      <li>I think that I would like to use this system frequently.</li>
+      <li>I found the system unnecessarily complex.</li>
+      <li>I thought the system was easy to use.</li>
+      <li>I think that I would need the support of a technical person to be able to use this system.</li>
+      <li>I found the various functions in this system were well integrated.</li>
+      <li>I thought there was too much inconsistency in this system.</li>
+      <li>I would imagine that most people would learn to use this system very quickly.</li>
+      <li>I found the system very cumbersome to use.</li>
+      <li>I felt very confident using the system.</li>
+      <li>I needed to learn a lot of things before I could get going with this system.</li>
+    </ol>
+    <br>
+    <p>Including the SUS in every usability test has the following benefits:</p>
+    <ul>
+      <li>
+        Provides your team with a baseline usability score. When you’ve completed
+        all your user tests, either add all the scores together for an overall
+        score, or find the average.
+      </li>
+      <li>
+        Allows you to compare scores between tests. Did one user score something
+        higher than another user? This may provide additional insights regarding the
+        usability of your product with respect to different personas.
+      </li>
+      <li>
+        Gives you leverage when convincing stakeholders where you invest time
+        and resources. It also lets you easily demonstrate to stakeholders how
+        your product has improved as you do more and more tests down the line.
+      </li>
+    </ul>
+    <br>
+    <p>
+      In terms of when to ask these questions, we suggest at the end of every script.
+    </p>
+    <br>
+    <br>
+    <h3 id="test-the-test">
+      Test the test
+    </h3>
+    <p>
+      One of the best pieces of advice we can offer is to do a couple dry runs of
+      the test on anyone you can find, whether a coworker or a friend. Don’t worry
+      about getting someone who matches your perfect user &mdash; dry runs are for making
+      sure your script makes sense and nothing feels awkward or confusing.
+    </p>
+    <p>
+      If your real participants are participating remotely, a dry run will also
+      give you the opportunity to see if it makes sense without you sitting right
+      next to them.
+    </p>
+    <p>
+      Finally, use the dry run to time your test. We find between 1 and 1.5 hours
+      to be the sweet spot for getting value while keeping your participant
+      engaged &mdash; any longer and everyone in the room starts to get tired. Long
+      tests also create a mountain of recordings to parse after the fact, which
+      can be time consuming and repetitive.
+    </p>
+    <br>
+    <br>
+    <h3 id="modify-as-you-go">Modify as you go</h3>
+    <p>
+      You may discover a problem very early on in your tests and wonder if it’s
+      necessary to watch all five of your testers struggle with the same thing.
+      It’s absolutely not, and here’s why: These aren't scientific tests, but
+      rather opportunities to observe real users interacting with a product
+      you're intimately familiar with.
+    </p>
+    <p>
+      Whereas a true experiment would require a scientific hypothesis which you
+      either prove or disprove with clean data, <strong>user tests are a structured way
+      to discover if something sucks &mdash; and sometimes you only need to see
+      it once to know it's worth changing.</strong>
+    </p>
+    <p>
+      Plus, making tweaks on the fly allows you to test things faster and
+      uncover deeper insights. In fact, some of the best insights we’ve gotten
+      were the result of subtle changes we made over the course of several tests.
+    </p>
+    <p>
+      Here’s how that might look in practice:
+    </p>
+    <p>
+      Let’s say your first two testers really struggle with finding the
+      "My Account” page. Rather than watching three more people struggle for
+      the sake of data, you could instead choose to fix the problem between
+      tests &mdash; by changing the colour of the button, for example &mdash; and then
+      ask the next user to perform the same task using the new flow. Should
+      the problem be resolved you’re then free to address the next problem
+      and then the next.
+    </p>
+    <p>
+      We've often done 3-4 changes between tests, resolving issues from
+      previous tests and testing the new iterations. This often gets us much
+      further than painstakingly adhering to the original test.
+    </p>
+    <p>
+      Some things you might consider tweaking in between tests include:
+      <ul>
+        <li>changes to the test itself</li>
+        <li>asking a different question</li>
+        <li>posing a scenario differently</li>
+        <li>
+          making changes to the UI to fix obvious issues from early tests that
+          hung people up
+        </li>
+      </ul>
+    </p>
+    <p>
+      Of course, there are situations in which you might not want to change the
+      test. Like, for example, if you’re trying to persuade a stakeholder with
+      data (e.g., “We need to allocate resources to fixing XYZ because testing
+      shows five out of five people struggled with it.”).
+    </p>
+    <p>
+      Also, if you identify a problem, but the solution doesn’t seem obvious
+      or it’s obvious but it would require big changes &mdash; don’t change the test.
+      Instead, let your testers run the test until you have enough data and
+      you’re confident you know what the problem is and why it exists. Only
+      then will the obvious solution be revealed. (We know, it’s cheesy &mdash;
+      but it’s also true.)
+    </p>
+    <p>
+      We've tested entire cohorts where we change nothing, because we don't
+      have a deep enough understanding of the problem, or we need to demonstrate
+      to a stakeholder just how deep the problem runs. We've also done tests
+      where we change lots of stuff, and it proved the solution in one cohort.
+      In short, <strong>use your judgement, and treat user testing as an adaptable
+      tool versus a set of rules.</strong>
+    </p>
+
+
+    <div class="callout" id="tools-of-the-trade">
+    <h6 class="callout__title">Tools of the trade</h6>
+      <ul>
+        <li>
+          Screen recording software. If you have a preferred screen recording tool,
+          great. If not, try out Quicktime screen recording — it’s our favourite.
+        </li>
+        <li>
+          Mobile app recording setup. If you’re testing a mobile app, we love using
+          Mr.Tappy. Using a tool like this also allows users to pick up the device,
+          making the test more realistic.
+        </li>
+      </ul>
+    </div>
+
+    <div class="action-items" id="action-items">
+      <h6 class="action-items__title">Action items</h6>
+      <ul class="action-items__list">
+        <li class="action-item">
+          Ensure the thing you’re testing is in good working order
+        </li>
+        <li class="action-item">
+          Write your script
+        </li>
+        <li class="action-item">
+          Create a scenario for your participants
+        </li>
+        <li class="action-item">
+          Do at least one (but ideally two or more) dry runs, including a remote dry
+          run if necessary
+        </li>
+        <li class="action-item">
+          Tweak your test based on feedback from the dry run
+        </li>
+        <li>
+          Test your tech (screen recording software, audio, mobile recording setup, etc.)
+        </li>
+      </ul>
+    </div>
+    <a href="/startusertesting/4-step-4/" class="button--primary button__next-step">
+      Next: Conduct your user test &rarr;
+    </a>
+    {% include book-footer.html %}
+  </div>
+</div>

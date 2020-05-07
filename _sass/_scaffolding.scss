@@ -1,3 +1,8 @@
+// TODO: suggest adding box-sizing: border-box; to all
+// * {
+//   box-sizing: border-box;
+// }
+
 body {
   position: relative;
   font-family: $body-font;
@@ -10,9 +15,9 @@ body {
   margin: 0 auto;
   color: $grey;
 
-  @media only screen and 
+  @media only screen and
   (min-width: 1701px) {
-    box-shadow: 0 20px 50px rgba($grey-medium, 0.4);
+    box-shadow: 0 30px 60px rgba($grey-medium, 0.3);
   }
 }
 
@@ -20,9 +25,13 @@ body {
   width: 100%;
 }
 
-// ============================================================================= 
+.prevent-scrolling {
+  overflow: hidden;
+}
+
+// =============================================================================
 // Logo
-// ============================================================================= 
+// =============================================================================
 
 .logo {
   display: inline-block;

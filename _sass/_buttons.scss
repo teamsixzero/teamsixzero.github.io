@@ -7,15 +7,16 @@
   transition: all .1s ease-in-out;
   text-align: center;
   border-radius: 4px;
+  border: 1px solid transparent;
   font-size: 13px;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
-.button--primary {  
+.button--primary {
   @extend %button;
   background: $teal;
-  color: #ffffff;  
+  color: #ffffff !important;
 
   &:hover {
     background: lighten($teal, 5%);
@@ -23,20 +24,32 @@
   }
 }
 
-.button--secondary { 
+.button--secondary {
   @extend %button;
   background: transparent;
   color: $teal;
 
-  @media only screen and 
+
+  @media only screen and
   (max-width: $screen-md) {
     margin-top: 8px;
   }
 
   &:hover {
     background: #ffffff;
-    text-decoration: underline;
-    box-shadow: 0 2px 20px rgba($grey, 0.3);
+    border: 1px solid $teal;
     color: $teal;
-  }  
+  }
+}
+
+.button--primary + .button--secondary {
+  margin-left: 8px;
+}
+
+// NOTE: to use this class, recommend setting your SVG icons at 16x16, centering svg paths, and minimizing gaps between canvas and paths
+.button--icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
 }

@@ -1,0 +1,14 @@
+// typography
+// ------------------------------------
+// calculates rem based on base font-size (likely in px, possibly not) and returns rems
+@function get-rem($size, $base-font-size: $base-font-size) {
+  @if $size == 0 { @return 0; }
+  @return $size / $base-font-size + 0rem;
+}
+
+// z-index
+// -------------------------------------
+// matches z-index to requested layer
+@function z($layer) {
+  @return map-get($z-layers, $layer);
+}

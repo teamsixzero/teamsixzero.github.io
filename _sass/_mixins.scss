@@ -1,0 +1,43 @@
+// Element Resets
+// --------------------------------------
+@mixin reset__button() {
+  // Normalize (<button>)
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible;
+}
+
+// typography
+// --------------------------------------
+@mixin typography__heading-accent-text () {
+  margin-bottom: 0;
+  color: $grey-3;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+// TODO: recommend adding typography mixins, to separate look and feel from
+// logical flow of headings
+
+
+// breakpoints
+// ------------------------------------
+$ebook__navigation-breakpoint: 1024px;
+
+@mixin breakpoint__ebook__navigation--compressed() {
+  @media only screen and (max-width: $ebook__navigation-breakpoint) {
+    @content;
+  }
+}
+
+@mixin breakpoint__ebook__navigation--expanded() {
+  @media only screen and (min-width: $ebook__navigation-breakpoint + 1) {
+    @content;
+  }
+}

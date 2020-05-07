@@ -47,11 +47,15 @@ p {
   }
 }
 
-ul li {
-  line-height: 1.75;
-  margin-bottom: 32px;
+ul li, ol li {
   color: $grey;
+  line-height: 1.75;
   font-weight: 300;
+}
+
+.list-has-no-bullets {
+  list-style: none;
+  padding-left: 0;
 }
 
 
@@ -89,6 +93,29 @@ a {
     &:after {
       transition: all .2s ease-in-out;
       left: 9px;
+    }
+  }
+}
+
+.link-with-arrow__left {
+  white-space: nowrap;
+  text-decoration: none;
+
+  &:before {
+    content: "←";
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    right: 5px;
+    top: 1px;
+  }
+
+  &:hover {
+    text-decoration: underline;
+
+    &:before {
+      transition: all .2s ease-in-out;
+      right: 9px;
     }
   }
 }
