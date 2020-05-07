@@ -24,7 +24,7 @@ body_class: body-has-bg-top-left book-landing
         and build apps your users can’t live without.
       </p>
       <a href="/startusertesting/webbook" class="button--primary">Read it now</a>
-      <a href="" class="button--secondary" target="_blank">Download PDF</a>
+      <!-- <a href="" class="button--secondary" target="_blank">Download PDF</a> -->
     </div>
   </div>
 </section>
@@ -81,7 +81,11 @@ body_class: body-has-bg-top-left book-landing
   </div>
 </section>
 
-{% include book-toc.html %}
+<section class="section--text book-toc">
+  <div class="book-toc__inner">
+    {% include book-toc.html %}
+  </div>
+</section>
 
 <hr>
 
