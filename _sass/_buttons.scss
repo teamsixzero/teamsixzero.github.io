@@ -16,7 +16,7 @@
 .button--primary {
   @extend %button;
   background: $teal;
-  color: #ffffff;
+  color: #ffffff !important;
 
   &:hover {
     background: lighten($teal, 5%);
