@@ -46,7 +46,7 @@
   grid-row-gap: 0;
 
   @include breakpoint__ebook__navigation--expanded {
-    grid-template-columns: 400px 1fr;
+    grid-template-columns: get-rem(424px) 1fr;
   }
 
   .book-menu {
