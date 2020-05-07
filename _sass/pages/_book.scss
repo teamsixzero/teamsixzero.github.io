@@ -59,7 +59,7 @@
     @include breakpoint__ebook__navigation--expanded {
       grid-area: 1 / 2 / 2 / 3;
       width: 70%;
-      max-width: get-rem(670px);
+      max-width: get-rem(800px);
       margin: 0 auto;
     }
 
@@ -70,7 +70,6 @@
 }
 
 .book-drawer {
-  // TODO: refactor this shit
   $drawer__base-width: 500px;
   $drawer__base-slide: 564px;
 
@@ -87,9 +86,10 @@
     padding-bottom: get-rem(32px);
     padding-left: get-rem(32px);
     background-color: white;
-    // TODO: use prefers-reduced-motion media query here
-    transition-duration: 0.25s;
-    transition-property: transform, box-shadow;
+    @media (prefers-reduced-motion: no-preference) {
+      transition-duration: 0.25s;
+      transition-property: transform, box-shadow;
+    }
     z-index: z(drawer);
     overflow-y: scroll;
 
@@ -182,7 +182,6 @@
     margin-bottom: 4rem;
   }
 
-  // TODO: avoid all overrides
   // content overrides
   &__container {
     .toc__chapters {
@@ -195,13 +194,11 @@
       font-weight: 600;
 
       a {
-        // TODO: ask if this is intended in design -> does not match rest of site
         text-decoration: none;
       }
     }
 
     .toc__chapter {
-      // TODO: this deviates from designs, recommend keeping for usability (touch capture area)
       margin-bottom: get-rem(4px);
       font-size: get-rem(16px);
     }
@@ -239,7 +236,6 @@
 
 // blur effect
 .main-wrapper__blur {
-  // TODO: change this to a mixin
   $blur-size: 5;
 
   filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='#{$blur-size}');
@@ -266,7 +262,6 @@
 // Type
 // =============================================================================
 
-// TODO: move to separate file
 .svg__blur {
   display: none;
 }

@@ -2,6 +2,7 @@
 // ==================================================
 
 .hamburger {
+  @include reset__button();
   padding: $hamburger-padding-y $hamburger-padding-x;
   display: inline-block;
   cursor: pointer;
@@ -9,9 +10,6 @@
   transition-property: opacity, filter;
   transition-duration: $hamburger-hover-transition-duration;
   transition-timing-function: $hamburger-hover-transition-timing-function;
-
-  // TODO: move this to top as long as it doesn't impact other implementations
-  @include reset__button();
 
   &:hover {
     @if $hamburger-hover-use-filter == true {

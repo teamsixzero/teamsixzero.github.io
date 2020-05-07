@@ -28,7 +28,7 @@
 
 // breakpoints
 // ------------------------------------
-$ebook__navigation-breakpoint: 900px;
+$ebook__navigation-breakpoint: 1024px;
 
 @mixin breakpoint__ebook__navigation--compressed() {
   @media only screen and (max-width: $ebook__navigation-breakpoint) {

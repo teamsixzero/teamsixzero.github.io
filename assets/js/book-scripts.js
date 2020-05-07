@@ -19,6 +19,7 @@ $(() => {
     $html.removeClass('prevent-scrolling');
     $drawerContainer.removeClass('book-drawer__container--visible');
     $mainContent.removeClass('main-wrapper__blur');
+    $drawerContentOverlay.attr('aria-hidden', true);
     $drawerContentOverlay.hide();
     $mainContent.focus();
   };
@@ -27,6 +28,7 @@ $(() => {
     $html.addClass('prevent-scrolling');
     $drawerContainer.addClass('book-drawer__container--visible');
     $mainContent.addClass('main-wrapper__blur');
+    $drawerContentOverlay.attr('aria-hidden', false);
     $drawerContentOverlay.show();
     $drawerContainer.focus();
   };

@@ -9,7 +9,6 @@
 </head>
 <body class="{{ page.body_class }}">
 
-  <!-- TODO: @derek-findthebrink ensure accessibility with aria labels -->
   <nav class="book-drawer__container">
     <div class="book-drawer__top-navigation">
       <a href="/startusertesting/">&larr; back to sixzero.co</a>
@@ -30,8 +29,7 @@
   </nav>
 
   <main class="main-wrapper" id="panel">
-    <!-- TODO: ID as button for ARIA -->
-    <div class="book-drawer__content-overlay">
+    <div role="button" aria-hidden="true" aria-label="Hide the book menu" class="book-drawer__content-overlay">
       <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="svg__blur">
         <defs>
           <filter id="svg__filter__blur">
