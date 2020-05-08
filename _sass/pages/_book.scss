@@ -281,7 +281,14 @@
   color: #000000;
   padding-bottom: 64px;
 
-  h6 {
+  h4 {
+    font-family: $body-font;
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  h5 {
+    font-size: 20px;
     font-weight: 700;
   }
 
