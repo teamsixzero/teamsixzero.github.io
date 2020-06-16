@@ -4,3 +4,6 @@ _site/
 _site/index.html
 node_modules
 .jekyll-cache/
+.rvmrc
+Gemfile
+Gemfile.lock
