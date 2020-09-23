@@ -8,7 +8,8 @@
     "dev": "concurrently -n jekyll,browsersync \"npm run dev:serve\" \"npm run dev:watch\"",
     "dev:ngrok": "ngrok start sixzero",
     "dev:serve": "jekyll serve",
-    "dev:watch": "browser-sync start --proxy \"http://localhost:4000\" --files \"_site/**/*\""
+    "dev:watch": "browser-sync start --proxy \"http://localhost:4000\" --files \"_site/**/*\"",
+    "build:favicons": "node buildScripts/generateFavicon.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,8 @@
   "homepage": "https://github.com/teamsixzero/teamsixzero.github.io#readme",
   "devDependencies": {
     "browser-sync": "^2.26.7",
-    "concurrently": "^5.1.0"
+    "concurrently": "^5.1.0",
+    "favicons": "^6.2.0",
+    "fs-extra": "^9.0.1"
   }
 }
