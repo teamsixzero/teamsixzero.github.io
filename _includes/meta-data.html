@@ -1,9 +1,11 @@
 <!-- Meta -->
-<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}Sixzero helps companies design impactful apps and software.{% endif %}"> 
+<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}Sixzero helps companies design impactful apps and software.{% endif %}">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Canonical -->
+<link rel="canonical" href="{{site.url}}{{page.url}}" />
 <!-- Favicon -->
-<link rel="icon" type="image/png" href="/assets/img/favicon.png?v=4" sizes="16x16">  
-<link rel="icon" type="image/png" href="/assets/img/favicon.png?v=4" sizes="32x32">  
+<link rel="icon" type="image/png" href="/assets/img/favicon.png?v=4" sizes="16x16">
+<link rel="icon" type="image/png" href="/assets/img/favicon.png?v=4" sizes="32x32">
 <link rel="icon" type="image/png" href="/assets/img/favicon.png?v=4" sizes="96x96">
 <!-- Styles -->
 <link rel="stylesheet" href="/assets/css/main.css" media="all">
@@ -18,5 +20,3 @@
 <meta property="og:image:height" content="627" />
 <meta property="og:image:alt" content="{% if page.og_imagealt %}{{ page.og_og_imagealt }}{% else %}Sixzero banner with logo{% endif %}" />
 <meta property="og:url" content="http://sixzero.co{{ page.url }}" />
-
-
