@@ -4,6 +4,14 @@ plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
   - jekyll-autoprefixer
+exclude:
+  - buildScripts
+  - yarn.lock
+  - package.json
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
 sass:
   sass_dir: _sass
   style: compressed
