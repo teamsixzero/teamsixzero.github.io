@@ -75,6 +75,7 @@ const callback = function (error, response) {
   })
 
   // write include file
+  response.html.unshift('<!-- THIS FILE IS AUTO-GENERATED USING THE FAVICONS BUILD SCRIPT. DO NOT EDIT DIRECTLY --->')
   fs.writeFileSync(FAVICONS_PARTIAL_FILE, response.html.join('\n'))
 
   console.log(response.images);
