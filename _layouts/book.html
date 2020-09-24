@@ -12,14 +12,17 @@
 
   <nav class="book-drawer__container">
     <div class="book-drawer__top-navigation">
-      <a href="/startusertesting/">&larr; Back to Sixzero</a>
+      <a href="/startusertesting/" class="book-drawer__top-navigation__back-link">
+        <span class="book-drawer__top-navigation__back-link__left-arrow">&larr;</span>
+        <span class="book-drawer__top-navigation__back-link__text">Back to Sixzero</span>
+      </a>
       <button class="book-drawer__toggle button--icon">
         {% include svg/icon-close.svg %}
       </button>
     </div>
     <div class="book-drawer__header">
-      <h2 class="book-drawer__title">How to Design Apps People Actually Want to Use</h2>
-      <p class="book-drawer__byline">A Quick-Start Guide to User Testing</p>
+      <p class="h1 book-drawer__title">How to Design Apps People Actually Want to Use</p>
+      <p class="book-drawer__subtitle">A Quick-Start Guide to User Testing</p>
       <div class="book-drawer__author-block">
         <p>V1, 2020 Edition</p>
         <p>By Nick Foster & Amy Wood</p>
@@ -29,9 +32,9 @@
     <section class="book-toc">
       <div>
         <div class="toc__step">
-          <h6 class="toc__chapter-title">
+          <p class="h6 toc__chapter-title">
             <a href="/startusertesting/webbook/">Table of Contents</a>
-          </h6>
+          </p>
         </div>
         {% include book-toc.html %}
         </div>

@@ -139,6 +139,13 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 4rem;
+
+    &__back-link {
+
+      &__left-arrow {
+
+      }
+    }
   }
 
   &__header {
@@ -149,7 +156,7 @@
     font-size: get-rem(24px);
   }
 
-  &__byline {
+  &__subtitle {
     font-size: get-rem(18px);
     font-weight: 600;
   }
@@ -377,6 +384,24 @@
 
 .book-menu__section {
   margin-left: 0;
+}
+
+.header-block-reversed {
+  display: flex;
+  flex-flow: column;
+
+  &__title {
+    order: 2;
+    margin-bottom: 14px;
+  }
+
+  &__subtitle {
+    order: 1;
+  }
+
+  .book-menu__step {
+    margin-bottom: 8px;
+  }
 }
 
 // =============================================================================
