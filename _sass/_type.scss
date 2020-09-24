@@ -1,4 +1,7 @@
-@mixin font-content-base() {
+// =============================================================================
+// Type: Mixins
+// =============================================================================
+@mixin headings-and-paragraphs-base() {
   line-height: 1.5;
   font-weight: 300;
   margin-bottom: 32px;
@@ -10,80 +13,75 @@
   }
 }
 
-h1, h2, h3, h4, h5, h6, p {
-  @include font-content-base();
-}
-
 @mixin font-header() {
-  @include font-content-base();
+  @include headings-and-paragraphs-base();
   font-family: $header-font;
 }
 
 @mixin font-content() {
-  @include font-content-base();
+  @include headings-and-paragraphs-base();
   font-family: $body-font;
 }
 
-h1, h2, h3, h4 {
-  @include font-header();
-}
 
-h1 {
-  font-size: 53px;
-}
-
-.h1 {
-  @include font-header();
-  font-size: 53px;
-}
-
-
-h2 {
-  font-size: 44px;
-}
-
-.h2 {
-  @include font-header();
-  font-size: 44px;
-}
-
-h3 {
-  font-size: 37px;
-}
-
-.h3 {
-  @include font-header();
-  font-size: 37px;
-}
-
-h4 {
-  font-size: 31px;
-}
-
+// =============================================================================
+// Type: Headings
+// =============================================================================
+h1,
+h2,
+h3,
+h4,
+.h1,
+.h2,
+.h3,
 .h4 {
   @include font-header();
-  font-size: 31px;
 }
 
-h5 {
-  font-size: 25px;
-}
-
-.h5 {
-  @include font-content();
-  font-size: 25px;
-}
-
-h6 {
-  font-size: 21px;
-}
-
+h5,
+h6,
+.h5,
 .h6 {
   @include font-content();
-  font-size: 21px;
 }
 
+
+h1,
+.h1 {
+  font-size: $font-heading-size__h1;
+}
+
+h2,
+.h2 {
+  font-size: $font-heading-size__h2;
+}
+
+h3,
+.h3 {
+  font-size: $font-heading-size__h3;
+}
+
+h4,
+.h4 {
+  font-size: $font-heading-size__h4;
+}
+
+h5,
+.h5 {
+  font-size: $font-heading-size__h5;
+}
+
+h6,
+.h6 {
+  font-size: $font-heading-size__h6;
+}
+
+
+// =============================================================================
+// Type: Content
+// =============================================================================
 p {
+  @include headings-and-paragraphs-base();
   line-height: 1.75;
 
   @media only screen and
@@ -107,7 +105,6 @@ ul li, ol li {
 // =============================================================================
 // Type: Links
 // =============================================================================
-
 a {
   color: $grey;
   text-decoration: underline;
@@ -165,6 +162,10 @@ a {
   }
 }
 
+
+// =============================================================================
+// Type: Quotes
+// =============================================================================
 .quote-highlight {
   background-color: $teal;
   padding-left: 8px;
