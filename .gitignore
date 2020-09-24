@@ -7,3 +7,4 @@ node_modules
 .rvmrc
 Gemfile
 Gemfile.lock
+/.envrc

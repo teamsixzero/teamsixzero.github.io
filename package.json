@@ -2,9 +2,11 @@
   "name": "teamsixzero.github.io",
   "version": "1.0.0",
   "description": "website for sixzero",
+  "private": true,
   "main": "",
   "scripts": {
     "test": "echo 'no test script'",
+    "test:visual": "percy snapshot _site/",
     "dev": "concurrently -n jekyll,browsersync \"npm run dev:serve\" \"npm run dev:watch\"",
     "dev:ngrok": "ngrok start sixzero",
     "dev:serve": "jekyll serve",
@@ -25,6 +27,7 @@
     "browser-sync": "^2.26.7",
     "concurrently": "^5.1.0",
     "favicons": "^6.2.0",
-    "fs-extra": "^9.0.1"
+    "fs-extra": "^9.0.1",
+    "percy": "^0.28.2"
   }
 }
