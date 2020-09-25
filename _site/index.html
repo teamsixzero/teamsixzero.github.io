@@ -7,7 +7,7 @@
 <meta name="description" content="Sixzero helps companies design impactful apps and software.">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- Canonical -->
-<link rel="canonical" href="http://localhost:4000/" />
+<link rel="canonical" href="https://sixzero.co/" />
 <!-- Favicon -->
 <!-- THIS FILE IS AUTO-GENERATED USING THE FAVICONS BUILD SCRIPT. DO NOT EDIT DIRECTLY --->
 <link rel="shortcut icon" href="/assets/favicons/favicon.ico">
@@ -72,9 +72,14 @@
 <meta property="og:image:height" content="627" />
 <meta property="og:image:alt" content="Sixzero banner with logo" />
 <meta property="og:url" content="http://sixzero.co/" />
-
-  
-</head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110588115-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-110588115-1');
+</script>
 <body class="body-has-bg-top-left">
   <nav class="desktop-nav nav--light">
   <div class="nav__inner">
@@ -85,14 +90,12 @@
     class="logo"
   />
 </a>
-
     <a href="/projects/" class="nav__item">Work</a>
 <a href="/startusertesting/" class="nav__item">Book</a>
 <a href="/about/" class="nav__item">About</a>
 <a href="mailto:hello@sixzero.co" class="nav__item" target="_blank">Contact</a>
   </div>
 </nav>
-
 <nav class="mobile-nav" id="menu">
   <a href="/" class="nav__item">Home</a>
   <a href="/projects/" class="nav__item">Work</a>
@@ -108,7 +111,6 @@
     </span>
   </button>
 </div>
-
 <a href="/" class="mobile-logo">
   <img
     src="/assets/img/logo-dark.png"
@@ -116,18 +118,12 @@
     class="logo"
   />
 </a>
-
     <header class="header--home">
   <div class="header__content">
-    
       <img src="/assets/img/diamond.svg" class="header__icon" alt="Illustration of a diamond">      
-    
     <h1 class="header__title">We help companies design impactful apps and software</h1>
-    
   </div>
 </header>
-
-
 <section class="project--left-image ftsy-home-preview has-no-padding-top">
   <div class="section__inner--c12">
     <div class="project__image">
@@ -212,8 +208,6 @@
     </div>
   </div>
 </section>
-
-
 <section class="section--testimonial">
   <div class="section__inner--c6">
     <p class="h6 testimonial__text">
@@ -231,7 +225,6 @@
     </div>
   </div>
 </section>
-
 <section class="project--right-image ">
   <div class="section__inner--c10">
     <div class="project__description">
@@ -297,8 +290,6 @@
     </div>
   </div>
 </section>
-
-
 <section class="section--testimonial">
   <div class="section__inner--c6">
     <p class="h6 testimonial__text">
@@ -316,7 +307,6 @@
     </div>
   </div>
 </section>
-
 <section class="project--right-image ">
   <div class="section__inner--c10">
     <div class="project__description">
@@ -333,8 +323,6 @@
     </div>
   </div>
 </section>
-
-
 <section class="section--centered what-we-do section--color-grey-light-gradient">
   <div class="section__inner--c10">
     <h2 class="h3 section-title">What we do</h2>
@@ -369,19 +357,13 @@
     </div>
   </div>
 </section>
-
-
 <section class="section--centered section-cta-block ">
   <div class="section__inner--c6">
     <h2 class="h3 section-title">
-      
       Let&rsquo;s work together
-      
     </h2>
     <p class="section-subtitle">
-      
       We will help you design something people love.
-      
     </p>
     <a
       href="mailto:hello@sixzero.co"
@@ -390,8 +372,6 @@
     >Get in touch</a>
   </div>
 </section>
-
-
   </main>
   <footer>
   <div class="footer__nav">
@@ -404,16 +384,13 @@
     &copy; 2020 Sixzero &mdash; <a href="mailto:hello@sixzero.co" target="_blank">hello@sixzero.co</a>
   </div>
 </footer>
-
   <!-- Google font CSS -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Poppins:300,400,600,700">
-
 <!-- JQuery -->
 <script
   src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
   integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
   crossorigin="anonymous"></script>
-
 <!-- Slideout menu -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
 <script>
@@ -423,19 +400,16 @@
     if (!menu) {
       return;
     }
-
     var slideout = new Slideout({
       'panel': document.getElementById('panel'),
       'menu': menu,
       'padding': 241,
       'tolerance': 70
     });
-
     // Toggle button
     document.querySelector('.toggle-button').addEventListener('click', function() {
       slideout.toggle();
     });
-
     $(window).resize(function() {
       if ($(window).width() > 480) {
         $('.main-wrapper').removeAttr("style");
@@ -443,25 +417,17 @@
     });
   })();
 </script>
-
-
 <!-- Hamburger menu icon animation -->
 <script>
 var $hamburger = $(".hamburger");
-
 $hamburger.on("click", function(e) {
   $hamburger.toggleClass("is-active");
 });
 </script>
-
 <!-- Style links on active page -->
 <script>
 var loc = window.location.pathname;
-
 $('.nav__inner').find('.nav__item').each(function() {
   $(this).toggleClass('active', $(this).attr('href') == loc);
 });
 </script>
-
-</body>
-</html>
