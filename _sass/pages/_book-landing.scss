@@ -10,7 +10,7 @@
     }
   }
 
-  h6, .h6 {
+  h6 {
     font-size: $font-heading-size__h6;
 
     @media only screen and
@@ -37,8 +37,17 @@
     width: 80%;
     margin: 0 auto;
   }
+
 }
 
+.book-index,
+.book-landing {
+  .toc__top-level-list {
+    margin-top: 0;
+    padding-left: 0;
+    list-style-type: none;
+  }
+}
 
 // =============================================================================
 // Webbook Index
@@ -286,12 +295,20 @@
 
   &:last-of-type {
     margin-bottom: 0;
+
+    .toc__chapter-title {
+      margin-bottom: 0;
+    }
   }
 }
 
 .toc__chapters {
   margin-bottom: 0;
   padding-left: 16px;
+
+  &:not(.toc__top-level-list) {
+    list-style-type: disc;
+  }
 }
 
 .toc__chapter {
@@ -300,6 +317,7 @@
 }
 
 .toc__chapter-title {
+  display: inline-block;
   font-weight: 700;
   margin-bottom: 16px;
 }
