@@ -15,15 +15,6 @@ exclude:
 sass:
   sass_dir: _sass
   style: compressed
-compress_html:
-  clippings: all
-  comments: []
-  startings: all
-  endings: all
-  ignore:
-    envs: [development]
-  blanklines: true
-  profile: false
 permalink: pretty
 google_analytics: UA-110588115-1
 url: https://sixzero.co
