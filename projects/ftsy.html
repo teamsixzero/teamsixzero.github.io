@@ -26,18 +26,17 @@ body_class: body-has-bg-top-right
       </p>
     </div>
     <div class="project__image">
-      <picture>
-        <source
-          media="(max-width: 768px)"
-          srcset="/assets/img/projects/ftsy/category-details-mobile.png"
-        >
-        <img
-          src="/assets/img/projects/ftsy/category-details.png"
-          alt="FTSY mobile app details screen"
-          class="responsive-image"
-          loading="lazy"
-        />
-      </picture>
+      {% include image/optimized.html
+        types="webp,jp2,png"
+        maxPx="704"
+        widths="300,450,600,704"
+        dir="projects/ftsy/category-details"
+        name="category-details"
+        sizes="(max-width: 768px) 50vw, 704px"
+        fallbackURL="projects/ftsy/category-details.png"
+        class="responsive-image"
+        alt="FTSY mobile app details screen"
+      %}
     </div>
   </div>
 </section>

@@ -1,0 +1,22 @@
+{% assign types = include.types | split: ',' %}
+{% assign widths = include.widths | split: ',' %}
+
+<picture>
+  {% for type in types %}
+  <source
+    sizes="{{include.sizes}}"
+    srcset="
+      {% for width in widths %}
+      /assets/img/{{include.dir}}/{{include.name}}--{{width}}w.{{type}} {{width}}w,
+      {% endfor %}
+    "
+    type="image/{{type}}"
+  />
+  {% endfor %}
+  <img
+    src="/assets/img/{{include.fallbackURL}}"
+    alt="{{include.alt}}"
+    class="{{include.class}}"
+    loading="lazy"
+  />
+</picture>

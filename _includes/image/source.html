@@ -1,0 +1,9 @@
+<source
+  sizes="(max-width: {{include.maxPx}}px) 100vw, {{include.maxPx}}px"
+  srcset="
+    {% for width in include.widths %}
+    /assets/img/{{include.furl}}--{{img.width}}.{{include.type}},
+    {% endfor %}
+  "
+  type="image/{{include.type}}"
+/>
