@@ -7,7 +7,7 @@ const OUTPUT_FOLDER = '../assets/favicons';
 const HTML_OUTPUT_FILE = '../_includes/favicons.html';
 
 const APP_NAME = 'Sixzero';
-const THEME_COLOR = "#5DCFC9";
+const THEME_COLOR = "#ffffff";
 const PUBLIC_FAVICONS_FOLDER_PATH = "/assets/favicons";
 
 const FAVICON_SOURCE = nodepath.resolve(__dirname, SOURCE_FILE);

@@ -12,48 +12,51 @@ body_class: body-has-bg-top-right
   <div class="section__inner--c10">
     <div class="project__description">
       <h1 class="intro__title">FTSY</h1>
-      <h6 class="intro__copy">
-        Shopping for new shoes online can be daunting. Finding cool new brands 
-        and unique styles is a challenge, and sizing is always a huge risk. 
-        While companies do plenty of things to help reduce anxiety and inspire 
-        confidence while purchasing, there is always a little voice saying 
+      <p class="h6 intro__copy">
+        Shopping for new shoes online can be daunting. Finding cool new brands
+        and unique styles is a challenge, and sizing is always a huge risk.
+        While companies do plenty of things to help reduce anxiety and inspire
+        confidence while purchasing, there is always a little voice saying
         &ldquo;I really hope these fit!&rdquo;.
-      </h6>
-      <h6 class="intro__copy"> 
-        FTSY approached us to help them improve the shoe shopping experience so 
-        that everyone can feel confident and find the perfect pair without the 
+      </p>
+      <p class="h6 intro__copy">
+        FTSY approached us to help them improve the shoe shopping experience so
+        that everyone can feel confident and find the perfect pair without the
         stress.
-      </h6>
+      </p>
     </div>
     <div class="project__image">
-     <picture>
-        <source media="(max-width: 768px)" srcset="/assets/img/projects/ftsy/category-details-mobile.png">
-        <img
-          src="/assets/img/projects/ftsy/category-details.png"
-          alt="FTSY mobile app details screen"
-          class="responsive-image"
-        />
-      </picture>
-    </div>   
+      {% include image/optimized.html
+        types="webp,jp2,png"
+        maxPx="704"
+        widths="300,450,600,704"
+        dir="projects/ftsy/category-details"
+        name="category-details"
+        sizes="(max-width: 768px) 50vw, 704px"
+        fallbackURL="projects/ftsy/category-details.png"
+        class="responsive-image"
+        alt="FTSY mobile app details screen"
+      %}
+    </div>
   </div>
 </section>
 
 <section class="project--centered project-centered--left-aligned ftsy-testing">
   <div class="project__description">
-    <h4 class="project__name">
+    <h2 class="h4 project__name">
       User experience testing
-    </h4>
+    </h2>
     <p>
-      Our first priority was to gain a deep understanding of how potential FTSY 
-      users went about shopping for shoes online. We wanted to learn what 
-      worries them, what they like or dislike, and what makes a good shopping 
-      experience. We also needed to know how well the existing FTSY app 
+      Our first priority was to gain a deep understanding of how potential FTSY
+      users went about shopping for shoes online. We wanted to learn what
+      worries them, what they like or dislike, and what makes a good shopping
+      experience. We also needed to know how well the existing FTSY app
       performed.
     </p>
     <p>
-      To do this, we did 5 individual user testing sessions. During the 
-      interviews, we dug deep and figured out what each person&rsquo;s vision of a 
-      great shopping experience looked liked and got each person to try the 
+      To do this, we did 5 individual user testing sessions. During the
+      interviews, we dug deep and figured out what each person&rsquo;s vision of a
+      great shopping experience looked liked and got each person to try the
       FTSY app. The thoughts and insights they shared were invaluable.
     </p>
     <p class="has-no-padding-bottom ">
@@ -63,12 +66,32 @@ body_class: body-has-bg-top-right
 </section>
 
 <picture>
-  <source media="(max-width: 768px)" srcset="/assets/img/projects/ftsy/wireframes-mobile-xs.png">
-  <source media="(max-width: 1024px)" srcset="/assets/img/projects/ftsy/wireframes-mobile.png">
+  {% include image/sources.html
+    media="(max-width: 768px)"
+    widths="768,550,350"
+    dir="projects/ftsy/wireframes-mobile-xs"
+    name="wireframes-mobile-xs"
+    types="webp,jp2,png"
+  %}
+  {% include image/sources.html
+    media="(max-width: 1024px)"
+    widths="1024,950,850"
+    dir="projects/ftsy/wireframes-mobile"
+    name="wireframes-mobile"
+    types="webp,jp2,png"
+  %}
+  {% include image/sources.html
+    media="(min-width: 1024px)"
+    widths="2880,2250,1800,1500,1300"
+    dir="projects/ftsy/wireframes"
+    name="wireframes"
+    types="webp,jp2,png"
+  %}
   <img
     src="/assets/img/projects/ftsy/wireframes.png"
     alt="FTSY mobile app wireframes"
     class="responsive-image"
+    loading="lazy"
   />
 </picture>
 <div class="picture-caption">
@@ -78,111 +101,130 @@ body_class: body-has-bg-top-right
 <section class="project--left-image has-bg-circle-left has-xl-spacing">
   <div class="section__inner--c10">
     <div class="project__image">
-     <picture>
-        <source media="(max-width: 768px)" srcset="/assets/img/projects/ftsy/product-page-mobile.png">
+      <picture>
+        <source
+          media="(max-width: 768px)"
+          srcset="/assets/img/projects/ftsy/product-page-mobile.png"
+        >
         <img
           src="/assets/img/projects/ftsy/product-page.png"
           alt="Product details screen in FTSY app"
           class="responsive-image"
-
+          loading="lazy"
         />
       </picture>
     </div>
     <div class="project__description">
-      <h4 class="project__name">It&rsquo;s in the details</h4>
+      <h2 class="h4 project__name">It&rsquo;s in the details</h2>
       <p>
-        Our testing sessions told us to focus on features that would help 
-        shoppers make a purchase more confidently. That meant concentrating on 
-        the product pages. We redesigned the page from the ground up. We made 
-        the images larger so you could see every 
-        last detail, we showed the available colours and price more prominently, 
-        we made the product descriptions easier to find, and showed the sizing 
+        Our testing sessions told us to focus on features that would help
+        shoppers make a purchase more confidently. That meant concentrating on
+        the product pages. We redesigned the page from the ground up. We made
+        the images larger so you could see every
+        last detail, we showed the available colours and price more prominently,
+        we made the product descriptions easier to find, and showed the sizing
         front and center.
       </p>
       <p>
-        We also changed the purchase button. Test participants described being 
-        surprised or hesitant to press the button in the original app because 
-        they were unsure of the next step. A colour and copy change removed 
-        those worries. 
+        We also changed the purchase button. Test participants described being
+        surprised or hesitant to press the button in the original app because
+        they were unsure of the next step. A colour and copy change removed
+        those worries.
       </p>
-    </div>   
+    </div>
   </div>
 </section>
 
 <section class="ftsy-shopping">
-    <div class="project__description">
-      <div class="project__description-inner"> 
-        <h4 class="project__name">The good part</h4>
-        <p>
-          5 out of 5 test participants told us over and over that they just wanted 
-          to get to the good part &mdash; the shoes! 
-        </p>
-        <p>
-          This meant redefining the structure of the app, and removing parts 
-          of the onboarding flow that caused so much confusion. We wanted people 
-          to freely browse all the unique shoes as quickly as possible so they 
-          could fall in love before they needed to scan their feet and enter 
-          any account details. 
-        </p>
-      </div>
+  <div class="project__description">
+    <div class="project__description-inner">
+      <h2 class="h4 project__name">The good part</h2>
+      <p>
+        5 out of 5 test participants told us over and over that they just wanted
+        to get to the good part &mdash; the shoes!
+      </p>
+      <p>
+        This meant redefining the structure of the app, and removing parts
+        of the onboarding flow that caused so much confusion. We wanted people
+        to freely browse all the unique shoes as quickly as possible so they
+        could fall in love before they needed to scan their feet and enter
+        any account details.
+      </p>
     </div>
-    <div class="project__image">
-     <picture>
-      <source media="(max-width: 768px)" srcset="/assets/img/projects/ftsy/shopping-3.png">
-        <source media="(max-width: 992px)" srcset="/assets/img/projects/ftsy/shopping.png">
-        <img
-          src="/assets/img/projects/ftsy/shopping.png"
-          alt="Redefining the structure of the FTSY app"
-          class="responsive-image"
-        />
-      </picture>
-    </div>
+  </div>
+  <div class="project__image">
+    <picture>
+      <source
+        media="(max-width: 768px)"
+        srcset="/assets/img/projects/ftsy/shopping-3.png"
+      >
+      <source
+        media="(max-width: 992px)"
+        srcset="/assets/img/projects/ftsy/shopping.png"
+      >
+      <img
+        src="/assets/img/projects/ftsy/shopping.png"
+        alt="Redefining the structure of the FTSY app"
+        class="responsive-image"
+        loading="lazy"
+      />
+    </picture>
+  </div>
 </section>
 
 <section class="project--right-image has-bg-circle-right has-xl-spacing ftsy-scanning">
   <div class="section__inner--c10">
     <div class="project__description">
-      <h4 class="project__name">The magic ingredient</h4>
+      <h2 class="h4 project__name">The magic ingredient</h2>
       <p>
-        FTSY&rsquo;s proprietary scanning technology is the magic ingredient in 
-        the FTSY sauce. The AI-driven mobile scanner builds a 3D model by taking 
-        multiple photos of shoppers feet. Photos are turned into accurate foot 
-        models with an understanding of shape, such as arches and pronation, 
+        FTSY&rsquo;s proprietary scanning technology is the magic ingredient in
+        the FTSY sauce. The AI-driven mobile scanner builds a 3D model by taking
+        multiple photos of shoppers feet. Photos are turned into accurate foot
+        models with an understanding of shape, such as arches and pronation,
         which impact how a foot will feel in a shoe.
       </p>
       <p>
-        While our participants loved the idea, they pointed out several areas 
+        While our participants loved the idea, they pointed out several areas
         in which the user experience could be made more intuitive.
       </p>
       <p>
-        We designed a scanning experience that is much faster and easier to 
-        use by focusing clear instructions, a better sense of progress, and 
+        We designed a scanning experience that is much faster and easier to
+        use by focusing clear instructions, a better sense of progress, and
         a clearer UI.
       </p>
-    </div>  
+    </div>
     <div class="project__image">
-     <picture>
-        <source media="(max-width: 768px)" srcset="/assets/img/projects/ftsy/scanning-mobile.png">
+      <picture>
+        <source
+          media="(max-width: 768px)"
+          srcset="/assets/img/projects/ftsy/scanning-mobile.png"
+        >
         <img
           src="/assets/img/projects/ftsy/scanning.png"
           alt="FTSY mobile app foot scanning screen"
           class="responsive-image"
+          loading="lazy"
         />
       </picture>
-    </div>   
+    </div>
   </div>
 </section>
 
 <section class="section--testimonial">
   <div class="section__inner--c6">
-    <h6 class="testimonial__text">
-      &ldquo;Sixzero really impressed us with their ability to <span class="quote-highlight">empathize with 
-      the consumer</span> and the job they are trying to accomplish, including a 
-      little entertainment and fun. They took the time to imagine what an 
+    <p class="h6 testimonial__text">
+      &ldquo;Sixzero really impressed us with their ability to <span class="quote-highlight">empathize with
+      the consumer</span> and the job they are trying to accomplish, including a
+      little entertainment and fun. They took the time to imagine what an
       awesome outcome looks like.&rdquo;
-    </h6>
+    </p>
     <div class="testimonial__person">
-      <img src="/assets/img/ryan.jpg" alt="Ryan Smith, Founder and CEO, FTSY" class="testimonial__image">
+      <img
+        src="/assets/img/ryan.jpg"
+        alt="Ryan Smith, Founder and CEO, FTSY"
+        class="testimonial__image"
+        loading="lazy"
+      >
       <div class="testimonial__name">
         Ryan Smith<br>
         Founder &amp; CEO, FTSY

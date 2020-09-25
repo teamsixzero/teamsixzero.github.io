@@ -1,9 +1,9 @@
-_site/
+/_site
 /.sass-cache
 .sass-cache
-_site/index.html
 node_modules
 .jekyll-cache/
 .rvmrc
 Gemfile
 Gemfile.lock
+/.envrc

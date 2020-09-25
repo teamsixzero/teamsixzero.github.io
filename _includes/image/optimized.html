@@ -1,0 +1,15 @@
+<picture>
+  {% include image/sources.html
+    sizes=include.sizes
+    widths=include.widths
+    dir=include.dir
+    name=include.name
+    types=include.types
+  %}
+  <img
+    src="/assets/img/{{include.fallbackURL}}"
+    alt="{{include.alt}}"
+    class="{{include.class}}"
+    loading="lazy"
+  />
+</picture>

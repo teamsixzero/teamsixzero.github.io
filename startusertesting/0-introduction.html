@@ -9,8 +9,8 @@ body_class: book-page
 ---
 
 
-<div class="book-container">
-  <div class="book-menu">
+<section class="book-container">
+  <nav class="book-menu">
     <div class="book-menu__content">
       <a href="/startusertesting/" class="book-menu__button remove-if-js">&larr; Back to Sixzero</a>
 
@@ -25,12 +25,14 @@ body_class: book-page
         </button>
       </div>
 
-      <p class="book-menu__step-heading">
-        <small class="book-menu__step">Let's get started</small>
-      </p>
-      <h1 class="book-menu__title">
-        Introduction
-      </h1>
+      <div class="header-block-reversed">
+        <p class="h1 book-menu__title header-block-reversed__title">
+          Introduction
+        </p>
+        <p class="book-menu__step-heading header-block-reversed__subtitle">
+          <small class="book-menu__step">Let's get started</small>
+        </p>
+      </div>
       <ul class="book-menu__sections">
         <li class="book-menu__section">
           <a href="#what-is-user-testing" class="active">What is user testing?</a>
@@ -53,11 +55,12 @@ body_class: book-page
       </ul>
       <a href="/startusertesting/1-step-1/" class="book-menu__next">Next: Define what you’re testing and why</a>
     </div>
-  </div>
+  </nav>
   <!-- end toc section -->
 
 
   <div class="book-content">
+    <h1 class="sr-only">Introduction</h1>
     <p>
       It’s impossible to build an app people actually love and want to use if you 
       never talk to them. Seems obvious, right? And, yet, often overlooked.
@@ -78,7 +81,7 @@ body_class: book-page
     </p>
     <br>
     <br>
-    <h3 id="what-is-user-testing">What is user testing?</h3>
+    <h2 class="h3" id="what-is-user-testing">What is user testing?</h2>
     <p>
       User testing is a controlled method of gathering feedback by testing 
       your product &mdash; or a specific piece of your product &mdash; with real 
@@ -95,9 +98,9 @@ body_class: book-page
     </p>
     <br>
     <br>
-    <h3 id="why-should-you-conduct-user-testing">
+    <h2 class="h3" id="why-should-you-conduct-user-testing">
       Why should you conduct user testing?
-    </h3>
+    </h2>
     <p>
       Every user test we’ve ever done has produced valuable insights we wouldn’t 
       have discovered otherwise, all of which have yielded impactful results &mdash; 
@@ -125,9 +128,9 @@ body_class: book-page
     </p>
     <br>
     <br>
-    <h3 id="who-should-conduct-user-testing">
+    <h2 class="h3" id="who-should-conduct-user-testing">
       Who should conduct user testing?
-    </h3>
+    </h2>
     <p>The short answer is everyone. The long answer is anyone who:</p>
     <ul>
       <li>is launching a new product</li>
@@ -138,9 +141,9 @@ body_class: book-page
     </ul>
     <br>
     <br>
-    <h3 id="when-should-you-conduct-user-testing">
+    <h2 class="h3" id="when-should-you-conduct-user-testing">
       When should you conduct user testing?
-    </h3>
+    </h2>
     <p>
       Have you ever heard the cliche, “The best time to invest was yesterday. 
       The next best time is today.”? That’s how we feel about user testing.
@@ -153,7 +156,7 @@ body_class: book-page
     </p>
 
     <div class="callout" id="is-it-worth-the-investment">
-      <h6 class="callout__title">But is it really worth the investment?</h6>
+      <h3 class="h6 callout__title">But is it really worth the investment?</h3>
       <p>
         Ever hear of a little piece of software called Windows 95? Who are we 
         kidding, of course you have. But did you know that the Windows 95 you’re 
@@ -176,9 +179,9 @@ body_class: book-page
     </div>
     <br>
     <br>
-    <h3 id="our-five-step-framework">
+    <h2 class="h3" id="our-five-step-framework">
       Our five-step framework
-    </h3>
+    </h2>
     <p>The following guide will walk you through our five-step framework.</p>
     <div class="callout">
       <ul class="callout__list list-has-no-bullets">
@@ -199,4 +202,4 @@ body_class: book-page
     </a>
     {% include book-footer.html %}
     </div>
-</div>
+</section>

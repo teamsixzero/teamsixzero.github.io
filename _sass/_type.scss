@@ -1,47 +1,90 @@
-h1, h2, h3, h4, h5, h6, p {
+// =============================================================================
+// Type: Mixins
+// =============================================================================
+@mixin headings-and-paragraphs-base() {
   line-height: 1.5;
   font-weight: 300;
   margin-bottom: 32px;
   margin-top: 0;
 
-  @media only screen and 
+  @media only screen and
   (max-width: $screen-md) {
     margin-bottom: 24px;
   }
 }
 
-h1, h2, h3, h4 {
+@mixin font-header() {
+  @include headings-and-paragraphs-base();
   font-family: $header-font;
 }
 
-h1 {  
-  font-size: 53px;
+@mixin font-content() {
+  @include headings-and-paragraphs-base();
+  font-family: $body-font;
 }
 
-h2 {
-  font-size: 44px;
+
+// =============================================================================
+// Type: Headings
+// =============================================================================
+h1,
+h2,
+h3,
+h4,
+.h1,
+.h2,
+.h3,
+.h4 {
+  @include font-header();
 }
 
-h3 {
-  font-size: 37px;
+h5,
+h6,
+.h5,
+.h6 {
+  @include font-content();
 }
 
-h4 {
-  font-size: 31px;
+
+h1,
+.h1 {
+  font-size: $font-heading-size__h1;
 }
 
-h5 {
-  font-size: 25px;
+h2,
+.h2 {
+  font-size: $font-heading-size__h2;
 }
 
-h6 {
-  font-size: 21px;
+h3,
+.h3 {
+  font-size: $font-heading-size__h3;
 }
 
+h4,
+.h4 {
+  font-size: $font-heading-size__h4;
+}
+
+h5,
+.h5 {
+  font-size: $font-heading-size__h5;
+}
+
+h6,
+.h6 {
+  font-size: $font-heading-size__h6;
+}
+
+
+// =============================================================================
+// Type: Content
+// =============================================================================
 p {
+  @include headings-and-paragraphs-base();
   line-height: 1.75;
-  
-  @media only screen and 
+
+  @media only screen and
   (max-width: $screen-sm) {
     font-size: 16px;
   }
@@ -59,10 +102,9 @@ ul li, ol li {
 }
 
 
-// ============================================================================= 
+// =============================================================================
 // Type: Links
-// ============================================================================= 
-
+// =============================================================================
 a {
   color: $grey;
   text-decoration: underline;
@@ -120,6 +162,10 @@ a {
   }
 }
 
+
+// =============================================================================
+// Type: Quotes
+// =============================================================================
 .quote-highlight {
   background-color: $teal;
   padding-left: 8px;
