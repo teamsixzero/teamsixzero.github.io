@@ -54,14 +54,27 @@ body_class: body-has-bg-top-left
 <section class="wide-cropped-image has-no-padding-bottom">
   <div class="project__image">
     <picture>
-      <source
+      {% include image/sources.html
+        media="(max-width: 768px)"
+        widths="300,500,768"
+        dir="projects/olive/olive-ipads-mobile"
+        name="olive-ipads-mobile"
+        types="webp,jp2,png"
+      %}
+      {% include image/sources.html
+        media="(max-width: 1200px)"
+        widths="1000,1200"
+        dir="projects/olive/olive-ipads-tablet"
+        name="olive-ipads-tablet"
+        types="webp,jp2,png"
+      %}
+      {% include image/sources.html
         media="(min-width: 1200px)"
-        srcset="/assets/img/projects/olive/olive-ipads-desktop.png"
-      >
-      <source
-        media="(min-width: 768px)"
-        srcset="/assets/img/projects/olive/olive-ipads-tablet.png"
-      >
+        widths="1500,1800,2300,2777"
+        dir="projects/olive/olive-ipads-desktop"
+        name="olive-ipads-desktop"
+        types="webp,jp2,png"
+      %}
       <img
         src="/assets/img/projects/olive/olive-ipads-mobile.png"
         alt="Olive mobile app example screen"
