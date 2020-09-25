@@ -66,18 +66,32 @@ body_class: body-has-bg-top-right
 </section>
 
 <picture>
-  <source
+  {% include image/source.html
     media="(max-width: 768px)"
-    srcset="/assets/img/projects/ftsy/wireframes-mobile-xs.png"
-  >
-  <source
+    widths="768,550,350"
+    dir="projects/ftsy/wireframes-mobile-xs"
+    name="wireframes-mobile-xs"
+    types="webp,jp2,png"
+  %}
+  {% include image/source.html
     media="(max-width: 1024px)"
-    srcset="/assets/img/projects/ftsy/wireframes-mobile.png"
-  >
+    widths="1024,950,850"
+    dir="projects/ftsy/wireframes-mobile"
+    name="wireframes-mobile"
+    types="webp,jp2,png"
+  %}
+  {% include image/source.html
+    media="(min-width: 1024px)"
+    widths="2880,2250,1800,1500,1300"
+    dir="projects/ftsy/wireframes"
+    name="wireframes"
+    types="webp,jp2,png"
+  %}
   <img
     src="/assets/img/projects/ftsy/wireframes.png"
     alt="FTSY mobile app wireframes"
     class="responsive-image"
+    loading="lazy"
   />
 </picture>
 <div class="picture-caption">

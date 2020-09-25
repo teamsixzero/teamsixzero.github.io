@@ -1,9 +1,19 @@
+{% assign types = include.types | split: ',' %}
+{% assign widths = include.widths | split: ',' %}
+
+{% for type in types %}
 <source
-  sizes="(max-width: {{include.maxPx}}px) 100vw, {{include.maxPx}}px"
+  {% if include.sizes %}
+  sizes="{{include.sizes}}"
+  {% endif %}
+  {% if include.media %}
+  media="{{include.media}}"
+  {% endif %}
   srcset="
-    {% for width in include.widths %}
-    /assets/img/{{include.furl}}--{{img.width}}.{{include.type}},
-    {% endfor %}
-  "
-  type="image/{{include.type}}"
+      {% for width in widths %}
+      /assets/img/{{include.dir}}/{{include.name}}--{{width}}w.{{type}} {{width}}w,
+      {% endfor %}
+    "
+  type="image/{{type}}"
 />
+{% endfor %}
