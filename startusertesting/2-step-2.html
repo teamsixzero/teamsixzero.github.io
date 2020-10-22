@@ -11,7 +11,10 @@ body_class: book-page
 <section class="book-container">
   <nav class="book-menu">
     <div class="book-menu__content">
-      <a href="/startusertesting/" class="book-menu__button remove-if-js">&larr; Back to Sixzero</a>
+      <a
+        href="/startusertesting/"
+        class="book-menu__button remove-if-js"
+      >&larr; Back to Sixzero</a>
 
       <div
         class="book-drawer__toggle-container visible-if-js"
@@ -27,10 +30,13 @@ body_class: book-page
       <p class="book-menu__step-heading">
         <small class="book-menu__step">Step 2</small>
       </p>
-      <p class="h1 book-menu__title">
+      <h1 class="h1 book-menu__title">
         Identify and schedule your test participants
-      </p>
-      <ul class="book-menu__sections">
+      </h1>
+      <ul
+        class="book-menu__sections"
+        id="page-navigation"
+      >
         <li class="book-menu__section">
           <a href="#determine-your-participant-criteria">
             Determine your participant criteria
@@ -52,13 +58,31 @@ body_class: book-page
           </a>
         </li>
       </ul>
-      <a href="/startusertesting/3-step-3/" class="book-menu__next">
-        Next: Build your user test and script
-      </a>
+      <div class="book-menu__next-chapter">
+        <p class="book-menu__next-chapter__text">
+          Next chapter
+        </p>
+        <p>
+          <a
+            href="/startusertesting/3-step-3/"
+            class="book-menu__next-chapter__link"
+          >
+            Build your user test and script
+          </a>
+        </p>
+      </div>
     </div>
   </nav>
-  <div class="book-content">
-    <h1 class="sr-only">Identify and schedule your test participants</h1>
+  <div
+    class="book-content"
+    id="book-content"
+  >
+    <h2
+      class="h3 book-section-header"
+      id="determine-your-participant-criteria"
+    >
+      Determine your participant criteria
+    </h2>
     <p>
       Just like deciding what to test, it’s likely you already have a good idea of
       who your ideal users are &mdash; you may have even written personas!
@@ -69,7 +93,10 @@ body_class: book-page
       user including (but definitely not limited to) age, proficiency,
       geographic location, etc.
     </p>
-    <div class="callout" id="make-your-wish-list">
+    <div
+      class="callout"
+      id="make-your-wish-list"
+    >
       <h2 class="h5 callout__title">Make Your Wish List</h2>
       <p>
         Struggling to define your ideal user? Take a peek at the Participant
@@ -78,7 +105,10 @@ body_class: book-page
     </div>
     <br>
     <br>
-    <h2 class="h3" id="find-your-user-test-participants">Find your user test participants</h2>
+    <h2
+      class="h3 book-section-header"
+      id="find-your-user-test-participants"
+    >Find your user test participants</h2>
     <p>
       This always feels like the daunting part, but in reality, you only need to
       secure five participants for reliable insights.
@@ -121,11 +151,17 @@ body_class: book-page
         sneak peek at what you’re working on.
       </li>
     </ul>
-    <div class="callout" id="why-five-is-the-perfect-number">
+    <div
+      class="callout"
+      id="why-five-is-the-perfect-number"
+    >
       <h3 class="h5 callout__title">Why five is the *perfect* number</h3>
       <p>
         You might think that more participants equals more valuable insights,
-        but it’s simply not true, because, well, math. Check out <a href="https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/" target="_blank">this article</a>
+        but it’s simply not true, because, well, math. Check out <a
+          href="https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/"
+          target="_blank"
+        >this article</a>
         for a more detailed explanation.
       </p>
     </div>
@@ -139,7 +175,10 @@ body_class: book-page
       still represents someone who will be using your app.
     </p>
 
-    <div class="callout" id="money-talks">
+    <div
+      class="callout"
+      id="money-talks"
+    >
       <h3 class="h5 callout__title">Money Talks</h3>
       <p>
         You may be asking yourself, ‘How do you get people to care about testing
@@ -169,7 +208,10 @@ body_class: book-page
     </ul>
     <br>
     <br>
-    <h2 class="h3" id="schedule-your-tests">Schedule your tests</h2>
+    <h2
+      class="h3 book-section-header"
+      id="schedule-your-tests"
+    >Schedule your tests</h2>
     <p>
       Now that you’ve secured five participants (and, hopefully, one backup) it’s
       time to schedule their tests.
@@ -198,7 +240,10 @@ body_class: book-page
       </li>
     </ol>
 
-    <div class="callout" id="backups">
+    <div
+      class="callout"
+      id="backups"
+    >
       <h3 class="h5 callout__title">Backups — not just for hard drives</h3>
       <p>
         It's always a good idea to recruit at least one backup participant in the
@@ -206,8 +251,10 @@ body_class: book-page
       </p>
     </div>
 
-    <div class="action-items" id="action-items">
-      <h2 class="h4 action-items__title">Action Items</h2>
+    <div
+      class="action-items"
+    >
+      <h2 class="h4 action-items__title book-section-header" id="action-items">Action Items</h2>
       <ul class="action-items__list">
         <li class="action-item">List your participant criteria</li>
         <li class="action-item">Get approval for incentives</li>
@@ -218,10 +265,12 @@ body_class: book-page
         </li>
       </ul>
     </div>
-    <a href="/startusertesting/3-step-3/" class="button--primary button__next-step">
-      Next: Build your user test and script &rarr;
+    <a
+      href="/startusertesting/3-step-3/"
+      class="button--primary button__next-step"
+    >
+      Build your user test and script &rarr;
     </a>
     {% include book-footer.html %}
   </div>
 </section>
-

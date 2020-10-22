@@ -2,7 +2,7 @@ const favicons = require('favicons')
 const nodepath = require('path');
 const fs = require('fs-extra')
 
-const SOURCE_FILE = '../assets/img/favicon.png';
+const SOURCE_FILE = '../assets/img/favicon.svg';
 const OUTPUT_FOLDER = '../assets/favicons';
 const HTML_OUTPUT_FILE = '../_includes/favicons.html';
 
@@ -18,13 +18,14 @@ const FAVICONS_PARTIAL_FILE = nodepath.resolve(__dirname, HTML_OUTPUT_FILE);
 fs.ensureDirSync(FAVICONS_TARGET_DIR);
 fs.emptyDirSync(FAVICONS_TARGET_DIR);
 
+const APP_DESCRIPTION = "Sixzero helps companies design impactful apps and software.";
 const configuration = {
-  path: PUBLIC_FAVICONS_FOLDER_PATH,                        // Path for overriding default icons path. `string`
+  path: PUBLIC_FAVICONS_FOLDER_PATH,        // Path for overriding default icons path. `string`
   appName: APP_NAME,                        // Your application's name. `string`
-  appShortName: null,                       // Your application's short_name. `string`. Optional. If not set, appName will be used
-  appDescription: null,                     // Your application's description. `string`
-  developerName: null,                      // Your (or your developer's) name. `string`
-  developerURL: null,                       // Your (or your developer's) URL. `string`
+  appShortName: APP_NAME,                   // Your application's short_name. `string`. Optional. If not set, appName will be used
+  appDescription: APP_DESCRIPTION,          // Your application's description. `string`
+  developerName: "Nick Foster, Sixzero",    // Your (or your developer's) name. `string`
+  developerURL: "https://sixzero.co/",      // Your (or your developer's) URL. `string`
   dir: "auto",                              // Primary text direction for name, short_name, and description
   lang: "en-US",                            // Primary language for name and short_name
   background: "#fff",                       // Background colour for flattened icons. `string`

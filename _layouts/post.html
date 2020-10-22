@@ -2,24 +2,39 @@
 <html lang="en">
 <head>
   <title>{{ page.title }}</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta
+    http-equiv="Content-Type"
+    content="text/html; charset=utf-8"
+  />
   {% if page.description %}
-    <meta name="description" content="{{ page.description }}">
+  <meta
+    name="description"
+    content="{{ page.description }}"
+  >
   {% endif %}
   {% include meta-data.html %}
 </head>
 
 <body id="top">
   {% include navigation.html %}
-  <main class="main-wrapper" id="panel">
+  <main
+    class="main-wrapper"
+    id="maincontent"
+  >
     {% include mobile-menu-trigger.html %}
     <div class="post-container">
       {{ content }}
       <div class="post__cta-container">
-        <a href="/contact" class="button--primary">
-        Let&rsquo;s work together
+        <a
+          href="/contact"
+          class="button--primary"
+        >
+          Let&rsquo;s work together
         </a>
-        <a href="#top" class="button--secondary">
+        <a
+          href="#top"
+          class="button--secondary"
+        >
           Back to top
         </a>
       </div>
@@ -28,4 +43,5 @@
   {% include footer.html %}
   {% include scripts.html %}
 </body>
+
 </html>

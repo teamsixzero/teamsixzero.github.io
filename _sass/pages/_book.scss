@@ -139,13 +139,6 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 4rem;
-
-    &__back-link {
-
-      &__left-arrow {
-
-      }
-    }
   }
 
   &__header {
@@ -191,6 +184,39 @@
 
   // content overrides
   &__container {
+    .toc__chapter {
+      a {
+        position: relative;
+
+        &::before {
+          position: absolute;
+          top: 50%;
+          left: -20px;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 3px;
+          border-color: $teal;
+          border-radius: 50%;
+          background-color: $teal;
+          visibility: hidden;
+          transform: translateY(-50%);
+          opacity: 0;
+          content: "";
+        }
+
+        &:hover,
+        &.active {
+          color: $grey;
+
+          &::before {
+            opacity: 1;
+            visibility: visible;
+          }
+        }
+      }
+    }
+
     .toc__chapters {
       padding-left: 0;
       list-style-type: none !important;
@@ -233,7 +259,7 @@
     }
   }
 
-  &__next {
+  &__next-chapter {
     // hide next chapter link on mobile
     @include breakpoint__ebook__navigation--compressed() {
       display: none;
@@ -287,6 +313,11 @@
 .book-content {
   color: #000000;
   padding-bottom: 64px;
+
+  h3,
+  .h3 {
+    font-size: 30px;
+  }
 
   h4,
   .h4 {
@@ -343,11 +374,62 @@
 .book-menu {
   color: #000000;
 
-  a {
-    color: #000000;
+  // NOTE: using this as opposed to '&__section' to increase specificity
+  .book-menu__section {
+    margin-bottom: 8px;
+    margin-left: -28px;
 
-    &:hover {
-      color: $teal;
+    a {
+      position: relative;
+      display: inline-block;
+      padding: 6px 16px 6px 30px;
+      color: #000000;
+      text-decoration: none;
+
+      &::before {
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 4px;
+        border-color: $teal;
+        border-radius: 50%;
+        background-color: $teal;
+        visibility: hidden;
+        transform: translateY(-50%);
+        opacity: 0;
+        content: "";
+      }
+
+      &:hover,
+      &.active {
+        &::before {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+
+      &:hover {
+        box-shadow: 0 2px 8px 0 #0000001a;
+      }
+    }
+  }
+
+  &__next-chapter {
+    &__text {
+      @include typography__heading-accent-text();
+    }
+
+    &__link {
+      color: black;
+      text-decoration: none;
+
+      &:hover {
+        color: black;
+        text-decoration: underline;
+      }
     }
   }
 }
@@ -374,7 +456,7 @@
 }
 
 .book-menu__content {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 200;
 }
 

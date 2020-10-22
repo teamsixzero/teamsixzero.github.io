@@ -1,6 +1,6 @@
-// ============================================================================= 
+// =============================================================================
 // Mobile Nav
-// ============================================================================= 
+// =============================================================================
 
 .mobile-nav-trigger {
   position: absolute;
@@ -8,7 +8,7 @@
   padding: 13px;
   display: none;
 
-  @media only screen and 
+  @media only screen and
   (max-width: $screen-xs) {
     display: block;
   }
@@ -28,7 +28,7 @@
 .mobile-nav {
   display: none;
 
-  @media only screen and 
+  @media only screen and
   (max-width: $screen-xs) {
     display: block;
   }
@@ -42,7 +42,7 @@
   transform: translateX(-50%);
   display: none;
 
-  @media only screen and 
+  @media only screen and
   (max-width: $screen-xs) {
     display: block;
   }
@@ -53,9 +53,9 @@
   }
 }
 
-// ============================================================================= 
+// =============================================================================
 // Desktop Nav
-// ============================================================================= 
+// =============================================================================
 
 .desktop-nav {
   @include grid-container;
@@ -64,14 +64,14 @@
   top: 0;
   width: 100%;
   z-index: 100;
-  
-  @media only screen and 
+
+  @media only screen and
   (max-width: $screen-sm) {
     padding-top: 24px;
     padding-bottom: 24px;
   }
 
-  @media only screen and 
+  @media only screen and
   (max-width: $screen-xs){
     display: none;
   }
@@ -134,9 +134,9 @@
   }
 }
 
-// ============================================================================= 
+// =============================================================================
 // Slideout menu CSS
-// ============================================================================= 
+// =============================================================================
 
 .slideout-menu {
   position: fixed;
@@ -165,7 +165,7 @@
 }
 
 .slideout-open .slideout-menu {
-  @media only screen and 
+  @media only screen and
   (min-width: $screen-xs){
     display: none !important;
   }

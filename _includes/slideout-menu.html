@@ -9,18 +9,18 @@
     }
 
     var slideout = new Slideout({
-      'panel': document.getElementById('panel'),
+      'panel': document.getElementById('maincontent'),
       'menu': menu,
       'padding': 241,
       'tolerance': 70
     });
 
     // Toggle button
-    document.querySelector('.toggle-button').addEventListener('click', function() {
+    document.querySelector('.toggle-button').addEventListener('click', function () {
       slideout.toggle();
     });
 
-    $(window).resize(function() {
+    $(window).resize(function () {
       if ($(window).width() > 480) {
         $('.main-wrapper').removeAttr("style");
       }

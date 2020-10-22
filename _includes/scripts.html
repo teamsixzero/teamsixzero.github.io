@@ -1,28 +1,32 @@
 <!-- Google font CSS -->
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Poppins:300,400,600,700">
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Poppins:300,400,600,700"
+>
 
 <!-- JQuery -->
 <script
   src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
   integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
-  crossorigin="anonymous"></script>
+  crossorigin="anonymous"
+></script>
 
 {% include slideout-menu.html %}
 
 <!-- Hamburger menu icon animation -->
 <script>
-var $hamburger = $(".hamburger");
+  var $hamburger = $(".hamburger");
 
-$hamburger.on("click", function(e) {
-  $hamburger.toggleClass("is-active");
-});
+  $hamburger.on("click", function (e) {
+    $hamburger.toggleClass("is-active");
+  });
 </script>
 
 <!-- Style links on active page -->
 <script>
-var loc = window.location.pathname;
+  var loc = window.location.pathname;
 
-$('.nav__inner').find('.nav__item').each(function() {
-  $(this).toggleClass('active', $(this).attr('href') == loc);
-});
+  $('.nav__inner').find('.nav__item').each(function () {
+    $(this).toggleClass('active', $(this).attr('href') == loc);
+  });
 </script>

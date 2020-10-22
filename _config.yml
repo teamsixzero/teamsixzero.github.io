@@ -12,6 +12,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - node_modules
+  - babel.config.json
 sass:
   sass_dir: _sass
   style: compressed

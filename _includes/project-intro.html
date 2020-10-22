@@ -1,20 +1,23 @@
 <header class="project--intro {{ include.class }}">
   <div class="section__inner--c8">
     {% if include.imageTop %}
-      <img src="{{ include.imageTop }}" class="{{ include.imageClass }}">
+    <img
+      src="{{ include.imageTop }}"
+      class="{{ include.imageClass }}"
+    >
     {% endif %}
     <h1 class="intro__title">{{ include.title }}</h1>
     <p class="h6 intro__copy">
       {{ include.introBody }}
       {% if include.link %}
-        <a
-          href="{{ include.link }}"
-          target="_blank"
-          rel="noopener {{ include.linkRel }}"
-          class="header__link link-with-arrow"
-        >
-            {{ include.linkText }}
-        </a>
+      <a
+        href="{{ include.link }}"
+        target="_blank"
+        rel="noopener {{ include.linkRel }}"
+        class="header__link link-with-arrow"
+      >
+        {{ include.linkText }}
+      </a>
       {% endif %}
     </p>
   </div>

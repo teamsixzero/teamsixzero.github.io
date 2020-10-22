@@ -11,7 +11,10 @@ body_class: book-page
 <section class="book-container">
   <nav class="book-menu">
     <div class="book-menu__content">
-      <a href="/startusertesting/" class="book-menu__button remove-if-js">&larr; Back to Sixzero</a>
+      <a
+        href="/startusertesting/"
+        class="book-menu__button remove-if-js"
+      >&larr; Back to Sixzero</a>
 
       <div
         class="book-drawer__toggle-container visible-if-js"
@@ -27,10 +30,13 @@ body_class: book-page
       <p class="book-menu__step-heading">
         <small class="book-menu__step">Step 3</small>
       </p>
-      <p class="h1 book-menu__title">
+      <h1 class="book-menu__title">
         Build your user test and script
-      </p>
-      <ul class="book-menu__sections">
+      </h1>
+      <ul
+        class="book-menu__sections"
+        id="page-navigation"
+      >
         <li class="book-menu__section">
           <a href="#make-the-experience-as-real-as-possible">
             Make the experience as real as possible
@@ -67,13 +73,30 @@ body_class: book-page
           </a>
         </li>
       </ul>
-      <a href="/startusertesting/4-step-4/" class="book-menu__next">Next: Conduct your user test</a>
+      <div class="book-menu__next-chapter">
+        <p class="book-menu__next-chapter__text">
+          Next chapter
+        </p>
+        <p>
+          <a
+            href="/startusertesting/4-step-4/"
+            class="book-menu__next"
+          >Conduct your user test</a>
+        </p>
+      </div>
     </div>
   </nav>
-  <div class="book-content">
-    <h1 class="h3" id="make-the-experience-as-real-as-possible" class="title-has-no-top-margin">
+  <div
+    class="book-content"
+    id="book-content"
+  >
+    <h2
+      class="h3 book-section-header"
+      id="make-the-experience-as-real-as-possible"
+      class="title-has-no-top-margin"
+    >
       Make the experience as real as possible
-    </h1>
+    </h2>
     <p>
       As a general rule, you’ll get more detailed feedback the more detailed
       and functional your prototype. But you don't always need detailed feedback.
@@ -123,8 +146,8 @@ body_class: book-page
       Achieving the right level of fidelity is a balancing act and depends
       heavily upon how much detail you need in your feedback to continue
       moving forward with confidence. The trick then is <strong>faking reality just
-      enough so the user buys it, while putting in the minimum amount of
-      effort to create the prototype as possible.</strong> As tempting as it may be
+        enough so the user buys it, while putting in the minimum amount of
+        effort to create the prototype as possible.</strong> As tempting as it may be
       to present your testers with something beautiful and polished, building
       something super detailed too early on would require you to make a
       bunch of assumptions and waste a bunch of time, which is &mdash; ultimately
@@ -143,7 +166,10 @@ body_class: book-page
     </p>
     <br>
     <br>
-    <h2 class="h3" id="set-the-stage-with-a-realistic-scenario">
+    <h2
+      class="h3 book-section-header"
+      id="set-the-stage-with-a-realistic-scenario"
+    >
       Set the stage with a realistic scenario
     </h2>
     <p>
@@ -168,7 +194,10 @@ body_class: book-page
     </p>
     <br>
     <br>
-    <h2 class="h3" id="write-your-script">
+    <h2
+      class="h3 book-section-header"
+      id="write-your-script"
+    >
       Write your script
     </h2>
     <p>
@@ -201,45 +230,48 @@ body_class: book-page
       You don’t need to be a journalist to come up with great follow-up
       questions, you just need to be curious. For example, when a participant
       says they like or don’t like something, ask them:
-      <ul>
-        <li>What don’t you/do you like about it?</li>
-        <li>How might you improve it?</li>
-      </ul>
+    <ul>
+      <li>What don’t you/do you like about it?</li>
+      <li>How might you improve it?</li>
+    </ul>
     </p>
     <p>
       If a participant is surprised by something, ask them:
-      <ul>
-        <li>Why were you surprised?</li>
-        <li>What did you expect to happen?</li>
-      </ul>
+    <ul>
+      <li>Why were you surprised?</li>
+      <li>What did you expect to happen?</li>
+    </ul>
     </p>
     <p>
       At the start of a new flow or feature, ask participants:
-      <ul>
-        <li>What do you think this is?</li>
-        <li>What are your initial impressions, thoughts, and feelings?</li>
-      </ul>
+    <ul>
+      <li>What do you think this is?</li>
+      <li>What are your initial impressions, thoughts, and feelings?</li>
+    </ul>
     </p>
     <p>
       If a participant breezes through something important, stop them and ask:
-      <ul>
-        <li>Did you notice it? Why not?</li>
-        <li>Do you care?</li>
-      </ul>
+    <ul>
+      <li>Did you notice it? Why not?</li>
+      <li>Do you care?</li>
+    </ul>
     </p>
     <p>
       Once a user has completed a flow, ask them:
-      <ul>
-        <li>What were your overall impressions?</li>
-        <li>Did it match your impression of it before you started?</li>
-        <li>Was it valuable?</li>
-        <li>What did you like?</li>
-        <li>What did you dislike?</li>
-      </ul>
+    <ul>
+      <li>What were your overall impressions?</li>
+      <li>Did it match your impression of it before you started?</li>
+      <li>Was it valuable?</li>
+      <li>What did you like?</li>
+      <li>What did you dislike?</li>
+    </ul>
     </p>
     <br>
     <br>
-    <h2 class="h3" id="dont-forget-the-software-usability-scale">Don’t forget the &lsquo;Software Usability Scale&rsquo;</h2>
+    <h2
+      class="h3 book-section-header"
+      id="dont-forget-the-software-usability-scale"
+    >Don’t forget the &lsquo;Software Usability Scale&rsquo;</h2>
     <p>
       Developed in 1986, the Software Usability Scale (SUS) is a reliable tool for
       measuring the usability of your product.
@@ -286,7 +318,10 @@ body_class: book-page
     </p>
     <br>
     <br>
-    <h2 class="h3" id="test-the-test">
+    <h2
+      class="h3 book-section-header"
+      id="test-the-test"
+    >
       Test the test
     </h2>
     <p>
@@ -309,7 +344,10 @@ body_class: book-page
     </p>
     <br>
     <br>
-    <h2 class="h3" id="modify-as-you-go">Modify as you go</h2>
+    <h2
+      class="h3 book-section-header"
+      id="modify-as-you-go"
+    >Modify as you go</h2>
     <p>
       You may discover a problem very early on in your tests and wonder if it’s
       necessary to watch all five of your testers struggle with the same thing.
@@ -320,8 +358,8 @@ body_class: book-page
     <p>
       Whereas a true experiment would require a scientific hypothesis which you
       either prove or disprove with clean data, <strong>user tests are a structured way
-      to discover if something sucks &mdash; and sometimes you only need to see
-      it once to know it's worth changing.</strong>
+        to discover if something sucks &mdash; and sometimes you only need to see
+        it once to know it's worth changing.</strong>
     </p>
     <p>
       Plus, making tweaks on the fly allows you to test things faster and
@@ -347,15 +385,15 @@ body_class: book-page
     </p>
     <p>
       Some things you might consider tweaking in between tests include:
-      <ul>
-        <li>changes to the test itself</li>
-        <li>asking a different question</li>
-        <li>posing a scenario differently</li>
-        <li>
-          making changes to the UI to fix obvious issues from early tests that
-          hung people up
-        </li>
-      </ul>
+    <ul>
+      <li>changes to the test itself</li>
+      <li>asking a different question</li>
+      <li>posing a scenario differently</li>
+      <li>
+        making changes to the UI to fix obvious issues from early tests that
+        hung people up
+      </li>
+    </ul>
     </p>
     <p>
       Of course, there are situations in which you might not want to change the
@@ -377,12 +415,15 @@ body_class: book-page
       to a stakeholder just how deep the problem runs. We've also done tests
       where we change lots of stuff, and it proved the solution in one cohort.
       In short, <strong>use your judgement, and treat user testing as an adaptable
-      tool versus a set of rules.</strong>
+        tool versus a set of rules.</strong>
     </p>
 
 
-    <div class="callout" id="tools-of-the-trade">
-    <h5 class="h5 callout__title">Tools of the trade</h5>
+    <div
+      class="callout"
+      id="tools-of-the-trade"
+    >
+      <h3 class="h5 callout__title">Tools of the trade</h3>
       <ul>
         <li>
           Screen recording software. If you have a preferred screen recording tool,
@@ -396,8 +437,10 @@ body_class: book-page
       </ul>
     </div>
 
-    <div class="action-items" id="action-items">
-      <h2 class="h4 action-items__title">Action items</h2>
+    <div
+      class="action-items"
+    >
+      <h2 class="h4 action-items__title book-section-header" id="action-items">Action items</h2>
       <ul class="action-items__list">
         <li class="action-item">
           Ensure the thing you’re testing is in good working order
@@ -420,8 +463,11 @@ body_class: book-page
         </li>
       </ul>
     </div>
-    <a href="/startusertesting/4-step-4/" class="button--primary button__next-step">
-      Next: Conduct your user test &rarr;
+    <a
+      href="/startusertesting/4-step-4/"
+      class="button--primary button__next-step"
+    >
+      Conduct your user test &rarr;
     </a>
     {% include book-footer.html %}
   </div>

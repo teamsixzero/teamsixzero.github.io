@@ -2,25 +2,25 @@
 
   .project__description {
 
-    @media only screen and 
+    @media only screen and
     (min-width: $screen-sm) {
       @include grid-column(4);
     }
 
-     @media only screen and 
+     @media only screen and
     (min-width: $screen-md) {
       @include grid-column(3);
     }
   }
 
   .project__image {
-    @media only screen and 
+    @media only screen and
     (min-width: $screen-sm) {
       @include grid-column(7);
       margin-top: 50px;
     }
 
-    @media only screen and 
+    @media only screen and
     (min-width: $screen-md) {
       margin-top: 120px;
     }
@@ -34,43 +34,43 @@
 
 .ftsy-intro {
 
-  @media only screen and 
+  @media only screen and
   (max-width: $screen-md) {
     padding-top: 208px;
   }
 
-  @media only screen and 
+  @media only screen and
   (max-width: $screen-xs) {
     padding-top: 112px;
   }
 
 
   .intro__title {
-    @media only screen and 
+    @media only screen and
     (max-width: $screen-lg) {
       font-size: 37px;
       line-height: 1.25;
     }
 
-    @media only screen and 
+    @media only screen and
     (max-width: $screen-md) {
       font-size: 31px;
       line-height: 1.25;
     }
 
-    @media only screen and 
+    @media only screen and
     (max-width: $screen-sm) {
       font-size: 27px;
     }
   }
 
-  .intro__copy { 
-    @media only screen and 
+  .intro__copy {
+    @media only screen and
     (max-width: $screen-lg) {
       font-size: 19px;
     }
 
-    @media only screen and 
+    @media only screen and
     (max-width: $screen-md) {
       font-size: 16px;
       line-height: 1.75;
@@ -89,7 +89,7 @@
   align-items: center;
   background: #F5F5F5;
 
-  @media only screen and 
+  @media only screen and
   (max-width: $screen-sm) {
     display: block;
     overflow: hidden;
@@ -102,14 +102,14 @@
     flex: 0 0 50%;
 
 
-    @media only screen and 
+    @media only screen and
     (max-width: $screen-sm) {
       display: block;
       max-width: 100%;
       margin: 56px 32px 46px;
     }
 
-    @media only screen and 
+    @media only screen and
     (max-width: $screen-xs) {
       margin-left: 0;
       margin-right: 0;
@@ -120,22 +120,22 @@
   .project__description-inner {
     @include grid-column(7);
 
-    @media only screen and 
+    @media only screen and
     (min-width: $screen-md) {
       @include grid-column(8);
     }
 
-    @media only screen and 
+    @media only screen and
     (max-width: $screen-md) {
       @include grid-column(9);
     }
 
-    @media only screen and 
+    @media only screen and
     (max-width: $screen-sm) {
       @include grid-column(10);
     }
 
-    @media only screen and 
+    @media only screen and
     (max-width: $screen-xs) {
       @include grid-column(12);
     }
@@ -143,20 +143,20 @@
 
   .project__image {
     overflow: hidden;
- 
+
     img {
       width: 100%;
       vertical-align: top;
     }
 
-    @media only screen and 
+    @media only screen and
     (max-width: $screen-sm) {
       display: block;
       width: 100%;
       margin-bottom: -350px;
     }
 
-    @media only screen and 
+    @media only screen and
     (max-width: $screen-xs) {
       margin-bottom: -100px;
     }
@@ -164,11 +164,11 @@
 }
 
 
-.ftsy-scanning, 
+.ftsy-scanning,
 .ftsy-intro {
   .project__image {
 
-    @media only screen and 
+    @media only screen and
     (min-width: $screen-sm) {
       @include grid-shift(1);
       text-align: center;
@@ -178,11 +178,11 @@
       }
     }
 
-    @media only screen and 
+    @media only screen and
     (max-width: $screen-sm) {
       img {
         max-width: 300px;
       }
     }
-  }  
+  }
 }

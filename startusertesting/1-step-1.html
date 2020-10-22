@@ -11,7 +11,10 @@ body_class: book-page
 <section class="book-container">
   <nav class="book-menu">
     <div class="book-menu__content">
-      <a href="/startusertesting/" class="book-menu__button remove-if-js">&larr; Back to Sixzero</a>
+      <a
+        href="/startusertesting/"
+        class="book-menu__button remove-if-js"
+      >&larr; Back to Sixzero</a>
 
       <div
         class="book-drawer__toggle-container visible-if-js"
@@ -27,10 +30,13 @@ body_class: book-page
       <p class="book-menu__step-heading">
         <small class="book-menu__step">Step 1</small>
       </p>
-      <p class="h1 book-menu__title">
+      <h1 class="book-menu__title">
         Define what you’re testing and why
-      </p>
-      <ul class="book-menu__sections">
+      </h1>
+      <ul
+        class="book-menu__sections"
+        id="page-navigation"
+      >
         <li class="book-menu__section">
           <a href="#decide-what-you-are-testing">Decide what you are testing</a>
         </li>
@@ -40,17 +46,33 @@ body_class: book-page
         <li class="book-menu__section">
           <a href="#build-out-the-foundations-of-your-test">Build out the foundations of your test</a>
         </li>
-        <li class="book-menu__section"><a href="#action-item">Action Items</a></li>
+        <li class="book-menu__section"><a href="#action-items">Action Items</a></li>
       </ul>
-      <a href="/startusertesting/2-step-2/" class="book-menu__next">
-        Next: Identify and schedule your test participants
-      </a>
+      <div class="book-menu__next-chapter">
+        <p class="book-menu__next-chapter__text">
+          Next chapter
+        </p>
+        <p>
+          <a
+            href="/startusertesting/2-step-2/"
+            class="book-menu__next-chapter__link"
+          >
+            Identify and schedule your test participants
+          </a>
+        </p>
+      </div>
     </div>
   </nav>
-  <div class="book-content">
-    <h1 class="h3" id="decide-what-you-are-testing">
+  <div
+    class="book-content"
+    id="book-content"
+  >
+    <h2
+      class="sr-only book-section-header"
+      id="decide-what-you-are-testing"
+    >
       Decide what you are testing
-    </h1>
+    </h2>
     <p>
       Tempting as it might be to test #allthethings, it’s just not possible &mdash; at
       least not in a single day. Instead, focus on what’s most important to your
@@ -63,11 +85,14 @@ body_class: book-page
       and give them the task of using your core functionality. For example, if you
       were facilitating testing for Airbnb, you would ask your participant to
       create an account and complete a booking. <em> The more it hurts to watch the
-      more valuable it is. Don’t look away!</em>
+        more valuable it is. Don’t look away!</em>
     </p>
     <br>
     <br>
-    <h2 class="h3" id="decide-what-you-want-to-understand">
+    <h2
+      class="h3 book-section-header"
+      id="decide-what-you-want-to-understand"
+    >
       Decide what you want to understand
     </h2>
 
@@ -77,8 +102,8 @@ body_class: book-page
     </p>
 
     <p>
-    List out all the reasons why you believe users are having trouble. Using the
-    Airbnb example again, it would look something like this:
+      List out all the reasons why you believe users are having trouble. Using the
+      Airbnb example again, it would look something like this:
     </p>
 
     <ul>
@@ -89,10 +114,16 @@ body_class: book-page
 
     <p>
       These questions will become the foundation of your test outline and script.
-      (Don’t worry, we’ve provided templates for both <a href="https://drive.google.com/drive/folders/1EDQypvBIby1OoiptW4WKsCKKnkI12RoH?usp=sharing" target="_blank">here.</a>)
+      (Don’t worry, we’ve provided templates for both <a
+        href="https://drive.google.com/drive/folders/1EDQypvBIby1OoiptW4WKsCKKnkI12RoH?usp=sharing"
+        target="_blank"
+      >here.</a>)
     </p>
 
-    <h2 class="h3" id="build-out-the-foundations-of-your-test">
+    <h2
+      class="h3 book-section-header"
+      id="build-out-the-foundations-of-your-test"
+    >
       Build out the foundations of your test
     </h2>
     <p>
@@ -102,8 +133,14 @@ body_class: book-page
     </p>
 
     <ul>
-      <li><a href="https://docs.google.com/document/d/1VQ0Ydukoh80d7CdEIdJTKdt4J1-9mS_YjuVXNR8_zcM/edit?usp=sharing" target="_blank">User test outline and script</a></li>
-      <li><a href="https://docs.google.com/document/d/1bucindwrgbXyYoJpPbkeEui6txETP6H-y60VHhaVFyY/edit?usp=sharing" target="_blank">Outreach email</a></li>
+      <li><a
+          href="https://docs.google.com/document/d/1VQ0Ydukoh80d7CdEIdJTKdt4J1-9mS_YjuVXNR8_zcM/edit?usp=sharing"
+          target="_blank"
+        >User test outline and script</a></li>
+      <li><a
+          href="https://docs.google.com/document/d/1bucindwrgbXyYoJpPbkeEui6txETP6H-y60VHhaVFyY/edit?usp=sharing"
+          target="_blank"
+        >Outreach email</a></li>
     </ul>
 
     <p>
@@ -111,20 +148,33 @@ body_class: book-page
       from the people you recruit to the questions you ask.
     </p>
 
-    <div class="action-items" id="action-item">
-      <h2 class="h4 action-items__title">Action Items</h2>
+    <div
+      class="action-items"
+    >
+      <h2
+        id="action-items"
+        class="h4 action-items__title book-section-header"
+      >
+        Action Items
+      </h2>
       <ul class="action-items__list">
         <li class="action-item">Decide what you want to understand</li>
         <li class="action-item">Make a list of why you think users might be having trouble</li>
         <li class="action-item">
-          Save a copy of all the <a href="https://drive.google.com/drive/folders/1EDQypvBIby1OoiptW4WKsCKKnkI12RoH?usp=sharing" target="_blank">test materials</a>
+          Save a copy of all the <a
+            href="https://drive.google.com/drive/folders/1EDQypvBIby1OoiptW4WKsCKKnkI12RoH?usp=sharing"
+            target="_blank"
+          >test materials</a>
           to your drive and begin filling in the details
         </li>
       </ul>
     </div>
 
-    <a href="/startusertesting/2-step-2/" class="button--primary button__next-step">
-      Next: Identify and schedule your test participants &rarr;
+    <a
+      href="/startusertesting/2-step-2/"
+      class="button--primary button__next-step"
+    >
+      Identify and schedule your test participants &rarr;
     </a>
     {% include book-footer.html %}
   </div>

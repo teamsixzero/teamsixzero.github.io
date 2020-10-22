@@ -2,7 +2,7 @@
   @include grid-container;
   display: flex;
 
-  @media only screen and 
+  @media only screen and
   (max-width: $screen-sm) {
     display: block;
   }
@@ -13,18 +13,18 @@
 // Card
 // =============================================================================
 
-%card {    
+%card {
   display: flex;
   flex-direction: column;
   flex: 0 0 auto;
   box-sizing: border-box;
   box-shadow: 0 20px 30px rgba($grey-medium, 0.2);
   padding: 40px 32px;
-  background: #ffffff;    
+  background: #ffffff;
   text-align: left;
   transition: all .1s ease-in-out;
 
-  @media only screen and 
+  @media only screen and
   (max-width: $screen-sm) {
     @include grid-column(12);
     margin-bottom: 40px;
@@ -40,7 +40,7 @@
 
   .card-highlight-text {
     display: block;
-    text-transform: uppercase; 
+    text-transform: uppercase;
     letter-spacing: 1.5px;
     color: rgba($grey, .5);
     font-size: 12px;
@@ -51,12 +51,12 @@
     margin-bottom: 16px;
     font-family: $header-font;
 
-     @media only screen and 
+     @media only screen and
     (max-width: $screen-md) {
       font-size: 19px;
     }
 
-    @media only screen and 
+    @media only screen and
     (max-width: $screen-sm) {
       font-size: 16px;
     }
@@ -66,7 +66,7 @@
     font-size: 16px;
     margin-bottom: 0;
 
-    @media only screen and 
+    @media only screen and
     (max-width: $screen-md) {
       font-size: 14px;
     }
@@ -78,14 +78,14 @@
   @extend %card;
   @include grid-column(4);
 
-  @media only screen and 
+  @media only screen and
   (max-width: $screen-sm) {
     @include grid-column(8);
     @include grid-shift(2);
     display: block;
   }
 
-  @media only screen and 
+  @media only screen and
   (max-width: $screen-xs) {
     @include grid-column(12);
     @include grid-shift(0);

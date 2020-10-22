@@ -6,19 +6,19 @@ header {
   padding-top: 210px;
   padding-bottom: 180px;
 
-  @media only screen and 
+  @media only screen and
   (min-width: $screen-lg) {
     padding-top: 300px;
     padding-bottom: 300px;
   }
 
-  @media only screen and 
+  @media only screen and
   (max-width: $screen-sm) {
     padding-top: 170px;
     padding-bottom: 130px;
   }
 
-  @media only screen and 
+  @media only screen and
   (max-width: $screen-xs) {
     padding-top: 130px;
     padding-bottom: 100px;
@@ -29,7 +29,7 @@ header {
   margin-top: 0;
   margin-bottom: 0;
 
-  @media only screen and 
+  @media only screen and
   (max-width: $screen-sm) {
     font-size: 37px;
     line-height: 1.25;
@@ -42,7 +42,7 @@ header {
   margin-top: 24px;
   margin-bottom: 0;
 
-  @media only screen and 
+  @media only screen and
   (max-width: $screen-sm) {
     font-size: 18px;
   }
@@ -53,13 +53,13 @@ header {
   @include grid-shift(2);
   text-align: center;
 
-  @media only screen and 
+  @media only screen and
   (max-width: $screen-md) {
     @include grid-column(10);
     @include grid-shift(1);
   }
 
-  @media only screen and 
+  @media only screen and
   (max-width: $screen-xs) {
     @include grid-column(12);
     @include grid-shift(0);
@@ -71,7 +71,7 @@ header {
 }
 
 
-// ============================================================================= 
+// =============================================================================
 // Project: Intro
 // =============================================================================
 
@@ -84,13 +84,13 @@ header {
   text-align: center;
 
 
-  @media only screen and 
+  @media only screen and
   (max-width: $screen-sm) {
     padding-top: 112px;
     padding-bottom: 0px;
   }
 
-  @media only screen and 
+  @media only screen and
   (max-width: $screen-xs) {
     padding-top: 112px;
     padding-bottom: 0;
@@ -101,13 +101,13 @@ header {
 .intro__title {
   margin-bottom: 16px;
 
-  @media only screen and 
+  @media only screen and
   (max-width: $screen-md) {
     font-size: 37px;
     line-height: 1.25;
   }
 
-  @media only screen and 
+  @media only screen and
   (max-width: $screen-sm) {
     font-size: 31px;
     line-height: 1.25;
@@ -118,12 +118,12 @@ header {
   line-height: 2;
   color: $grey-3;
 
-  @media only screen and 
+  @media only screen and
   (max-width: $screen-md) {
-    font-size: 19px;      
+    font-size: 19px;
   }
 
-  @media only screen and 
+  @media only screen and
   (max-width: $screen-sm) {
     font-size: 16px;
     line-height: 1.75;
@@ -141,12 +141,12 @@ header {
     font-size: 64px;
     line-height: 1.5;
 
-    @media only screen and 
+    @media only screen and
     (max-width: $screen-md) {
       font-size: 53px;
     }
 
-    @media only screen and 
+    @media only screen and
     (max-width: $screen-sm) {
       font-size: 37px;
     }
@@ -160,14 +160,14 @@ header {
 
 .header--grey {
   background: $grey-light;
-  
-  @media only screen and 
+
+  @media only screen and
   (min-width: $screen-md) {
     padding-top: 190px;
     padding-bottom: 170px;
   }
 
-  @media only screen and 
+  @media only screen and
   (min-width: $screen-lg) {
     padding-top: 270px;
     padding-bottom: 240px;
@@ -178,12 +178,12 @@ header {
     font-size: 64px;
     line-height: 1.5;
 
-    @media only screen and 
+    @media only screen and
     (max-width: $screen-md) {
       font-size: 53px;
     }
 
-    @media only screen and 
+    @media only screen and
     (max-width: $screen-sm) {
       font-size: 37px;
     }
@@ -219,30 +219,30 @@ header {
   padding-bottom: 160px;
 
 
-  @media only screen and 
+  @media only screen and
   (max-width: $screen-md) {
     padding-top: 144px;
     padding-bottom: 144px;
   }
 
-   @media only screen and 
+   @media only screen and
   (max-width: $screen-xs) {
     padding-top: 128px;
     padding-bottom: 128px;
   }
 
   .header__title {
-    @media only screen and 
+    @media only screen and
     (min-width: $screen-lg) {
       font-size: 57px;
-    }   
+    }
 
-    @media only screen and 
+    @media only screen and
     (max-width: $screen-sm) {
       font-size: 37px;
     }
 
-    @media only screen and 
+    @media only screen and
     (max-width: $screen-xs) {
       font-size: 31px;
     }
@@ -253,19 +253,19 @@ header {
     @include grid-column(8);
     @include grid-shift(2);
 
-    @media only screen and 
+    @media only screen and
     (max-width: $screen-lg) {
       @include grid-column(8);
       @include grid-shift(2);
     }
 
-    @media only screen and 
+    @media only screen and
     (max-width: $screen-sm) {
       @include grid-column(10);
       @include grid-shift(1);
     }
 
-    @media only screen and 
+    @media only screen and
     (max-width: $screen-xs) {
       @include grid-column(12);
       @include grid-shift(0);
@@ -278,7 +278,7 @@ header {
     height: auto;
     margin-bottom: 8px;
 
-    @media only screen and 
+    @media only screen and
     (max-width: $screen-sm) {
       width: 40px;
       margin-bottom: 24px;

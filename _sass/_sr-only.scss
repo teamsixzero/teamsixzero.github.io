@@ -27,7 +27,7 @@
     @see https://csswizardry.com/2016/05/the-importance-of-important/
 */
 
-.sr-only {
+@mixin sr-only() {
   border: 0 !important;
   clip: rect(1px, 1px, 1px, 1px) !important; /* 1 */
   -webkit-clip-path: inset(50%) !important;
@@ -41,6 +41,21 @@
   white-space: nowrap !important;            /* 3 */
 }
 
+@mixin sr-only-focusable {
+  clip: auto !important;
+  -webkit-clip-path: none !important;
+  clip-path: none !important;
+  height: auto !important;
+  margin: auto !important;
+  overflow: visible !important;
+  width: auto !important;
+  white-space: normal !important;
+}
+
+.sr-only {
+  @include sr-only();
+}
+
 /*
   Use in conjunction with .sr-only to only display content when it's focused.
   @note Useful for skip links
@@ -52,12 +67,5 @@
 */
 .sr-only-focusable:focus,
 .sr-only-focusable:active {
-  clip: auto !important;
-  -webkit-clip-path: none !important;
-    clip-path: none !important;
-  height: auto !important;
-  margin: auto !important;
-  overflow: visible !important;
-  width: auto !important;
-  white-space: normal !important;
+  @include sr-only-focusable();
 }

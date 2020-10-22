@@ -1,21 +1,21 @@
-// ============================================================================= 
+// =============================================================================
 // Project
-// ============================================================================= 
+// =============================================================================
 
 .project__name {
-  @media only screen and 
+  @media only screen and
   (max-width: $screen-md) {
     font-size: 27px;
   }
 
-  @media only screen and 
+  @media only screen and
   (max-width: $screen-sm) {
     font-size: 23px;
   }
 }
 
 .project__description{
- @media only screen and 
+ @media only screen and
   (max-width: $screen-sm) {
     text-align: left;
   }
@@ -23,7 +23,7 @@
 
 .project__description p,
 .brief__body p {
-  @media only screen and 
+  @media only screen and
   (max-width: $screen-md) {
     font-size: 14px;
   }
@@ -43,9 +43,9 @@
   margin-top: -8px;
 }
 
-// ============================================================================= 
+// =============================================================================
 // Project: Image left/right
-// ============================================================================= 
+// =============================================================================
 
 %left-right-images {
   @include grid-container;
@@ -55,13 +55,13 @@
   overflow: hidden;
   border: none;
 
-  @media only screen and 
+  @media only screen and
   (max-width: $screen-sm) {
     padding-top: 96px;
     padding-bottom: 96px;
   }
 
-  @media only screen and 
+  @media only screen and
   (max-width: $screen-xs) {
     padding-top: 64px;
     padding-bottom: 64px;
@@ -72,14 +72,14 @@
     display: flex;
     align-items: center;
 
-    @media only screen and 
+    @media only screen and
     (max-width: $screen-xs) {
       display: block;
     }
   }
 
   .project__description {
-    @media only screen and 
+    @media only screen and
     (max-width: $screen-xs) {
       margin-bottom: 32px;
       display: block;
@@ -87,12 +87,12 @@
   }
 
   .project__image {
-    @media only screen and 
+    @media only screen and
     (min-width: $screen-sm) {
       @include grid-column(7);
     }
 
-    @media only screen and 
+    @media only screen and
     (min-width: $screen-xs)  {
       @include grid-column(6);
     }
@@ -100,28 +100,28 @@
     img {
       max-width: 1300px;
 
-      @media only screen and 
+      @media only screen and
       (max-width: $screen-md) {
         max-width: 1000px;
       }
 
-      @media only screen and 
+      @media only screen and
       (max-width: $screen-sm) {
         max-width: 700px;
       }
 
-      @media only screen and 
+      @media only screen and
       (max-width: $screen-xs) {
         width: 100%;
       }
     }
-  }  
+  }
 }
 
 
-// ============================================================================= 
+// =============================================================================
 // Project: image hangs on the right
-// ============================================================================= 
+// =============================================================================
 
 .project--right-image {
   @extend %left-right-images;
@@ -129,67 +129,67 @@
   .project__image {
     @include grid-shift(1);
 
-    @media only screen and 
+    @media only screen and
     (max-width: $screen-sm) {
       @include grid-shift(0);
     }
   }
 
   .project__description {
-    @media only screen and 
+    @media only screen and
     (min-width: $screen-sm) {
       @include grid-column(5);
     }
 
-    @media only screen and 
-    (min-width: $screen-xs) and 
+    @media only screen and
+    (min-width: $screen-xs) and
     (max-width: $screen-xs-max){
       @include grid-column(6);
     }
 
-    @media only screen and 
+    @media only screen and
     (max-width: $screen-xs) {
       margin-bottom: 32px;
     }
   }
 }
 
-// ============================================================================= 
+// =============================================================================
 // Project: image hangs on the left
-// ============================================================================= 
+// =============================================================================
 
 .project--left-image {
   @extend %left-right-images;
 
   .project__description {
-    @media only screen and 
+    @media only screen and
     (min-width: $screen-xs) {
       @include grid-column(5);
       @include grid-shift(1);
     }
 
-    @media only screen and 
+    @media only screen and
     (max-width: $screen-xs) {
       order: 1;
     }
   }
 
   .project__image {
-    @media only screen and 
+    @media only screen and
     (min-width: $screen-xs) {
       direction: rtl;
     }
 
-    @media only screen and 
+    @media only screen and
     (max-width: $screen-xs) {
       order: 2;
     }
-  }  
+  }
 }
 
-// ============================================================================= 
+// =============================================================================
 // Project: with centered image and text
-// ============================================================================= 
+// =============================================================================
 
 .project--centered {
   @include grid-container;
@@ -197,13 +197,13 @@
   padding-bottom: 112px;
   border: 0;
 
-  @media only screen and 
+  @media only screen and
   (max-width: $screen-sm) {
     padding-top: 96px;
     padding-bottom: 96px;
   }
 
-  @media only screen and 
+  @media only screen and
   (max-width: $screen-xs) {
     padding-top: 64px;
     padding-bottom: 64px;
@@ -225,13 +225,13 @@
     text-align: center;
     margin-bottom: 24px;
 
-    @media only screen and 
+    @media only screen and
     (max-width: $screen-sm){
       @include grid-column(10);
       @include grid-shift(1);
     }
 
-    @media only screen and 
+    @media only screen and
     (max-width: $screen-xs){
       @include grid-column(12);
       @include grid-shift(0);
@@ -242,7 +242,7 @@
     @include grid-column(10);
     @include grid-shift(1);
 
-    @media only screen and 
+    @media only screen and
     (max-width: $screen-xs){
       @include grid-column(12);
       @include grid-shift(0);
@@ -254,7 +254,7 @@
     max-width: 400px;
     margin: 0 auto;
 
-    @media only screen and 
+    @media only screen and
     (max-width: $screen-xs){
       @include grid-column(8);
       @include grid-shift(2);
@@ -268,19 +268,19 @@
     @include grid-column(6);
     @include grid-shift(3);
 
-    @media only screen and 
+    @media only screen and
     (max-width: $screen-md){
       @include grid-column(8);
       @include grid-shift(2);
     }
 
-    @media only screen and 
+    @media only screen and
     (max-width: $screen-sm){
       @include grid-column(10);
       @include grid-shift(1);
     }
 
-    @media only screen and 
+    @media only screen and
     (max-width: $screen-xs){
       @include grid-column(12);
       @include grid-shift(0);
@@ -288,19 +288,19 @@
   }
 }
 
-// ============================================================================= 
+// =============================================================================
 // Project: Isometric Mobile
-// ============================================================================= 
+// =============================================================================
 
 .project--isometric-mobile {
   margin-bottom: 200px;
 
-  @media only screen and 
+  @media only screen and
   (max-width: $screen-sm){
     margin-bottom: 180px;
   }
 
-  @media only screen and 
+  @media only screen and
   (max-width: $screen-xs){
     margin-bottom: 80px;
   }
@@ -310,12 +310,12 @@
     @include grid-shift(2);
     margin-bottom: -350px;
 
-    @media only screen and 
+    @media only screen and
     (max-width: $screen-md){
       margin-bottom: -260px;
     }
 
-    @media only screen and 
+    @media only screen and
     (max-width: $screen-xs){
       @include grid-column(12);
       @include grid-shift(0);
@@ -324,16 +324,16 @@
   }
 }
 
-// ============================================================================= 
+// =============================================================================
 // Project: 2-up comparison image
-// ============================================================================= 
+// =============================================================================
 
 .project__comparison-image {
   @include grid-column(10);
   @include grid-shift(1);
   padding-top: 80px;
 
-  @media only screen and 
+  @media only screen and
   (max-width: $screen-xs){
     @include grid-column(12);
     @include grid-shift(0);
@@ -347,18 +347,18 @@
 }
 
 
-// ============================================================================= 
+// =============================================================================
 // Project: Cropped images see on Olive
-// ============================================================================= 
+// =============================================================================
 
 
 .cropped-screenshot {
-  @media only screen and 
+  @media only screen and
   (max-width: $screen-sm) {
     padding-top: 48px;
   }
 
-  @media only screen and 
+  @media only screen and
   (max-width: $screen-xs) {
     padding-top: 24px;
   }
@@ -400,9 +400,9 @@
 
 
 
-// ============================================================================= 
+// =============================================================================
 // Project: Floating brief section see olive.
-// ============================================================================= 
+// =============================================================================
 
 .project--brief {
     @include grid-container;
@@ -410,13 +410,13 @@
     padding-bottom: 136px;
     border: 0;
 
-    @media only screen and 
+    @media only screen and
     (max-width: $screen-sm) {
       padding-top: 112px;
       padding-bottom: 112px;
     }
 
-    @media only screen and 
+    @media only screen and
     (max-width: $screen-xs) {
       padding-top: 80px;
       padding-bottom: 80px;
@@ -428,19 +428,19 @@
     @include grid-shift(1);
 
 
-    @media only screen and 
+    @media only screen and
     (max-width: $screen-lg) {
       @include grid-column(5);
       @include grid-shift(1);
     }
 
-    @media only screen and 
+    @media only screen and
     (max-width: $screen-sm) {
       @include grid-column(8);
       @include grid-shift(1);
     }
 
-    @media only screen and 
+    @media only screen and
     (max-width: $screen-xs) {
       @include grid-column(12);
       @include grid-shift(0);
