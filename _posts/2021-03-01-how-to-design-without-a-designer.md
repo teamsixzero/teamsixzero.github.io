@@ -60,7 +60,8 @@ Surveys and interviews are great ways to get started on gathering insight from t
 
 A famous example of this is [AirBnB’s humble beginnings](https://firstround.com/review/How-design-thinking-transformed-Airbnb-from-failing-startup-to-billion-dollar-business/). The founders got out from behind their screens and out into the field so that they could truly understand what the experience was like when using their product. By doing this, they uncovered the real needs of their users and incorporated those insights back into the product. To this day, this process is an integral part of the company’s philosophy, as stated by CEO Brian Chesky in this recent tweet: 
 
-<img>
+<blockquote class="twitter-tweet" style="display: inline-block; margin-bottom: 36px;"><p lang="en" dir="ltr">“The role of the designer is that of a very good thoughtful host anticipating the needs of their guests.” – Charles Eames</p>&mdash; Brian Chesky (@bchesky) <a href="https://twitter.com/bchesky/status/1339409880638054400?ref_src=twsrc%5Etfw">December 17, 2020</a></blockquote> 
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 If you’re still not convinced, look into the [64 phases of lab testing it took to build Windows 95](https://socket3.wordpress.com/2018/02/03/designing-windows-95s-user-interface/), which sold 7 million copies in its first five weeks.  
 

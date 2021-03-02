@@ -15,16 +15,15 @@
 
 <body class="{{ page.body_class }}">
   {% include navigation.html %}
-  <main
-    class="main-wrapper"
-    id="maincontent"
-  >
+  <main class="main-wrapper" id="maincontent">
     {% include mobile-menu-trigger.html %}
+    
     <section class="section--text">
       <div class="section__inner--c6">
         {{ content }}
       </div>
     </section>
+    
   </main>
   {% include footer.html %}
   {% include scripts.html %}

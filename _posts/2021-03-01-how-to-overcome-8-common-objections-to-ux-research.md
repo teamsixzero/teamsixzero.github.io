@@ -20,6 +20,8 @@ This is likely the most common object you’ll hear.  Let your team know that yo
 
 This can be done by you and is only as expensive as a few hours of your time to plan and facilitate. Your team might think they are solving a short-term problem (ie. saving on costs), but **when you compare the cost of the hours needed to retroactively correct the issues that have blindsided you, research is incredibly cheap.**
 
+>when you compare the cost of the hours needed to retroactively correct the issues that have blindsided you, research is incredibly cheap.
+
 After all, the best way to save money is by fixing problems before they are integrated into your product because once they're there, you could be constantly working around that constraint.
 
 ### 2. Research is slow
