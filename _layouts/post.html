@@ -6,42 +6,31 @@
     http-equiv="Content-Type"
     content="text/html; charset=utf-8"
   />
-  {% if page.description %}
-  <meta
-    name="description"
-    content="{{ page.description }}"
-  >
-  {% endif %}
+  {% include preconnect.html %}
   {% include meta-data.html %}
+  {% if site.google_analytics and jekyll.environment == 'production' %}
+  {% include analytics.html %}
+  {% endif %}
 </head>
 
-<body id="top">
+<body class="{{ page.body_class }}">
   {% include navigation.html %}
   <main
     class="main-wrapper"
     id="maincontent"
   >
     {% include mobile-menu-trigger.html %}
-    <div class="post-container">
-      {{ content }}
-      <div class="post__cta-container">
-        <a
-          href="/contact"
-          class="button--primary"
-        >
-          Let&rsquo;s work together
-        </a>
-        <a
-          href="#top"
-          class="button--secondary"
-        >
-          Back to top
-        </a>
+    <section class="section--text">
+      <div class="section__inner--c6">
+        {{ content }}
       </div>
-    </div>
+    </section>
   </main>
   {% include footer.html %}
   {% include scripts.html %}
 </body>
 
 </html>
+
+
+

@@ -1,0 +1,19 @@
+---
+layout: default
+title: Blog
+light_header: true
+body_class: body-has-bg-top-left
+---
+
+<section class="section--text">
+  <div class="section__inner--c6">
+    <ul>
+      {% for post in site.posts %}
+        <li>
+          <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+          <!-- <p> hello {{ post.excerpt }}</p> -->
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
