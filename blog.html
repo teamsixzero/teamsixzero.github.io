@@ -2,17 +2,30 @@
 layout: default
 title: Blog
 light_header: true
-body_class: body-has-bg-top-left
+body_class: no-box-shadow
 ---
 
-<section class="section--text">
-  <div class="section__inner--c6">
-    <ul>
+<section class="section--centered">
+  <div class="section__inner--c12">
+    <ul class="card-container">
       {% for post in site.posts %}
-        <li>
-          <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-          <!-- <p> hello {{ post.excerpt }}</p> -->
-        </li>
+      <li class="card--c6 is-full-width-image is-grid-32 is-acting-as-link">
+        <div class="card-image-container">
+          <img class="card-image" src="{{ post.image_url }}" />
+        </div>
+        <div class="card-content">
+          <h3 class="h6 card-title">
+            <a class="text-no-decoration" href="{{ post.url }}"
+              >{{ post.title }}</a
+            >
+          </h3>
+          {% if post.published_at %}
+          <p class="text-uppercase mb-0 card-highlight-text">
+            Published {{ post.published_at | date: "%B %-d, %Y" }}
+          </p>
+          {% endif %}
+        </div>
+      </li>
       {% endfor %}
     </ul>
   </div>

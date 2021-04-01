@@ -13,17 +13,26 @@
   {% endif %}
 </head>
 
-<body class="{{ page.body_class }}">
+<body class="blog-post {{ page.body_class }}">
   {% include navigation.html %}
   <main class="main-wrapper" id="maincontent">
     {% include mobile-menu-trigger.html %}
-    
+    <div class="cover-image" style="background-image: url('{{ page.image_url }}'); background-position: {{ page.image_position | default: "center center" }};"></div>
+
     <section class="section--text">
       <div class="section__inner--c6">
-        {{ content }}
+        <div class="header-card">
+          <h1 class="header-card__title text-align-center">{{ page.title }}</h1>
+          <p class="mb-0 card-highlight-text">
+            Published {{ page.published_at | date: "%B %-d, %Y" }}
+          </p>
+        </div>
+        <div class="content">
+          {{ content }}
+        </div>
       </div>
     </section>
-    
+
   </main>
   {% include footer.html %}
   {% include scripts.html %}
