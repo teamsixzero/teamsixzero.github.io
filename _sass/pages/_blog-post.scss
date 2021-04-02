@@ -63,6 +63,7 @@
   }
 
   @media only screen and (max-width: $screen-sm) {
+    // IDEA: move this kind of typography operation to a mixin?
     h1,
     .h1 {
       font-size: 32px;
@@ -95,14 +96,26 @@
   }
 
   .content {
-    @media only screen and (min-width: $screen-sm) {
-      font-size: 20px;
-    }
-
-    // TODO: something ugly here
-    &,
-    p {
+    // Sets the default font size of all block elements
+    // Adds a top margin to any header or header-class preceded by a block element
+    @include all-block-content-elements() {
       font-size: 18px;
+
+      // IDEA: move this kind of operation to a mixin?
+      ~ h1,
+      ~ .h1,
+      ~ h2,
+      ~ .h1,
+      ~ h3,
+      ~ .h1,
+      ~ h4,
+      ~ .h1,
+      ~ h5,
+      ~ .h1,
+      ~ h6,
+      ~ .h6 {
+        margin-top: 62px;
+      }
     }
 
     img {
