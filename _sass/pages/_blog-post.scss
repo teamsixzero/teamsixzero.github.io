@@ -3,6 +3,13 @@
     top: 14px;
   }
 
+  .section__inner--c6 {
+    @media only screen and (max-width: $screen-xs) {
+      @include grid-column(12);
+      @include grid-shift(0);
+    }
+  }
+
   .cover-image {
     position: relative;
     top: 87px;
@@ -31,7 +38,7 @@
     align-items: center;
     margin-left: -80px;
     margin-right: -80px;
-    padding: 72px;
+    padding: 88px 88px 64px;
     background-color: white;
 
     @media only screen and (max-width: $screen-sm) {
@@ -42,53 +49,99 @@
 
     @media only screen and (max-width: $screen-xs) {
       padding: 0 0 36px 0;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    &__published-at {
+      color: $grey-light-faded;
+
+      @media only screen and (max-width: $screen-sm) {
+        font-size: 14px;
+      }
     }
   }
 
   @media only screen and (max-width: $screen-sm) {
     h1,
     .h1 {
-      font-size: 40px;
+      font-size: 32px;
     }
 
     h2,
     .h2 {
-      font-size: 36px;
+      font-size: 30px;
     }
 
     h3,
     .h3 {
-      font-size: 30px;
+      font-size: 26px;
     }
 
     h4,
     .h4 {
-      font-size: 26px;
+      font-size: 22px;
     }
 
     h5,
     .h5 {
-      font-size: 22px;
+      font-size: 18px;
     }
 
     h6,
     .h6 {
-      font-size: 18px;
+      font-size: 14px;
     }
   }
 
   .content {
+    @media only screen and (min-width: $screen-sm) {
+      font-size: 20px;
+    }
+
+    // TODO: something ugly here
+    &,
+    p {
+      font-size: 18px;
+    }
+
     img {
       width: 100%;
+      margin: 40px 0;
     }
 
     blockquote {
-      @extend %card;
-      margin-bottom: 32px;
+      margin-top: 40px;
+      margin-bottom: 72px;
+      padding: 1em;
+      padding: 32px;
+      box-shadow: 0 20px 30px rgba($grey-medium, 0.2);
+
+      @media only screen and (min-width: $screen-sm) {
+        padding: 40px 56px;
+      }
+
+      @media only screen and (max-width: $screen-xs) {
+        margin-left: 0;
+        margin-right: 0;
+      }
+
 
       & > p {
         @extend .h4;
         @extend .mb-0;
+
+        @media only screen and (max-width: $screen-lg) {
+          font-size: 28px;
+        }
+
+        @media only screen and (max-width: $screen-md) {
+          font-size: 24px;
+        }
+
+        @media only screen and (max-width: $screen-xs) {
+          font-size: 18px;
+        }
       }
     }
   }

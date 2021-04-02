@@ -1,4 +1,4 @@
-$grid-32: (
+$grid-gutter-32: (
   columns: 12,
   gutter: 32px,
 );
@@ -62,7 +62,7 @@ ul.card-container {
     display: block;
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    color: rgba($grey, .5);
+    color: $grey-light-faded;
     font-size: 12px;
     margin-bottom: 24px;
   }
@@ -78,7 +78,7 @@ ul.card-container {
 
     @media only screen and
     (max-width: $screen-sm) {
-      font-size: 16px;
+      font-size: 22px;
     }
   }
 
@@ -182,17 +182,19 @@ ul.card-container {
     @include grid-shift(0);
   }
 
-  &.is-grid-32 {
-    @include grid-column(6, $grid-32);
+  &.is-grid-gutter-32 {
+    @include grid-column(6, $grid-gutter-32);
 
     @media only screen and
     (max-width: $screen-sm) {
-      @include grid-column(8, $grid-32);
+      @include grid-column(10);
+      @include grid-shift(1);
     }
 
     @media only screen and
     (max-width: $screen-xs) {
-      @include grid-column(12, $grid-32);
+      @include grid-column(12);
+      @include grid-shift(0);
     }
   }
 }
