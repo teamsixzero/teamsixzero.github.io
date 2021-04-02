@@ -3,7 +3,7 @@ layout: post
 author: jill
 light_header: true
 title: How to Overcome 8 Common Objections to UX Research
-body_class: no-box-shadow
+body_class: has-no-box-shadow
 published_at: 2020-03-07
 image_url: /assets/img/blogs/2.jpg
 image_alt: A woman in a bathing suit paddling a red canoe over calm water on a beautiful day

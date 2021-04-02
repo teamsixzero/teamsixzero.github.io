@@ -20,7 +20,7 @@ body {
     box-shadow: 0 30px 60px rgba($grey-medium, 0.3);
   }
 
-  &.no-box-shadow {
+  &.has-no-box-shadow {
     box-shadow: initial !important;
   }
 }

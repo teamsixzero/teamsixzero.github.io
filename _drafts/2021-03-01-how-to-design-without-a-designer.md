@@ -2,7 +2,7 @@
 layout: post
 author: jill
 light_header: true
-body_class: no-box-shadow
+body_class: has-no-box-shadow
 title: How to Design without a Designer
 published_at: 2020-03-03
 image_url: /assets/img/blogs/1--portrait.jpg
