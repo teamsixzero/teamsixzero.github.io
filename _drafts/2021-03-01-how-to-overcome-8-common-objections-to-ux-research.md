@@ -7,7 +7,7 @@ body_class: no-box-shadow
 published_at: 2020-03-07
 image_url: /assets/img/blogs/2.jpg
 image_alt: A woman in a bathing suit paddling a red canoe over calm water on a beautiful day
-image_position: center bottom
+image_position: center center
 ---
 
 Whether you’re fresh into the ideation stage of a new business or you’re working on the next big feature, it’s important to have a clear understanding of your users' experience. Not being aligned with how a user interacts with a product is one of the key reasons why apps fail.
