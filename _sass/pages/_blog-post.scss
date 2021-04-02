@@ -129,7 +129,7 @@
 
       & > p {
         @extend .h4;
-        @extend .mb-0;
+        @extend .has-no-margin-bottom;
 
         @media only screen and (max-width: $screen-lg) {
           font-size: 28px;
