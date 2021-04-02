@@ -10,9 +10,9 @@
     "test:visual:percy": "percy snapshot _site/",
     "develop": "JEKYLL_ENV=development npm-run-all clean --parallel develop:serve develop:watch",
     "develop:tunnel": "ngrok http -subdomain=sixzero-dev 4000",
-    "develop:serve": "bundle exec jekyll serve",
+    "develop:serve": "bundle exec jekyll serve --drafts",
     "develop:watch": "browser-sync start --proxy \"http://localhost:4000\" --files \"_site\"",
-    "deploy:staging": "JEKYLL_ENV=staging npm-run-all clean build:jekyll deploy:staging:surge",
+    "deploy:staging": "JEKYLL_ENV=staging npm-run-all clean build:jekyll:drafts deploy:staging:surge",
     "deploy:staging:surge": "surge --domain taboo-houses.surge.sh ./_site",
     "clean": "node buildScripts/clean.js",
     "teardown:staging": "surge teardown taboo-houses.surge.sh",
@@ -20,6 +20,7 @@
     "serve:production": "bundle exec jekyll serve",
     "build": "JEKYLL_ENV=production npm-run-all clean build:jekyll",
     "build:jekyll": "bundle exec jekyll build",
+    "build:jekyll:drafts": "bundle exec jekyll build --drafts",
     "build:favicons": "node buildScripts/generateFavicon.js"
   },
   "repository": {
