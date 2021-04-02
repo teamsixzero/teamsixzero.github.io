@@ -3,7 +3,6 @@ markdown: kramdown
 plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
-  - jekyll-autoprefixer
 exclude:
   - buildScripts
   - yarn.lock
@@ -13,6 +12,7 @@ exclude:
   - Gemfile.lock
   - node_modules
   - babel.config.json
+  - gulpfile.js
 sass:
   sass_dir: _sass
   style: compressed

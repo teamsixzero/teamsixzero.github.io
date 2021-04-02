@@ -1,0 +1,32 @@
+---
+layout: default
+title: Blog | Sixzero
+light_header: true
+body_class: has-no-box-shadow
+---
+
+<section class="section--centered">
+  <div class="section__inner--c12">
+    <ul class="card-container">
+      {% for post in site.posts %}
+      <li class="card--c6 is-full-width-image is-grid-gutter-32 is-acting-as-link">
+        <div class="card-image-container">
+          <img class="card-image" src="{{ post.image_url }}" />
+        </div>
+        <div class="card-content">
+          <h3 class="h6 card-title">
+            <a class="text-no-decoration" href="{{ post.url }}"
+              >{{ post.title }}</a
+            >
+          </h3>
+          {% if post.published_at %}
+          <p class="text-uppercase has-no-margin-bottom card-highlight-text">
+            Published {{ post.published_at | date: "%B %-d, %Y" }}
+          </p>
+          {% endif %}
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

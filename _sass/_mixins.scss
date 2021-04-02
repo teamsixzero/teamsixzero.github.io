@@ -22,9 +22,58 @@
   text-transform: uppercase;
 }
 
-// TODO: recommend adding typography mixins, to separate look and feel from
-// logical flow of headings
+// all block-level content elements
+// ---------------------------------------
+// - does not include sectioning elements (e.g., <article>, <nav>, <section>)
+// - includes some elements that are likely to be displayed as block-level (e.g.,
+//   <video>, <canvas>)
+// - notably excludes <div>, because this is likely to be used as as sectioning
+//   element
+// - excludes block-level elements that are semantically required to be contained
+//   by other elements (e.g., <li>)
+// - excludes headers
+// TODO: add param to enable including headers
+@mixin all-block-content-elements() {
+  address,
+  area,
+  audio,
+  blockquote,
+  br,
+  button,
+  canvas,
+  code,
+  dd,
+  details,
+  dialog,
+  dl,
+  dt,
+  embed,
+  fieldset,
+  figcaption,
+  figure,
+  form,
+  hgroup,
+  hr,
+  iframe,
+  img,
+  map,
+  menu,
+  object,
+  ol,
+  p,
+  picture,
+  pre,
+  strong,
+  summary ,
+  svg,
+  table,
+  ul,
+  video
+  {
+    @content;
+  }
 
+}
 
 // breakpoints
 // ------------------------------------

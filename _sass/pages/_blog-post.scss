@@ -1,0 +1,161 @@
+.blog-post {
+  .mobile-logo {
+    top: 14px;
+  }
+
+  .section__inner--c6 {
+    @media only screen and (max-width: $screen-xs) {
+      @include grid-column(12);
+      @include grid-shift(0);
+    }
+  }
+
+  .cover-image {
+    position: relative;
+    top: 87px;
+    width: 100%;
+    height: 503px;
+    margin-bottom: -240px;
+    padding-top: 23px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media only screen and (max-width: $screen-sm) {
+      top: 71px;
+    }
+
+    @media only screen and (max-width: $screen-xs) {
+      height: 360px;
+      top: 46px;
+      margin-bottom: 0;
+    }
+  }
+
+  .header-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: -80px;
+    margin-right: -80px;
+    padding: 88px 88px 64px;
+    background-color: white;
+
+    @media only screen and (max-width: $screen-sm) {
+      margin-left: -22px;
+      margin-right: -22px;
+      padding: 36px;
+    }
+
+    @media only screen and (max-width: $screen-xs) {
+      padding: 0 0 36px 0;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    &__published-at {
+      color: $grey-light-faded;
+
+      @media only screen and (max-width: $screen-sm) {
+        font-size: 14px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: $screen-sm) {
+    // IDEA: move this kind of typography operation to a mixin?
+    h1,
+    .h1 {
+      font-size: 32px;
+    }
+
+    h2,
+    .h2 {
+      font-size: 30px;
+    }
+
+    h3,
+    .h3 {
+      font-size: 26px;
+    }
+
+    h4,
+    .h4 {
+      font-size: 22px;
+    }
+
+    h5,
+    .h5 {
+      font-size: 18px;
+    }
+
+    h6,
+    .h6 {
+      font-size: 14px;
+    }
+  }
+
+  .content {
+    // Sets the default font size of all block elements
+    // Adds a top margin to any header or header-class preceded by a block element
+    @include all-block-content-elements() {
+      font-size: 18px;
+
+      // IDEA: move this kind of operation to a mixin?
+      ~ h1,
+      ~ .h1,
+      ~ h2,
+      ~ .h1,
+      ~ h3,
+      ~ .h1,
+      ~ h4,
+      ~ .h1,
+      ~ h5,
+      ~ .h1,
+      ~ h6,
+      ~ .h6 {
+        margin-top: 62px;
+      }
+    }
+
+    img {
+      width: 100%;
+      margin: 40px 0;
+    }
+
+    blockquote {
+      margin-top: 40px;
+      margin-bottom: 72px;
+      padding: 1em;
+      padding: 32px;
+      box-shadow: 0 20px 30px rgba($grey-medium, 0.2);
+
+      @media only screen and (min-width: $screen-sm) {
+        padding: 40px 56px;
+      }
+
+      @media only screen and (max-width: $screen-xs) {
+        margin-left: 0;
+        margin-right: 0;
+      }
+
+
+      & > p {
+        @extend .h4;
+        @extend .has-no-margin-bottom;
+
+        @media only screen and (max-width: $screen-lg) {
+          font-size: 28px;
+        }
+
+        @media only screen and (max-width: $screen-md) {
+          font-size: 24px;
+        }
+
+        @media only screen and (max-width: $screen-xs) {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}

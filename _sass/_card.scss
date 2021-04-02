@@ -1,3 +1,8 @@
+$grid-gutter-32: (
+  columns: 12,
+  gutter: 32px,
+);
+
 .card-container {
   @include grid-container;
   display: flex;
@@ -8,18 +13,25 @@
   }
 }
 
+ul.card-container {
+  padding-left: 0;
+}
+
 
 // =============================================================================
 // Card
 // =============================================================================
 
 %card {
+  $padding-vertical: 40px;
+  $padding-horizontal: 32px;
+
   display: flex;
   flex-direction: column;
   flex: 0 0 auto;
   box-sizing: border-box;
   box-shadow: 0 20px 30px rgba($grey-medium, 0.2);
-  padding: 40px 32px;
+  padding: $padding-vertical $padding-horizontal;
   background: #ffffff;
   text-align: left;
   transition: all .1s ease-in-out;
@@ -32,6 +44,14 @@
     box-shadow: 0 8px 12px rgba($grey-medium, 0.2);
   }
 
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    padding: 0;
+  }
+
   .card-image {
     display: block;
     width: 100%;
@@ -42,7 +62,7 @@
     display: block;
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    color: rgba($grey, .5);
+    color: $grey-light-faded;
     font-size: 12px;
     margin-bottom: 24px;
   }
@@ -58,7 +78,7 @@
 
     @media only screen and
     (max-width: $screen-sm) {
-      font-size: 16px;
+      font-size: 22px;
     }
   }
 
@@ -69,6 +89,59 @@
     @media only screen and
     (max-width: $screen-md) {
       font-size: 14px;
+    }
+  }
+
+  // Variations
+  &.is-full-width-image {
+    padding: 0;
+
+    .card-image-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+
+      @media only screen and (min-width: $screen-lg) {
+        height: 350px;
+      }
+
+      @media only screen and (max-width: $screen-lg) {
+        height: 300px;
+      }
+
+      @media only screen and (max-width: $screen-md) {
+        height: 200px;
+      }
+
+      @media only screen and (max-width: $screen-xs) {
+        height: 150px;
+      }
+
+      & > .card-image {
+        flex: 1;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .card-content {
+      padding: $padding-vertical $padding-horizontal;
+    }
+  }
+
+  &.is-acting-as-link {
+    // NOTE: this approach only works if there is ONE link in the content
+    position: relative;
+
+    a[href]::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
     }
   }
 }
@@ -89,5 +162,39 @@
   (max-width: $screen-xs) {
     @include grid-column(12);
     @include grid-shift(0);
+  }
+}
+
+.card--c6 {
+  @extend %card;
+  @include grid-column(6);
+
+  @media only screen and
+  (max-width: $screen-sm) {
+    @include grid-column(8);
+    @include grid-shift(2);
+    display: block;
+  }
+
+  @media only screen and
+  (max-width: $screen-xs) {
+    @include grid-column(12);
+    @include grid-shift(0);
+  }
+
+  &.is-grid-gutter-32 {
+    @include grid-column(6, $grid-gutter-32);
+
+    @media only screen and
+    (max-width: $screen-sm) {
+      @include grid-column(10);
+      @include grid-shift(1);
+    }
+
+    @media only screen and
+    (max-width: $screen-xs) {
+      @include grid-column(12);
+      @include grid-shift(0);
+    }
   }
 }

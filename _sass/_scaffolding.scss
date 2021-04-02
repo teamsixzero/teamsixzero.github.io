@@ -19,6 +19,10 @@ body {
   (min-width: 1701px) {
     box-shadow: 0 30px 60px rgba($grey-medium, 0.3);
   }
+
+  &.has-no-box-shadow {
+    box-shadow: initial !important;
+  }
 }
 
 .responsive-image {
