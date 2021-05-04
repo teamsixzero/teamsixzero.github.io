@@ -95,6 +95,21 @@
     }
   }
 
+  .twitter-tweet {
+    display: inline-block; 
+    margin-bottom: 64px;
+
+    .tweet-author {
+      display: block;
+      padding-top: 24px;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  } 
+
   .content {
     // Sets the default font size of all block elements
     // Adds a top margin to any header or header-class preceded by a block element
@@ -124,8 +139,8 @@
     }
 
     blockquote {
-      margin-top: 40px;
-      margin-bottom: 72px;
+      margin-top: 64px;
+      margin-bottom: 88px;
       padding: 1em;
       padding: 32px;
       box-shadow: 0 20px 30px rgba($grey-medium, 0.2);

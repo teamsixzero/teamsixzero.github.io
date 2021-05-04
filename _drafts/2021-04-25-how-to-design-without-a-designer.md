@@ -4,7 +4,7 @@ author: jill
 light_header: true
 body_class: has-no-box-shadow
 title: How to Design without a Designer
-published_at: 2020-03-03
+published_at: 2021-04-25
 image_url: /assets/img/blogs/1--portrait.jpg
 image_alt: An incredible view of the stars at night, in the mountains, with a van with its interior lit in the foreground.
 image_position: center center
@@ -49,8 +49,6 @@ Working in a silo is the best way to ensure your assumptions will go unchecked a
 
 You don’t need a designer to do this, you just need to establish a process that includes talking to potential users at various milestones.
 
-<img>
-
 There are three main milestones that should trigger you to start the process of validating your idea:
 
 1. At the very start of the project before any designers or developers start creating solutions. What you learn here will be the blueprint for your solution.
@@ -63,7 +61,7 @@ Surveys and interviews are great ways to get started on gathering insight from t
 
 A famous example of this is [AirBnB’s humble beginnings](https://firstround.com/review/How-design-thinking-transformed-Airbnb-from-failing-startup-to-billion-dollar-business/). The founders got out from behind their screens and out into the field so that they could truly understand what the experience was like when using their product. By doing this, they uncovered the real needs of their users and incorporated those insights back into the product. To this day, this process is an integral part of the company’s philosophy, as stated by CEO Brian Chesky in this recent tweet:
 
-<blockquote class="twitter-tweet" style="display: inline-block; margin-bottom: 36px;"><p lang="en" dir="ltr">“The role of the designer is that of a very good thoughtful host anticipating the needs of their guests.” – Charles Eames</p>&mdash; Brian Chesky (@bchesky) <a href="https://twitter.com/bchesky/status/1339409880638054400?ref_src=twsrc%5Etfw">December 17, 2020</a></blockquote>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">“The role of the designer is that of a very good thoughtful host anticipating the needs of their guests.” – Charles Eames</p><a href="https://twitter.com/bchesky/status/1339409880638054400?ref_src=twsrc%5Etfw" target="_blank" class="tweet-author">&mdash; Brian Chesky (@bchesky) December 17, 2020</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 If you’re still not convinced, look into the [64 phases of lab testing it took to build Windows 95](https://socket3.wordpress.com/2018/02/03/designing-windows-95s-user-interface/), which sold 7 million copies in its first five weeks.
