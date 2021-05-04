@@ -4,8 +4,8 @@ author: jill
 light_header: true
 title: How to Overcome 8 Common Objections to UX Research
 body_class: has-no-box-shadow
-published_at: 2020-03-07
-image_url: /assets/img/blogs/2.jpg
+published_at: 2021-05-03
+image_url: /assets/img/blogs/banner-8-common-objections.png
 image_alt: A woman in a bathing suit paddling a red canoe over calm water on a beautiful day
 image_position: center center
 ---
@@ -23,11 +23,9 @@ This is likely the most common object you’ll hear.  Let your team know that yo
 
 This can be done by you and is only as expensive as a few hours of your time to plan and facilitate. Your team might think they are solving a short-term problem (ie. saving on costs), but **when you compare the cost of the hours needed to retroactively correct the issues that have blindsided you, research is incredibly cheap.**
 
-> when you compare the cost of the hours needed to retroactively correct the issues that have blindsided you, research is incredibly cheap.
+> "When you compare the cost of the hours needed to retroactively correct the issues that have blindsided you, research is incredibly cheap."
 
 After all, the best way to save money is by fixing problems before they are integrated into your product because once they're there, you could be constantly working around that constraint.
-
-![A super squiggly line gradually straightening out as it approaches the right edge of the image](/assets/img/blogs/squiggly-line.jpg)
 
 ### 2. Research is slow
 
@@ -50,7 +48,7 @@ These questions will allow you to listen, discuss, and see more clearly the need
 
 If your team has an idea of what needs to be built, you should still pitch customer-centric research as a means to validate those assumptions. After all, if you build solutions based on your own experiences, your vision for the product could be filled with biases and blind spots.
 
-What feels like the right solution might miss the mark with the way your users think. I’ve personally been in situations where I worked with a specific product for years, only to have my beliefs completely shattered within five minutes of watching someone try and use the app.  Had I stopped to [check my assumptions periodically while building](/2021/03/01/how-to-design-without-a-designer/),  The product would have found greater success early on and saved the company a ton of money had we built the right solution first.
+What feels like the right solution might miss the mark with the way your users think. I’ve personally been in situations where I worked with a specific product for years, only to have my beliefs completely shattered within five minutes of watching someone try and use the app.  Had I stopped to [check my assumptions periodically while building](/2021/04/25/how-to-design-without-a-designer/),  The product would have found greater success early on and saved the company a ton of money had we built the right solution first.
 
 
 ### 5. We can do it later
@@ -80,7 +78,7 @@ You can hypothesize about what the data you have gathered is telling you, but un
 Your team is ahead of the curve if they’re already out there talking to people. But good research never ends and the quality of the questions you’re asking matters.
  Jared M. Spool of Center Centre – UIE explains that the [solution to creating a great user experience](https://articles.uie.com/user_exposure_hours/#:~:text=Exposure%20hours) is found in “exposure hours. The number of hours each team member is exposed directly to real users interacting with the team’s designs or the team’s competitor’s designs. There is a direct correlation between this exposure and the improvements we see in the designs that team produces”.
 
-This is an opportunity to let your team see that there are many types of research that yield different insights. The idea is not to just conduct research once and be done but to build it into your culture and [refine the quality of the research as you go](/2021/03/01/how-to-design-without-a-designer/).
+This is an opportunity to let your team see that there are many types of research that yield different insights. The idea is not to just conduct research once and be done but to build it into your culture and [refine the quality of the research as you go](/2021/04/25/how-to-design-without-a-designer/).
 
 
 ### The Takeaway
