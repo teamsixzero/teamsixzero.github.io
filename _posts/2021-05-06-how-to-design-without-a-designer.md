@@ -4,9 +4,11 @@ author: jill
 light_header: true
 body_class: has-no-box-shadow
 title: How to Design without a Designer
-published_at: 2021-04-25
-image_url: /assets/img/blogs/1--portrait.jpg
-image_alt: An incredible view of the stars at night, in the mountains, with a van with its interior lit in the foreground.
+published_at: 2021-05-06
+image_url: /assets/img/blogs/design-without-a-designer.png
+image_alt: an illustration of a person carrying a box
+og_image: /assets/img/blogs/design-without-a-designer--og.png
+og_description: When I was a junior designer, I thought it was my job to have all the answers.
 image_position: center center
 ---
 
