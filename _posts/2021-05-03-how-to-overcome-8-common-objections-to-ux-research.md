@@ -7,7 +7,7 @@ body_class: has-no-box-shadow
 published_at: 2021-05-03
 image_url: /assets/img/blogs/banner-8-common-objections.png
 image_alt: An illustration of basic shapes
-og_image: /assets/img/blogs/banner-8-common-objections--og.png
+og_image: http://sixzero.co/assets/img/blogs/banner-8-common-objections--og.png
 og_description: Here are some of the most common objections I hear and how I overcome them.
 image_position: center center
 ---
