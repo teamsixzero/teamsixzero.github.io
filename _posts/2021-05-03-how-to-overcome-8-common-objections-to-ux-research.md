@@ -6,7 +6,7 @@ title: How to Overcome 8 Common Objections to UX Research
 body_class: has-no-box-shadow
 published_at: 2021-05-03
 image_url: /assets/img/blogs/banner-8-common-objections.png
-image_alt: A woman in a bathing suit paddling a red canoe over calm water on a beautiful day
+image_alt: An illustration of basic shapes
 image_position: center center
 ---
 
