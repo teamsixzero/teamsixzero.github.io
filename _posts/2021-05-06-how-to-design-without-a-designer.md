@@ -7,6 +7,8 @@ title: How to Design without a Designer
 published_at: 2021-05-06
 image_url: /assets/img/blogs/design-without-a-designer.png
 image_alt: an illustration of a person carrying a box
+og_image: /assets/img/blogs/design-without-a-designer--og.png
+og_description: When I was a junior designer, I thought it was my job to have all the answers.
 image_position: center center
 ---
 
