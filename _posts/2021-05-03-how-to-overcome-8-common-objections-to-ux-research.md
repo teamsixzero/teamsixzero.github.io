@@ -48,7 +48,7 @@ These questions will allow you to listen, discuss, and see more clearly the need
 
 If your team has an idea of what needs to be built, you should still pitch customer-centric research as a means to validate those assumptions. After all, if you build solutions based on your own experiences, your vision for the product could be filled with biases and blind spots.
 
-What feels like the right solution might miss the mark with the way your users think. I’ve personally been in situations where I worked with a specific product for years, only to have my beliefs completely shattered within five minutes of watching someone try and use the app.  Had I stopped to [check my assumptions periodically while building](/2021/04/25/how-to-design-without-a-designer/),  The product would have found greater success early on and saved the company a ton of money had we built the right solution first.
+What feels like the right solution might miss the mark with the way your users think. I’ve personally been in situations where I worked with a specific product for years, only to have my beliefs completely shattered within five minutes of watching someone try and use the app.  Had I stopped to [check my assumptions periodically while building](/2021/05/06/how-to-design-without-a-designer/),  The product would have found greater success early on and saved the company a ton of money had we built the right solution first.
 
 
 ### 5. We can do it later
@@ -78,7 +78,7 @@ You can hypothesize about what the data you have gathered is telling you, but un
 Your team is ahead of the curve if they’re already out there talking to people. But good research never ends and the quality of the questions you’re asking matters.
  Jared M. Spool of Center Centre – UIE explains that the [solution to creating a great user experience](https://articles.uie.com/user_exposure_hours/#:~:text=Exposure%20hours) is found in “exposure hours. The number of hours each team member is exposed directly to real users interacting with the team’s designs or the team’s competitor’s designs. There is a direct correlation between this exposure and the improvements we see in the designs that team produces”.
 
-This is an opportunity to let your team see that there are many types of research that yield different insights. The idea is not to just conduct research once and be done but to build it into your culture and [refine the quality of the research as you go](/2021/04/25/how-to-design-without-a-designer/).
+This is an opportunity to let your team see that there are many types of research that yield different insights. The idea is not to just conduct research once and be done but to build it into your culture and [refine the quality of the research as you go](/2021/05/06/how-to-design-without-a-designer/).
 
 
 ### The Takeaway
