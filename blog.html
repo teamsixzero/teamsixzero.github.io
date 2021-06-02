@@ -7,9 +7,14 @@ body_class: has-no-box-shadow
 
 <section class="section--centered">
   <div class="section__inner--c12">
-    <ul class="card-container">
+    <ul class="card-container flex-wrap">
       {% for post in site.posts %}
-      <li class="card--c6 is-full-width-image is-grid-gutter-32 is-acting-as-link">
+      <li
+        class="
+          card--c6
+          is-full-width-image is-grid-gutter-32 is-acting-as-link is-mb-32
+        "
+      >
         <div class="card-image-container">
           <img class="card-image" src="{{ post.image_url }}" />
         </div>
