@@ -1,6 +1,6 @@
 ---
 layout: post
-author: jill
+author: Nick Foster
 light_header: true
 body_class: has-no-box-shadow
 title: How to Design without a Designer

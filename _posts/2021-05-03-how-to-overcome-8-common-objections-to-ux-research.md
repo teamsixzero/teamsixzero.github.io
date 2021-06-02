@@ -1,6 +1,6 @@
 ---
 layout: post
-author: jill
+author: Nick Foster
 light_header: true
 title: How to Overcome 8 Common Objections to UX Research
 body_class: has-no-box-shadow
