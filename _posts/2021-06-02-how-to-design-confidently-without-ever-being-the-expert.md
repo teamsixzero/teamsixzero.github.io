@@ -5,9 +5,9 @@ light_header: true
 title: How to Design Confidently Without Ever Being the Expert
 body_class: has-no-box-shadow
 published_at: 2021-06-02
-image_url: /assets/img/blogs/banner-8-common-objections.png
+image_url: /assets/img/blogs/design-confidently-without-ever-being-the-expert.png
 image_alt: An illustration of basic shapes
-og_image: http://sixzero.co/assets/img/blogs/banner-8-common-objections--og.png
+og_image: http://sixzero.co/assets/img/blogs/design-confidently-without-ever-being-the-expert.png--og.png
 image_position: center center
 ---
 
