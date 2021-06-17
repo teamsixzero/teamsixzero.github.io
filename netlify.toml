@@ -1,0 +1,103 @@
+[build]
+  publish = "_site"
+  command = "yarn build"
+
+[[redirects]]
+  from = "/friends"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/janeapp/*"
+  to = "janeapp"
+  status = 301
+
+[[redirects]]
+  from = "/article"
+  to = "/projects"
+  status = 301
+
+[[redirects]]
+  from = "/projects/admithub"
+  to = "/projects"
+  status = 301
+
+[[redirects]]
+  from = "/projects/etherparty"
+  to = "/projects"
+  status = 301
+
+[[redirects]]
+  from = "/projects/gainlife"
+  to = "/projects"
+  status = 301
+
+[[redirects]]
+  from = "/projects/jobscan"
+  to = "/projects"
+  status = 301
+
+[[redirects]]
+  from = "/projects/keyhole"
+  to = "/projects"
+  status = 301
+
+[[redirects]]
+  from = "/projects/pranalabs"
+  to = "/projects"
+  status = 301
+
+[[redirects]]
+  from = "/projects/preview"
+  to = "/projects"
+  status = 301
+
+[[redirects]]
+  from = "/projects/quickcontractors"
+  to = "/projects"
+  status = 301
+
+[[redirects]]
+  from = "/projects/qz"
+  to = "/projects"
+  status = 301
+
+[[redirects]]
+  from = "/projects/rentmoola"
+  to = "/projects"
+  status = 301
+
+[[redirects]]
+  from = "/projects/rewattpower"
+  to = "/projects"
+  status = 301
+
+[[redirects]]
+  from = "/projects/talentsnap"
+  to = "/projects"
+  status = 301
+
+[[redirects]]
+  from = "/projects/tesserent"
+  to = "/projects"
+  status = 301
+
+[[redirects]]
+  from = "/projects/trybe"
+  to = "/projects"
+  status = 301
+
+[[redirects]]
+  from = "/projects/voro"
+  to = "/projects"
+  status = 301
+
+[[redirects]]
+  from = "/projects/wantboard"
+  to = "/projects"
+  status = 301
+
+[[redirects]]
+  from = "/projects/wealthboard"
+  to = "/projects"
+  status = 301
