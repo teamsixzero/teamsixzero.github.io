@@ -9,7 +9,7 @@
 
 [[redirects]]
   from = "/janeapp/*"
-  to = "janeapp"
+  to = "/janeapp/"
   status = 301
 
 [[redirects]]
@@ -19,85 +19,85 @@
 
 [[redirects]]
   from = "/projects/admithub"
-  to = "/projects"
+  to = "/projects/"
   status = 301
 
 [[redirects]]
   from = "/projects/etherparty"
-  to = "/projects"
+  to = "/projects/"
   status = 301
 
 [[redirects]]
   from = "/projects/gainlife"
-  to = "/projects"
+  to = "/projects/"
   status = 301
 
 [[redirects]]
   from = "/projects/jobscan"
-  to = "/projects"
+  to = "/projects/"
   status = 301
 
 [[redirects]]
   from = "/projects/keyhole"
-  to = "/projects"
+  to = "/projects/"
   status = 301
 
 [[redirects]]
   from = "/projects/pranalabs"
-  to = "/projects"
+  to = "/projects/"
   status = 301
 
 [[redirects]]
   from = "/projects/preview"
-  to = "/projects"
+  to = "/projects/"
   status = 301
 
 [[redirects]]
   from = "/projects/quickcontractors"
-  to = "/projects"
+  to = "/projects/"
   status = 301
 
 [[redirects]]
   from = "/projects/qz"
-  to = "/projects"
+  to = "/projects/"
   status = 301
 
 [[redirects]]
   from = "/projects/rentmoola"
-  to = "/projects"
+  to = "/projects/"
   status = 301
 
 [[redirects]]
   from = "/projects/rewattpower"
-  to = "/projects"
+  to = "/projects/"
   status = 301
 
 [[redirects]]
   from = "/projects/talentsnap"
-  to = "/projects"
+  to = "/projects/"
   status = 301
 
 [[redirects]]
   from = "/projects/tesserent"
-  to = "/projects"
+  to = "/projects/"
   status = 301
 
 [[redirects]]
   from = "/projects/trybe"
-  to = "/projects"
+  to = "/projects/"
   status = 301
 
 [[redirects]]
   from = "/projects/voro"
-  to = "/projects"
+  to = "/projects/"
   status = 301
 
 [[redirects]]
   from = "/projects/wantboard"
-  to = "/projects"
+  to = "/projects/"
   status = 301
 
 [[redirects]]
   from = "/projects/wealthbar"
-  to = "/projects"
+  to = "/projects/"
   status = 301
