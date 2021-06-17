@@ -98,6 +98,6 @@
   status = 301
 
 [[redirects]]
-  from = "/projects/wealthboard"
+  from = "/projects/wealthbar"
   to = "/projects"
   status = 301
