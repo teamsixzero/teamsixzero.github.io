@@ -27,7 +27,7 @@ Here’s how you can do it too:
 
 Your ego is going to absolutely hate this. But hear me out.
 
-When I first get started with a new client, I tell them point-blank that I don’t know the solution to the problem, but that I have a foolproof process that will ensure I find it.
+When I first get started with a new client, I tell them point-blank that I don’t know the solution to the problem, but that I have a [foolproof process](/2021/05/06/how-to-design-without-a-designer/) that will ensure I find it.
 
 The reason is, the less you pretend to know about the problem the better you will be at asking the right questions to uncover the right solution. Be the facilitator that collects as many different insights as possible. Position yourself as open and be accessible for people to come to with their ideas so that you foster solid working relationships built on trust and empathy.
 

@@ -15,7 +15,7 @@ Whether you’re fresh into the ideation stage of a new business or you’re wor
 You may already know the importance of validating your work through user-focused research, but find that when you suggest it as a way to gain insight into your customers, you’re met with resistance from your team. Often, this is because the very thought of research sparks visuals of hundreds of test subjects engaged in psychology experiments — [even when it’s not](https://www.interaction-design.org/literature/article/user-research-what-it-is-and-why-you-should-do-it).
 
 To convince your team that research is worthwhile you need to help them understand how the information you collect is a goldmine to a product team, and quite frankly can mean the difference between a product that creates value for its users and one that fails.
-I’ve been a designer for a long time, I have certainly been there. But once I learned how to sell UX research, it became a lot easier to convince people it's a no brainer.
+I’ve been a designer for a long time, I have certainly been there. But once I learned how to sell UX research, it became a lot easier to convince people that user testing is worth it.
 Here are some of the most common objections I hear and how I overcome them.
 
 ### 1. Research is expensive
@@ -86,5 +86,5 @@ This is an opportunity to let your team see that there are many types of researc
 
 Product teams are often focused on the now and what needs to be done to move towards launching a product as quickly as they can. They are unaware of what exactly user-research is and how cheap, efficient and effective it can be.
 
-But with a little of your guidance, you can turn UX research naysayers into believers, and help them see how consulting with your users ensures you never step off a curb without looking both ways.
+But with a little of your guidance, you prove that user research is worth it and help naysayers see how consulting with your users ensures you never step off a curb without looking both ways. 
 
