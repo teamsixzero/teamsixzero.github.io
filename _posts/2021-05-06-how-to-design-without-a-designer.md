@@ -7,7 +7,7 @@ title: How to Design without a Designer
 published_at: 2021-05-06
 image_url: /assets/img/blogs/design-without-a-designer.png
 image_alt: an illustration of a person carrying a box
-og_image: http://sixzero.co/assets/img/blogs/design-without-a-designer--og.png
+og_image: https://sixzero.co/assets/img/blogs/design-without-a-designer--og.png
 image_position: center center
 ---
 
