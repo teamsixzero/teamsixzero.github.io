@@ -7,7 +7,7 @@ body_class: has-no-box-shadow
 published_at: 2021-06-02
 image_url: /assets/img/blogs/design-confidently-without-ever-being-the-expert.png
 image_alt: An illustration of basic shapes
-og_image: http://sixzero.co/assets/img/blogs/design-confidently-without-ever-being-the-expert.png--og.png
+og_image: https://sixzero.co/assets/img/blogs/design-confidently-without-ever-being-the-expert.png--og.png
 image_position: center center
 ---
 
