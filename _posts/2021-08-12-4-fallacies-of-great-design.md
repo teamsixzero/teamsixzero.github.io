@@ -42,6 +42,6 @@ Innovation isn’t always about creating something completely new. Sometimes it�
 ### The Takeaway
 The next time you’re wondering if you will ever design something truly fantastic, remember that the greatest products we see today didn’t just come from one individual’s spark of genius. While it often remains unseen, there is always a process behind innovative work. There are 30+ failed iterations that never see the light of day and a design process that involves an incredible amount of time spent challenging assumptions and calculating risk. But above all else, there’s a designer who has invested their time developing a process that will ensure they always understand their user’s needs better than anyone else. 
 
-Illustration by: Muti, Folio Art
+_Nick Foster is the founder of Sixzero, an agency that helps companies design apps and software with impact._
 
-
+_Illustration by: Muti, Folio Art_
