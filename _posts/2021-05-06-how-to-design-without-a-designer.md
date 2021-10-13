@@ -80,3 +80,5 @@ Repeat this process over and over. In fact, make it a part of your culture. When
 If start-ups and business owners start developing a habit of checking their assumptions long before they jump into design and development, they will uncover the insights they need to find success early and save a ton of money by building the right thing first. Moreover, they can be sure they are creating a tool that is invaluable for their users, every single time.
 
 _Nick Foster is the founder of Sixzero, an agency that helps companies design apps and software with impact._
+
+_Illustration by: Muti, Folio Art_

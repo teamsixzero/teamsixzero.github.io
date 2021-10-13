@@ -88,3 +88,8 @@ Product teams are often focused on the now and what needs to be done to move tow
 
 But with a little of your guidance, you prove that user research is worth it and help naysayers see how consulting with your users ensures you never step off a curb without looking both ways. 
 
+_Nick Foster is the founder of Sixzero, an agency that helps companies design apps and software with impact._
+
+
+_Illustration by: Muti, Folio Art_
+
