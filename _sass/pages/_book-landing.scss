@@ -293,6 +293,10 @@
 .toc__step {
   margin-bottom: 56px;
 
+  .toc__chapter-title a {
+    display: block;
+  }
+
   &:last-of-type {
     margin-bottom: 0;
 
@@ -330,3 +334,24 @@
 .book-about__title {
   margin-bottom: 56px;
 }
+
+
+// ==========================================================================
+// New Chapter
+// ==========================================================================
+
+.new-chapter-chip {
+  display: inline-block;
+  padding: 8px 12px;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: $blue;
+  color: #ffffff;
+  margin-bottom: 8px;
+  border-radius: 4px;
+}
+
+
