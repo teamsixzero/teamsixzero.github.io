@@ -49,6 +49,9 @@ These questions will allow you to listen, discuss, and see more clearly the need
 
 If your team has an idea of what needs to be built, you should still pitch customer-centric research as a means to validate those assumptions. After all, if you build solutions based on your own experiences, your vision for the product could be filled with biases and blind spots.
 
+>What *feels* like the right solution might miss the mark with the way your users think.
+
+
 What feels like the right solution might miss the mark with the way your users think. I’ve personally been in situations where I worked with a specific product for years, only to have my beliefs completely shattered within five minutes of watching someone try and use the app.  Had I stopped to [check my assumptions periodically while building](/2021/05/06/how-to-design-without-a-designer/),  The product would have found greater success early on and saved the company a ton of money had we built the right solution first.
 
 

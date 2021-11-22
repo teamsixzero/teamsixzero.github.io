@@ -31,6 +31,8 @@ When I first get started with a new client, I tell them point-blank that I don�
 
 The reason is, the less you pretend to know about the problem the better you will be at asking the right questions to uncover the right solution. Be the facilitator that collects as many different insights as possible. Position yourself as open and be accessible for people to come to with their ideas so that you foster solid working relationships built on trust and empathy.
 
+>Remember that as a Designer, it is never your job to know the right solution from the get-go. Rather, it is your job to discard your assumptions and look for all the ways that you might be wrong
+
 Remember that as a Designer, it is never your job to know the right solution from the get-go. Rather, it is your job to discard your assumptions and look for all the ways that you might be wrong. Then it’s your job to gather all the information you need to build the right thing first.
 
 ### Always be asking for input
@@ -56,6 +58,8 @@ Talk about a humbling moment.
 It is uncomfortable when someone points out something you missed or had not considered. To this day, I still feel a little twinge whenever this happens (and it happens often) because it makes me question myself as a Designer.
 
 But this is the whole point of collaboration. After all, it’s impossible to cover every single base on your own, and no one else expects you to.
+
+>The less you identify with your work and the more open you are to the perspectives and direct feedback from others the better your work becomes. 
 
 Remember, you can be passionate about and proud of your work but don’t be attached to it. Don’t shy away from feedback at the chance that you might be wrong. In fact, assume that you’re always wrong and look for the insights that can prove it. The less you identify with your work and the more open you are to the perspectives and direct feedback from others the better your work becomes. 
 
