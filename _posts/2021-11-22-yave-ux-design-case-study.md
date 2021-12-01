@@ -11,6 +11,12 @@ og_image: https://sixzero.co/assets/img/perfect-ui-is-pointless-without-great-ux
 image_position: center center
 ---
 
+<div class='embed-container'>
+<iframe src="https://player.vimeo.com/video/651300500?h=fb76160fc8?api=1&background=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</div>
+
+<br>q
+
 Yave has re-imagined the brand recognition and buying experience that consumers have when they purchase from independently owned shops.  
 
 Initially built for independent coffee brands, Scott Tupper, Founder & CEO of Yave,  built Yave with a mission to humanize commodity chains and to support supply chain traceability.  With 2020’s COVID-19 restrictions, mobile technology and e-commerce were forced upon the brick and mortar world, leaving many retailers scrambling to digitize with generic online ordering apps. Yave’s founders saw the opportunity to pivot their product to support small businesses by creating a solution that not only ensures contactless payment is kept in place but builds brand affinity by giving customers a deeper look into a brand purpose and backstory.
