@@ -35,8 +35,6 @@ But while this new way of collaborating required more time and diligence, the Ya
 
 Scrappy start-up indeed. 
 
-<img src="/assets/img/blogs/yave/yave-case-still-1.png" alt="Example of the Yave payment interface">
-
 ### Quick research led to a big unlock
 
 As with all products we help create, our focus with Yave was to make sure that the solution we designed is in line with what end-consumers need in a way that is intuitive for them to use. 
@@ -74,6 +72,8 @@ Therefore, we decided to get Yave started with facilitating user research and co
 And it worked. 
  
 Yave gathered insights from potential end-users at their “test lab”, Onda Origins Café & Roastery in Seattle. This set us up to hit the ground running the minute we made the design partnership official. 
+
+<img src="/assets/img/blogs/yave/yave-case-still-1.png" alt="Example of the Yave payment interface">
 
 ### The Result 
 
