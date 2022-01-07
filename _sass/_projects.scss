@@ -446,3 +446,25 @@
       @include grid-shift(0);
     }
   }
+
+// =============================================================================
+// Project: with iphone mockup
+// =============================================================================
+
+.project--iphone-mockup {
+  padding-top: 220px;
+  padding-bottom: 220px;
+
+  @media only screen and
+  (max-width: $screen-sm) {
+    padding-top: 145px;
+    padding-bottom: 145px;
+  }
+
+  @media only screen and
+  (max-width: $screen-xs) {
+    padding-top: 96px;
+    padding-bottom: 96px;
+    text-align: center;
+  }
+}
