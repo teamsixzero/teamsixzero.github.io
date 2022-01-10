@@ -1,0 +1,10 @@
+.video-wizebank {
+  --video--width: 2048;
+  --video--height: 1046;
+  background: white;
+
+  iframe {
+    top: -2px;
+    left: -2px;
+  }
+}
