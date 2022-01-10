@@ -37,6 +37,7 @@ ul.card-container {
   background: #ffffff;
   text-align: left;
   transition: all 0.1s ease-in-out;
+  border-radius: 24px;
 
   @media only screen and (max-width: $screen-sm) {
     @include grid-column(12);
