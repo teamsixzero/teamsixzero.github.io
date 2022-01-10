@@ -78,28 +78,27 @@ header {
 .project--intro {
   @include grid-container;
   background: transparent;
-  padding-top: 192px;
-  padding-bottom: 16px;
+  padding-top: 162px;
+  padding-bottom: 0;
   border: none;
   text-align: center;
 
-
   @media only screen and
   (max-width: $screen-sm) {
-    padding-top: 112px;
+    padding-top: 96px;
     padding-bottom: 0px;
   }
 
   @media only screen and
   (max-width: $screen-xs) {
-    padding-top: 112px;
+    padding-top: 56px;
     padding-bottom: 0;
     text-align: center;
   }
 }
 
 .intro__title {
-  margin-bottom: 16px;
+  margin-bottom: 0;
 
   @media only screen and
   (max-width: $screen-md) {
@@ -215,8 +214,8 @@ header {
 .header--home {
   @include grid-container;
   background: transparent;
-  padding-top: 224px;
-  padding-bottom: 160px;
+  padding-top: 170px;
+  padding-bottom: 110px;
 
 
   @media only screen and
@@ -234,34 +233,29 @@ header {
   .header__title {
     @media only screen and
     (min-width: $screen-lg) {
-      font-size: 57px;
+      font-size: 100px;
     }
 
     @media only screen and
     (max-width: $screen-sm) {
-      font-size: 37px;
+      font-size: 66px;
     }
 
     @media only screen and
     (max-width: $screen-xs) {
-      font-size: 31px;
+      font-size: 50px;
     }
   }
 
 
   .header__content {
-    @include grid-column(8);
-    @include grid-shift(2);
+    @include grid-column(10);
+    @include grid-shift(1);
+    text-align: left;
 
     @media only screen and
-    (max-width: $screen-lg) {
+    (min-width: $screen-lg) {
       @include grid-column(8);
-      @include grid-shift(2);
-    }
-
-    @media only screen and
-    (max-width: $screen-sm) {
-      @include grid-column(10);
       @include grid-shift(1);
     }
 
