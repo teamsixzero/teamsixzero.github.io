@@ -17,6 +17,9 @@ $z-layers: (
 // ----------------------------
 $white-faded: rgba(255,255,255,0.7);
 
+$grey-dark: #9FA6B2;
+$grey-normal: #B0B6BC;
+
 $grey: #394858;
 $grey-3: #9CA3AB;
 $grey-medium: #B8BCC2;
@@ -35,17 +38,17 @@ $blue: #233147;
 
 // typography
 // -----------------------------
-$base-font-size: 16px !default;
+$base-font-size: 17px !default;
 
-$header-font: 'Libre Baskerville', "Hoefler Text", Garamond, "Times New Roman", serif;
-$body-font: 'Poppins', sans-serif;
+$header-font: 'PP Pangram', 'Helvetica Neue', Arial, sans-serif;
+$body-font: 'PP Pangram', 'Helvetica Neue', Arial, sans-serif;
 
-$font-heading-size__h1: 53px;
-$font-heading-size__h2: 44px;
-$font-heading-size__h3: 37px;
-$font-heading-size__h4: 31px;
-$font-heading-size__h5: 25px;
-$font-heading-size__h6: 21px;
+$font-heading-size__h1: 100px;
+$font-heading-size__h2: 80px;
+$font-heading-size__h3: 54px;
+$font-heading-size__h4: 44px;
+$font-heading-size__h5: 32px;
+$font-heading-size__h6: 23px;
 
 
 // breakpoints
