@@ -7,7 +7,13 @@
       alt="{{ include.iconAlt }}"
     >
     {% endif %}
-    <h1 class="header__title">{{ include.title }}</h1>
+    {% if include.class == "header--home" %}
+      <h1 class="header__title">
+        We help companies design <span class="title-highlight">impactful</span> apps and software
+      </h1>
+    {% else %}
+      <h1 class="header__title">{{ include.title }}</h1>
+    {% endif %}
     {% if include.subtitle %}
     <h2 class="header__subtitle">
       {{ include.subtitle }}
