@@ -1,0 +1,23 @@
+@font-face {
+   font-family: 'PP Pangram';
+      src: url('/assets/fonts/PPPangramSans-Regular.eot');
+      src: url('/assets/fonts/PPPangramSans-Regular.woff') format('woff'),
+           url('/assets/fonts/PPPangramSans-Regular.ttf') format('truetype');
+   font-weight: 400;
+}
+
+@font-face {
+   font-family: 'PP Pangram';
+      src: url('/assets/fonts/PPPangramSans-Medium.eot');
+      src: url('/assets/fonts/PPPangramSans-Medium.woff') format('woff'),
+           url('/assets/fonts/PPPangramSans-Medium.ttf') format('truetype');
+   font-weight: 500;
+}
+
+@font-face {
+   font-family: 'PP Pangram';
+      src: url('/assets/fonts/PPPangramSans-Bold.eot');
+      src: url('/assets/fonts/PPPangramSans-Bold.woff') format('woff'),
+           url('/assets/fonts/PPPangramSans-Bold.ttf') format('truetype');
+   font-weight: 700;
+}
