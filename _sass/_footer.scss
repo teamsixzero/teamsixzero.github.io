@@ -38,4 +38,8 @@ footer {
 
 .footer__copy {
   font-size: 15px;
+
+  a {
+    color: $grey-dark;
+  }
 }
