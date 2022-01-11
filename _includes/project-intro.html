@@ -6,7 +6,13 @@
       class="{{ include.imageClass }}"
     >
     {% endif %}
-    <h1 class="intro__title">{{ include.title }}</h1>
+    {% if include.class == "intro--about" %}
+      <h1 class="header__title">
+        We believe more than anything in the power of <span class="title-highlight">listening</span>
+      </h1>
+    {% else %}
+      <h1 class="intro__title">{{ include.title }}</h1>
+    {% endif %}
     <p class="h6 intro__copy">
       {{ include.introBody }}
       {% if include.link %}
