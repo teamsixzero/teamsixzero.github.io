@@ -95,6 +95,11 @@ header {
     padding-bottom: 0;
     text-align: center;
   }
+
+  &.intro--about {
+    text-align: left;
+    margin-bottom: 56px;
+  }
 }
 
 .intro__title {
