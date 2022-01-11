@@ -2,6 +2,11 @@
   p {
     color: rgba($blue, 0.85);
   }
+
+  .intro__copy,
+  .intro__copy a {
+    color: rgba($blue-secondary, 0.5);
+  }
 }
 
 .buyer-mindset {
