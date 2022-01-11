@@ -1,3 +1,9 @@
+.projects--ftsy {
+  p {
+    color: rgba($blue, 0.85);
+  }
+}
+
 .ftsy-home-preview {
 
   .project__description {
@@ -44,8 +50,19 @@
     padding-top: 112px;
   }
 
+  .project__description {
+    @include grid-column(6);
+  }
+
+  .project__image {
+    @include grid-column(4);
+    @include grid-shift(1);
+  }
+
 
   .intro__title {
+    margin-bottom: 60px;
+
     @media only screen and
     (max-width: $screen-lg) {
       font-size: 37px;
@@ -65,6 +82,9 @@
   }
 
   .intro__copy {
+    line-height: 1.5;
+    color: rgba($blue, 0.85);
+
     @media only screen and
     (max-width: $screen-lg) {
       font-size: 19px;
@@ -73,7 +93,6 @@
     @media only screen and
     (max-width: $screen-md) {
       font-size: 16px;
-      line-height: 1.75;
     }
   }
 }
@@ -121,13 +140,18 @@
     @include grid-column(7);
 
     @media only screen and
-    (min-width: $screen-md) {
-      @include grid-column(8);
+    (max-width: $screen-lg) {
+      @include grid-column(6);
+    }
+
+    @media only screen and
+    (min-width: $screen-md) and (max-width: $screen-lg)  {
+      @include grid-column(9);
     }
 
     @media only screen and
     (max-width: $screen-md) {
-      @include grid-column(9);
+      @include grid-column(8);
     }
 
     @media only screen and
