@@ -24,6 +24,7 @@ body_class: has-no-box-shadow
               >{{ post.title }}</a
             >
           </h3>
+          {{ post.excerpt }}
           {% if post.published_at %}
           <p class="text-uppercase has-no-margin-bottom card-highlight-text">
             Published {{ post.published_at | date: "%B %-d, %Y" }}

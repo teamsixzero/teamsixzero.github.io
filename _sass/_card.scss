@@ -64,9 +64,9 @@ ul.card-container {
     display: block;
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    color: $grey-light-faded;
-    font-size: 12px;
-    margin-bottom: 24px;
+    color: $grey-dark;
+    font-size: 13px;
+    margin-bottom: 16px;
   }
 
   .card-title {
@@ -83,8 +83,9 @@ ul.card-container {
   }
 
   .card-body {
-    font-size: 16px;
+    font-size: 17px;
     margin-bottom: 0;
+    width: 80%;
 
     @media only screen and (max-width: $screen-md) {
       font-size: 14px;
@@ -125,7 +126,7 @@ ul.card-container {
     }
 
     .card-content {
-      padding: $padding-vertical $padding-horizontal;
+      padding: 24px;
     }
   }
 
@@ -164,6 +165,7 @@ ul.card-container {
 .card--c6 {
   @extend %card;
   @include grid-column(6);
+  border-radius: 0;
 
   @media only screen and (max-width: $screen-sm) {
     @include grid-column(8);
