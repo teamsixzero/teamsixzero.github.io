@@ -2,16 +2,16 @@
 layout: post
 author: Nick Foster
 light_header: true
-title: How to stop defending and start presenting your work
+title: How to stop defending and start presenting your design work
 body_class: has-no-box-shadow
-published_at: 2021-12-13
+published_at: 2022-01-13
 image_url: /assets/img/blogs/how-to-stop-defending-and-start-presenting-your-work.jpg
 image_alt: An abstract illustration of an hour glass
 og_image: https://sixzero.co/assets/img/how-to-stop-defending-and-start-presenting-your-work--og.jpg
 image_position: center center
 ---
 
-The main differentiator between being just a designer and being your team’s MVP is being able to articulate your process and how you arrived at your solution. 
+A major differentiator between being just a designer and being your team’s MVP is being able to articulate your process and how you arrived at your solution. 
 
 Before knowing how to do this, I always found myself having to defend my work to my team. My team would look at my solution and start asking loads of questions about all the decisions I made that lead to the solution I created. Being in this situation left me nervous. I would get defensive and stumble on my words trying to come up with answers.
 
