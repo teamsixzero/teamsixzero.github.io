@@ -89,6 +89,6 @@ The concept behind Yave, to support small businesses and spread global impact, i
 
 When we reflected with Nicola Claxton, co-founder and COO of Yave on the outcomes of their MVP development she said: "Their work was an integral part of our patent application and within a few months of soft-launching the beta had over 300 customers at our test lab in Seattle. I highly recommend working with the Sixzero team." 
 
-For more information on Yave, visit their <a href="https://www.yave.io/" target="_blank">website</a>.
+For more information on Yave, visit their <a href="https://www.yave.io/" target="_blank">website</a> or visit <a href="https://ondaorigins.com/" target="_blank">Onda origins</a>
 
 *Illustration by: Muti, Folio Art*
