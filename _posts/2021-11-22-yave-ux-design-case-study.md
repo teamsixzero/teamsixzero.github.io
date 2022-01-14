@@ -21,7 +21,7 @@ Yave has re-imagined the brand recognition and buying experience that consumers 
 
 <blockquote>
   <p>
-    &ldquo;Within a few months the beta had over 300 customers at our test lab in Seattle&rdquo;
+    &ldquo;Their work was an integral part of our patent application. I highly recommend working with the Sixzero team.&rdquo;
   </p>
   <br>
   Nicola Claxton, co-Founder &amp; COO of Yave.
@@ -87,7 +87,7 @@ Yave gathered insights from potential end-users at their “test lab”, Onda Or
 
 The concept behind Yave, to support small businesses and spread global impact, is one that we were eager to rally behind. We genuinely cared that their vision for this app was a success, which is why we ensured there was an emphasis on user research as not just a one-time thing. 
 
-When we reflected with Nicola Claxton, co-founder and COO of Yave on the outcomes of their MVP development she said: "The work they did was an important contribution to our patent application and within a few months of soft-launching the beta had over 300 customers at our test lab in Seattle. I highly recommend working with the Sixzero team." 
+When we reflected with Nicola Claxton, co-founder and COO of Yave on the outcomes of their MVP development she said: "Their work was an integral part of our patent application and within a few months of soft-launching the beta had over 300 customers at our test lab in Seattle. I highly recommend working with the Sixzero team." 
 
 For more information on Yave, visit their <a href="https://www.yave.io/" target="_blank">website</a>.
 
