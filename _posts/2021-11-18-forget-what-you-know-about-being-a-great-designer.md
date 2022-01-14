@@ -4,7 +4,7 @@ author: Nick Foster
 light_header: true
 title: Forget what you know about being a great designer
 body_class: has-no-box-shadow
-published_at: 2022-03-14
+published_at: 2022-01-04
 image_url: /assets/img/blogs/forget-what-you-know-about-being-a-great-designer.png
 image_alt: An illustration of a laptop on a pedestal
 og_image: https://sixzero.co/assets/img/forget-what-you-know-about-being-a-great-designer--og.png

@@ -4,9 +4,9 @@ author: Nick Foster
 light_header: true
 title: 'Unestablished and Unpolished: Our Experience Collaborating in a Pandemic'
 body_class: has-no-box-shadow
-published_at: 2022-1-31
+published_at: 2022-01-03
 image_url: /assets/img/blogs/collaborating-in-a-pandemic.png
-image_alt: An illustration of a laptop on a pedestal
+image_alt: An illustration of cartoon coffee cup having a nice time
 og_image: https://sixzero.co/assets/img/collaborating-in-a-pandemic--og.png
 image_position: center center
 ---
@@ -15,9 +15,17 @@ image_position: center center
 <iframe src="https://player.vimeo.com/video/651300500?h=fb76160fc8?api=1&background=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 </div>
 
-<br>
+<br> 
 
-Yave has re-imagined the brand recognition and buying experience that consumers have when they purchase from independently owned shops.  
+Yave has re-imagined the brand recognition and buying experience that consumers have when they purchase from independently owned shops.
+
+<blockquote>
+  <p>
+    The work Sixzero did contributed to our patent application and within a few months of soft-launching the beta accounted for 5% of sales with over 300 customers.
+  </p>
+  <br>
+  Nicola Claxton, co-Founder &amp; COO of Yave.
+</blockquote>
 
 Initially built for independent coffee brands, Scott Tupper, Founder & CEO of Yave,  built Yave with a mission to humanize commodity chains and to support supply chain traceability.  With 2020’s COVID-19 restrictions, mobile technology and e-commerce were forced upon the brick and mortar world, leaving many retailers scrambling to digitize with generic online ordering apps. Yave’s founders saw the opportunity to pivot their product to support small businesses by creating a solution that not only ensures contactless payment is kept in place but builds brand affinity by giving customers a deeper look into a brand purpose and backstory.
 
@@ -79,7 +87,7 @@ Yave gathered insights from potential end-users at their “test lab”, Onda Or
 
 The concept behind Yave, to support small businesses and spread global impact, is one that we were eager to rally behind. We genuinely cared that their vision for this app was a success, which is why we ensured there was an emphasis on user research as not just a one-time thing. 
 
-When we reflected with Nicola Claxton, co-founder and COO of Yave on the outcomes of their MVP development she said: “the surprise was never that our process and solution worked, but that no one else is doing it.  We were able to submit a patent application for what we know is a solution that poses real value for our customers.”
+When we reflected with Nicola Claxton, co-founder and COO of Yave on the outcomes of their MVP development she said: "I highly recommend working with the Sixzero team. The work they did contributed to our patent application and within a few months of soft-launching the beta accounted for 5% of sales with over 300 customers. They also went above and beyond to support our grant proposal from Germany's federal aid agency." 
 
 For more information on Yave, visit their <a href="https://www.yave.io/" target="_blank">website</a>.
 
