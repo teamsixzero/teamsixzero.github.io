@@ -21,6 +21,14 @@ Yave has re-imagined the brand recognition and buying experience that consumers 
 
 Initially built for independent coffee brands, Scott Tupper, Founder & CEO of Yave,  built Yave with a mission to humanize commodity chains and to support supply chain traceability.  With 2020’s COVID-19 restrictions, mobile technology and e-commerce were forced upon the brick and mortar world, leaving many retailers scrambling to digitize with generic online ordering apps. Yave’s founders saw the opportunity to pivot their product to support small businesses by creating a solution that not only ensures contactless payment is kept in place but builds brand affinity by giving customers a deeper look into a brand purpose and backstory.
 
+<blockquote>
+  <p>
+    &ldquo;Their work was an integral part of our patent application. I highly recommend working with the Sixzero team.&rdquo;
+  </p>
+  <br>
+  Nicola Claxton, co-Founder &amp; COO of Yave.
+</blockquote>
+
 We partnered with Yave to help design their MVP. Our goal was to verify their initial vision for an order-ahead app and put it into customers’ hands quickly. While our tried and true process for gathering user insights was met with collaboration roadblocks due to COVID’s physical distancing restrictions, we were still able to turn the initial concept into a successful MVP wireframe design within six weeks.
 
 Here’s how we did it. 
@@ -78,14 +86,6 @@ Yave gathered insights from potential end-users at their “test lab”, Onda Or
 ### The Result 
 
 The concept behind Yave, to support small businesses and spread global impact, is one that we were eager to rally behind. We genuinely cared that their vision for this app was a success, which is why we ensured there was an emphasis on user research as not just a one-time thing. 
-
-<blockquote>
-  <p>
-    &ldquo;Their work was an integral part of our patent application. I highly recommend working with the Sixzero team.&rdquo;
-  </p>
-  <br>
-  Nicola Claxton, co-Founder &amp; COO of Yave.
-</blockquote>
 
 When we reflected with Nicola Claxton, co-founder and COO of Yave on the outcomes of their MVP development she said: "Their work was an integral part of our patent application and within a few months of soft-launching the beta had over 300 customers at our test lab in Seattle. I highly recommend working with the Sixzero team." 
 
