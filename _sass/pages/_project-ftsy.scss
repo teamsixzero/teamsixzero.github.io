@@ -210,3 +210,23 @@
     }
   }
 }
+
+.ftsy-product {
+  .project__image {
+    direction: ltr;
+
+    @media only screen and
+    (min-width: $screen-sm) {
+      img {
+        max-width: 520px;
+      }
+    }
+
+    @media only screen and
+    (max-width: $screen-sm) {
+      img {
+        max-width: 300px;
+      }
+    }
+  }
+}
