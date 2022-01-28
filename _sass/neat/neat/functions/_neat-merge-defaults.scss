@@ -13,7 +13,7 @@
 @function _neat-merge-defaults($grid) {
   $_merged-grid: map-merge((
     columns: 12,
-    gutter: 20px,
+    gutter: 0px,
     media: null,
     color: rgba(#00d4ff, 0.25),
     direction: ltr,
