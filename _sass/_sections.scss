@@ -353,7 +353,7 @@ section {
 
   div[class*="section__inner"] {
 
-    > div + div {
+    &.mixed-content div + div {
       margin-left: 100px !important;
     }
 
@@ -367,10 +367,6 @@ section {
       (max-width: $screen-xs) {
         order: 2;
       }
-
-      img {
-        max-height: 600px;
-      }
     }
 
     .content__text {
@@ -382,6 +378,25 @@ section {
       @media only screen and
       (max-width: $screen-xs) {
         order: 1;
+      }
+    }
+  }
+}
+
+.section--mixed-content.section--two-images {
+  .section__inner--c12 {
+    width: 100%;
+    margin-left: 0;
+    display: grid;
+    grid-template-columns: calc(50% - 50px) calc(50% - 50px) ;
+    grid-gap: 100px;
+
+    .content__image {
+      margin-left: 0;
+      width: unset;
+
+      img {
+        max-width: 100%;
       }
     }
   }
@@ -413,5 +428,13 @@ section {
   .card--highlight {
     background-color: $teal;
     color: white;
+  }
+}
+
+// on Development page, the only instance of this block.
+// Will have to update if used in multiple places
+.section--text.section--centered {
+  .section__inner--c4 {
+    @include grid-shift(4);
   }
 }
