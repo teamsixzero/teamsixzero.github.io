@@ -78,8 +78,8 @@ header {
 .project--intro {
   @include grid-container;
   background: transparent;
-  padding-top: 162px;
-  padding-bottom: 0;
+  padding-top: 200px;
+  padding-bottom: 56px;
   border: none;
   text-align: center;
 
@@ -99,6 +99,13 @@ header {
   &.intro--about {
     text-align: left;
     margin-bottom: 56px;
+  }
+
+  &.projects--intro {
+
+    h1 {
+      max-width: 1200px;
+    }
   }
 }
 
@@ -219,8 +226,8 @@ header {
 .header--home {
   @include grid-container;
   background: transparent;
-  padding-top: 170px;
-  padding-bottom: 110px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 
 
   @media only screen and
