@@ -436,5 +436,41 @@ section {
 .section--text.section--centered {
   .section__inner--c4 {
     @include grid-shift(4);
+
+    @media only screen and
+    (max-width: $screen-md) {
+      @include grid-column(8);
+      @include grid-shift(2);
+    }
+
+    @media only screen and
+    (max-width: $screen-xs) {
+      @include grid-column(10);
+      @include grid-shift(1);
+    }
+  }
+}
+
+.section--user-testing {
+  div[class*="section__inner"] {
+    .content__image {
+      @include grid-column(7);
+    }
+
+    .content__text {
+      @include grid-column(4);
+    }
+  }
+}
+
+.section--user-testing-book {
+  div[class*="section__inner"] {
+    .content__text {
+      @include grid-column(7);
+    }
+
+    .content__image {
+      @include grid-column(4);
+    }
   }
 }
