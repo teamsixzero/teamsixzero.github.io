@@ -24,3 +24,19 @@
     $(this).toggleClass('active', $(this).attr('href') == loc);
   });
 </script>
+
+<!-- Delay hiding dropdown menu onmouseout -->
+<script>
+  let trigger = $(".dropdown-menu-item > .nav__item");
+  let menu = $(".dropdown-menu");
+
+  console.log(trigger, menu);
+
+  trigger.on("mouseenter", function (e) {
+  //  menu.addClass("is-active");
+  });
+
+  menu.on("mouseout", function (e) {
+   // menu.removeClass("is-active");
+  })
+</script>
