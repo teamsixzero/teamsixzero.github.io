@@ -383,25 +383,6 @@ section {
   }
 }
 
-.section--mixed-content.section--two-images {
-  .section__inner--c12 {
-    width: 100%;
-    margin-left: 0;
-    display: grid;
-    grid-template-columns: calc(50% - 50px) calc(50% - 50px) ;
-    grid-gap: 100px;
-
-    .content__image {
-      margin-left: 0;
-      width: unset;
-
-      img {
-        max-width: 100%;
-      }
-    }
-  }
-}
-
 .section--service-cards {
   .card-container {
     display: grid;
