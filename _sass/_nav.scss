@@ -32,6 +32,11 @@
   (max-width: $screen-xs) {
     display: block;
   }
+
+  .dropdown-menu {
+    background-color: transparent;
+    margin-bottom: 0;
+  }
 }
 
 

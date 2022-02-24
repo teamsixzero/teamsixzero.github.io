@@ -51,6 +51,11 @@ h1,
 .h1 {
   font-size: $font-heading-size__h1;
   line-height: 1;
+
+  @media screen and
+  (max-width: $screen-sm-max) {
+    font-size: calc(#{$font-heading-size__h1} / 2);
+  }
 }
 
 h2,

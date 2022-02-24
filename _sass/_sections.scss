@@ -354,7 +354,16 @@ section {
   div[class*="section__inner"] {
 
     &.mixed-content div + div {
-      margin-left: 100px !important;
+      @media only screen and
+      (max-width: $screen-xs) {
+        margin-top: 48px;
+      }
+
+      @media only screen and
+      (min-width: $screen-xs) {
+        margin-left: 100px !important;
+      }
+
     }
 
     .content__image {
@@ -386,8 +395,20 @@ section {
 .section--service-cards {
   .card-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 40px;
+    grid-template-columns: 1fr;
+
+    @media only screen and
+    (min-width: $screen-sm) {
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 40px;
+    }
+
+    @media only screen and
+    (max-width: $screen-xs-max) {
+      .card--c6 {
+        left: 0;
+      }
+    }
   }
 
   .card--c6 {
@@ -434,24 +455,30 @@ section {
 
 .section--user-testing {
   div[class*="section__inner"] {
-    .content__image {
-      @include grid-column(7);
-    }
+    @media only screen and
+    (min-width: $screen-md) {
+      .content__image {
+        @include grid-column(7);
+      }
 
-    .content__text {
-      @include grid-column(4);
+      .content__text {
+        @include grid-column(4);
+      }
     }
   }
 }
 
 .section--user-testing-book {
   div[class*="section__inner"] {
-    .content__text {
-      @include grid-column(7);
-    }
+    @media only screen and
+    (min-width: $screen-md) {
+      .content__text {
+        @include grid-column(7);
+      }
 
-    .content__image {
-      @include grid-column(4);
+      .content__image {
+        @include grid-column(4);
+      }
     }
   }
 }
