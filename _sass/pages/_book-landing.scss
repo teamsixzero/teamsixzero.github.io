@@ -11,17 +11,19 @@
   }
 
   h6, .h6 {
-    font-size: $font-heading-size__h6;
+    font-size: 17px;
+    opacity: 0.85;
 
     @media only screen and
     (max-width: $screen-md) {
-      font-size: 18px;
+      font-size: 15px;
     }
   }
 
   p {
-    font-size: 18px;
+    font-size: 17px;
     line-height: 1.75;
+    opacity: 0.85;
 
     @media only screen and
     (max-width: $screen-md) {
@@ -35,9 +37,12 @@
     border-top: 1px solid rgba(0, 0, 0, 0.08);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     width: 80%;
-    margin: 0 auto;
+    margin: 144px auto 0;
   }
 
+  .section--text {
+    padding-bottom: 0;
+  }
 }
 
 .book-index,
@@ -144,7 +149,8 @@
   .book-intro__description {
     @media only screen and
     (min-width: $screen-sm) {
-      @include grid-column(6);
+      @include grid-column(7);
+      @include grid-shift(1);
     }
 
     @media only screen and
@@ -157,7 +163,7 @@
   .book-intro__cover {
     @media only screen and
     (min-width: $screen-sm) {
-      @include grid-column(6);
+      @include grid-column(4);
     }
 
     @media only screen and
@@ -166,16 +172,16 @@
     }
 
     img {
-      max-width: 500px;
+      max-width: 400px;
 
       @media only screen and
       (max-width: $screen-md) {
-        max-width: 350px;
+        max-width: 300px;
       }
 
       @media only screen and
       (max-width: $screen-sm) {
-        max-width: 250px;
+        max-width: 200px;
         margin-bottom: 32px;
       }
     }
@@ -190,8 +196,9 @@
   }
 }
 
-.book-intro__subtitle {
-  color: rgba($grey, 0.7);
+.h6.book-intro__subtitle {
+  font-weight: 500;
+  font-size: 23px;
 }
 
 // =============================================================================
@@ -278,6 +285,10 @@
     @include grid-column(10);
     @include grid-shift(1);
   }
+
+  h2 {
+    margin-bottom: 48px;
+  }
 }
 
 .book-toc__title {
@@ -295,6 +306,7 @@
 
   .toc__chapter-title a {
     display: block;
+    text-decoration: none;
   }
 
   &:last-of-type {
@@ -308,16 +320,19 @@
 
 .toc__chapters {
   margin-bottom: 0;
-  padding-left: 16px;
+  padding-left: 0;
 
   &:not(.toc__top-level-list) {
-    list-style-type: disc;
+    list-style-type: none;
   }
 }
 
 .toc__chapter {
-  font-size: 18px;
-  margin-bottom: 8px;
+  margin-bottom: 0px;
+
+  a {
+    text-decoration: none;
+  }
 }
 
 .toc__chapter-title {
