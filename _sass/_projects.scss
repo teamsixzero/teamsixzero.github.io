@@ -155,7 +155,6 @@
     @media only screen and
     (min-width: $screen-sm) {
       @include grid-column(4);
-      margin-left: 0;
     }
 
     @media only screen and
