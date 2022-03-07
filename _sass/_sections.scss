@@ -363,7 +363,6 @@ section {
       (min-width: $screen-xs) {
         margin-left: 100px !important;
       }
-
     }
 
     .content__image {
@@ -375,6 +374,10 @@ section {
       @media only screen and
       (max-width: $screen-xs) {
         order: 2;
+
+        img {
+          width: 100%;
+        }
       }
     }
 
@@ -387,6 +390,13 @@ section {
       @media only screen and
       (max-width: $screen-xs) {
         order: 1;
+      }
+
+      @media only screen and
+      (max-width: $screen-sm) {
+        .h4 {
+          font-size: 36px;
+        }
       }
     }
   }
@@ -430,6 +440,15 @@ section {
   .card--highlight {
     background-color: $teal;
     color: white;
+
+    @media only screen and
+    (max-width: $screen-xs) {
+      padding: 36px;
+
+      .h4 {
+        font-size: 32px;
+      }
+    }
   }
 }
 
@@ -480,5 +499,13 @@ section {
         @include grid-column(4);
       }
     }
+  }
+}
+
+// a one-off override for padding underneath the Olive
+// image on the Development page
+.development .wide-cropped-image {
+  & + .section--text {
+    padding-top: 0;
   }
 }

@@ -127,8 +127,23 @@
 .project--right-image {
   @extend %left-right-images;
 
+  // make sure image appears above text on mobile
+  .section__inner--c10 {
+    @media only screen and
+    (max-width: $screen-xs) {
+      display: flex !important;
+      flex-direction: column;
+    }
+  }
+
   .project__image {
     @include grid-shift(1);
+
+    @media only screen and
+    (max-width: $screen-xs) {
+      order: 1;
+      margin-bottom: 12px;
+    }
 
     @media only screen and
     (max-width: $screen-sm) {
@@ -152,6 +167,7 @@
     @media only screen and
     (max-width: $screen-xs) {
       margin-bottom: 32px;
+      order: 2;
     }
   }
 }
