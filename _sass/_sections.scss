@@ -389,6 +389,11 @@ section {
       @media only screen and
       (max-width: $screen-xs) {
         order: 1;
+
+        .h4 {
+          font-size: 26px !important;
+          text-align: left;
+        }
       }
 
       @media only screen and
