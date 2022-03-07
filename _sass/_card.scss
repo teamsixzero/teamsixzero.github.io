@@ -14,6 +14,10 @@ $grid-gutter-32: (
   @media only screen and (max-width: $screen-sm) {
     display: block;
   }
+
+  > a {
+    text-decoration: none;
+  }
 }
 
 ul.card-container {
@@ -115,7 +119,7 @@ ul.card-container {
       }
 
       @media only screen and (max-width: $screen-xs) {
-        height: 150px;
+        height: 300px;
       }
 
       & > .card-image {
