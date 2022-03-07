@@ -35,7 +35,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     margin-left: -80px;
     margin-right: -80px;
     padding: 88px 88px 64px;
@@ -53,12 +52,14 @@
       margin-right: 0;
     }
 
+    .header-card__title {
+      margin-bottom: 16px;
+    }
+
     &__published-at {
       color: $grey-light-faded;
-
-      @media only screen and (max-width: $screen-sm) {
-        font-size: 14px;
-      }
+      font-size: 13px;
+      letter-spacing: 0.25px;
     }
   }
 
@@ -71,7 +72,8 @@
 
     h2,
     .h2 {
-      font-size: 30px;
+      font-size: 36px;
+      line-height: 1.2;
     }
 
     h3,
@@ -131,6 +133,11 @@
       ~ .h6 {
         margin-top: 62px;
       }
+    }
+
+    h3 {
+      font-size: 32px;
+      font-weight: 500;
     }
 
     img {
