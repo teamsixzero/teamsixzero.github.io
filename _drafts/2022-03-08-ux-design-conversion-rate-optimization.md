@@ -2,7 +2,7 @@
 layout: post
 author: Nick Foster
 light_header: true
-title: "UX and Conversion Rate: How to master this dynamic duo"
+title: "UX Design and Conversion Rate Optimzation: How to master this dynamic duo"
 body_class: has-no-box-shadow
 published_at: 2022-03-08
 image_url: /assets/img/blogs/ux-conversion-rate.png
@@ -18,7 +18,7 @@ After spending the last year helping with growth and retention for a well-known 
 I’ve gained a lot of insight in this area only to realize that it’s a skill that can help designers have an outsized impact. That’s why I want to encourage other designers to take a deep dive into mastering conversion rate work to support their team in improving the performance of their products and equip them with the process to do so. I promise you, when brought together, UX and conversion rate optimization design work can make quite the revenue-generating pair. 
 
 
-#### How is conversion rate optimization different from the initial UX design?
+#### How is conversion rate optimization different from normal UX design work?
 
 Conversion rate work is one of the rare instances where you are not doing any blue sky ideation but instead starting from a place where something already exists. This means you not only have qualitative data gathered from users but likely have quantitative data gathered through analytics to help you figure out your new solutions. This works in your favour as you can easily see what's not working in the existing flow, form a hypothesis around why it might be missing the mark, and experiment accordingly. For example, you can enter into ideation knowing there is an 18% drop-off when users arrive at your pricing screen, allowing you to focus your solution on this area of the design. 
 
