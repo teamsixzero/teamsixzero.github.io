@@ -40,7 +40,7 @@ On top of that, you can approach the problem in the same way you tackle any othe
 
 So with that, let’s dive into how to get it done. Here is my process for optimizing conversion flows through UX Design practices. 
 
-#### Step one: Dig in and understand the problem.
+#### Step one: Dig in and understand the problem
 
 Assuming this is an existing business with customers, you along with other stakeholders at your company should start by looking at a flow and forming a hypothesis around why the conversion rate is low. 
 
@@ -97,7 +97,7 @@ _**Pro tip 2:** The big swings involve changing multiple variables making it tou
 
 If you’re creating a complex flow or changing lots of things, it may be worth doing a round of usability testing to get an initial sense of if your proposed idea actually works. Testing at this stage is also an opportunity to check that the original intention of the page is not affected by your new design. If you decide to forgo this round of testing, you might spend a bunch of time and money creating another flow with an even worse conversion rate than the original or, worse, damage the original function of the page with all of your changes and have absolutely no idea. So, consider yourself warned. 
 
-#### Step four: Test and measure. 
+#### Step four: Test and measure
 
 As a designer, you likely won’t be responsible for taking the lead in this step but it is certainly helpful to understand it anyway. Synthesizing the results is often left in the hands of Data Analysts, Data Scientists or Product Managers but it is your job to understand and hypothesize on the results. 
 

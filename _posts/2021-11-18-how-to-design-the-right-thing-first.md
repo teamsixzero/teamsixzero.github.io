@@ -2,7 +2,7 @@
 layout: post
 author: Nick Foster
 light_header: true
-title: How to design the right thing first
+title: "Design the right thing first: How to write a UX design brief"
 body_class: has-no-box-shadow
 published_at: 2022-02-14
 image_url: /assets/img/blogs/how-to-design-the-right-thing-first.png
@@ -11,7 +11,7 @@ og_image: https://sixzero.co/assets/img/how-to-design-the-right-thing-first--og.
 image_position: center center
 ---
 
-There’s more to great design work than what you see. 
+There’s more to great UX design than what you see. 
 
 In fact, there is incredibly important work to be done long before you even open Figma.
 
@@ -42,7 +42,7 @@ To define your statement start by asking:
 
 Go through these questions with a team and narrow down responses until you have an agreement on the specific problem. Next write a statement that outlines who you are solving for, what their problem is, why it’s so important to solve it.
 
-EXAMPLE?
+[comment]: <> (EXAMPLE?)
 
 You’ll see that this step also helps you remove unrelated feedback from the mix which will help the design process run more efficiently down the line.
 
@@ -61,7 +61,7 @@ To create goals, ask your team:
 
 Generate answers to these questions from both a user experience as well as a business standpoint. Gather input from your team and then choose the top two or three goals that everyone agrees on. 
 
-EXAMPLE?
+[comment]: <> (EXAMPLE?)
 
 #### Step three: Write out your ‘success looks like’ statements
 
@@ -71,7 +71,7 @@ Further, success statements help you uncover any further unalignment amongst you
 
 These statements can be written as simply as “success looks like…”. Similarly to creating your goals, consult with your team. Once everyone has contributed their version of success, compare all statements to ensure there is alignment. Perhaps one statement will rise as the main version of success that everyone agrees on or a new statement will be written that is a conglomerate of one or two. 
 
-EXAMPLE?
+[comment]: <> (EXAMPLE?)
 
 #### Step four: Identify your design principles 
 
@@ -85,7 +85,7 @@ The way I usually do this is by first thinking of what the ideal design solution
 
 This step helps articulate WHY you arrived at the solution you came to and helps everyone evaluate the design more objectively. 
 
-EXAMPLE?
+[comment]: <> (EXAMPLE?)
 
 #### Step five: Create a hypothesis 
 
@@ -113,6 +113,8 @@ For example:
 This statement tells you, as the designer, that the solution needs to showcase pricing in a way that allows the user to easily compare what each package offers.
 
 Be sure that your job stories are written based on the feedback you gathered while conducting [user research](/2021/05/03/how-to-overcome-8-common-objections-to-ux-research/) and not something fabricated based on any assumptions. As always, be sure to consult your team when writing your job stories so that you can all be in alignment with what the user wants to be done. 
+
+If you're keen to go deep on learning to write great Job Stories check out <a href="https://www.intercom.com/blog/using-job-stories-design-features-ui-ux/" target="_blank">this great post</a> from Intercom.
 
 #### The takeaway
 
