@@ -20,7 +20,7 @@ I’ve gained a lot of insight in this area only to realize that it’s a skill 
 
 #### How is conversion rate optimization different from normal UX design work?
 
-Conversion rate work is one of the rare instances where you are not doing any blue sky ideation but instead starting from a place where something already exists. This means you not only have qualitative data gathered from users but likely have quantitative data gathered through analytics to help you figure out your new solutions. This works in your favour as you can easily see what's not working in the existing flow, form a hypothesis around why it might be missing the mark, and experiment accordingly. For example, you can enter into ideation knowing there is an 18% drop-off when users arrive at your pricing screen, allowing you to focus your solution on this area of the design. 
+Conversion rate work is one of the rare instances where you are not doing any blue sky ideation but instead starting from a place where something already exists. This means you not only have <a href="https://imotions.com/blog/qualitative-vs-quantitative-research/" target="_blank">qualitative data</a> gathered from users but likely have quantitative data gathered through analytics to help you figure out your new solutions. This works in your favour as you can easily see what's not working in the existing flow, form a hypothesis around why it might be missing the mark, and experiment accordingly. For example, you can enter into ideation knowing there is an 18% drop-off when users arrive at your pricing screen, allowing you to focus your solution on this area of the design. 
 
 #### That’s cool. But what’s in it for me? 
 
@@ -54,9 +54,9 @@ Coming up with your hypothesis doesn’t need to take long but it shouldn’t be
 
 Get your team together and ask each person to examine the existing flow and come up with their own ideas as to why it might be leading to a low rate of conversions. Next, narrow down all of the ideas until you have one that everyone agrees is the strongest hypothesis. 
 
-If you've done that and the problem is still not completely obvious, I suggest showing the flow to some users by doing moderated or unmoderated usability tests. By experiencing the issue directly through your user’s eyes and seeing them struggle through an attempted conversion, you will likely come away with a lot more ideas on how to improve the flow. This step will either solidify your team’s initial assumptions as to what’s broken or expose you to a fresh set of ideas as to how to optimize the flow. 
+If you've done that and the problem is still not completely obvious, I suggest showing the flow to some users by doing <a href="/startusertesting/" target="_blank">moderated or unmoderated usability tests</a>. By experiencing the issue directly through your user’s eyes and seeing them struggle through an attempted conversion, you will likely come away with a lot more ideas on how to improve the flow. This step will either solidify your team’s initial assumptions as to what’s broken or expose you to a fresh set of ideas as to how to optimize the flow. 
 
-If you end up with a few potential hypotheses, your final step is to use an Impact vs. Effort Matrix to determine which ideas are worth moving forward with. 
+If you end up with a few potential hypotheses, your final step is to use an <a href="https://miro.com/templates/impact-effort-matrix/" target="_blank">Impact vs. Effort Matrix</a> to determine which ideas are worth moving forward with. 
 
 <img src="/assets/img/blogs/ux-conversion-rate-matrix.png" />
 
@@ -69,7 +69,7 @@ _**Pro tip 1:** If you can’t get everyone aligned on one experiment, then agre
 
 Next up, you should capture your problem statement, your hypothesis around how to improve it, and any analytical insights (from data, or from usability testing) in one place. Ultimately, what you’re creating here is a testing plan that you can refer back to during design and when you present your solutions. 
 
-In other words, a [design brief](/2021/11/18/how-to-design-the-right-thing-first/). 
+In other words, a <a href="/2021/11/18/how-to-write-ux-design-brief/" target="_blank">design brief</a>. 
 
 Everyone involved in the project should agree with what is wrong and have an agreement on what direction needs to be taken to correct the problem. Your design brief will outline this as a problem statement, but there should be no specifics around the solutions that will be built at this stage.
 
@@ -82,7 +82,7 @@ This could be:
 * “Success looks like making it easier for users to see their tax information so that they are ready to convert”
 * “Success looks like a 5% increase on this page which would lead to a $1000 increase in revenue a week”
 
-You’ll want to write out a set of statements that define the method in which you are going to design the solution, otherwise known as [design principles](/2021/11/18/how-to-stop-defending-and-start-presenting-your-work/). This isn’t to say we are defining a solution here, rather the approaches and principles that you are going to abide by. Add your hypothesis and insights gathered from usability testing and you’ll have a road map to ensure you are in complete alignment with what needs to be built. 
+You’ll want to write out a set of statements that define the method in which you are going to design the solution, otherwise known as <a href="/2021/11/18/how-to-stop-defending-and-start-presenting-your-work/" target="_blank">design principles</a>. This isn’t to say we are defining a solution here, rather the approaches and principles that you are going to abide by. Add your hypothesis and insights gathered from usability testing and you’ll have a road map to ensure you are in complete alignment with what needs to be built. 
 
 
 #### Step three: The Fun Part
@@ -101,9 +101,9 @@ If you’re creating a complex flow or changing lots of things, it may be worth 
 
 As a designer, you likely won’t be responsible for taking the lead in this step but it is certainly helpful to understand it anyway. Synthesizing the results is often left in the hands of Data Analysts, Data Scientists or Product Managers but it is your job to understand and hypothesize on the results. 
 
-Once you’ve got an approved design, it should get built and A/B tested. [A/B Testing](https://www.optimizely.com/optimization-glossary/ab-testing/) is a method of comparing two versions of a solution against each other to determine which one performs better. Most analysis can be done using basic event tracking (mixpanel, flurry, etc ) and statistics. You can also use a [calculator](https://abtestguide.com/bayesian/) if you don’t have an in-house data scientist. 
+Once you’ve got an approved design, it should get built and A/B tested. <a href="https://www.optimizely.com/optimization-glossary/ab-testing/" target="_blank">A/B Testing</a> is a method of comparing two versions of a solution against each other to determine which one performs better. Most analysis can be done using basic event tracking (mixpanel, flurry, etc ) and statistics. You can also use a <a href="https://abtestguide.com/bayesian/" target="_blank">calculator</a> if you don’t have an in-house data scientist. 
 
-Depending on how many people use the app or flow in question, A/B tests might take months. This is because you need statistically significant results for the test to be meaningful. That means you need enough people tested within both test groups to ensure you produce worthwhile insights. You can learn more about the importance of [statistical significance here](https://blog.analytics-toolkit.com/2017/statistical-significance-ab-testing-complete-guide/). 
+Depending on how many people use the app or flow in question, A/B tests might take months. This is because you need statistically significant results for the test to be meaningful. That means you need enough people tested within both test groups to ensure you produce worthwhile insights. You can learn more about the importance of <a href="https://blog.analytics-toolkit.com/2017/statistical-significance-ab-testing-complete-guide/" target="_blank">statistical significance here</a>.
 
 So, if you have low traffic and don’t think you can get statistically significant results, usability testing might be the best data you can get. If you have plenty of users, your test will produce either a pass (conversion increase), fail (conversion decrease) or neutral result (no detectable change). Again, don’t be alarmed if A/B testing takes a while to produce significant data. Even large companies, who run these tests regularly, have limited control over how long it can take.
 

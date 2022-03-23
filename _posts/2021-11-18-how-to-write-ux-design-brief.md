@@ -81,7 +81,7 @@ Similarly to how you need to get alignment on what problem to solve, it also hel
 
 Design principles are a set of statements that define the method in which you are going to design the solution. This isn’t to say we are defining a solution here, rather the approaches and principles that you are going to abide by. 
 
-The way I usually do this is by first thinking of what the ideal design solution might look like. From there, I work my way back from that solution and write down all the features and the purpose for including those elements in the design. 
+The way I usually do this is by first thinking of what the ideal design solution might look like. From there, I work my way back from that solution and write down all the features and the purpose for including those elements in the design. To learn more we've got a whole article on creating design principles <a href="/2021/11/18/how-to-stop-defending-and-start-presenting-your-work/" target="_blank">here</a>
 
 This step helps articulate WHY you arrived at the solution you came to and helps everyone evaluate the design more objectively. 
 
@@ -112,7 +112,7 @@ For example:
 
 This statement tells you, as the designer, that the solution needs to showcase pricing in a way that allows the user to easily compare what each package offers.
 
-Be sure that your job stories are written based on the feedback you gathered while conducting [user research](/2021/05/03/how-to-overcome-8-common-objections-to-ux-research/) and not something fabricated based on any assumptions. As always, be sure to consult your team when writing your job stories so that you can all be in alignment with what the user wants to be done. 
+Be sure that your job stories are written based on the feedback you gathered while conducting <a href="/2021/05/03/how-to-overcome-8-common-objections-to-ux-research/" target="_blank">user research</a> and not something fabricated based on any assumptions. As always, be sure to consult your team when writing your job stories so that you can all be in alignment with what the user wants to be done. 
 
 If you're keen to go deep on learning to write great Job Stories check out <a href="https://www.intercom.com/blog/using-job-stories-design-features-ui-ux/" target="_blank">this great post</a> from Intercom.
 
