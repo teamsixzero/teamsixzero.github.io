@@ -143,6 +143,10 @@ section {
   background-image: linear-gradient(#ffffff, $grey-light);
 }
 
+.section--color-grey-light-gradient-not-fullheight {
+  background-image: linear-gradient(#ffffff 0%, $grey-light 75%, #ffffff 76%);
+
+}
 .section--color-grey-light {
   background: $grey-light;
 }
