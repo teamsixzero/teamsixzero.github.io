@@ -17,15 +17,31 @@ body_class: what-we-do-single
     <div class="content__image">
       <picture>
         <source
-          media="(max-width: 768px)"
-          srcset="/assets/img/placeholder.png"
-        >
-        <img
-          src="/assets/img/placeholder.png"
-          alt="Placeholder"
-          class="responsive-image"
-          loading="lazy"
+          sizes="(max-width: 1400px) 100vw, 1400px"
+          srcset="
+            /assets/img/pages/illustrations/illustration-02_400.webp 400w,
+            /assets/img/pages/illustrations/illustration-02_600.webp 600w,
+            /assets/img/pages/illustrations/illustration-02_800.webp 800w,
+            /assets/img/pages/illustrations/illustration-02_1200.webp 1200w,
+            /assets/img/pages/illustrations/illustration-02_1400.webp 1400w,
+          "
+          type="image/webp"
         />
+        <source
+          sizes="(max-width: 1400px) 100vw, 1400px"
+          srcset="
+            /assets/img/pages/illustrations/illustration-02_400.png 400w,
+            /assets/img/pages/illustrations/illustration-02_600.png 600w,
+            /assets/img/pages/illustrations/illustration-02_800.png 800w,
+            /assets/img/pages/illustrations/illustration-02_1200.png 1200w,
+            /assets/img/pages/illustrations/illustration-02_1400.png 1400w,
+          "
+          type="image/png"
+        />
+        <img
+          class="responsive-image"
+          src="/assets/img/pages/illustrations/illustration-02_1400.png"
+          alt="An illustration showing a test action in-progress."
       </picture>
     </div>
     <div class="content__text">
