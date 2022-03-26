@@ -49,3 +49,10 @@
   background-position: right center;
   background-size: contain;
 }
+
+.has-bg-square-left {
+  background: url('/assets/img/bg-texture.png');
+  background-repeat: no-repeat;
+  background-position: left 35%;
+  background-size: 35%;
+}
