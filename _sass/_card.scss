@@ -77,8 +77,8 @@ ul.card-container {
     margin-bottom: 16px;
     font-family: $header-font;
 
-    @media only screen and (max-width: $screen-md) {
-      font-size: 19px;
+    @media only screen and (max-width: $screen-md-max) {
+      font-size: 23px;
     }
 
     @media only screen and (max-width: $screen-sm) {
@@ -153,6 +153,10 @@ ul.card-container {
 .card--c4 {
   @extend %card;
   @include grid-column(4);
+
+  @media only screen and (max-width: $screen-md-max) {
+    padding: 24px;
+  }
 
   @media only screen and (max-width: $screen-sm) {
     @include grid-column(8);
