@@ -16,8 +16,9 @@
 
 .project__description{
  @media only screen and
-  (max-width: $screen-sm) {
-    text-align: left;
+  (max-width: $screen-xs) {
+    margin-top: 16px;
+    text-align: center;
   }
 }
 

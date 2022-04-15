@@ -5,4 +5,15 @@
       font-size: 44px;
     }
   }
+
+  @media only screen and
+  (max-width: $screen-xs) {
+    .intro__title {
+      font-size: 36px;
+    }
+
+    .section--mixed-content {
+      padding-top: 48px;
+    }
+  }
 }
