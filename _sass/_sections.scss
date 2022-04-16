@@ -144,7 +144,7 @@ section {
 }
 
 .section--color-grey-light-gradient-not-fullheight {
-  background-image: linear-gradient(#ffffff 0%, $grey-light 75%, #ffffff 76%);
+  background-image: linear-gradient(#ffffff 0%, #fbfbfb 85%, #ffffff 86%);
 
 }
 .section--color-grey-light {
@@ -251,6 +251,8 @@ section {
   (max-width: $screen-xs){
     padding-top: 72px;
     padding-bottom: 72px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
