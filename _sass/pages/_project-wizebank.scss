@@ -4,6 +4,11 @@
 
   &.video-wizebank-intro {
     box-shadow: 0 20px 60px 0 rgba(5, 29, 61, 0.06);
+
+    // the video sits on a box shadow, so we have to
+    // replicate the shadow background to show
+    // seamless resizing of the video
+    background-image: linear-gradient(#fbfbfc 0%, #f8f6f6 100%);
   }
 }
 
@@ -13,5 +18,10 @@
   @media only screen and
   (max-width: $screen-xs) {
     padding-bottom: 128px;
+  }
+
+  .video-wizebank {
+    --video--width: 3400;
+    --video--height: 1704;
   }
 }

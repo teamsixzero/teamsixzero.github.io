@@ -4,10 +4,11 @@
     --video--height: 3240;
 
     position: relative;
-    padding-bottom: calc(var(--video--height) / var(--video--width) * 100%); /* 41.66666667% */
+    //padding-bottom: calc(var(--video--height) / var(--video--width) * 100%); /* 41.66666667% */
+    aspect-ratio: var(--video--width) / var(--video--height);
     overflow: hidden;
     max-width: 100%;
-    background: black;
+    background: white;
   }
 
   .embed-container iframe,
