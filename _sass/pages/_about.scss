@@ -1,22 +1,32 @@
 .where-we-work {
-  .section-title {
-    margin-bottom: 40px;
-    color: #ffffff;
-  }
+  background-image: url(/assets/img/map.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .address-with-map {
   display: flex;
   align-items: center;
-  box-shadow: 0 20px 30px rgba($blue, 0.7);
+  box-shadow: 0 15px 15px rgba($blue, 0.03);
   background: #ffffff;
-  padding: 0;
+  margin: 125px 0;
+
+  @include grid-column(4);
+  @include grid-shift(8);
+
+  @media only screen and
+  (max-width: $screen-md){
+    @include grid-column(6);
+    @include grid-shift(4);
+    display: block;
+  }
 
   @media only screen and
   (max-width: $screen-sm){
     @include grid-column(8);
     @include grid-shift(2);
     display: block;
+    margin: 64px 0;
   }
 
   @media only screen and
@@ -30,11 +40,20 @@
 .address__info {
   text-align: left;
   flex: 1;
-  padding: 40px 64px;
+  padding: 135px 60px 200px;
+
+  @media only screen and
+  (max-width: $screen-md){
+    padding: 72px 40px;
+  }
 
   @media only screen and
   (max-width: $screen-sm){
     padding: 40px;
+  }
+
+  h5 {
+    font-weight: 500;
   }
 
   p {

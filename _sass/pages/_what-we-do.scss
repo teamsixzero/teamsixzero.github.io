@@ -1,0 +1,40 @@
+.what-we-do-single {
+  @media only screen and
+  (max-width: $screen-sm) {
+    .intro__title {
+      font-size: 44px;
+    }
+  }
+
+  @media only screen and
+  (max-width: $screen-xs) {
+    .intro__title {
+      font-size: 36px;
+    }
+
+    .section--mixed-content {
+      padding-top: 48px;
+
+      h3, h4, .h5 {
+        font-size: 23px;
+        line-height: 150%;
+        margin-bottom: 6px;
+      }
+    }
+
+    .section--text {
+      h1 {
+        font-size: 32px;
+        margin-bottom: 0;
+        line-height: 130%;
+      }
+    }
+  }
+
+  .project__description p {
+    @media only screen and
+    (max-width: $screen-md) {
+      font-size: 16px;
+    }
+  }
+}

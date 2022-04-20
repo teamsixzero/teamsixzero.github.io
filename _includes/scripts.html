@@ -1,9 +1,3 @@
-<!-- Google font CSS -->
-<link
-  rel="stylesheet"
-  href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Poppins:300,400,600,700"
->
-
 <!-- JQuery -->
 <script
   src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -29,4 +23,20 @@
   $('.nav__inner').find('.nav__item').each(function () {
     $(this).toggleClass('active', $(this).attr('href') == loc);
   });
+</script>
+
+<!-- Delay hiding dropdown menu onmouseout -->
+<script>
+  let trigger = $(".dropdown-menu-item > .nav__item");
+  let menu = $(".dropdown-menu");
+
+  console.log(trigger, menu);
+
+  trigger.on("mouseenter", function (e) {
+  //  menu.addClass("is-active");
+  });
+
+  menu.on("mouseout", function (e) {
+   // menu.removeClass("is-active");
+  })
 </script>

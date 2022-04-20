@@ -14,6 +14,10 @@ $grid-gutter-32: (
   @media only screen and (max-width: $screen-sm) {
     display: block;
   }
+
+  > a {
+    text-decoration: none;
+  }
 }
 
 ul.card-container {
@@ -37,6 +41,7 @@ ul.card-container {
   background: #ffffff;
   text-align: left;
   transition: all 0.1s ease-in-out;
+  border-radius: 24px;
 
   @media only screen and (max-width: $screen-sm) {
     @include grid-column(12);
@@ -63,17 +68,17 @@ ul.card-container {
     display: block;
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    color: $grey-light-faded;
-    font-size: 12px;
-    margin-bottom: 24px;
+    color: $grey-dark;
+    font-size: 13px;
+    margin-bottom: 16px;
   }
 
   .card-title {
     margin-bottom: 16px;
     font-family: $header-font;
 
-    @media only screen and (max-width: $screen-md) {
-      font-size: 19px;
+    @media only screen and (max-width: $screen-md-max) {
+      font-size: 23px;
     }
 
     @media only screen and (max-width: $screen-sm) {
@@ -82,8 +87,9 @@ ul.card-container {
   }
 
   .card-body {
-    font-size: 16px;
+    font-size: 17px;
     margin-bottom: 0;
+    width: 80%;
 
     @media only screen and (max-width: $screen-md) {
       font-size: 14px;
@@ -113,7 +119,7 @@ ul.card-container {
       }
 
       @media only screen and (max-width: $screen-xs) {
-        height: 150px;
+        height: 300px;
       }
 
       & > .card-image {
@@ -124,7 +130,7 @@ ul.card-container {
     }
 
     .card-content {
-      padding: $padding-vertical $padding-horizontal;
+      padding: 24px;
     }
   }
 
@@ -148,6 +154,10 @@ ul.card-container {
   @extend %card;
   @include grid-column(4);
 
+  @media only screen and (max-width: $screen-md-max) {
+    padding: 24px;
+  }
+
   @media only screen and (max-width: $screen-sm) {
     @include grid-column(8);
     @include grid-shift(2);
@@ -163,6 +173,7 @@ ul.card-container {
 .card--c6 {
   @extend %card;
   @include grid-column(6);
+  border-radius: 0;
 
   @media only screen and (max-width: $screen-sm) {
     @include grid-column(8);

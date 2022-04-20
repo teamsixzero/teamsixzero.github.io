@@ -143,6 +143,10 @@ section {
   background-image: linear-gradient(#ffffff, $grey-light);
 }
 
+.section--color-grey-light-gradient-not-fullheight {
+  background-image: linear-gradient(#ffffff 0%, #fbfbfb 85%, #ffffff 85%);
+
+}
 .section--color-grey-light {
   background: $grey-light;
 }
@@ -196,8 +200,15 @@ section {
   }
 
   .section-subtitle {
-    color: rgba($grey, 0.7);
-    margin-bottom: 40px;
+    font-size: 17px;
+    color: $grey-normal;
+    margin-top: 6px;
+    margin-bottom: 24px;
+
+    @media only screen and
+    (min-width: $screen-sm) {
+      font-size: 23px;
+    }
   }
 }
 
@@ -215,31 +226,33 @@ section {
 
 
 // =============================================================================
-// Tesimonial
+// Testimonial
 // =============================================================================
 
 .section--testimonial {
   @include grid-container;
-  padding-top: 248px;
-  padding-bottom: 248px;
+  padding-top: 162px;
+  padding-bottom: 162px;
   background: $blue;
 
   @media only screen and
   (max-width: $screen-md){
-    padding-top: 208px;
-    padding-bottom: 208px;
+    padding-top: 135px;
+    padding-bottom: 135px;
   }
 
   @media only screen and
   (max-width: $screen-sm){
-    padding-top: 144px;
-    padding-bottom: 144px;
+    padding-top: 96px;
+    padding-bottom: 96px;
   }
 
   @media only screen and
   (max-width: $screen-xs){
-    padding-top: 112px;
-    padding-bottom: 112px;
+    padding-top: 72px;
+    padding-bottom: 72px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
@@ -259,25 +272,30 @@ section {
 .testimonial__text {
   color: #ffffff;
   font-family: $header-font;
-  font-size: 33px;
+  font-size: 44px;
+  font-weight: 500;
+  margin-bottom: 24px;
 
   @media only screen and
   (max-width: $screen-sm){
-    font-size: 25px;
+    font-size: 33px;
   }
 
   @media only screen and
   (max-width: $screen-xs){
-    font-size: 20px;
+    font-size: 25px;
   }
 }
 
 .testimonial__name {
   text-transform: uppercase;
-  font-weight: 200;
   letter-spacing: 1px;
   font-size: 14px;
-  color: $grey-light;
+  color: white;
+
+  span {
+    color: $grey-normal;
+  }
 }
 
 
@@ -320,6 +338,22 @@ section {
     transform: translateY(-2px);
     box-shadow: 0 25px 30px rgba($grey-medium, 0.3);
   }
+
+  .section-title {
+    @media only screen and
+    (max-width: $screen-xs-max) {
+      font-size: 36px;
+    }
+  }
+
+  .section-subtitle {
+    margin-bottom: 84px;
+
+     @media only screen and
+    (max-width: $screen-xs-max) {
+      font-size: 19px;
+    }
+  }
 }
 
 // =============================================================================
@@ -329,4 +363,177 @@ section {
 .picture-caption {
   padding-top: 16px;
   text-align: center;
+}
+
+
+// =============================================================================
+// Mixed content
+// =============================================================================
+
+.section--mixed-content {
+  @extend %left-right-images;
+  padding-bottom: 56px !important;
+
+  div[class*="section__inner"] {
+
+    &.mixed-content div + div {
+      @media only screen and
+      (max-width: $screen-xs) {
+        margin-top: 48px;
+      }
+
+      @media only screen and
+      (min-width: $screen-xs) {
+        margin-left: 100px !important;
+      }
+    }
+
+    .content__image {
+      @media only screen and
+      (min-width: $screen-xs) {
+        @include grid-column(5);
+      }
+
+      @media only screen and
+      (max-width: $screen-xs) {
+        order: 2;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    .content__text {
+      @media only screen and
+      (min-width: $screen-xs) {
+        @include grid-column(5);
+      }
+
+      @media only screen and
+      (max-width: $screen-xs) {
+        order: 1;
+
+        .h4 {
+          font-size: 26px !important;
+          //text-align: left;
+        }
+      }
+
+      @media only screen and
+      (max-width: $screen-sm) {
+        .h4 {
+          font-size: 36px;
+        }
+      }
+    }
+  }
+}
+
+.section--service-cards {
+  .card-container {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    @media only screen and
+    (min-width: $screen-sm) {
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 40px;
+    }
+
+    @media only screen and
+    (max-width: $screen-xs-max) {
+      .card--c6 {
+        left: 0;
+      }
+    }
+  }
+
+  .card--c6 {
+    width: unset;
+    margin-left: 0;
+    border-radius: 24px;
+    padding: 48px;
+
+    .card-image {
+      max-width: 50%;
+      margin-bottom: 72px;
+    }
+
+    .card-body {
+      width: 100%;
+    }
+  }
+
+  .card--highlight {
+    background-color: $teal;
+    color: white;
+
+    @media only screen and
+    (max-width: $screen-xs) {
+      padding: 36px;
+
+      .h4 {
+        font-size: 32px;
+      }
+    }
+  }
+}
+
+// on Development page, the only instance of this block.
+// Will have to update if used in multiple places
+.section--text.section--centered {
+  .section__inner--c4 {
+    @include grid-shift(4);
+
+    @media only screen and
+    (max-width: $screen-md) {
+      @include grid-column(8);
+      @include grid-shift(2);
+    }
+
+    @media only screen and
+    (max-width: $screen-xs) {
+      @include grid-column(10);
+      @include grid-shift(1);
+    }
+  }
+}
+
+.section--user-testing {
+  div[class*="section__inner"] {
+    @media only screen and
+    (min-width: $screen-md) {
+      .content__image {
+        @include grid-column(7);
+      }
+
+      .content__text {
+        @include grid-column(4);
+      }
+    }
+  }
+}
+
+.section--user-testing-book {
+  div[class*="section__inner"] {
+    @media only screen and
+    (min-width: $screen-md) {
+      .content__text {
+        @include grid-column(7);
+      }
+
+      .content__image {
+        @include grid-column(4);
+      }
+    }
+  }
+}
+
+// a one-off override for padding underneath the Olive
+// image on the Development page
+.development .wide-cropped-image {
+  & + .section--text {
+    padding-top: 0;
+  }
 }
