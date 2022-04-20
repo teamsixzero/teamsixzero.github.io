@@ -117,6 +117,6 @@ It’s not uncommon for there to be more failures than passes when you do this w
 Even if you think you’ve designed a home run solution, sometimes it just doesn’t make it out of the park. And that’s ok. In those failures, you’re learning from experiments that bring in the insights you need to get closer to the winning solution. By sticking to your process, I promise you’ll generate wins a lot quicker. And remember: If that long-sought-after win generates a big boost in revenue, you only need one to make each failure worth it. 
 
 
-*Nick Foster is the founder of Sixzero, an agency that helps companies design apps and software with measureable impact.*
+*Nick Foster is the founder of Sixzero, an agency that helps companies design apps and software with measurable impact.*
 
 *Illustration by: Muti, Folio Art*
