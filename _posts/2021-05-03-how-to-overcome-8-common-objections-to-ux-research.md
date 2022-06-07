@@ -11,6 +11,13 @@ og_image: https://sixzero.co/assets/img/blogs/banner-8-common-objections--og.png
 image_position: center center
 ---
 
+<div class="post-summary">
+  <span class="post-summary__highlight-text">In this article</span>
+  <p>
+    Need to convince your team that UX research is worthwhile? This article outlines how to prove to any stakeholder that UX research can be not only cheap and efficient but incredibly effective.
+  </p>
+</div>
+
 Whether you’re fresh into the ideation stage of a new business or you’re working on the next big feature, it’s important to have a clear understanding of your users' experience. Not being aligned with how a user interacts with a product is one of the key reasons why apps fail.
 You may already know the importance of validating your work through user-focused research, but find that when you suggest it as a way to gain insight into your customers, you’re met with resistance from your team. Often, this is because the very thought of research sparks visuals of hundreds of test subjects engaged in psychology experiments — [even when it’s not](https://www.interaction-design.org/literature/article/user-research-what-it-is-and-why-you-should-do-it).
 

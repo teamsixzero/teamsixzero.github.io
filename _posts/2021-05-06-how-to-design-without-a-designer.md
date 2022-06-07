@@ -11,6 +11,13 @@ og_image: https://sixzero.co/assets/img/blogs/design-without-a-designer--og.png
 image_position: center center
 ---
 
+<div class="post-summary">
+  <span class="post-summary__highlight-text">In this article</span>
+  <p>
+    In this article, you’ll learn how to form a customer-centric approach to checking your assumption and gathering user insight in order to ensure you always design a product that is aligned with your user’s needs.
+  </p>
+</div>
+
 When I was a junior designer, I thought it was my job to have all the answers. After all, it was the features that I created that the user would interact with. So I made interfaces and websites, alone in a silo, based only on my assumptions and guesswork. I would hide my designs from stakeholders until they were “ready”. Then I would be offended and defensive when they pointed out obvious flaws or omissions in my vision.
 
 Looking back, these websites, products, and interfaces were objectively terrible and, even though I thought they were great while I was creating them, the reality is they never met the needs of anyone who used them.

@@ -158,3 +158,10 @@
     @include grid-shift(0);
   }
 }
+
+
+// Executive summaries at the top of the posts
+.post-summary {
+  padding: 25px;
+  background: $grey-light;
+}

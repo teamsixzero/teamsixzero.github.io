@@ -11,6 +11,13 @@ og_image: https://sixzero.co/assets/img/how-to-stop-defending-and-start-presenti
 image_position: center center
 ---
 
+<div class="post-summary">
+  <span class="post-summary__highlight-text">In this article</span>
+  <p>
+    You'll learn you how to write design principles to help you better articulate how you arrived at your solution. This will help you to present your designs clearly and confidently to stakeholders so they can easily understand the thought behind your work, provide specific feedback, and get behind your solutions.
+  </p>
+</div>
+
 A major differentiator between being just a designer and being your team’s MVP is being able to articulate your process and how you arrived at your solution. 
 
 Before knowing how to do this, I always found myself having to defend my work to my team. My team would look at my solution and start asking loads of questions about all the decisions I made that lead to the solution I created. Being in this situation left me nervous. I would get defensive and stumble on my words trying to come up with answers.

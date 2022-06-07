@@ -16,7 +16,7 @@ image_position: center center
 <iframe src="https://player.vimeo.com/video/651300500?h=fb76160fc8?api=1&background=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 </div>
 
-<br> 
+<br>
 
 Yave has re-imagined the brand recognition and buying experience that consumers have when they purchase from independently owned shops.
 

@@ -11,6 +11,13 @@ og_image: https://sixzero.co/assets/img/blogs/ux-conversion-rate--og.png
 image_position: center center
 ---
 
+<div class="post-summary">
+  <span class="post-summary__highlight-text">In this article</span>
+  <p>
+    Want to design for tangible impact? Mastering conversion rate optimization (CRO) to improve the performance of products is one sure way to do so. This article explores how UX design and CRO can make quite the revenue-generating pair. And provides you with the process to make it happen.
+  </p>
+</div>
+
 No matter what product you’ve helped build, great UX design and conversion rate optimization (conversion rate optimization) play equally important roles in its overall success and, subsequently, the business you work for. 
 
 After spending the last year helping with growth and retention for a well-known SaaS corp where my job has been to increase conversions on many screens within their large app, I’ve realized just how paramount this conversion rate optimization work can be. Throughout our work, we scored wins in the 6 to 7 figure ARR. 

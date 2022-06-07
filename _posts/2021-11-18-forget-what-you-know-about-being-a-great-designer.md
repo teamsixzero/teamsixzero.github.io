@@ -11,6 +11,12 @@ og_image: https://sixzero.co/assets/img/forget-what-you-know-about-being-a-great
 image_position: center center
 ---
 
+<div class="post-summary">
+  <span class="post-summary__highlight-text">In this article</span>
+  <p>
+    The journey to being a great designer is never done. This article explores how to constantly hone your craft and your processes in order to define your own version of success. Oh, and we’ll look at ways to enjoy the journey in doing so.
+  </p>
+</div>
 
 UX Design is not a new game, but the field on which we designers play changes at an insane rate. 
 

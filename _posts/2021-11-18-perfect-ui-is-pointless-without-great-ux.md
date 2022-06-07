@@ -11,6 +11,13 @@ og_image: https://sixzero.co/assets/img/perfect-ui-is-pointless-without-great-ux
 image_position: center center
 ---
 
+<div class="post-summary">
+  <span class="post-summary__highlight-text">In this article</span>
+  <p>
+    Looks aren’t everything. That's why this article explores why user experience should be prioritized over polishing your product’s UI when you’re first designing a product. You’ll learn how to ensure you design a product that has just enough features to accomplish what your users need it to do.
+  </p>
+</div>
+
 It’s common for startups to reference the giants like Apple or Airbnb when first looking for design inspiration. And why wouldn’t they? These well-known companies offer a perfectly polished experience for their users.
 
 While these products are spotless in appearance, the reality is that it is not the look of the product that skyrockets an everyday device or booking site into a global phenomenon. These products add loads of value, presented in an easy-to-access solution that solves the main problem that their intended user has. That’s it. All an app needs to be a success is to have a user experience (UX) in which people find major value. The eye-catching user interface (UI) can always come later.

@@ -11,6 +11,13 @@ og_image: https://sixzero.co/assets/img/how-to-design-the-right-thing-first--og.
 image_position: center center
 ---
 
+<div class="post-summary">
+  <span class="post-summary__highlight-text">In this article</span>
+  <p>
+    This step-by-step guide to creating a design brief will teach you how to gather all your criteria for success from the get-go. You’ll learn how to collect stakeholder inputs, identify constraints and generate alignment on intended project outcomes. In return, you’ll mitigate surprises or off-topic requests and help your project run more smoothly.
+  </p>
+</div>
+
 There’s more to great UX design than what you see. 
 
 In fact, there is incredibly important work to be done long before you even open Figma.

@@ -163,7 +163,7 @@
 
 
       & > p {
-        @extend .h4;
+        @extend .h5;
         @extend .has-no-margin-bottom;
 
         @media only screen and (max-width: $screen-lg) {
@@ -179,5 +179,21 @@
         }
       }
     }
+  }
+
+  // Executive summaries at the top of the posts
+  .post-summary {
+    padding: 32px;
+    margin-bottom: 40px;
+    background: $grey-light;
+  }
+
+  .post-summary__highlight-text {
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: $blue;
+    font-size: 13px;
+    margin-bottom: 16px;
   }
 }
