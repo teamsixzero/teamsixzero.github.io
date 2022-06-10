@@ -11,7 +11,7 @@ og_image: https://sixzero.co/assets/img/blogs/qa-post--og.png
 image_position: center center
 ---
 
-No, it does not. This is where UI and UX are all too often confused.
+No, it does not. This is where UI and UX design are all too often confused.
 
 UX design is about providing users access to something they value in a way 
 that makes sense to them. UI on the other hand provides the visuals that 
