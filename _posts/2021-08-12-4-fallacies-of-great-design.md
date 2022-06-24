@@ -11,6 +11,13 @@ og_image: https://sixzero.co/assets/img/blogs/4-design-fallacies--og.png
 image_position: center center
 ---
 
+<div class="post-summary">
+  <span class="post-summary__highlight-text">In this article</span>
+  <p>
+    This article explores the misconceptions that great designs always start as complete, innovative ideas thought up by a single mastermind. The truth is indeed, far from that.
+  </p>
+</div>
+
 Innovation will always be a key factor in the long-term success of any business. Without it, it would be impossible to remain relevant as new technology and trends emerge that better solve the problems your user is facing.
 
 When I was starting out as a designer, I often felt the need to always create something different and risky because I needed to establish myself as innovative and thus invaluable to my team. Thinking this way, or worse, trying to live up to these self-imposed standards yielded little innovation when it came to my designs (and honestly, it led to overworking myself early in my career). 

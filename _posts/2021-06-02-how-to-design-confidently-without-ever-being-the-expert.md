@@ -11,6 +11,17 @@ og_image: https://sixzero.co/assets/img/blogs/design-confidently-without-ever-be
 image_position: center center
 ---
 
+<div class="post-summary">
+  <span class="post-summary__highlight-text">In this article</span>
+  <p>
+    Good designers don’t always have the answers, they just know how to find 
+    them. This article goes over how to design great things by not approaching 
+    a project as the expert in the problem itself, but as an expert in going 
+    out and finding the solution.
+  </p>
+</div>
+
+
 Early in my career as a UX Designer, I thought it was my job to know the answers. I assumed I was hired to be the expert in every problem my designs were meant to solve. This led me to years of designing in a silo. I never asked for input because I thought it would expose me as a fraud.
 
 You can imagine how well that went. 
