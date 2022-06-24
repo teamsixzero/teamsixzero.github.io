@@ -25,7 +25,7 @@ to create better designs next time.
 What’s changed for me is that I no longer feel the need to approach every new
 project as an expert in the solution.  Perfection of this craft is impossible. 
 
-It’s not our job to be the expert on every possible tool and to get it right 
+It’s <a href="/2021/06/02/how-to-design-confidently-without-ever-being-the-expert/" target="_blank">not our job to be the expert</a> on every possible tool and to get it right 
 the first time, but to be an expert in a process that allows us to uncover 
 the information we need to design products that are properly aligned with a 
 user’s needs.

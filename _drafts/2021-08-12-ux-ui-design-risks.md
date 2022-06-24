@@ -30,7 +30,8 @@ and often the rules of design have been thoroughly considered at every take.
 
 Remember: it is not a designer‘s job to take risks in what they design, but to 
 eliminate as many risks as possible through a process of validating ideas 
-through research, checking assumptions, considering conventional design rules 
+through <a href="/startusertesting/" target="_blank">research</a>, checking 
+assumptions, considering conventional design rules 
 and never designing on just instinct. 
 
 

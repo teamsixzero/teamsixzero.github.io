@@ -11,13 +11,13 @@ og_image: https://sixzero.co/assets/img/blogs/qa-post--og.png
 image_position: center center
 ---
 
-This is usually a symptom of misaligned expectations within a team 
+This is usually a symptom of misaligned expectations within a team.
 
 One of the most powerful skills in design is being able to distill multiple 
 inputs and constraints in a way that there is complete alignment on what 
 needs to be built.
 
-Enter the Design Brief: In my opinion, a tool more important than Figma 
+Enter the Design Brief: In my opinion, a tool more important than Figma.
 The holy grail of creative documents that are far too often created half-heartedly. 
 
 When done right they minimize surprises, accelerate projects and maximize 
@@ -37,8 +37,7 @@ communicate your team’s vision for the ultimate project win. They also ensure
 that beyond just defining the problem, everyone is aligned with what the 
 desired outcome of the solution should be.
 
-4. Identify your design principles: A set of statements that define the 
-method in which you are going to design the solution. This isn’t to say we are 
+4. Identify your <a href="/2021/11/18/how-to-stop-defending-and-start-presenting-your-work/" target="_blank">design principles</a>: A set of statements that define the method in which you are going to design the solution. This isn’t to say we are 
 defining a solution here, rather the approaches and principles that you are going to abide by.
 
 5. Create a hypothesis: An “if and then” statement that supports your problem 

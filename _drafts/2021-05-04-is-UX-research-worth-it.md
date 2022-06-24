@@ -11,7 +11,7 @@ og_image: https://sixzero.co/assets/img/blogs/qa-post--og.png
 image_position: center center
 ---
 
-To convince your team that research is worthwhile you need to help them 
+To convince your team that UX research is worthwhile you need to help them 
 understand how the insights you collect is a potential goldmine.Here are 
 some of the most common objections I hear and how I overcome them.
 
@@ -46,7 +46,7 @@ identifying the problem and determining how to solve it.
 8. ‘We've had some people try our apps and tell us what they think, we're good’.  
 Good research never ends and the quality of the questions you’re asking matters. 
 
-The idea is not to just conduct research once and be done but to build it into 
-your culture and refine the quality of the research as you go
+The idea is not to just conduct UX research once and be done but to build it into 
+your culture and refine the quality of the research as you go.
 
 Read more here: <a href="/2021/05/03/how-to-overcome-8-common-objections-to-ux-research/" target="_blank">How to Overcome 8 Common Objections to UX Research</a> or <a href="/startusertesting/" target="_blank">read our ebook</a> to learn more about running your own user testing sessions.

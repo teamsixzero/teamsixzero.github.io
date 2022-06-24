@@ -16,7 +16,7 @@ Yes you can. You just need to think like a designer.
 Here’s how to go about that:
 
 1. Challenge your assumptions early and often: before you start building, as 
-soon as you start building, once it’s released & then over and over again.
+soon as you start building, once it’s released and then over and over again.
 
 2. Have conversations with your customers: find (potential) users, show them 
 early prototypes, and <a href="/startusertesting/" target="_blank">do usability 
