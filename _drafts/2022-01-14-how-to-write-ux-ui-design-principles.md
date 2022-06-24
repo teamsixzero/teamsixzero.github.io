@@ -2,11 +2,11 @@
 layout: post
 author: Nick Foster
 light_header: true
-title: "QA #6: How do I get buy-in from my boss / team / client for my UX/UI design ideas?"
+title: "QA #8: How do I get buy-in from my boss / team / client for my UX/UI design ideas?"
 body_class: has-no-box-shadow
 published_at: 2022-01-05
 image_url: /assets/img/blogs/qa-post.png
-image_alt: An abstract image of the letters Q and A
+image_alt:
 og_image: https://sixzero.co/assets/img/blogs/qa-post--og.png
 image_position: center center
 ---

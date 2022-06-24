@@ -6,7 +6,7 @@ title: "QA #2: Can I build a great product or app without a UX/UI designer?"
 body_class: has-no-box-shadow
 published_at: 2021-05-07
 image_url: /assets/img/blogs/qa-post.png
-image_alt: An abstract image of the letters Q and A
+image_alt:
 og_image: https://sixzero.co/assets/img/blogs/qa-post--og.png
 image_position: center center
 ---

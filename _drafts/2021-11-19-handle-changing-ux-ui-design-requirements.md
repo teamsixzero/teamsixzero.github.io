@@ -2,11 +2,11 @@
 layout: post
 author: Nick Foster
 light_header: true
-title: "QA #7: How should I handle changing UX/UI design requirements?"
+title: "QA #5: How should I handle changing UX/UI design requirements?"
 body_class: has-no-box-shadow
-published_at: 2021-11-18
+published_at: 2022-02-15
 image_url: /assets/img/blogs/qa-post.png
-image_alt: An abstract image of the letters Q and A
+image_alt:
 og_image: https://sixzero.co/assets/img/blogs/qa-post--og.png
 image_position: center center
 ---
