@@ -5,9 +5,9 @@ light_header: true
 title: Forget what you know about being a great designer
 body_class: has-no-box-shadow
 published_at: 2022-01-04
-image_url: forget-what-you-know-about-being-a-great-designer.png
+image_url: /assets/img/blogs/forget-what-you-know-about-being-a-great-designer.png
 image_alt: An illustration of a laptop on a pedestal
-og_image: forget-what-you-know-about-being-a-great-designer--og.png
+og_image: https://sixzero.co/assets/img/blogs/forget-what-you-know-about-being-a-great-designer--og.png
 image_position: center center
 ---
 

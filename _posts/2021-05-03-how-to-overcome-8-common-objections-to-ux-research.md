@@ -5,9 +5,9 @@ light_header: true
 title: How to Overcome 8 Common Objections to UX Research
 body_class: has-no-box-shadow
 published_at: 2021-05-03
-image_url: banner-8-common-objections.png
+image_url: /assets/img/blogs/banner-8-common-objections.png
 image_alt: An illustration of basic shapes
-og_image: banner-8-common-objections--og.png
+og_image: https://sixzero.co/assets/img/blogs/banner-8-common-objections--og.png
 image_position: center center
 ---
 
