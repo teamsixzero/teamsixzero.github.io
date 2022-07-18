@@ -5,9 +5,9 @@ light_header: true
 title: How to design confidently without ever being the expert
 body_class: has-no-box-shadow
 published_at: 2021-06-02
-image_url: design-confidently-without-ever-being-the-expert.png
+image_url: design-confidently-without-ever-being-the-expert.jpg
 image_alt: An illustration of basic shapes
-og_image: design-confidently-without-ever-being-the-expert--og.png
+og_image: design-confidently-without-ever-being-the-expert--og.jpg
 image_position: center center
 ---
 
