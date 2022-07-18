@@ -5,9 +5,9 @@ light_header: true
 title: "UX Design and Conversion Rate Optimization: How to master this dynamic duo"
 body_class: has-no-box-shadow
 published_at: 2022-03-08
-image_url: /assets/img/blogs/ux-conversion-rate.png
+image_url: ux-conversion-rate.png
 image_alt: An illustration of basic shapes
-og_image: https://sixzero.co/assets/img/blogs/ux-conversion-rate--og.png
+og_image: ux-conversion-rate--og.png
 image_position: center center
 ---
 

@@ -5,9 +5,9 @@ light_header: true
 title: "Design the right thing first: How to write a UX design brief"
 body_class: has-no-box-shadow
 published_at: 2022-02-14
-image_url: /assets/img/blogs/how-to-design-the-right-thing-first.png
+image_url: how-to-design-the-right-thing-first.png
 image_alt: An illustration of a laptop on a pedestal
-og_image: https://sixzero.co/assets/img/how-to-design-the-right-thing-first--og.png
+og_image: how-to-design-the-right-thing-first--og.png
 image_position: center center
 ---
 
