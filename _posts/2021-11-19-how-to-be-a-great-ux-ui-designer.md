@@ -5,9 +5,9 @@ light_header: true
 title: "QA #6: Why do I look at other people's UX/UI design work and doubt myself?"
 body_class: has-no-box-shadow
 published_at: 2021-08-13
-image_url: qa-post.png
+image_url: /assets/img/blogs/qa-post.png
 image_alt:
-og_image: qa-post--og.png
+og_image: https://sixzero.co/assets/img/blogs/qa-post--og.png
 image_position: center center
 ---
 

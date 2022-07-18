@@ -5,9 +5,9 @@ light_header: true
 title: Can we get over these 4 fallacies of great design already? 
 body_class: has-no-box-shadow
 published_at: 2021-08-12
-image_url: 4-design-fallacies.png
+image_url: /assets/img/blogs/4-design-fallacies.png
 image_alt: An illustration of popular consumer products
-og_image: 4-design-fallacies--og.png
+og_image: https://sixzero.co/assets/img/blogs/4-design-fallacies--og.png
 image_position: center center
 ---
 
