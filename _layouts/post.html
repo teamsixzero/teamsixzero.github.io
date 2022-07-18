@@ -17,7 +17,7 @@
   {% include navigation.html %}
   <main class="main-wrapper" id="maincontent">
     {% include mobile-menu-trigger.html %}
-    <div class="cover-image" style="background-image: url('{{ page.image_url }}'); background-position: {{ page.image_position | default: "center center" }};"></div>
+    <div class="cover-image" style="background-image: url('/assets/img/blogs/{{ page.image_url }}'); background-position: {{ page.image_position | default: "center center" }};"></div>
 
     <section class="section--text">
       <div class="section__inner--c6">

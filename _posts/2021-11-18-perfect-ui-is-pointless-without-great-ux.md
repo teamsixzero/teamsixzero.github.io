@@ -5,9 +5,9 @@ light_header: true
 title: Perfect UI is pointless without great UX
 body_class: has-no-box-shadow
 published_at: 2022-01-14
-image_url: /assets/img/blogs/perfect-ui-is-pointless-without-great-ux.png
+image_url: perfect-ui-is-pointless-without-great-ux.png
 image_alt: An illustration of cargo ship carrying a giant ipad
-og_image: https://sixzero.co/assets/img/perfect-ui-is-pointless-without-great-ux--og.png
+og_image: perfect-ui-is-pointless-without-great-ux--og.png
 image_position: center center
 ---
 

@@ -5,9 +5,9 @@ light_header: true
 title: How to stop defending and start presenting your design work
 body_class: has-no-box-shadow
 published_at: 2022-01-13
-image_url: /assets/img/blogs/how-to-stop-defending-and-start-presenting-your-work.jpg
+image_url: how-to-stop-defending-and-start-presenting-your-work.jpg
 image_alt: An abstract illustration of an hour glass
-og_image: https://sixzero.co/assets/img/how-to-stop-defending-and-start-presenting-your-work--og.jpg
+og_image: how-to-stop-defending-and-start-presenting-your-work--og.jpg
 image_position: center center
 ---
 
