@@ -9,7 +9,7 @@
 
 [[redirects]]
   from = "/janeapp/*"
-  to = "/janeapp/"
+  to = "/projects"
   status = 301
 
 [[redirects]]
@@ -99,5 +99,10 @@
 
 [[redirects]]
   from = "/projects/wealthbar"
+  to = "/projects/"
+  status = 301
+
+[[redirects]]
+  from = "/projects/janeapp"
   to = "/projects/"
   status = 301
