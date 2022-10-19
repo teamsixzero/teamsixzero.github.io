@@ -106,3 +106,13 @@
   from = "/projects/janeapp"
   to = "/projects/"
   status = 301
+
+[[redirects]]
+  from = "/2022/03/08/ux-design-conversion-rate-optimization"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/2022/03/09/how-can-ux-help-conversion-rate"
+  to = "/blog/"
+  status = 301
