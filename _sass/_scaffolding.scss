@@ -49,3 +49,30 @@ body {
     transform: scale(1.02);
   }
 }
+
+
+// =============================================================================
+// Contact form // temp
+// =============================================================================
+
+
+.contact-form {
+
+  input, textarea {
+    display: block;
+    border: 1px solid #233147;
+    width: 100%;
+    margin-bottom: 8px;
+    padding: 8px;
+  }
+
+  textarea {
+    height: 120px;
+  }
+
+  label {
+    display: block;
+    width: 100%;  
+    margin-bottom: 8px;
+  }
+}
